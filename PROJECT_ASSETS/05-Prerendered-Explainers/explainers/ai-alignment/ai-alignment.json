@@ -1,0 +1,193 @@
+{
+  "slug": "ai-alignment",
+  "title": "AI 对齐与智能",
+  "domain": "信息与智能",
+  "hook": "信息与智能：当前世界最前沿的科学探究方向之一。以下从已溯源的权威资料梳理其核心问题、关键进展与开放挑战。",
+  "problems": [
+    {
+      "id": "INF-001",
+      "title": "AGI 对齐与价值观学习",
+      "description": "如何确保超级AI系统的目标与人类价值观一致?这是AI安全的核心问题。",
+      "impact": 5,
+      "difficulty": 5,
+      "timeline": "5-15年",
+      "sources": [
+        {
+          "text": "Anthropic Alignment 2024",
+          "url": "https://www.anthropic.com/research/alignment-faking",
+          "type": "official"
+        },
+        {
+          "text": "OpenAI Superalignment 2024",
+          "url": "https://openai.com/index/introducing-superalignment/",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "INF-002",
+      "title": "高带宽脑机接口",
+      "description": "实现大脑与计算机之间高带宽、双向信息传输，从恢复残障功能到增强认知。",
+      "impact": 5,
+      "difficulty": 5,
+      "timeline": "10-20年",
+      "sources": [
+        {
+          "text": "Neuralink 2024",
+          "url": "https://neuralink.com/updates/a-year-of-telepathy/",
+          "type": "official"
+        },
+        {
+          "text": "Nature Medicine 2024 BCI",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "INF-003",
+      "title": "量子通信网络与量子互联网",
+      "description": "构建基于量子纠缠的全球通信网络，实现无条件安全的通信和分布式量子计算。",
+      "impact": 4,
+      "difficulty": 4,
+      "timeline": "10-20年",
+      "sources": [
+        {
+          "text": "Nature 2024 Quantum Internet",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "INF-004",
+      "title": "后摩尔时代计算架构",
+      "description": "摩尔定律放缓后，通过新架构(类脑/光子/存算一体/3D堆叠)延续算力增长。",
+      "impact": 4,
+      "difficulty": 4,
+      "timeline": "5-15年",
+      "sources": [
+        {
+          "text": "Nature Electronics 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "INF-005",
+      "title": "DNA 信息存储",
+      "description": "用DNA分子作为超高密度(10^18 bytes/mm^3)、超长寿命(千年)的信息存储介质。",
+      "impact": 3,
+      "difficulty": 4,
+      "timeline": "10-20年",
+      "sources": [
+        {
+          "text": "Nature 2024 DNA Storage",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "INF-006",
+      "title": "AI 安全保障与红队",
+      "description": "系统性发现和缓解AI系统中的安全漏洞(越狱/数据投毒/后门/对抗样本)。",
+      "impact": 4,
+      "difficulty": 3,
+      "timeline": "5-10年",
+      "sources": [
+        {
+          "text": "NIST AI RMF 2024",
+          "url": "",
+          "type": "paper"
+        },
+        {
+          "text": "OpenAI Red Teaming 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "INF-007",
+      "title": "AI 治理与全球监管框架",
+      "description": "建立全球协调的AI治理框架，在促进创新和管控风险之间取得平衡。",
+      "impact": 4,
+      "difficulty": 4,
+      "timeline": "5-10年",
+      "sources": [
+        {
+          "text": "EU AI Act 2024",
+          "url": "",
+          "type": "paper"
+        },
+        {
+          "text": "Bletchley Declaration 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "INF-008",
+      "title": "神经形态计算",
+      "description": "模仿大脑结构和计算原理的芯片架构，实现超低功耗的实时智能计算。",
+      "impact": 3,
+      "difficulty": 4,
+      "timeline": "10-20年",
+      "sources": [
+        {
+          "text": "Intel Loihi 2 2024",
+          "url": "",
+          "type": "paper"
+        },
+        {
+          "text": "IBM NorthPole 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "INF-009",
+      "title": "分布式量子计算与量子网络",
+      "description": "通过量子网络连接多个量子处理器，实现可扩展的分布式量子计算。",
+      "impact": 4,
+      "difficulty": 5,
+      "timeline": "15-30年",
+      "sources": [
+        {
+          "text": "Nature 2024 Distributed QC",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "INF-010",
+      "title": "AI 驱动的科学发现",
+      "description": "用AI加速科学发现：从材料到药物到数学证明，AI正成为科学研究的核心工具。",
+      "impact": 5,
+      "difficulty": 3,
+      "timeline": "5-10年",
+      "sources": [
+        {
+          "text": "DeepMind GNoME 2023",
+          "url": "https://www.nature.com/articles/s41586-023-06735-9",
+          "type": "paper"
+        },
+        {
+          "text": "Nature AI4Science 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    }
+  ],
+  "milestones": [],
+  "players": [],
+  "open": [],
+  "sources": [],
+  "generated_by": "fallback-rule (no LLM key available)"
+}

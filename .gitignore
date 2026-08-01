@@ -1,0 +1,24 @@
+# 备份文件（可再生成）
+*.bak
+
+# 采集缓存（可离线续采，不入库）
+**/cache/
+
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+
+# 密钥 / 环境（严禁入仓库）
+.env
+.env.*
+*secret*
+**/DASHSCOPE_API_KEY*
+
+# 网络探测痕迹（非产品）
+proxy_probe.txt
+_recon_result.txt
+recon_*.txt
+
+# 大依赖
+node_modules/

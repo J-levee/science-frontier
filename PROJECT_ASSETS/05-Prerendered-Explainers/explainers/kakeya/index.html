@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>__TITLE__ · 预渲染讲解 | 科学边界</title>
+<style>
+:root{--bg:#0a0a0f;--surface:#13131a;--surface2:#1c1c26;--border:#2a2a38;--text:#e8e8f0;--text2:#9999aa;--text3:#666677;--accent:#6366f1;--accent2:#818cf8;--accent3:#a78bfa;--warm:#f59e0b;--hot:#ef4444;--cool:#06b6d4;--green:#10b981;--radius:12px}
+body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;line-height:1.6;margin:0;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(60% 50% at 18% 8%,rgba(99,102,241,0.06),transparent 70%),radial-gradient(50% 42% at 86% 18%,rgba(6,182,212,0.05),transparent 70%),radial-gradient(55% 45% at 50% 96%,rgba(167,139,250,0.05),transparent 70%)}
+.header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);padding:14px 24px}
+.header-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.logo{font-weight:700;font-size:18px;background:linear-gradient(135deg,var(--accent2),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
+.back{color:var(--text2);font-size:13px;text-decoration:none}
+.back:hover{color:var(--accent2)}
+.main{max-width:1000px;margin:0 auto;padding:32px 24px 64px}
+.hero{text-align:center;padding:32px 0 8px}
+.hero h1{font-size:30px;margin:0 0 12px}
+.hero .hook{color:var(--text2);font-size:16px;max-width:720px;margin:0 auto;line-height:1.7}
+.badge{display:inline-block;margin-top:14px;padding:5px 14px;border-radius:999px;background:rgba(16,185,129,0.12);color:var(--green);font-size:12px;border:1px solid rgba(16,185,129,0.3)}
+section{margin-top:40px}
+section h2{font-size:20px;margin-bottom:16px;display:flex;align-items:center;gap:10px}
+section h2::before{content:"";width:4px;height:20px;background:var(--accent);border-radius:2px;display:inline-block}
+.card{background:rgba(19,19,26,0.55);backdrop-filter:blur(6px);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px;margin-bottom:14px;transition:transform .25s ease,border-color .25s ease}
+.card:hover{transform:translateY(-4px);border-color:var(--accent)}
+.card h3{font-size:16px;margin:0 0 8px}
+.card .desc{color:var(--text2);font-size:14px;line-height:1.7}
+.tags{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.tag{font-size:11px;padding:2px 8px;border-radius:4px;background:var(--surface2);color:var(--text2)}
+.src-line{margin-top:10px;font-size:13px;color:var(--text2)}
+.src-line a{color:var(--accent2)}
+.timeline{border-left:2px solid var(--border);padding-left:20px;margin-left:4px}
+.tl-item{position:relative;margin-bottom:18px}
+.tl-item::before{content:"";position:absolute;left:-27px;top:4px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 8px var(--accent)}
+.tl-year{font-weight:700;color:var(--accent2)}
+.src-list{list-style:none;padding:0;margin:0}
+.src-item{padding:9px 0;border-bottom:1px solid var(--border);font-size:14px}
+.src-item a{color:var(--accent2);text-decoration:none}
+.src-item a:hover{text-decoration:underline}
+.src-badge{font-size:11px;color:var(--green);margin-left:8px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media (max-width:760px){.reveal{opacity:1!important;transform:none!important;transition:none}.hero h1{font-size:24px}}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<div class="header"><div class="header-inner"><a class="logo" href="../index.html">科学边界</a><a class="back" href="index.html">← 讲解总览</a></div></div>
+<div class="main">
+  <div class="hero">
+    <h1 id="ex-title"></h1>
+    <p class="hook" id="ex-hook"></p>
+    <div class="badge" id="ex-badge">📡 模型预渲染 · 零 key 即看</div>
+  </div>
+  <section class="reveal"><h2>核心问题</h2><div id="ex-problems"></div></section>
+  <section class="reveal"><h2>关键进展 / 里程碑</h2><div class="timeline" id="ex-milestones"></div></section>
+  <section class="reveal"><h2>主要玩家 / 研究者</h2><div id="ex-players"></div></section>
+  <section class="reveal"><h2>开放问题</h2><div id="ex-open"></div></section>
+  <section class="reveal"><h2>溯源与延伸阅读</h2><ul class="src-list" id="ex-sources"></ul></section>
+</div>
+<script>window.EXPLAINER = {
+  "slug": "kakeya",
+  "title": "挂谷猜想 / 数学前沿",
+  "domain": "数学与计算",
+  "hook": "数学与计算：当前世界最前沿的科学探究方向之一。以下从已溯源的权威资料梳理其核心问题、关键进展与开放挑战。",
+  "problems": [
+    {
+      "id": "MAT-001",
+      "title": "P vs NP",
+      "description": "计算机科学最重要的问题：每个能快速验证的问题是否也能快速求解?若P=NP，密码学和优化将彻底改变。",
+      "impact": 5,
+      "difficulty": 5,
+      "timeline": "未知(可能100年+)",
+      "sources": [
+        {
+          "text": "Clay Mathematics Institute",
+          "url": "https://www.claymath.org/millennium-problems/p-vs-np",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "MAT-002",
+      "title": "黎曼假设",
+      "description": "黎曼ζ函数所有非平凡零点实部均为1/2?与素数分布深刻相关，是数学最重要未解问题之一。",
+      "impact": 4,
+      "difficulty": 5,
+      "timeline": "未知",
+      "sources": [
+        {
+          "text": "Clay Mathematics Institute",
+          "url": "https://www.claymath.org/millennium-problems/p-vs-np",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "MAT-003",
+      "title": "BSD猜想",
+      "description": "椭圆曲线的有理点群与L函数在s=1处的性状之间精确关系的猜想。",
+      "impact": 3,
+      "difficulty": 5,
+      "timeline": "未知",
+      "sources": [
+        {
+          "text": "Clay Mathematics Institute",
+          "url": "https://www.claymath.org/millennium-problems/p-vs-np",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "MAT-004",
+      "title": "Navier-Stokes存在性与光滑性",
+      "description": "三维Navier-Stokes方程是否始终存在光滑解?关乎流体力学和湍流的基本理论。",
+      "impact": 3,
+      "difficulty": 5,
+      "timeline": "未知",
+      "sources": [
+        {
+          "text": "Clay Mathematics Institute",
+          "url": "https://www.claymath.org/millennium-problems/p-vs-np",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "MAT-005",
+      "title": "计算复杂性层级",
+      "description": "P、NP、PSPACE、EXPTIME等复杂性类之间的精确包含关系，特别是P vs PSPACE和NP vs coNP。",
+      "impact": 4,
+      "difficulty": 5,
+      "timeline": "未知",
+      "sources": [
+        {
+          "text": "CCC Conference 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "MAT-006",
+      "title": "通用人工智能(AGI)",
+      "description": "构建在所有认知任务上达到或超越人类水平的AI系统。这是AI领域的终极目标。",
+      "impact": 5,
+      "difficulty": 5,
+      "timeline": "5-20年",
+      "sources": [
+        {
+          "text": "OpenAI o3 2024",
+          "url": "https://openai.com/index/introducing-o3-and-o4-mini/",
+          "type": "official"
+        },
+        {
+          "text": "Anthropic Claude 2024",
+          "url": "https://www.anthropic.com/news/claude-3-5-sonnet",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "MAT-007",
+      "title": "AI可解释性与学习理论",
+      "description": "深度学习为什么有效?泛化的理论基础是什么?模型内部表示如何可解释?",
+      "impact": 5,
+      "difficulty": 5,
+      "timeline": "5-20年",
+      "sources": [
+        {
+          "text": "Anthropic Interpretability 2024",
+          "url": "https://www.anthropic.com/news/mapping-mind-language-model",
+          "type": "official"
+        },
+        {
+          "text": "NeurIPS 2024",
+          "url": "https://neurips.cc/",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "MAT-008",
+      "title": "量子计算优越性",
+      "description": "量子计算机在特定问题上实现经典计算机无法匹敌的计算速度。",
+      "impact": 5,
+      "difficulty": 5,
+      "timeline": "10-20年",
+      "sources": [
+        {
+          "text": "Google Willow 2024",
+          "url": "https://blog.google/technology/research/google-willow-quantum-chip/",
+          "type": "official"
+        },
+        {
+          "text": "Nature 2024 Quantum",
+          "url": "https://www.nature.com/articles/s41586-024-08449-y",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "MAT-009",
+      "title": "量子纠错与容错计算",
+      "description": "量子比特极易受噪声干扰，实现可靠的量子计算需要量子纠错码和容错协议。",
+      "impact": 5,
+      "difficulty": 5,
+      "timeline": "10-20年",
+      "sources": [
+        {
+          "text": "Google Willow 2024",
+          "url": "https://blog.google/technology/research/google-willow-quantum-chip/",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "MAT-010",
+      "title": "后量子密码学",
+      "description": "量子计算机可破解RSA/ECC等当前加密标准，需开发抗量子攻击的密码体系。",
+      "impact": 4,
+      "difficulty": 3,
+      "timeline": "5-10年",
+      "sources": [
+        {
+          "text": "NIST PQC 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "MAT-011",
+      "title": "自动定理证明与形式化验证",
+      "description": "AI辅助的自动定理证明和计算机形式化数学，目标是自动化数学发现。",
+      "impact": 4,
+      "difficulty": 4,
+      "timeline": "5-15年",
+      "sources": [
+        {
+          "text": "DeepMind AlphaProof 2024",
+          "url": "",
+          "type": "paper"
+        },
+        {
+          "text": "Lean Mathlib 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "MAT-012",
+      "title": "可计算性与算法信息论",
+      "description": "什么是可计算的?随机性的本质是什么?Kolmogorov复杂性的深刻问题。",
+      "impact": 3,
+      "difficulty": 5,
+      "timeline": "未知",
+      "sources": [
+        {
+          "text": "Algorithmic Information Theory 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    }
+  ],
+  "milestones": [],
+  "players": [],
+  "open": [],
+  "sources": [],
+  "generated_by": "fallback-rule (no LLM key available)"
+};</script>
+<script>
+(function(){
+  const E = window.EXPLAINER || {};
+  document.getElementById('ex-title').textContent = E.title || '';
+  document.getElementById('ex-hook').textContent = E.hook || '';
+  const probBox = document.getElementById('ex-problems');
+  (E.problems||[]).forEach(function(p){
+    const el=document.createElement('div'); el.className='card';
+    let tags='';
+    if(p.impact) tags+='<span class="tag">影响力 '+'★'.repeat(p.impact)+'</span>';
+    if(p.difficulty) tags+='<span class="tag">难度 '+'●'.repeat(p.difficulty)+'</span>';
+    if(p.timeline) tags+='<span class="tag">'+p.timeline+'</span>';
+    if(p.id) tags+='<span class="tag">'+p.id+'</span>';
+    let src='';
+    (p.sources||[]).forEach(function(s){ src += s.url ? '<a href="'+s.url+'" target="_blank" rel="noopener">'+s.text+'</a> ' : '<span>'+s.text+'</span> '; });
+    el.innerHTML='<h3>'+(p.title||'')+'</h3><div class="desc">'+(p.description||'')+'</div><div class="tags">'+tags+'</div>'+(src?'<div class="src-line">来源：'+src+'</div>':'');
+    probBox.appendChild(el);
+  });
+  const ms=document.getElementById('ex-milestones');
+  (E.milestones||[]).forEach(function(m){ var d=document.createElement('div'); d.className='tl-item'; d.innerHTML='<div class="tl-year">'+(m.year||'')+'</div><div>'+(m.text||'')+'</div>'; ms.appendChild(d); });
+  const pl=document.getElementById('ex-players');
+  (E.players||[]).forEach(function(n){ var s=document.createElement('span'); s.className='tag'; s.style.fontSize='13px'; s.style.padding='6px 12px'; s.textContent=n; pl.appendChild(s); pl.appendChild(document.createTextNode(' ')); });
+  const op=document.getElementById('ex-open');
+  (E.open||[]).forEach(function(t){ var d=document.createElement('div'); d.className='card'; d.innerHTML='<div class="desc">'+t+'</div>'; op.appendChild(d); });
+  const sc=document.getElementById('ex-sources');
+  (E.sources||[]).forEach(function(s){ var li=document.createElement('li'); li.className='src-item'; li.innerHTML=(s.url?'<a href="'+s.url+'" target="_blank" rel="noopener">'+s.text+'</a>':s.text)+(s.url?'<span class="src-badge">✓ 已溯源</span>':''); sc.appendChild(li); });
+  if('IntersectionObserver' in window){ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.12}); document.querySelectorAll('.reveal').forEach(function(e){io.observe(e);}); }
+  else document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in');});
+})();
+</script>
+</body>
+</html>

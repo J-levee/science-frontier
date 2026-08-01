@@ -1,0 +1,178 @@
+{
+  "slug": "fusion",
+  "title": "可控核聚变",
+  "domain": "材料与能源",
+  "hook": "材料与能源：当前世界最前沿的科学探究方向之一。以下从已溯源的权威资料梳理其核心问题、关键进展与开放挑战。",
+  "problems": [
+    {
+      "id": "ENG-001",
+      "title": "固态电池",
+      "description": "用固体电解质替代液态电解液，实现更高能量密度和更安全的锂电池。",
+      "impact": 4,
+      "difficulty": 3,
+      "timeline": "5-10年",
+      "sources": [
+        {
+          "text": "Toyota Solid State 2024",
+          "url": "",
+          "type": "paper"
+        },
+        {
+          "text": "Nature Energy 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "ENG-002",
+      "title": "新型储能机制",
+      "description": "超越锂离子电池的新型储能：锂硫、锂空气、钠离子、多价离子(Mg/Ca)电池。",
+      "impact": 4,
+      "difficulty": 4,
+      "timeline": "5-15年",
+      "sources": [
+        {
+          "text": "CATL Sodium 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "ENG-003",
+      "title": "直接空气碳捕集(DAC)",
+      "description": "从大气中直接捕集CO2，是实现负排放和碳中和的关键技术。",
+      "impact": 5,
+      "difficulty": 4,
+      "timeline": "10-20年",
+      "sources": [
+        {
+          "text": "Climeworks 2024",
+          "url": "https://climeworks.com/press-release/climeworks-switches-on-worlds-largest-direct-air-capture-plant-mammoth",
+          "type": "official"
+        },
+        {
+          "text": "IEA DAC Report 2024",
+          "url": "https://www.iea.org/energy-system/carbon-capture-utilisation-and-storage/direct-air-capture",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "ENG-004",
+      "title": "人工光合作用",
+      "description": "模仿自然光合作用，用太阳能将CO2和水转化为燃料或化学品。",
+      "impact": 4,
+      "difficulty": 4,
+      "timeline": "10-20年",
+      "sources": [
+        {
+          "text": "Nature Catalysis 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "ENG-005",
+      "title": "二维材料与范德华异质结",
+      "description": "将不同二维材料(石墨烯/BN/MoS2等)堆叠成异质结，创造全新物性和器件。",
+      "impact": 4,
+      "difficulty": 3,
+      "timeline": "5-15年",
+      "sources": [
+        {
+          "text": "Nature 2024 2D Materials",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "ENG-006",
+      "title": "第四代核反应堆",
+      "description": "下一代核反应堆(熔盐堆/高温气冷堆/快堆)提高安全性、效率和核燃料利用率。",
+      "impact": 5,
+      "difficulty": 4,
+      "timeline": "5-15年",
+      "sources": [
+        {
+          "text": "CNNC HTR-PM 2024",
+          "url": "https://www.neimagazine.com/news/chinas-htr-pm-heating-project-begins-operation-11658937",
+          "type": "official"
+        },
+        {
+          "text": "TerraPower 2024",
+          "url": "https://www.terrapower.com/",
+          "type": "official"
+        }
+      ]
+    },
+    {
+      "id": "ENG-007",
+      "title": "高效电解水制氢",
+      "description": "用可再生能源驱动电解水产生绿氢，是氢能经济的关键环节。",
+      "impact": 4,
+      "difficulty": 3,
+      "timeline": "5-10年",
+      "sources": [
+        {
+          "text": "Nature Energy 2024 Hydrogen",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "ENG-008",
+      "title": "超材料与变换光学",
+      "description": "人工设计的微结构材料，实现自然界不存在的电磁/声学/力学性质(负折射/隐身/超透镜)。",
+      "impact": 3,
+      "difficulty": 3,
+      "timeline": "5-15年",
+      "sources": [
+        {
+          "text": "Nature Materials 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "ENG-009",
+      "title": "仿生材料与自修复材料",
+      "description": "模仿生物体的自修复、自适应、传感功能的智能材料。",
+      "impact": 3,
+      "difficulty": 3,
+      "timeline": "5-15年",
+      "sources": [
+        {
+          "text": "Advanced Materials 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    },
+    {
+      "id": "ENG-010",
+      "title": "聚变-裂变混合堆",
+      "description": "利用聚变中子驱动裂变燃料增殖或嬗变，降低纯聚变的工程门槛。",
+      "impact": 3,
+      "difficulty": 4,
+      "timeline": "20-30年",
+      "sources": [
+        {
+          "text": "Nuclear Fusion 2024",
+          "url": "",
+          "type": "paper"
+        }
+      ]
+    }
+  ],
+  "milestones": [],
+  "players": [],
+  "open": [],
+  "sources": [],
+  "generated_by": "fallback-rule (no LLM key available)"
+}
