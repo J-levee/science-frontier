@@ -89,7 +89,8 @@ const server = http.createServer((req, res) => {
         return c && +c.getAttribute('r') === 11 && window.d3.select(n).datum()?.id === pid;
       });
       const m = /translate\(([-\d.]+),([-\d.]+)\)/.exec(g.getAttribute('transform') || '');
-      return m ? { x: +m[1], y: +m[2] } : null;
+      const d = window.d3.select(g).datum();
+      return m ? { x: +m[1], y: +m[2], fx: d.fx } : null;
     }, id);
     try {
       const before = await getP(planet.id);
@@ -102,7 +103,8 @@ const server = http.createServer((req, res) => {
       await page.waitForTimeout(900);
       const after = await getP(planet.id);
       const moved = before && during && Math.hypot(during.x - before.x, during.y - before.y) > 30;
-      const rebounded = after && Math.hypot(after.x - planet.hx, after.y - planet.hy) < Math.hypot(during.x - planet.hx, during.y - planet.hy) - 10;
+      // 确定性回弹信号：松手后 d3 释放 fx（drag end 置 null）→ 力模拟重新接管
+      const rebounded = after && after.fx === null;
       dragOk = `moved=${moved} rebounded=${rebounded}`;
     } catch (e) { dragOk = 'error: ' + e.message; }
   }

@@ -308,7 +308,7 @@ body{background:#07080f}
       </div>
       <div class="trust-anchor" id="trust-anchor">🔭 荣誉星图 · 收录中…</div>
       <div class="hero-actions">
-        <button class="btn-primary" onclick="document.getElementById('domain-grid').scrollIntoView({behavior:'smooth'})">开始探索 →</button>
+        <button class="btn-primary" onclick="document.getElementById('learn-path').scrollIntoView({behavior:'smooth'})">开始探索 →</button>
         <button class="btn-ghost" onclick="showIntro()">这是什么？</button>
       </div>
     </div>
@@ -325,6 +325,40 @@ body{background:#07080f}
       <div class="step-card"><div class="step-num">1</div><h3>选领域</h3><p>在三体星系中点亮一颗恒星或行星，进入对应学科领域。</p></div>
       <div class="step-card"><div class="step-num">2</div><h3>钻问题</h3><p>查看前沿问题的现状、关键方向与影响力 / 难度评级。</p></div>
       <div class="step-card"><div class="step-num">3</div><h3>追关联</h3><p>切到关联网络，看知识之间如何彼此牵引。</p></div>
+    </div>
+    <style>
+      .learn-path{margin-top:48px}
+      .lp-title{font-size:22px;font-weight:700;margin-bottom:6px}
+      .lp-sub{color:var(--text2);font-size:14px;margin-bottom:18px}
+      .route-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+      .route-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+      .route-head{display:flex;align-items:center;gap:12px;padding:16px;cursor:pointer;transition:background .2s}
+      .route-head:hover{background:var(--surface2)}
+      .route-icon{font-size:26px}
+      .route-meta{flex:1}
+      .route-name{font-weight:700;font-size:15px}
+      .route-desc{font-size:12.5px;color:var(--text3);margin-top:3px;line-height:1.45}
+      .route-count{font-size:13px;color:var(--accent);white-space:nowrap}
+      .route-list{padding:0 16px 16px;display:none}
+      .route-item{padding:12px;border:1px solid var(--border);border-radius:10px;margin-top:10px;cursor:pointer;transition:border-color .2s,transform .2s}
+      .route-item:hover{border-color:var(--accent);transform:translateY(-1px)}
+      .ri-title{font-weight:600;font-size:14px}
+      .ri-domain{font-size:12px;margin-left:6px;font-weight:500}
+      .ri-obj{font-size:12.5px;color:var(--text2);margin-top:6px;line-height:1.4}
+      .ri-tags{display:flex;gap:10px;margin-top:8px;font-size:12px;color:var(--text3)}
+      .route-more{font-size:12px;color:var(--text3);margin-top:10px;text-align:center}
+      .domain-why{display:flex;gap:14px;background:linear-gradient(135deg,rgba(129,140,248,.10),rgba(16,185,129,.08));border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;margin-bottom:16px}
+      .dw-icon{font-size:30px;line-height:1}
+      .dw-body{flex:1}
+      .dw-name{font-weight:700;font-size:15px;margin-bottom:4px}
+      .dw-text{font-size:13.5px;color:var(--text2);line-height:1.55}
+      .dw-stats{font-size:12px;color:var(--text3);margin-top:8px}
+      @media(max-width:760px){.route-grid{grid-template-columns:1fr}}
+    </style>
+    <div id="learn-path" class="learn-path reveal">
+      <h2 class="lp-title">🧭 不想漫无目的？三条学习路线带你入门</h2>
+      <p class="lp-sub">按攻克难度分三档，每题都附「学习目标」。点开任意路线，照着清单循序渐进地读下去。</p>
+      <div class="route-grid" id="route-grid"></div>
     </div>
     <div class="domain-grid" id="domain-grid"></div>
 
@@ -388,6 +422,7 @@ body{background:#07080f}
     <button class="nav-btn detail-back" onclick="showHome()">← 返回总览</button>
     <h2 id="list-title" style="font-size:22px;font-weight:700;margin-bottom:4px"></h2>
     <p id="list-subtitle" style="color:var(--text2);font-size:14px;margin-bottom:16px"></p>
+    <div id="domain-why" class="domain-why"></div>
     <div class="filter-bar">
       <label>排序:</label>
       <button class="sort-btn active" onclick="sortProblems('impact',this)">影响力</button>
@@ -681,6 +716,68 @@ function renderSources(sources) {
   return summary + `<ul class="src-list">${items}</ul>`;
 }
 
+// ===== D6-7 教学引导路径：三路线 + 学习目标标签 + 每领域"为什么重要"科普卡 =====
+const DOMAIN_WHY = {
+  '物理学':'物理学探究物质、能量、空间与时间的最基本规律，是一切自然科学的根基——从微观粒子到宇宙膨胀都在它的视野之内。',
+  '生命科学':'生命科学追问生命如何运作、演化与延续，直接关系到健康、农业，以及我们如何理解自身这个物种。',
+  '数学与计算':'数学与计算提供描述世界的形式语言与推理工具，也是现代密码学、人工智能与科学计算的底层引擎。',
+  '宇宙学':'宇宙学研究宇宙的起源、结构与最终命运，把人类的存在置于最宏阔的时空尺度之中。',
+  '材料与能源':'材料与能源决定文明能用什么、能走多远。从电池到超导，许多技术瓶颈其实卡在这一层。',
+  '信息与智能':'信息与智能研究如何表示、传递与生成知识，正在重塑科研、产业与每个人的日常生活。',
+  '地球科学与气候':'地球科学与气候理解我们唯一的家园如何运转，是应对极端天气与实现可持续发展的科学基础。',
+  '化学':'化学在原子与分子层面连接物质变化，是新药物、新材料与能源转换的核心枢纽。',
+  '社会科学与认知':'社会科学与认知研究个体与群体的心智、行为与制度，解释人类如何思考、决策与共处。',
+  '航天与太空探索':'航天与太空探索把科学仪器与人类的视野推向外太空，既拓展认知，也反向牵引尖端工程。'
+};
+const LEARN_PATHS = [
+  { band:3, icon:'🌱', name:'新手路线', desc:'从人类已经摸到门把手的前沿问题入手——难度适中、表述清晰，适合先建立直觉与兴趣。' },
+  { band:4, icon:'🚀', name:'进阶路线', desc:'进入真正硬核的交叉前沿，需要一点背景知识，但回报是一幅更深的图景。' },
+  { band:5, icon:'🧠', name:'深度路线', desc:'直面最顽固的未知——人类智力的极限挑战，适合想一直钻到底的人。' },
+];
+function learnObjective(d) {
+  if (d.key_directions && d.key_directions.length) return d.key_directions[0];
+  return (d.subdomain || '') + ' 方向的当前前沿进展';
+}
+function renderLearnPath() {
+  const grid = document.getElementById('route-grid');
+  if (!grid) return;
+  grid.innerHTML = LEARN_PATHS.map(p => {
+    const all = DATA.filter(d => d.difficulty === p.band);
+    const fullCount = all.length;
+    const items = all.sort((a, b) => b.impact - a.impact || a.domain.localeCompare(b.domain, 'zh')).slice(0, 12);
+    const more = fullCount > items.length ? `<div class="route-more">仅展示影响力最高的 ${items.length} 题 · 该路线共 ${fullCount} 题</div>` : '';
+    const listHTML = items.map(d => {
+      const color = domainColors[d.domain] || '#888';
+      return `<div class="route-item" onclick="showDetail('${d.id}')">
+        <div class="ri-title">${esc(d.title)} <span class="ri-domain" style="color:${color}">${esc(d.domain)}</span></div>
+        <div class="ri-obj">🎯 学习目标：${esc(learnObjective(d))}</div>
+        <div class="ri-tags"><span>影响力 ${'★'.repeat(d.impact)}</span><span>难度 ${'●'.repeat(d.difficulty)}</span></div>
+      </div>`;
+    }).join('') + more;
+    return `<div class="route-card">
+      <div class="route-head" onclick="toggleRoute(this)">
+        <div class="route-icon">${p.icon}</div>
+        <div class="route-meta"><div class="route-name">${p.name}</div><div class="route-desc">${p.desc}</div></div>
+        <div class="route-count">${fullCount} 题 ▾</div>
+      </div>
+      <div class="route-list">${listHTML}</div>
+    </div>`;
+  }).join('');
+}
+function toggleRoute(head) {
+  const card = head.closest('.route-card');
+  if (!card) return;
+  const list = card.querySelector('.route-list');
+  const cnt = card.querySelector('.route-count');
+  if (list.style.display === 'none' || !list.style.display) {
+    list.style.display = 'block';
+    cnt.innerHTML = cnt.innerHTML.replace('▾', '▴');
+  } else {
+    list.style.display = 'none';
+    cnt.innerHTML = cnt.innerHTML.replace('▴', '▾');
+  }
+}
+
 function renderHome() {
   const domains = {};
   DATA.forEach(d => {
@@ -701,6 +798,7 @@ function renderHome() {
 
   const grid = document.getElementById('domain-grid');
   renderDomainView(grid, domains);
+  renderLearnPath();
 
   // 荣誉星图（D3-5）：用采集到的奖项数据填充信任锚 + 渲染星场
   const ta = document.getElementById('trust-anchor');
@@ -913,6 +1011,14 @@ function showDomain(domain) {
   const subdomains = [...new Set(problems.map(d => d.subdomain))];
   document.getElementById('list-title').textContent = `${domainIcons[domain] || ''} ${domain}`;
   document.getElementById('list-subtitle').textContent = `${problems.length} 个问题 · ${subdomains.length} 个子领域: ${subdomains.join(' / ')}`;
+
+  const why = document.getElementById('domain-why');
+  if (why) {
+    const icon = domainIcons[domain] || '🔬';
+    const color = domainColors[domain] || '#888';
+    const maxImp = problems.reduce((m, d) => Math.max(m, d.impact), 0);
+    why.innerHTML = `<div class="dw-icon">${icon}</div><div class="dw-body"><div class="dw-name" style="color:${color}">为什么 ${esc(domain)} 很重要？</div><div class="dw-text">${esc(DOMAIN_WHY[domain] || '')}</div><div class="dw-stats">${problems.length} 个前沿问题 · ${subdomains.length} 个子领域 · 最高影响力 ${maxImp}/5</div></div>`;
+  }
 
   renderProblemList(problems);
 }
