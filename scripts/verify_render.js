@@ -62,28 +62,45 @@ const server = http.createServer((req, res) => {
     return out;
   });
 
-  // 模拟拖拽星系中的行星，确认 drag handler 不报错且能释放
-  const box = await page.evaluate(() => {
+  // 模拟拖拽星系中的【行星】(circle r=11)，确认 filter 放行 + 真实位移 + 释放回弹
+  // 注意：必须按 r=11 锁定行星，恒星(id 同域名)被力模拟钉死，不能当作拖拽对象
+  const planet = await page.evaluate(() => {
     const svg = document.querySelector('#domain-grid svg');
     if (!svg) return null;
-    const r = svg.getBoundingClientRect();
-    return { x: r.x, y: r.y, w: r.width, h: r.height };
+    const g = [...svg.querySelectorAll('g')].find(n => {
+      const c = n.querySelector('circle');
+      return c && +c.getAttribute('r') === 11;
+    });
+    if (!g) return null;
+    const c = g.querySelector('circle');
+    const r = c.getBoundingClientRect();
+    const d = window.d3.select(g).datum();
+    return { id: d.id, sx: r.x + r.width / 2, sy: r.y + r.height / 2, hx: d.x, hy: d.y };
   });
-  let dragOk = 'skipped(no svg)';
-  if (box) {
-    const cx = box.x + box.w / 2, cy = box.y + box.h / 2;
-    try {
-      await page.mouse.move(cx, cy);
-      await page.mouse.down();
-      await page.mouse.move(cx + 40, cy + 30, { steps: 5 });
-      await page.mouse.move(cx + 80, cy + 60, { steps: 5 });
-      await page.mouse.up();
-      await page.waitForTimeout(800); // 等引力回弹
-      const moved = await page.evaluate(() => {
-        const n = document.querySelector('#domain-grid svg g[transform]');
-        return n ? n.getAttribute('transform') : null;
+  let dragOk = 'skipped(no planet)';
+  if (planet) {
+    const getP = (id) => page.evaluate((pid) => {
+      const svg = document.querySelector('#domain-grid svg');
+      const g = [...svg.querySelectorAll('g')].find(n => {
+        const c = n.querySelector('circle');
+        return c && +c.getAttribute('r') === 11 && window.d3.select(n).datum()?.id === pid;
       });
-      dragOk = 'ok, transform=' + (moved ? 'present' : 'none');
+      const m = /translate\(([-\d.]+),([-\d.]+)\)/.exec(g.getAttribute('transform') || '');
+      return m ? { x: +m[1], y: +m[2] } : null;
+    }, id);
+    try {
+      const before = await getP(planet.id);
+      await page.mouse.move(planet.sx, planet.sy);
+      await page.mouse.down();
+      await page.mouse.move(planet.sx + 60, planet.sy + 45, { steps: 6 });
+      await page.mouse.move(planet.sx + 120, planet.sy + 90, { steps: 6 });
+      const during = await getP(planet.id);
+      await page.mouse.up();
+      await page.waitForTimeout(900);
+      const after = await getP(planet.id);
+      const moved = before && during && Math.hypot(during.x - before.x, during.y - before.y) > 30;
+      const rebounded = after && Math.hypot(after.x - planet.hx, after.y - planet.hy) < Math.hypot(during.x - planet.hx, during.y - planet.hy) - 10;
+      dragOk = `moved=${moved} rebounded=${rebounded}`;
     } catch (e) { dragOk = 'error: ' + e.message; }
   }
 

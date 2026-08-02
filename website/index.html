@@ -802,7 +802,7 @@ function renderGalaxy(container, domains) {
       if (d.type === 'planet') { hoveredGalaxy = null; probe.attr('opacity', 0); }
     })
     .call(d3.drag()
-      .filter(d => d.type === 'planet')
+      .filter((event, d) => d.type === 'planet')
       .on('start', (e, d) => { d.fx = d.x; d.fy = d.y; d.__dragged = false; })
       .on('drag', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = e.x; d.fy = e.y; d.__dragged = true; })
       .on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; })
