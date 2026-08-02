@@ -305,9 +305,26 @@ body{background:#07080f}
     <!-- P1 荣誉星图 TEMP（临时承载，前端重构时整体替换） -->
     <section id="honor-section" class="reveal" style="margin-top:56px">
       <style>
-        .honor-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px;transition:all .2s}
-        .honor-card:hover{border-color:var(--accent);transform:translateY(-2px);background:var(--surface2)}
-        .honor-mot{font-size:12px;color:var(--text2);margin-top:8px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+        .honor-viz{position:relative;width:100%;height:560px;background:radial-gradient(120% 120% at 50% 38%, #0b1020 0%, #070a14 72%);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+        #honor-starfield{width:100%;height:100%;display:block;cursor:grab;touch-action:none}
+        #honor-starfield:active{cursor:grabbing}
+        .honor-node{cursor:pointer}
+        .honor-cluster-label{fill:rgba(255,255,255,.30);font-size:13px;font-weight:600;letter-spacing:.05em}
+        .honor-tooltip{position:absolute;pointer-events:none;left:0;top:0;max-width:300px;background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:10px 12px;box-shadow:0 8px 30px rgba(0,0,0,.4);opacity:0;transition:opacity .15s;font-size:13px;z-index:30;line-height:1.5}
+        .honor-tooltip.show{opacity:1}
+        .honor-tooltip .tt-name{font-weight:700;font-size:14px;color:var(--text)}
+        .honor-tooltip .tt-meta{color:var(--text3);font-size:12px;margin:2px 0 6px}
+        .honor-tooltip .tt-disc{color:var(--text2)}
+        .honor-detail{position:absolute;top:0;right:0;width:380px;max-width:92%;height:100%;background:var(--surface);border-left:1px solid var(--border);box-shadow:-12px 0 40px rgba(0,0,0,.4);padding:22px;overflow-y:auto;transform:translateX(100%);transition:transform .3s ease;z-index:40}
+        .honor-detail.show{transform:translateX(0)}
+        .honor-detail .hd-close{position:absolute;top:12px;right:14px;width:28px;height:28px;border:none;background:var(--surface2);color:var(--text);border-radius:8px;font-size:18px;cursor:pointer;line-height:1}
+        .honor-detail h2{font-size:20px;margin:4px 0 2px;color:var(--text)}
+        .honor-detail h3{font-size:15px;margin:18px 0 6px;color:var(--accent)}
+        .honor-detail .hd-disc{font-size:14px;line-height:1.6;color:var(--text)}
+        .honor-pill{display:inline-block;font-size:12px;padding:2px 9px;border-radius:999px;margin-right:6px;margin-top:4px}
+        .honor-prob-link{display:block;width:100%;text-align:left;margin:6px 0;padding:9px 11px;background:var(--surface2);border:1px solid var(--border);border-radius:9px;color:var(--text);font-size:13px;cursor:pointer;transition:all .15s}
+        .honor-prob-link:hover{border-color:var(--accent);background:var(--surface);transform:translateX(2px)}
+        @media(max-width:640px){ .honor-viz{height:440px} .honor-detail{width:100%;max-width:100%} }
       </style>
       <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:6px">
         <h2 style="font-size:24px;font-weight:700">🔭 荣誉星图 · 科学巨匠</h2>
@@ -316,17 +333,25 @@ body{background:#07080f}
       <p style="color:var(--text2);font-size:14px;margin-bottom:16px">顶级科学奖项得主，按三星系着色，悬停查看获奖理由。<span style="color:var(--text3)">（此板块为临时承载，前端重构后将被替换）</span></p>
       <div class="filter-bar" style="margin-bottom:16px">
         <label>星系</label>
-        <select id="honor-star" onchange="renderHonor()">
+        <select id="honor-star" onchange="renderHonorStarfield()">
           <option value="">全部</option>
           <option value="physics">⚛️ 物理星系</option>
           <option value="life">🧬 生命星系</option>
           <option value="compute">🔢 计算星系</option>
         </select>
         <label>奖项</label>
-        <select id="honor-award" onchange="renderHonor()"><option value="">全部</option></select>
-        <input id="honor-search" type="text" placeholder="搜索姓名 / 机构 / 国家..." oninput="renderHonor()" style="flex:1;min-width:180px">
+        <select id="honor-award" onchange="renderHonorStarfield()"><option value="">全部</option></select>
+        <input id="honor-search" type="text" placeholder="搜索姓名 / 机构 / 国家..." oninput="renderHonorStarfield()" style="flex:1;min-width:180px">
       </div>
-      <div id="honor-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px"></div>
+      <div class="honor-viz">
+        <svg id="honor-starfield" preserveAspectRatio="xMidYMid meet" aria-label="荣誉星图：按三星系着色的科学巨匠灯塔"></svg>
+        <div id="honor-tooltip" class="honor-tooltip"></div>
+        <div id="honor-detail" class="honor-detail hidden">
+          <button class="hd-close" onclick="closeHonorDetail()">×</button>
+          <div id="honor-detail-body"></div>
+        </div>
+      </div>
+      <div style="font-size:12px;color:var(--text3);margin-top:8px">提示：滚轮 / 双指缩放，拖拽平移；点击灯塔查看获奖理由与关联的前沿问题。</div>
     </section>
 
     <div class="hot-marquee reveal"><div class="track" id="hot-track"></div></div>
@@ -409,45 +434,143 @@ const domainIcons = {
   "航天与太空探索": "🚀"
 };
 
-// === P1 荣誉星图 TEMP（临时承载，重构时整体替换） ===
+// === D3-5 荣誉星图（替换 TEMP 卡片墙，D3 星场）===
 const HONOR_STAR_COLOR = { physics:'#818cf8', life:'#10b981', compute:'#f59e0b' };
-let _honorAwardReady = false;
-function esc(s){ return String(s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])); }
-function renderHonor(){
-  const grid = document.getElementById('honor-grid');
-  if (!grid || typeof awards === 'undefined') return;
-  const star = (document.getElementById('honor-star')||{}).value || '';
-  const award = (document.getElementById('honor-award')||{}).value || '';
-  const q = ((document.getElementById('honor-search')||{}).value || '').trim().toLowerCase();
-  if (!_honorAwardReady){
-    const set = {};
-    awards.forEach(a => { set[a.award] = (set[a.award]||0)+1; });
-    const sel = document.getElementById('honor-award');
-    Object.keys(set).sort().forEach(k => {
-      const o = document.createElement('option'); o.value = k; o.textContent = k + ' ('+set[k]+')'; sel.appendChild(o);
+let _honorReady = false;
+function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m])); }
+
+function honorRadius(d){
+  if(/nobel/i.test(d.award)) return 3.4;
+  if(/fields|turing|abel/i.test(d.award)) return 2.9;
+  return 2.4;
+}
+function honorLayout(){
+  const W=1000, H=560;
+  const clusters=[
+    {star:'physics', cx:W*0.22, cy:H*0.52, label:'⚛ 物理星系'},
+    {star:'life',    cx:W*0.50, cy:H*0.52, label:'🧬 生命星系'},
+    {star:'compute', cx:W*0.78, cy:H*0.52, label:'🔢 计算星系'},
+  ];
+  const counts={physics:0,life:0,compute:0};
+  (typeof awards!=='undefined'?awards:[]).forEach(a=>{ if(counts[a.star]!==undefined) counts[a.star]++; });
+  const maxR=H*0.40, maxCount=Math.max(1,...Object.values(counts));
+  clusters.forEach(c=> c.R=maxR*Math.sqrt(counts[c.star]/maxCount));
+  const GA=Math.PI*(3-Math.sqrt(5)); // 黄金角 137.5°
+  const nodes=[];
+  clusters.forEach(c=>{
+    const arr=(typeof awards!=='undefined'?awards:[]).filter(a=>a.star===c.star);
+    arr.forEach((a,i)=>{
+      const r=c.R*Math.sqrt((i+0.5)/arr.length);
+      const ang=i*GA;
+      nodes.push(Object.assign({},a,{x:c.cx+r*Math.cos(ang),y:c.cy+r*Math.sin(ang),color:c.color}));
     });
-    _honorAwardReady = true;
+  });
+  return {nodes,W,H,clusters};
+}
+function renderHonorStarfield(){
+  const svg=d3.select('#honor-starfield');
+  if(svg.empty()||typeof awards==='undefined') return;
+  if(!_honorReady){
+    const set={}; awards.forEach(a=>{ set[a.award]=(set[a.award]||0)+1; });
+    const sel=document.getElementById('honor-award');
+    if(sel){ Object.keys(set).sort().forEach(k=>{ const o=document.createElement('option'); o.value=k; o.textContent=k+' ('+set[k]+')'; sel.appendChild(o); }); }
+    const {nodes,W,H,clusters}=honorLayout();
+    svg.attr('viewBox',`0 0 ${W} ${H}`);
+    const g=svg.append('g').attr('class','hz-g');
+    g.selectAll('text.honor-cluster-label').data(clusters).enter().append('text')
+      .attr('class','honor-cluster-label').attr('text-anchor','middle')
+      .attr('x',d=>d.cx).attr('y',d=>d.cy - d.R - 16).text(d=>d.label);
+    const node=g.selectAll('g.honor-node').data(nodes,d=>d.id).enter().append('g')
+      .attr('class','honor-node').attr('transform',d=>`translate(${d.x},${d.y})`);
+    node.append('circle').attr('class','halo').attr('r',d=>honorRadius(d)*2.6)
+      .attr('fill',d=>d.color).attr('opacity',0.13);
+    node.append('circle').attr('class','core').attr('r',d=>honorRadius(d))
+      .attr('fill',d=>d.color).attr('stroke','rgba(255,255,255,.55)').attr('stroke-width',0.4);
+    node.on('mouseenter',function(ev,d){ d3.select(this).select('circle.core').attr('r',honorRadius(d)*2.1).attr('stroke','#fff').attr('stroke-width',1); showHonorTip(d,ev); })
+        .on('mousemove',function(ev){ moveHonorTip(ev); })
+        .on('mouseleave',function(ev,d){ d3.select(this).select('circle.core').attr('r',honorRadius(d)).attr('stroke','rgba(255,255,255,.55)').attr('stroke-width',0.4); hideHonorTip(); })
+        .on('click',function(ev,d){ ev.stopPropagation(); openHonorDetail(d); });
+    const zoom=d3.zoom().scaleExtent([0.5,9]).on('zoom',ev=>g.attr('transform',ev.transform));
+    svg.call(zoom);
+    svg.on('click',()=>hideHonorTip());
+    _honorReady=true;
   }
-  const list = awards.filter(a =>
-    (!star || a.star === star) &&
-    (!award || a.award === award) &&
-    (!q || (a.name+' '+a.affiliation+' '+a.country+' '+a.award).toLowerCase().includes(q))
-  ).slice(0, 400);
-  const cnt = document.getElementById('honor-count');
-  if (cnt) cnt.textContent = '显示 ' + list.length + ' / ' + awards.length + ' 位';
-  grid.innerHTML = list.map(a => {
-    const c = HONOR_STAR_COLOR[a.star] || '#818cf8';
-    const meta = [a.affiliation, a.country].filter(Boolean).join(' · ');
-    return '<div class="honor-card">'
-      + '<div style="display:flex;justify-content:space-between;align-items:start;gap:8px">'
-      +   '<div style="font-weight:600;font-size:15px;color:var(--text)">'+esc(a.name)+'</div>'
-      +   '<span style="font-size:12px;color:'+c+';white-space:nowrap">'+a.year+'</span>'
-      + '</div>'
-      + '<div style="font-size:12px;color:var(--accent2);margin-top:2px">'+esc(a.award)+'</div>'
-      + (meta ? '<div style="font-size:12px;color:var(--text3);margin-top:4px">'+esc(meta)+'</div>' : '')
-      + (a.motivation ? '<div class="honor-mot">'+esc(a.motivation)+'</div>' : '')
-      + '</div>';
-  }).join('');
+  applyHonorFilter();
+}
+function applyHonorFilter(){
+  const star=(document.getElementById('honor-star')||{}).value||'';
+  const award=(document.getElementById('honor-award')||{}).value||'';
+  const q=((document.getElementById('honor-search')||{}).value||'').trim().toLowerCase();
+  let shown=0;
+  d3.selectAll('#honor-starfield g.honor-node').each(function(d){
+    const ok=(!star||d.star===star)&&(!award||d.award===award)&&(!q||(d.name+' '+(d.affiliation||'')+' '+(d.country||'')+' '+d.award).toLowerCase().includes(q));
+    this.style.opacity=ok?1:0.05;
+    if(ok) shown++;
+  });
+  const cnt=document.getElementById('honor-count');
+  if(cnt) cnt.textContent='显示 '+shown+' / '+awards.length+' 位灯塔';
+}
+function showHonorTip(d,ev){
+  const tip=document.getElementById('honor-tooltip');
+  if(!tip) return;
+  const disc=(d.discovery||d.motivation||'').slice(0,60);
+  tip.innerHTML='<div class="tt-name">'+esc(d.name)+'</div>'
+    +'<div class="tt-meta">'+esc(d.year)+' · '+esc(d.award)+'</div>'
+    +'<div class="tt-disc">'+(disc?esc(disc)+'…':'（暂无获奖理由）')+'</div>';
+  tip.classList.add('show');
+  moveHonorTip(ev);
+}
+function moveHonorTip(ev){
+  const tip=document.getElementById('honor-tooltip');
+  if(!tip) return;
+  const viz=document.querySelector('.honor-viz'); if(!viz) return;
+  const rect=viz.getBoundingClientRect();
+  let x=ev.clientX-rect.left+14, y=ev.clientY-rect.top+14;
+  if(x+300>rect.width) x=ev.clientX-rect.left-300;
+  if(y+120>rect.height) y=ev.clientY-rect.top-120;
+  tip.style.left=x+'px'; tip.style.top=y+'px';
+}
+function hideHonorTip(){ const tip=document.getElementById('honor-tooltip'); if(tip) tip.classList.remove('show'); }
+function openHonorDetail(d){
+  const panel=document.getElementById('honor-detail');
+  const body=document.getElementById('honor-detail-body');
+  if(!panel||!body) return;
+  const color=HONOR_STAR_COLOR[d.star]||'#818cf8';
+  const links=(d.links||[]);
+  const ext = d.wikidata ? 'https://www.wikidata.org/wiki/'+esc(d.wikidata) : (links[0]||'');
+  const probs=(d.problemLinks||[]);
+  let probHtml='';
+  if(probs.length){
+    probHtml='<h3>关联前沿问题 ('+probs.length+')</h3>';
+    probHtml+=probs.map(pid=>'<button class="honor-prob-link" onclick="showDetail(\''+pid+'\');closeHonorDetail();">🔗 '+esc(pid)+' →</button>').join('');
+  } else {
+    probHtml='<h3>关联前沿问题</h3><p style="font-size:13px;color:var(--text3)">该方向暂无直接关联的前沿问题（domain-only 映射下可能为空白）。</p>';
+  }
+  body.innerHTML=''
+    +'<div style="font-size:13px;color:'+color+'">'+esc(d.year)+' · '+esc(d.award)+'</div>'
+    +'<h2>'+esc(d.name)+'</h2>'
+    +'<div style="font-size:12px;color:var(--text3)">'+[d.affiliation,d.country].filter(Boolean).map(esc).join(' · ')+'</div>'
+    +'<span class="honor-pill" style="background:'+color+'22;color:'+color+'">'+esc(d.domain||'')+'</span>'
+    +'<h3>获奖理由</h3>'
+    +'<p class="hd-disc">'+(esc(d.discovery||d.motivation||'（暂无）'))+'</p>'
+    + probHtml
+    + (ext?'<h3>外部资料</h3><a href="'+ext+'" target="_blank" rel="noopener" style="font-size:13px">查看原始资料 ↗</a>':'');
+  panel.classList.remove('hidden');
+  panel.classList.add('show');
+}
+function closeHonorDetail(){
+  const panel=document.getElementById('honor-detail');
+  if(panel){ panel.classList.remove('show'); panel.classList.add('hidden'); }
+}
+// D6 预留：从问题详情“相关诺奖”反向跳入并定位该获奖者
+function focusHonor(id){
+  const sec=document.getElementById('honor-section');
+  if(sec) sec.scrollIntoView({behavior:'smooth',block:'center'});
+  const node=d3.select('#honor-starfield g.honor-node').filter(function(d){return d.id===id;});
+  if(node.empty()) return;
+  d3.selectAll('#honor-starfield g.honor-node circle.core').attr('stroke','rgba(255,255,255,.55)').attr('stroke-width',0.4);
+  node.select('circle.core').attr('stroke','#fff').attr('stroke-width',2);
+  openHonorDetail(node.datum());
 }
 
 function init() {
@@ -554,10 +677,13 @@ function renderHome() {
   const grid = document.getElementById('domain-grid');
   renderDomainView(grid, domains);
 
-  // 荣誉星图（P1）：用采集到的奖项数据填充信任锚 + 渲染临时承载板块
+  // 荣誉星图（D3-5）：用采集到的奖项数据填充信任锚 + 渲染星场
   const ta = document.getElementById('trust-anchor');
-  if (ta) ta.textContent = '🔭 荣誉星图 · ' + (typeof awards !== 'undefined' ? awards.length : 0) + ' 位科学巨匠已收录';
-  renderHonor();
+  if (ta){
+    const nobel = (typeof awards!=='undefined'?awards:[]).filter(a=>/nobel/i.test(a.award)).length;
+    ta.textContent = '🔭 荣誉星图 · ' + nobel + ' 位诺奖灯塔已收录';
+  }
+  renderHonorStarfield();
 }
 
 // ===== 三体星系叙事：领域星系视图 =====
