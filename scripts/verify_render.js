@@ -64,6 +64,9 @@ const server = http.createServer((req, res) => {
 
   // 模拟拖拽星系中的【行星】(circle r=11)，确认 filter 放行 + 真实位移 + 释放回弹
   // 注意：必须按 r=11 锁定行星，恒星(id 同域名)被力模拟钉死，不能当作拖拽对象
+  // 先滚动星系进入视口（否则行星在折叠线外，鼠标够不到，会误报 false）
+  await page.evaluate(() => { const g = document.getElementById('domain-grid'); if (g) g.scrollIntoView(); });
+  await page.waitForTimeout(800);
   const planet = await page.evaluate(() => {
     const svg = document.querySelector('#domain-grid svg');
     if (!svg) return null;

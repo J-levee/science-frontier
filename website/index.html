@@ -89,6 +89,16 @@ a:hover{text-decoration:underline}
 .related-list{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
 .related-item{padding:6px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:6px;font-size:13px;color:var(--accent2);cursor:pointer;transition:all 0.2s}
 .related-item:hover{border-color:var(--accent);background:var(--surface)}
+.laureate-list{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.laureate-item{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;background:var(--surface2);border:1px solid var(--border);border-radius:10px;cursor:pointer;transition:all .18s}
+.laureate-item:hover{border-color:var(--accent);background:var(--surface);transform:translateX(2px)}
+.li-year{flex:0 0 46px;font-weight:700;font-size:13px;color:var(--cool);padding-top:2px}
+.li-main{flex:1;min-width:0}
+.li-name{font-weight:600;font-size:14px;color:var(--text)}
+.li-award{font-size:12px;color:var(--text3);margin:1px 0 3px}
+.li-disc{font-size:12.5px;color:var(--text2);line-height:1.5}
+.li-more{font-size:12px;color:var(--text3);padding:2px 2px 0}
+.why-lead{color:var(--text);font-size:14px;line-height:1.7}
 
 /* Filter bar */
 .filter-bar{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:16px;padding:12px 16px;background:var(--surface);border:1px solid var(--border);border-radius:8px}
@@ -975,11 +985,42 @@ function showDetail(id) {
   const color = domainColors[d.domain] || '#888';
   const relatedProblems = (d.related || []).map(rid => DATA.find(x => x.id === rid)).filter(Boolean);
 
+  const _awardsRef = (typeof awards !== 'undefined') ? awards : [];
+  const laureates = (d.laureate_links || []).map(id => _awardsRef.find(a => a.id === id)).filter(Boolean);
+  const MAX_L = 8;
+  const laureateHtml = laureates.length ? (() => {
+    const shown = laureates.slice(0, MAX_L);
+    const overflow = laureates.length - shown.length;
+    const items = shown.map(a => `
+      <div class="laureate-item" onclick="closeDetailToHome();focusHonor('${esc(a.id)}')" title="${esc(a.discovery || a.motivation || '')}">
+        <div class="li-year">${esc(a.year)}</div>
+        <div class="li-main">
+          <div class="li-name">${esc(a.name)}</div>
+          <div class="li-award">${esc(a.award)}</div>
+          <div class="li-disc">${esc((a.discovery || a.motivation || '').slice(0, 50))}${(a.discovery || a.motivation || '').length > 50 ? '…' : ''}</div>
+        </div>
+      </div>`).join('');
+    const more = overflow > 0 ? `<div class="li-more">+${overflow} 位相关获奖者 · 按领域关联（非逐题精确映射）</div>` : '';
+    return `
+      <div class="detail-section">
+        <h3>关键突破 / 相关诺奖 (${laureates.length})</h3>
+        <div class="laureate-list">${items}</div>
+        ${more}
+        <div style="font-size:12px;color:var(--text3);margin-top:6px">点击任意获奖者 → 跳转荣誉星图并定位</div>
+      </div>`;
+  })() : '';
+
+  const whyHtml = `
+    <div class="detail-section">
+      <h3>为什么重要</h3>
+      <p class="why-lead"><strong>${esc(d.title)}</strong> 处在 <b style="color:${color}">${esc(d.domain)}</b> · ${esc(d.subdomain)} 研究脉络的关键位置。其影响力评级 <b>${d.impact}/5</b>、攻克难度 <b>${d.difficulty}/5</b>，预计在 <b style="color:var(--cool)">${esc(d.timeline)}</b> 取得突破——理解它，是推开该领域下一扇门的前提。</p>
+    </div>`;
+
   document.getElementById('detail-content').innerHTML = `
     <div class="detail-card">
       <h2>${d.title}</h2>
       <div class="detail-id">${d.id} · ${d.domain} / ${d.subdomain}</div>
-      
+      ${whyHtml}
       <div class="detail-section">
         <h3>问题描述</h3>
         <p>${d.description}</p>
@@ -1009,10 +1050,10 @@ function showDetail(id) {
           <div class="mv" style="color:var(--cool)">${d.timeline}</div>
         </div>
       </div>
-
+      ${laureateHtml}
       ${relatedProblems.length > 0 ? `
       <div class="detail-section">
-        <h3>关联问题 (${relatedProblems.length})</h3>
+        <h3>相关领域问题 (${relatedProblems.length})</h3>
         <div class="related-list">
           ${relatedProblems.map(r => `
             <div class="related-item" onclick="showDetail('${r.id}')">
@@ -1043,6 +1084,13 @@ function goBack() {
   } else {
     showHome();
   }
+}
+
+function closeDetailToHome() {
+  const dv = document.getElementById('detail-view');
+  const hv = document.getElementById('home-view');
+  if (dv) dv.classList.add('hidden');
+  if (hv) hv.classList.remove('hidden');
 }
 
 function handleSearch() {
