@@ -3,8 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>科学边界 · Science Frontier</title>
-<style>
+    <title>科学边界 · Science Frontier</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='7' fill='%235b6cff'/%3E%3C/svg%3E">
+    <style>
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
   --bg:#0a0a0f;--surface:#13131a;--surface2:#1c1c26;--border:#2a2a38;
@@ -269,7 +270,20 @@ body{background:#07080f}
 <div class="main">
   <!-- Home View -->
   <div id="home-view">
-    <div class="hero">
+    <style>
+      .story-nav{position:sticky;top:0;z-index:40;display:flex;gap:6px;justify-content:center;flex-wrap:wrap;padding:10px 12px;margin-bottom:10px;background:linear-gradient(180deg,rgba(8,11,20,.94),rgba(8,11,20,.7));backdrop-filter:blur(8px);border-bottom:1px solid var(--border)}
+      .story-nav .sn-item{font-size:13px;color:var(--text3);text-decoration:none;padding:6px 14px;border-radius:999px;border:1px solid transparent;transition:all .2s;white-space:nowrap}
+      .story-nav .sn-item:hover{color:var(--text);border-color:var(--border)}
+      .story-nav .sn-item.active{color:#fff;background:var(--accent);border-color:var(--accent)}
+      @media(max-width:760px){.story-nav{justify-content:flex-start;overflow-x:auto}}
+    </style>
+    <nav class="story-nav" id="story-nav" aria-label="故事弧导航">
+      <a class="sn-item active" href="#sec-hero" data-target="sec-hero">① 边界</a>
+      <a class="sn-item" href="#domain-grid" data-target="galaxy">② 星系</a>
+      <a class="sn-item" href="#honor-section" data-target="honor">③ 荣誉</a>
+      <a class="sn-item" href="#" data-target="network" onclick="showNetwork();activateStoryNav('network');return false;">④ 星座</a>
+    </nav>
+    <div class="hero" id="sec-hero">
       <h1 class="hero-title">站在已知的边缘<br>眺望未知的星海</h1>
       <p class="hero-sub">科学边界 · 当前世界最前沿的科学问题与探究方向</p>
       <svg class="hero-boundary" viewBox="0 0 800 60" preserveAspectRatio="none" aria-hidden="true">
@@ -302,6 +316,8 @@ body{background:#07080f}
       <div class="step-card"><div class="step-num">2</div><h3>钻问题</h3><p>查看前沿问题的现状、关键方向与影响力 / 难度评级。</p></div>
       <div class="step-card"><div class="step-num">3</div><h3>追关联</h3><p>切到关联网络，看知识之间如何彼此牵引。</p></div>
     </div>
+    <div class="domain-grid" id="domain-grid"></div>
+
     <!-- P1 荣誉星图 TEMP（临时承载，前端重构时整体替换） -->
     <section id="honor-section" class="reveal" style="margin-top:56px">
       <style>
@@ -355,7 +371,6 @@ body{background:#07080f}
     </section>
 
     <div class="hot-marquee reveal"><div class="track" id="hot-track"></div></div>
-    <div class="domain-grid" id="domain-grid"></div>
   </div>
 
   <!-- List View -->
@@ -775,7 +790,7 @@ function renderGalaxy(container, domains) {
 
   const node = g.append('g').selectAll('g').data(nodes).enter().append('g')
     .style('cursor', 'pointer')
-    .on('click', (e, d) => { if (d.type === 'planet') showDomain(d.id); })
+    .on('click', (e, d) => { if (d.type === 'planet' && !d.__dragged) showDomain(d.id); })
     .on('mouseenter', function (e, d) {
       d3.select(this).select('circle').attr('stroke', '#fff').attr('stroke-width', 2);
       showGalaxyTip(container, d);
@@ -785,7 +800,13 @@ function renderGalaxy(container, domains) {
       d3.select(this).select('circle').attr('stroke', d.color).attr('stroke-width', 1.5);
       hideGalaxyTip(container);
       if (d.type === 'planet') { hoveredGalaxy = null; probe.attr('opacity', 0); }
-    });
+    })
+    .call(d3.drag()
+      .filter(d => d.type === 'planet')
+      .on('start', (e, d) => { d.fx = d.x; d.fy = d.y; d.__dragged = false; })
+      .on('drag', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = e.x; d.fy = e.y; d.__dragged = true; })
+      .on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; })
+    );
 
   node.append('circle')
     .attr('r', d => d.type === 'star' ? 20 : 11)
@@ -802,11 +823,11 @@ function renderGalaxy(container, domains) {
     .attr('fill', '#9999aa').attr('font-size', '11px')
     .text(d => d.id);
 
-  d3.forceSimulation(nodes)
+  const sim = d3.forceSimulation(nodes)
     .force('link', d3.forceLink(links).id(d => d.id).distance(72).strength(0.6))
     .force('charge', d3.forceManyBody().strength(-80))
-    .force('x', d3.forceX(d => d.type === 'star' ? d.x : d.tx).strength(d => d.type === 'star' ? 1 : 0.12))
-    .force('y', d3.forceY(d => d.type === 'star' ? d.y : d.ty).strength(d => d.type === 'star' ? 1 : 0.12))
+    .force('x', d3.forceX(d => d.type === 'star' ? d.x : d.tx).strength(d => d.type === 'star' ? 1 : 0.22))
+    .force('y', d3.forceY(d => d.type === 'star' ? d.y : d.ty).strength(d => d.type === 'star' ? 1 : 0.22))
     .force('collision', d3.forceCollide().radius(d => d.type === 'star' ? 28 : 16))
     .on('tick', () => {
       link.attr('x1', d => d.source.x).attr('y1', d => d.source.y)
@@ -1193,6 +1214,35 @@ function showNetwork() {
 })();
 
 init();
+</script>
+<script>
+(function(){
+  function activateStoryNav(target){
+    document.querySelectorAll('#story-nav .sn-item').forEach(function(it){
+      it.classList.toggle('active', it.getAttribute('data-target') === target);
+    });
+  }
+  window.activateStoryNav = activateStoryNav;
+  var nav = document.getElementById('story-nav');
+  if(!nav) return;
+  var idMap = { 'sec-hero':'sec-hero', 'domain-grid':'galaxy', 'honor-section':'honor' };
+  var secs = ['sec-hero','domain-grid','honor-section']
+    .map(function(id){ return document.getElementById(id); }).filter(Boolean);
+  if(secs.length){
+    // 滚动定位法：取视口 25% 高度处参考线，最后一个越过该线的段为当前段（确定性、唯一）
+    function spy(){
+      var line = Math.max(80, window.innerHeight * 0.25);
+      var cur = secs[0];
+      for (var i=0;i<secs.length;i++){ if (secs[i].getBoundingClientRect().top <= line) cur = secs[i]; }
+      activateStoryNav(idMap[cur.id]);
+    }
+    window.addEventListener('scroll', spy, { passive:true });
+    window.addEventListener('resize', spy);
+    spy();
+  } else {
+    activateStoryNav('sec-hero');
+  }
+})();
 </script>
 </body>
 </html>

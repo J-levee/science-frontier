@@ -22,3 +22,8 @@ recon_*.txt
 
 # 大依赖
 node_modules/
+
+# 渲染核验产物（verify_render.js 输出，不入库）
+shot_*.png
+render_verify.png
+.tmpchk/
