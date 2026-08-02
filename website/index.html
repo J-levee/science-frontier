@@ -245,7 +245,7 @@ body{background:#07080f}
   border-radius:999px;color:var(--green);font-size:13px;background:rgba(16,185,129,0.08);letter-spacing:.02em}
 .galaxy{position:relative;height:540px;margin-top:24px;overflow:hidden;border:1px solid var(--border);
   border-radius:var(--radius);background:radial-gradient(ellipse at 50% 50%,rgba(99,102,241,0.07),transparent 70%)}
-.galaxy svg{display:block;width:100%;height:100%}
+.galaxy svg{display:block;width:100%;height:100%;touch-action:none;user-select:none;-webkit-user-select:none}
 .galaxy-probe{transition:opacity .25s}
 .water-drop{position:absolute;width:18px;height:22px;margin:-11px 0 0 -9px;pointer-events:none;opacity:0;
   transition:opacity .3s;background:radial-gradient(circle at 34% 30%,rgba(190,205,255,0.95),rgba(99,102,241,0.55) 60%,rgba(99,102,241,0.08) 100%);
@@ -254,6 +254,7 @@ body{background:#07080f}
   background:rgba(19,19,26,0.96);border:1px solid var(--border);border-radius:8px;font-size:12px;
   line-height:1.5;color:var(--text);z-index:6;transform:translate(16px,16px);box-shadow:0 6px 24px rgba(0,0,0,.4)}
 .galaxy-tip strong{color:var(--accent2)}
+.galaxy-hint{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:5;pointer-events:none;background:rgba(20,20,32,.72);border:1px solid var(--border);border-radius:20px;padding:6px 16px;font-size:12.5px;color:var(--text2);backdrop-filter:blur(4px);white-space:nowrap}
 
 </style>
 </head>
@@ -885,6 +886,13 @@ function renderGalaxy(container, domains) {
     links.push({ source: name, target: star });
   });
 
+  if (!container.querySelector('.galaxy-hint')) {
+    const hint = document.createElement('div');
+    hint.className = 'galaxy-hint';
+    hint.textContent = '🪐 拖拽行星探索领域关系 · 单击进入领域（三颗恒星为固定基石，不可拖）';
+    container.appendChild(hint);
+  }
+
   const svg = d3.select(container).append('svg')
     .attr('width', '100%').attr('height', '100%').attr('viewBox', `0 0 ${W} ${H}`);
 
@@ -897,29 +905,37 @@ function renderGalaxy(container, domains) {
     .attr('stroke', '#2a2a38').attr('stroke-width', 1).attr('opacity', 0.45);
 
   const node = g.append('g').selectAll('g').data(nodes).enter().append('g')
-    .style('cursor', 'pointer')
+    .style('cursor', d => d.type === 'planet' ? 'grab' : 'default')
     .on('click', (e, d) => { if (d.type === 'planet' && !d.__dragged) showDomain(d.id); })
     .on('mouseenter', function (e, d) {
-      d3.select(this).select('circle').attr('stroke', '#fff').attr('stroke-width', 2);
+      const c = d3.select(this).select('circle');
+      c.attr('stroke', '#fff').attr('stroke-width', 2)
+       .attr('filter', 'drop-shadow(0 0 10px ' + d.color + ')');
       showGalaxyTip(container, d);
       if (d.type === 'planet') { hoveredGalaxy = d; updateProbe(); }
     })
     .on('mouseleave', function (e, d) {
-      d3.select(this).select('circle').attr('stroke', d.color).attr('stroke-width', 1.5);
+      const c = d3.select(this).select('circle');
+      c.attr('stroke', d.color).attr('stroke-width', 1.5)
+       .attr('filter', d.type === 'star' ? 'drop-shadow(0 0 10px ' + d.color + ')' : 'none');
       hideGalaxyTip(container);
       if (d.type === 'planet') { hoveredGalaxy = null; probe.attr('opacity', 0); }
     })
     .call(d3.drag()
       .filter((event, d) => d.type === 'planet')
-      .on('start', (e, d) => { d.fx = d.x; d.fy = d.y; d.__dragged = false; })
+      .on('start', function (e, d) { d.fx = d.x; d.fy = d.y; d.__dragged = false; d3.select(this).style('cursor', 'grabbing'); })
       .on('drag', (e, d) => { if (!e.active) sim.alphaTarget(0.3).restart(); d.fx = e.x; d.fy = e.y; d.__dragged = true; })
-      .on('end', (e, d) => { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; })
+      .on('end', function (e, d) { if (!e.active) sim.alphaTarget(0); d.fx = null; d.fy = null; d3.select(this).style('cursor', 'grab'); })
     );
 
   node.append('circle')
     .attr('r', d => d.type === 'star' ? 20 : 11)
     .attr('fill', d => d.color).attr('stroke', d => d.color).attr('stroke-width', 1.5)
     .style('filter', d => d.type === 'star' ? 'drop-shadow(0 0 10px ' + d.color + ')' : 'none');
+
+  // 透明命中区：把行星可抓取半径从 11 扩大到 18，真机/触摸更好抓
+  node.filter(d => d.type === 'planet').append('circle')
+    .attr('r', 18).attr('fill', 'transparent').attr('stroke', 'none').attr('pointer-events', 'all');
 
   node.filter(d => d.type === 'star').append('text')
     .attr('y', 40).attr('text-anchor', 'middle')
