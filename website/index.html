@@ -804,7 +804,7 @@ function renderHome() {
   // 荣誉星图（D3-5）：用采集到的奖项数据填充信任锚 + 渲染星场
   const ta = document.getElementById('trust-anchor');
   if (ta){
-    const nobel = (typeof awards!=='undefined'?awards:[]).filter(a=>/nobel/i.test(a.award)).length;
+    const nobel = (typeof awards!=='undefined'?awards:[]).filter(a=>a.awardKey&&a.awardKey.startsWith('nobel-')).length;
     ta.textContent = '🔭 荣誉星图 · ' + nobel + ' 位诺奖灯塔已收录';
   }
   renderHonorStarfield();
