@@ -884,8 +884,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   // phase windows
   var CONV0=0.30, CONV1=0.52;      // starlight converges along paths
   var IGN0 =0.40, IGN1 =0.55;      // galaxy ignites
-  var LAND0=0.58, LAND1=0.90;      // starlight descends onto people (extended -> dwell time)
-  var DIM0 =0.90, DIM1 =0.985;     // bodies fade only after landing completes
+  var LAND0=0.58, LAND1=0.78;      // starlight descends onto people (extended -> dwell time)
+  var DIM0 =0.78, DIM1 =0.90;     // bodies fade only after landing completes
 
   /* ---------------- data ---------------- */
   var PROBS = window.__PROBS || [];
@@ -1860,7 +1860,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     for(var i=0;i<3;i++){
       var b=bodies[i]; if(!b) continue;
       var s=bodyScreen(b), list=groups[i]||[], N=list.length||1;
-      var stagger=0.46/N, dur=0.54;
+      var stagger=0.22/N, dur=0.30;
       for(var k=0;k<N;k++){
         var a=list[k];
         var raw=(lp - k*stagger)/dur;
