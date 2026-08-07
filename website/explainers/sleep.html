@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>睡眠的奥秘：为什么我们要睡觉？ — 科学边界</title>
+  <style>
+    :root {
+    --bg: #07070b; --bg-2: #0b0b13; --ink: #e9eaf2; --ink-dim: #9aa0b8;
+    --line: rgba(255,255,255,.08); --accent: #6366f1; --accent2: #818cf8;
+    --accent3: #a78bfa; --warm: #f59e0b; --hot: #ef4444; --cool: #06b6d4;
+    --green: #10b981; --gold: #fbbf24;
+    --serif: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Georgia,serif;
+    --radius: 12px;
+  }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.8; }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+    .back { display: inline-block; color: var(--accent2); text-decoration: none; font-size: 14px; margin-bottom: 30px; }
+    h1 { font-size: 2.2em; font-weight: 800; margin-bottom: 10px; background: linear-gradient(135deg, var(--accent2), #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hook { font-size: 1.15em; color: var(--warm); margin-bottom: 30px; padding: 16px 20px; background: rgba(251,191,36,0.06); border-left: 3px solid var(--warm); border-radius: 0 8px 8px 0; }
+    .section { margin: 40px 0; }
+    h2 { font-size: 1.4em; color: #c4b5fd; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { margin-bottom: 14px; font-size: 1.05em; }
+    .analogy { background: var(--bg-2); border-radius: 12px; padding: 20px 24px; margin: 24px 0; border: 1px solid var(--line); }
+    .analogy h3 { color: var(--accent2); font-size: 1em; margin-bottom: 8px; }
+    .takeaway { background: linear-gradient(135deg, rgba(251,191,36,0.08), rgba(96,165,250,0.04)); border: 1px solid rgba(251,191,36,0.25); border-radius: 12px; padding: 20px 24px; margin: 30px 0; }
+    .takeaway h3 { color: var(--warm); }
+    .audio-player { background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 30px 0; display: flex; align-items: center; gap: 14px; }
+    .audio-player audio { flex: 1; }
+    .audio-label { font-size: 13px; color: var(--ink-dim); white-space: nowrap; }
+    svg { max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 8px; background: var(--bg-2); }
+    .svg-caption { text-align: center; font-size: 13px; color: var(--ink-dim); margin-top: -16px; margin-bottom: 20px; }
+    .related { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .related a { color: var(--accent2); text-decoration: none; font-size: 14px; padding: 6px 14px; border: 1px solid rgba(96,165,250,0.25); border-radius: 20px; transition: all .2s; }
+    .related a:hover { background: rgba(96,165,250,0.12); }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../design-proposal-v11.html">← 返回科学边界</a>
+  <h1>睡眠的奥秘：为什么我们要睡觉？</h1>
+  <div class="hook">💡 你这一生大约有1/3的时间在睡觉。如果你活到90岁，那就是整整30年——比你在学校度过的时间还长。为什么大自然要"浪费"这么多时间让我们躺在床上？难道我们进化了上百万年，就为了每天关机8小时？</div>
+
+  <div class="section">
+    <h2>一、睡觉不是"关机"，而是"大扫除"<span data-ai-q="睡觉是关机还是大扫除？用比喻解释"></span></h2>
+    <p>很多人以为睡觉就是大脑关掉电源、进入待机模式。错！睡着的大脑<strong>比醒着时还要忙碌</strong>——只不过它在做你不容易察觉的工作。</p>
+    <p>睡眠的第一个任务是<strong>"大扫除"</strong>。白天你学习、思考、运动，大脑神经元拼命工作，产生大量代谢废物——其中一种叫"β-淀粉样蛋白"的有毒垃圾，正是阿尔茨海默病（老年痴呆）的主要病因之一。2013年，科学家发现大脑里有一套"洗碗机系统"——叫<strong>类淋巴系统</strong>——专门在睡眠期间打开水龙头，用脑脊液冲洗神经元之间的空间，把白天积累的垃圾冲走。</p>
+    <p>这就像学校的午间大扫除：上课时教室里堆满了纸团、零食包装；只有所有人都离开教室，保洁阿姨才能进来扫地、擦桌子。你的大脑也一样——只有你睡着了，类淋巴系统才能开动，把垃圾冲进"下水道"。</p>
+
+    <svg viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="cleanGlow"><feGaussianBlur stdDeviation="1.5"/></filter>
+        <filter id="wasteGlow"><feGaussianBlur stdDeviation="2"/></filter>
+      </defs>
+      <rect width="680" height="320" fill="#111827" rx="8"/>
+
+      <text x="340" y="28" text-anchor="middle" fill="#94a3b8" font-size="13">睡眠时的大脑"大扫除"：类淋巴系统冲洗代谢废物</text>
+
+      <!-- 左侧：清醒时 -->
+      <text x="160" y="60" text-anchor="middle" fill="#f87171" font-size="13" font-weight="bold">清醒时：垃圾堆积</text>
+      <rect x="40" y="75" width="240" height="170" rx="10" fill="rgba(248,113,113,0.06)" stroke="rgba(248,113,113,0.2)" stroke-width="1"/>
+      <!-- 神经元示意 -->
+      <ellipse cx="110" cy="120" rx="18" ry="12" fill="rgba(96,165,250,0.3)" stroke="#60a5fa" stroke-width="1.2"/>
+      <ellipse cx="200" cy="120" rx="18" ry="12" fill="rgba(96,165,250,0.3)" stroke="#60a5fa" stroke-width="1.2"/>
+      <ellipse cx="155" cy="160" rx="18" ry="12" fill="rgba(96,165,250,0.3)" stroke="#60a5fa" stroke-width="1.2"/>
+      <!-- 连接 -->
+      <line x1="125" y1="125" x2="185" y2="125" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+      <line x1="165" y1="150" x2="165" y2="133" stroke="rgba(96,165,250,0.2)" stroke-width="1"/>
+      <!-- 垃圾（黄点） -->
+      <circle cx="130" cy="118" r="2.5" fill="#fbbf24" opacity="0.7"/>
+      <circle cx="180" cy="118" r="2" fill="#fbbf24" opacity="0.6"/>
+      <circle cx="160" cy="158" r="3" fill="#fbbf24" opacity="0.8"/>
+      <circle cx="210" cy="128" r="2.5" fill="#f59e0b" opacity="0.6"/>
+      <circle cx="100" cy="130" r="2" fill="#fbbf24" opacity="0.5"/>
+      <text x="160" y="215" text-anchor="middle" fill="#f87171" font-size="11">⚠ 代谢垃圾越积越多</text>
+
+      <!-- 中间箭头 -->
+      <text x="325" y="170" text-anchor="middle" fill="#fbbf24" font-size="24">→</text>
+      <text x="325" y="195" text-anchor="middle" fill="#94a3b8" font-size="11">入睡</text>
+
+      <!-- 右侧：睡眠时 -->
+      <text x="520" y="60" text-anchor="middle" fill="#34d399" font-size="13" font-weight="bold">睡眠时：大扫除启动</text>
+      <rect x="400" y="75" width="240" height="170" rx="10" fill="rgba(52,211,153,0.06)" stroke="rgba(52,211,153,0.2)" stroke-width="1"/>
+      <!-- 神经元示意 -->
+      <ellipse cx="470" cy="120" rx="18" ry="12" fill="rgba(96,165,250,0.3)" stroke="#60a5fa" stroke-width="1.2"/>
+      <ellipse cx="560" cy="120" rx="18" ry="12" fill="rgba(96,165,250,0.3)" stroke="#60a5fa" stroke-width="1.2"/>
+      <ellipse cx="515" cy="160" rx="18" ry="12" fill="rgba(96,165,250,0.3)" stroke="#60a5fa" stroke-width="1.2"/>
+      <!-- 脑脊液流动（蓝色箭头波浪） -->
+      <path d="M460,108 Q470,103 475,108 Q480,113 485,108" fill="none" stroke="#60a5fa" stroke-width="2"/>
+      <path d="M475,145 Q485,140 490,145 Q495,150 500,145" fill="none" stroke="#60a5fa" stroke-width="2"/>
+      <path d="M530,115 Q540,110 545,115 Q550,120 555,115" fill="none" stroke="#60a5fa" stroke-width="2"/>
+      <path d="M505,155 Q515,150 520,155 Q525,160 530,155" fill="none" stroke="#60a5fa" stroke-width="2"/>
+      <!-- 清洁区域 -->
+      <text x="520" y="195" text-anchor="middle" fill="#60a5fa" font-size="10">↑ 脑脊液冲洗垃圾 ↓</text>
+      <text x="520" y="215" text-anchor="middle" fill="#34d399" font-size="11">✅ 废物逐渐被清除</text>
+
+      <!-- 底部标注 -->
+      <text x="340" y="260" text-anchor="middle" fill="#94a3b8" font-size="11">类淋巴系统 — 大脑专属的"洗碗机"</text>
+      <text x="340" y="280" text-anchor="middle" fill="#64748b" font-size="10">2013年发现：睡眠期间脑脊液流动速度比清醒时快60%，有效清除β-淀粉样蛋白等神经毒素</text>
+    </svg>
+    <div class="svg-caption">图：清醒时大脑神经元产生代谢废物（黄色圆点），睡眠时类淋巴系统开启"大扫除"，用脑脊液冲洗垃圾。</div>
+  </div>
+
+  <div class="section">
+    <h2>二、睡眠的四个阶段：从浅睡到"大脑在放电影"<span data-ai-q="睡眠的四个阶段各有什么特点？"></span></h2>
+    <p>每天晚上，你的大脑不是简简单单地"睡了→醒了"，而是在四种不同的状态之间来回切换，每完成一轮大约90分钟，一晚上要循环四到五次。</p>
+
+    <table style="width:100%;border-collapse:collapse;margin:16px 0;font-size:14px;">
+      <tr style="border-bottom:1px solid var(--line);">
+        <td style="padding:8px 12px;color:var(--accent2);white-space:nowrap;font-weight:bold;">阶段 1（N1）</td>
+        <td style="padding:8px 12px;color:var(--ink-dim);">浅睡期，几分钟。意识模糊，肌肉偶尔抽搐（感觉像"踩空了"）。脑波变慢，很容易被叫醒。</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line);">
+        <td style="padding:8px 12px;color:var(--warm);font-weight:bold;">阶段 2（N2）</td>
+        <td style="padding:8px 12px;color:var(--ink-dim);">中度睡眠，占总睡眠约50%。体温下降，心率减慢。大脑发出"睡眠纺锤波"——像警戒雷达一样保护你不被轻微噪音吵醒。</td>
+      </tr>
+      <tr style="border-bottom:1px solid var(--line);">
+        <td style="padding:8px 12px;color:#a78bfa;font-weight:bold;">阶段 3（N3）</td>
+        <td style="padding:8px 12px;color:var(--ink-dim);">深睡眠，最"深度"的阶段。身体生长激素大量分泌（所以孩子要睡够！），免疫系统自我修复。被叫醒会感到极度迷糊——这叫"睡眠惯性"。</td>
+      </tr>
+      <tr>
+        <td style="padding:8px 12px;color:#f472b6;font-weight:bold;">REM 睡眠</td>
+        <td style="padding:8px 12px;color:var(--ink-dim);">快速眼动睡眠。大脑活跃度媲美清醒状态，眼球快速转动，85%的梦境发生在这个阶段。但身体肌肉完全瘫痪——这是大脑的保护机制，防止你把梦演出来。</td>
+      </tr>
+    </table>
+
+    <svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="waveGlow"><feGaussianBlur stdDeviation="1.2"/></filter>
+      </defs>
+      <rect width="680" height="340" fill="#111827" rx="8"/>
+
+      <text x="340" y="28" text-anchor="middle" fill="#94a3b8" font-size="13">一晚上 4 个睡眠阶段的脑电图（EEG）波形特征</text>
+
+      <!-- 纵轴标签 -->
+      <text x="30" y="70" fill="#64748b" font-size="10">频率 ←</text>
+      <text x="30" y="85" fill="#64748b" font-size="10">高</text>
+      <text x="30" y="270" fill="#64748b" font-size="10">低</text>
+
+      <!-- N1 阶段 -->
+      <rect x="50" y="50" width="620" height="60" rx="4" fill="rgba(96,165,250,0.04)" stroke="rgba(96,165,250,0.12)" stroke-width="0.8"/>
+      <text x="65" y="70" fill="#60a5fa" font-size="12" font-weight="bold">阶段 1 (N1) — 浅睡</text>
+      <text x="65" y="85" fill="#64748b" font-size="10">低幅混频，α波减少，θ波出现</text>
+      <!-- 浅睡波形 -->
+      <path d="M290,65 Q300,60 305,65 Q310,70 320,65 Q330,60 335,68 Q340,75 350,68 Q360,62 365,70 Q370,77 380,68 Q390,60 395,65 Q400,70 410,65 Q420,60 425,68 Q435,75 445,68 Q455,60 460,67 Q470,73 480,66 Q490,59 500,66 Q510,72 520,65 Q530,60 535,68 Q545,74 555,67 Q565,61 575,69 Q585,76 595,68 Q605,60 615,66 Q620,70 630,65" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round"/>
+
+      <!-- N2 阶段 -->
+      <rect x="50" y="118" width="620" height="60" rx="4" fill="rgba(251,191,36,0.04)" stroke="rgba(251,191,36,0.12)" stroke-width="0.8"/>
+      <text x="65" y="138" fill="#fbbf24" font-size="12" font-weight="bold">阶段 2 (N2) — 中度睡眠</text>
+      <text x="65" y="153" fill="#64748b" font-size="10">出现睡眠纺锤波（短促高频爆发）和K复合波</text>
+      <!-- N2波形：有纺锤波 -->
+      <path d="M290,140 Q300,135 305,139 Q310,143 315,139" fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M315,139 L325,130 L335,148" fill="none" stroke="#fbbf24" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M335,148 Q345,152 355,148 Q365,144 375,148 Q380,144 385,148 Q390,152 400,148 Q410,144 420,148" fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M420,148 L430,139 L440,147" fill="none" stroke="#fbbf24" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M440,147 Q455,143 465,147 Q475,151 485,147 Q495,143 505,147 Q515,151 525,147 Q535,140 545,147 Q555,153 565,148 Q575,143 585,148 Q595,152 605,148 Q610,145 615,148 Q625,152 635,148" fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round"/>
+
+      <!-- N3 阶段：慢波 -->
+      <rect x="50" y="186" width="620" height="60" rx="4" fill="rgba(167,139,250,0.04)" stroke="rgba(167,139,250,0.12)" stroke-width="0.8"/>
+      <text x="65" y="206" fill="#a78bfa" font-size="12" font-weight="bold">阶段 3 (N3) — 深睡眠 / 慢波睡眠</text>
+      <text x="65" y="221" fill="#64748b" font-size="10">δ波主导：高幅低频，最"同步"的大脑状态</text>
+      <!-- 慢波 -->
+      <path d="M290,210 Q320,195 350,210 Q380,225 410,210 Q440,195 470,210 Q500,225 530,210 Q560,195 590,210 Q620,225 640,210" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- REM 阶段 -->
+      <rect x="50" y="254" width="620" height="60" rx="4" fill="rgba(244,114,182,0.04)" stroke="rgba(244,114,182,0.12)" stroke-width="0.8"/>
+      <text x="65" y="274" fill="#f472b6" font-size="12" font-weight="bold">REM 睡眠 — 做梦阶段</text>
+      <text x="65" y="289" fill="#64748b" font-size="10">锯齿波：高频低幅，类似清醒但肌肉瘫痪</text>
+      <!-- REM锯齿波 -->
+      <path d="M290,275 Q295,270 300,275 Q305,280 310,275 Q312,270 317,275 Q322,280 327,275 Q330,270 335,275 Q340,280 345,275 Q350,270 355,276 Q360,282 365,275 Q370,270 375,275 Q380,280 385,275 Q390,270 395,276 Q400,282 405,276 Q410,270 415,275 Q420,280 425,275 Q428,270 433,275 Q438,280 443,275 Q448,270 453,275 Q458,282 463,276 Q468,270 473,275 Q478,280 483,275 Q486,270 491,275 Q496,280 501,275 Q506,270 511,275 Q516,282 521,276 Q526,270 531,275 Q536,280 541,275 Q546,270 551,276 Q556,282 561,275 Q566,270 571,275 Q576,280 581,275 Q586,270 591,276 Q596,282 601,275 Q606,270 611,275 Q616,280 621,275 Q624,270 629,275 Q634,280 639,275" fill="none" stroke="#f472b6" stroke-width="1.8" stroke-linecap="round"/>
+    </svg>
+    <div class="svg-caption">图：一晚上4个睡眠阶段的脑电图（EEG）波形。注意深睡眠（N3）的δ波特别缓慢、振幅特别大；REM的波形最快，像清醒状态。</div>
+  </div>
+
+  <div class="section">
+    <h2>三、做梦是什么？大脑在给自己"放电影"<span data-ai-q="为什么人会做梦？梦有什么作用？"></span></h2>
+    <p>做梦是睡眠中最神奇的现象。你闭上眼睛，却可能在梦里飞翔、掉下悬崖、或者回到小学教室。这些画面是哪里来的？</p>
+    <p>现代科学认为，做梦是大脑在<strong>处理"白天的内存"</strong>。你白天经历的事情、学习的知识、体验的情绪，并不都值得长期保存。睡觉时，大脑像一位图书管理员：把重要的信息挑出来、写好标签、归档到长期存储区；把无关紧要的信息（比如"今天路上看到一辆蓝色的车"）扔进回收站。</p>
+    <p>做梦就是这个"整理过程"的副产品。REM阶段，视觉皮层和情感中枢异常活跃（所以梦里有画面、有强烈情绪），而前额叶——负责逻辑和判断的那部分大脑——基本关闭了。这就是为什么梦里你能飞、能在水下呼吸、能跟一只会说话的狗聊天——你的"理性检查员"下班了，没有任何人告诉你"这不合逻辑"。</p>
+    <p>有一个经典实验证明了这一点：让被试者学习一个复杂的迷宫任务，然后分两组——一组睡觉、一组不睡。睡过觉的那组走迷宫的速度提升了40%，而且那些进入更多REM睡眠的人提升最明显。<strong>梦，可能就是大脑在"复习功课"。</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>四、青少年为什么必须睡够 9 小时？<span data-ai-q="为什么青少年需要睡9小时？"></span></h2>
+    <p>你可能会说："我睡 6 个小时也精神得很啊！" 但科学告诉你，<strong>青少年时期是大脑"大规模装修"的黄金窗口</strong>——而这个装修工程只能在深睡眠和REM睡眠里进行。</p>
+    <p>首先，青春期的深睡眠阶段大量分泌生长激素。不仅是身高和肌肉在长，大脑也在"升级硬件"：神经元之间不必要的连接被修剪掉（像剪树枝），重要的连接被加强（像拓宽高速公路）。缺觉就意味着大脑"施工队"要提前收工。</p>
+    <p>其次，REM睡眠帮助你巩固白天学的知识。晚上熬夜背课文，效果远不如睡一觉后第二天早上去记——因为睡眠把知识从"短期存储区"搬到了"长期仓库"。白天拼命搬货，晚上不放货架，第二天货物全散落一地。</p>
+    <p>更关键的是，青少年的生物钟比成年人自然推迟约两小时——你晚上11点还精神抖擞是正常的，不是你"不想睡"。这不是懒，是你的大脑钟表走得不一样。这可能解释了为什么一些学校把上课时间从早上7:30推迟到9:00后，学生成绩平均上升了5-10%。</p>
+
+    <svg viewBox="0 0 680 240" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="barGlow"><feGaussianBlur stdDeviation="1"/></filter>
+      </defs>
+      <rect width="680" height="240" fill="#111827" rx="8"/>
+
+      <text x="340" y="30" text-anchor="middle" fill="#94a3b8" font-size="13">各年龄段每日所需睡眠时长（小时）</text>
+
+      <!-- 坐标轴 -->
+      <line x1="70" y1="180" x2="640" y2="180" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="70" y="200" text-anchor="middle" fill="#64748b" font-size="10">0</text>
+      <text x="210" y="200" text-anchor="middle" fill="#64748b" font-size="10">5</text>
+      <text x="350" y="200" text-anchor="middle" fill="#64748b" font-size="10">10</text>
+      <text x="490" y="200" text-anchor="middle" fill="#64748b" font-size="10">15</text>
+      <text x="630" y="200" text-anchor="middle" fill="#64748b" font-size="10">20</text>
+
+      <!-- 新生儿 -->
+      <rect x="80" y="80" width="50" height="100" rx="4" fill="rgba(244,114,182,0.2)" stroke="#f472b6" stroke-width="1.2"/>
+      <text x="105" y="72" text-anchor="middle" fill="#e2e8f0" font-size="10">新生儿</text>
+      <text x="105" y="132" text-anchor="middle" fill="#f472b6" font-size="13" font-weight="bold">14-17</text>
+      <text x="105" y="148" text-anchor="middle" fill="#64748b" font-size="9">小时</text>
+
+      <!-- 幼儿 -->
+      <rect x="155" y="100" width="45" height="80" rx="4" fill="rgba(96,165,250,0.2)" stroke="#60a5fa" stroke-width="1.2"/>
+      <text x="177" y="92" text-anchor="middle" fill="#e2e8f0" font-size="10">幼儿</text>
+      <text x="177" y="145" text-anchor="middle" fill="#60a5fa" font-size="13" font-weight="bold">10-13</text>
+
+      <!-- 学龄儿童 -->
+      <rect x="225" y="108" width="45" height="72" rx="4" fill="rgba(52,211,153,0.2)" stroke="#34d399" stroke-width="1.2"/>
+      <text x="247" y="100" text-anchor="middle" fill="#e2e8f0" font-size="10">学龄儿</text>
+      <text x="247" y="148" text-anchor="middle" fill="#34d399" font-size="12" font-weight="bold">9-11</text>
+
+      <!-- 青少年（高亮） -->
+      <rect x="295" y="98" width="50" height="82" rx="4" fill="rgba(251,191,36,0.3)" stroke="#fbbf24" stroke-width="2.5" filter="url(#barGlow)"/>
+      <text x="320" y="90" text-anchor="middle" fill="#fbbf24" font-size="10" font-weight="bold">青少年</text>
+      <text x="320" y="145" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="bold">8-10</text>
+      <text x="320" y="162" text-anchor="middle" fill="#fcd34d" font-size="9">← 就！是！你！</text>
+
+      <!-- 成人 -->
+      <rect x="370" y="108" width="45" height="72" rx="4" fill="rgba(167,139,250,0.2)" stroke="#a78bfa" stroke-width="1.2"/>
+      <text x="392" y="100" text-anchor="middle" fill="#e2e8f0" font-size="10">成人</text>
+      <text x="392" y="148" text-anchor="middle" fill="#a78bfa" font-size="12" font-weight="bold">7-9</text>
+
+      <!-- 老年人 -->
+      <rect x="440" y="118" width="45" height="62" rx="4" fill="rgba(148,163,184,0.2)" stroke="#94a3b8" stroke-width="1.2"/>
+      <text x="462" y="110" text-anchor="middle" fill="#e2e8f0" font-size="10">老年人</text>
+      <text x="462" y="153" text-anchor="middle" fill="#94a3b8" font-size="11" font-weight="bold">7-8</text>
+
+      <!-- 底部说明 -->
+      <text x="340" y="230" text-anchor="middle" fill="#fbbf24" font-size="11">数据来源：美国国家睡眠基金会推荐标准</text>
+
+      <!-- 箭头 -->
+      <line x1="345" y1="100" x2="295" y2="135" stroke="#fbbf24" stroke-width="1" stroke-dasharray="2,2"/>
+    </svg>
+    <div class="svg-caption">图：各年龄段睡眠需求。青少年（黄色高亮条）需要8-10小时，是所有年龄段中由于生长+学习需求最不敢"打折"的阶段。</div>
+  </div>
+
+  <div class="analogy">
+    <h3>🔍 打个比方：为什么不能"少睡多醒"？</h3>
+    <p>有人说："我每天睡 10 小时，浪费了 10 小时的人生！" 这就好比说："我每天要给手机充电太浪费时间了——不如一直用，用到自动关机。"</p>
+    <p>睡眠不是浪费，而是维护。就像你的手机要充电、电脑要重启、马路要维修——有些工作只能在"停用"的状态下进行。你不可能在车还开着的时候换机油。同样，你的大脑不可能在你醒着的时候做"深层清洁"和"记忆整理"。这不是勤奋和懒惰的问题，<strong>这是生物机器的保养手册。</strong></p>
+  </div>
+
+  <div class="takeaway">
+    <h3>🌟 记住这个</h3>
+    <p>睡眠不是懒惰，不是软弱，不是可以牺牲的"弹性时间"。它是大脑的深度维护模式——清除毒素、巩固记忆、修复身体、调节情绪。对正在长身体、长大脑的青少年来说，8-10小时高质量的睡眠不是"建议"，而是刚需。<strong>今晚早点关灯——你的大脑会用一整晚的时间，给你一个更聪明、更快乐、更健康的明天。</strong></p>
+  </div>
+
+  <div class="audio-player">
+    <span class="audio-label">🎧 听播客</span>
+    <audio controls src="audio/sleep.mp3"></audio>
+  </div>
+
+  <div class="related">
+    <span style="color:var(--ink-dim);font-size:14px">探索更多：</span>
+    <a href="../design-proposal-v11.html">科学边界主页</a>
+    <a href="fusion.html">可控核聚变：在地球上造一颗太阳</a>
+    <a href="agi.html">通用人工智能：会思考的机器</a>
+    <a href="kakeya.html">挂谷猜想：一根针的旋转之谜</a>
+    <a href="dark-energy.html">暗能量：宇宙的终极命运</a>
+    <a href="quantum-error.html">量子纠错：给信息穿上铠甲</a>
+  </div>
+</div>
+
+  <script>window.__AI_CONTEXT={topic:"睡眠的奥秘",icebreakers:["为什么我们要睡觉？不睡会怎样？", "做梦的时候大脑在做什么？", "青少年为什么要睡够9小时？", "手机为什么会让人睡不着？"]};</script>
+  <script src="ai-widget.js"></script>
+</body>
+</html>

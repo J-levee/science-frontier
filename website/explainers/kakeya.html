@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>挂谷猜想：一根针旋转需要多大空间？ — 科学边界</title>
+  <style>
+    :root {
+    --bg: #07070b; --bg-2: #0b0b13; --ink: #e9eaf2; --ink-dim: #9aa0b8;
+    --line: rgba(255,255,255,.08); --accent: #6366f1; --accent2: #818cf8;
+    --accent3: #a78bfa; --warm: #f59e0b; --hot: #ef4444; --cool: #06b6d4;
+    --green: #10b981; --gold: #fbbf24;
+    --serif: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Georgia,serif;
+    --radius: 12px;
+  }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.8; }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+    .back { display: inline-block; color: var(--accent2); text-decoration: none; font-size: 14px; margin-bottom: 30px; }
+    h1 { font-size: 2.2em; font-weight: 800; margin-bottom: 10px; background: linear-gradient(135deg, var(--accent2), #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hook { font-size: 1.15em; color: var(--warm); margin-bottom: 30px; padding: 16px 20px; background: rgba(251,191,36,0.06); border-left: 3px solid var(--warm); border-radius: 0 8px 8px 0; }
+    .section { margin: 40px 0; }
+    h2 { font-size: 1.4em; color: #c4b5fd; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { margin-bottom: 14px; font-size: 1.05em; }
+    .analogy { background: var(--bg-2); border-radius: 12px; padding: 20px 24px; margin: 24px 0; border: 1px solid var(--line); }
+    .analogy h3 { color: var(--accent2); font-size: 1em; margin-bottom: 8px; }
+    .takeaway { background: linear-gradient(135deg, rgba(251,191,36,0.08), rgba(96,165,250,0.04)); border: 1px solid rgba(251,191,36,0.25); border-radius: 12px; padding: 20px 24px; margin: 30px 0; }
+    .takeaway h3 { color: var(--warm); }
+    .audio-player { background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 30px 0; display: flex; align-items: center; gap: 14px; }
+    .audio-player audio { flex: 1; }
+    .audio-label { font-size: 13px; color: var(--ink-dim); white-space: nowrap; }
+    svg { max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 8px; background: var(--bg-2); }
+    .svg-caption { text-align: center; font-size: 13px; color: var(--ink-dim); margin-top: -16px; margin-bottom: 20px; }
+    .related { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .related a { color: var(--accent2); text-decoration: none; font-size: 14px; padding: 6px 14px; border: 1px solid rgba(96,165,250,0.25); border-radius: 20px; transition: all .2s; }
+    .related a:hover { background: rgba(96,165,250,0.12); }
+    /* 专题特色样式：副标题 + 标签 + 科普/技术双 tab */
+    .eyebrow{font-size:11px;letter-spacing:.18em;color:var(--ink-dim);text-transform:uppercase;margin-bottom:6px}
+    .tag-row{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 14px}
+    .tag{display:inline-block;font-size:12px;color:var(--accent2);padding:3px 12px;border:1px solid rgba(129,140,248,.35);border-radius:999px;background:rgba(99,102,241,.06)}
+    .tab-row{display:flex;gap:6px;margin:20px 0 18px;padding-bottom:0;border-bottom:1px solid var(--line)}
+    .tab-btn{background:none;border:none;color:var(--ink-dim);font-size:13px;padding:8px 16px;cursor:pointer;font-family:inherit;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s}
+    .tab-btn:hover{color:var(--ink)}
+    .tab-btn.active{color:var(--accent2);border-bottom-color:var(--accent2)}
+    .story-pane,.tech-pane{display:none}
+    .story-pane.active,.tech-pane.active{display:block}
+    .tech-pane p{font-size:1em;color:var(--ink-dim);line-height:1.85}
+    .tech-pane p b{color:var(--ink)}
+    .tech-pane h2{font-size:1.2em;color:#a78bfa;padding-bottom:6px}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../design-proposal-v11.html?open=kakeya">← 返回科学边界</a>
+  <div class="eyebrow">前沿问题 · KAKEYA</div>
+  <h1>挂谷猜想（Kakeya Conjecture）</h1>
+  <div class="tag-row">
+    <span class="tag">数学与计算</span>
+    <span class="tag">几何测度论</span>
+  </div>
+  <div class="tab-row">
+    <button class="tab-btn active" data-tab="story">📖 科普故事</button>
+    <button class="tab-btn" data-tab="tech">📐 技术摘要</button>
+  </div>
+  <div class="story-pane active">
+    <div class="hook">💡 你有没有想过：一根针，在桌面上旋转，需要多大的一块地方？这个问题看似简单，却困扰了数学家近 100 年，还催生了 2026 年的菲尔兹奖。</div>
+
+  <div class="section">
+    <h2>一、从日本数学家挂谷宗一的"转针"问题开始<span data-ai-q="挂谷宗一是谁？他的转针问题是什么？"></span></h2>
+    <p>1917年，日本数学家挂谷宗一提出了一个有趣的问题：假设你有一根长度是1的针（或者说一根细细的牙签），你需要多大的平面区域，才能让这根针在这个区域内完成一次180°的旋转——而且是<strong>连续地</strong>转过来，中途不能离开这个区域，也不能"瞬移"？</p>
+    <p>你可能第一反应是：那不就是以针长为直径的一个圆吗？没错，把针的一端固定，另一端画一个半圆，转180°绝对没问题。但数学家问的是：<strong>能不能更小一点？</strong>答案是真可以——而且可以小到令人难以置信！</p>
+
+    <svg viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="needleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" stop-color="#60a5fa"/>
+          <stop offset="100%" stop-color="#a78bfa"/>
+        </linearGradient>
+        <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <!-- 背景网格 -->
+      <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+        <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="0.5"/>
+      </pattern>
+      <rect width="680" height="280" fill="url(#grid)"/>
+
+      <!-- 圆盘路径 -->
+      <circle cx="240" cy="150" r="100" fill="none" stroke="rgba(251,191,36,0.3)" stroke-width="1.5" stroke-dasharray="6,3"/>
+      <text x="240" y="45" text-anchor="middle" fill="#94a3b8" font-size="12">圆盘方案：面积 π/4 ≈ 0.785</text>
+
+      <!-- 圆内的针（3个位置示意旋转） -->
+      <line x1="240" y1="150" x2="340" y2="150" stroke="url(#needleGrad)" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+      <circle cx="340" cy="150" r="3" fill="#fbbf24"/>
+      <text x="260" y="180" fill="#60a5fa" font-size="11" text-anchor="middle">针长 = 1</text>
+
+      <line x1="240" y1="150" x2="290" y2="192" stroke="url(#needleGrad)" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+      <circle cx="290" cy="192" r="2.5" fill="#fbbf24" opacity="0.4"/>
+
+      <line x1="240" y1="150" x2="240" y2="68" stroke="url(#needleGrad)" stroke-width="3" stroke-linecap="round" opacity="0.4"/>
+      <circle cx="240" cy="68" r="2.5" fill="#fbbf24" opacity="0.4"/>
+
+      <!-- 三叶形区域（右侧） -->
+      <text x="495" y="45" text-anchor="middle" fill="#94a3b8" font-size="12">三叶形方案：面积更小！</text>
+      <path d="M495,220 L495,150 L550,120 L550,150 Z" fill="none" stroke="rgba(96,165,250,0.35)" stroke-width="1" stroke-dasharray="4,3"/>
+      <!-- 三条凹曲边组成的三角区域 -->
+      <path d="M495,220 Q475,185 495,150" fill="none" stroke="rgba(96,165,250,0.5)" stroke-width="2"/>
+      <path d="M495,150 Q515,185 550,150" fill="none" stroke="rgba(96,165,250,0.5)" stroke-width="2"/>
+      <path d="M495,220 Q520,210 550,150" fill="none" stroke="rgba(96,165,250,0.5)" stroke-width="2"/>
+      <!-- 三叶形内标 S -->
+      <text x="510" y="180" fill="#a78bfa" font-size="12" text-anchor="middle">S</text>
+
+      <!-- 说明文字 -->
+      <text x="495" y="260" text-anchor="middle" fill="#fbbf24" font-size="11">三叶形面积 &lt; 0.6 —— 远小于圆！</text>
+    </svg>
+    <div class="svg-caption">图：左为最简单的圆盘方案（面积 ≈ 0.785），右为更优的三叶形（面积 &lt; 0.6）。挂谷猜想追问：极限最小面积能到多小？</div>
+  </div>
+
+  <div class="section">
+    <h2>二、惊人的发现：面积可以"无限接近于零"</h2>
+    <p>数学家们一开始以为，针旋转所需的最小面积应该有个"下限"——比如0.1，或者至少比0大一些吧？但1928年，苏联数学家别西科维奇给出了一个震撼数学界的答案：<strong>针旋转180°所需的面积，可以任意小——想多近零就多近零！</strong></p>
+    <p>怎么做到的？秘密在于一种神奇的图形——"<strong>别西科维奇集</strong>"。你可以把它想象成一片形状极为复杂的"雪花"：它由很多块小碎片拼接而成，针在每一小块里都能微微偏转一点角度，当针访问完所有碎片后，总共正好转了180°。而这些碎片的总面积，可以小到让人不敢相信。</p>
+    <p>换句话说：你可以在桌面上画一个面积比芝麻还小的"迷宫"，针在里面钻来钻去、左转右转——最后竟然完整地转了半圈！</p>
+
+    <svg viewBox="0 0 680 280" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="glow2"><feGaussianBlur stdDeviation="1.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+      </defs>
+      <rect width="680" height="280" fill="#111827" rx="8"/>
+
+      <!-- 针的旋转路径示意：多段折线 + 针的动画关键帧 -->
+      <text x="340" y="30" text-anchor="middle" fill="#94a3b8" font-size="13">针在多块碎片间穿梭，每一小块贡献一点旋转角度</text>
+
+      <!-- 碎片区域1 -->
+      <rect x="60" y="80" width="60" height="60" rx="4" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.3)" stroke-width="1"/>
+      <text x="90" y="118" text-anchor="middle" fill="#60a5fa" font-size="10">碎片 A</text>
+      <line x1="65" y1="100" x2="115" y2="100" stroke="url(#needleGrad)" stroke-width="2.5" stroke-linecap="round" filter="url(#glow2)"/>
+
+      <!-- 碎片区域2 -->
+      <rect x="180" y="80" width="60" height="60" rx="4" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.3)" stroke-width="1"/>
+      <text x="210" y="118" text-anchor="middle" fill="#60a5fa" font-size="10">碎片 B</text>
+      <line x1="195" y1="100" x2="235" y2="120" stroke="url(#needleGrad)" stroke-width="2.5" stroke-linecap="round" filter="url(#glow2)"/>
+
+      <!-- 碎片区域3 -->
+      <rect x="300" y="80" width="60" height="60" rx="4" fill="rgba(96,165,250,0.1)" stroke="rgba(96,165,250,0.3)" stroke-width="1"/>
+      <text x="330" y="118" text-anchor="middle" fill="#60a5fa" font-size="10">碎片 C</text>
+      <line x1="315" y1="110" x2="345" y2="130" stroke="url(#needleGrad)" stroke-width="2.5" stroke-linecap="round" filter="url(#glow2)"/>
+
+      <!-- 碎片区域4（旋转接近180°） -->
+      <rect x="470" y="80" width="60" height="60" rx="4" fill="rgba(167,139,250,0.1)" stroke="rgba(167,139,250,0.3)" stroke-width="1"/>
+      <text x="500" y="118" text-anchor="middle" fill="#a78bfa" font-size="10">碎片 D</text>
+      <line x1="520" y1="100" x2="480" y2="100" stroke="url(#needleGrad)" stroke-width="2.5" stroke-linecap="round" filter="url(#glow2)"/>
+
+      <!-- 连接箭头 -->
+      <text x="150" y="115" text-anchor="middle" fill="#94a3b8" font-size="14">→</text>
+      <text x="270" y="115" text-anchor="middle" fill="#94a3b8" font-size="14">→</text>
+      <text x="420" y="115" text-anchor="middle" fill="#94a3b8" font-size="14">→</text>
+
+      <!-- 底部旋转角度累积 -->
+      <rect x="100" y="200" width="480" height="30" rx="6" fill="rgba(251,191,36,0.06)" stroke="rgba(251,191,36,0.15)" stroke-width="1"/>
+      <rect x="100" y="200" width="120" height="30" rx="6" fill="rgba(96,165,250,0.2)"/>
+      <text x="160" y="220" text-anchor="middle" fill="#e2e8f0" font-size="11">A: 0° → 30°</text>
+
+      <rect x="220" y="200" width="110" height="30" rx="0" fill="rgba(96,165,250,0.25)"/>
+      <text x="275" y="220" text-anchor="middle" fill="#e2e8f0" font-size="11">B: 60°</text>
+
+      <rect x="330" y="200" width="110" height="30" rx="0" fill="rgba(96,165,250,0.3)"/>
+      <text x="385" y="220" text-anchor="middle" fill="#e2e8f0" font-size="11">C: 90°</text>
+
+      <rect x="440" y="200" width="140" height="30" rx="6" fill="rgba(167,139,250,0.35)"/>
+      <text x="510" y="220" text-anchor="middle" fill="#e2e8f0" font-size="11">D: 180° 完成！</text>
+    </svg>
+    <div class="svg-caption">图：别西科维奇集的核心思想——针在多个极小碎片中穿梭，每个碎片贡献一点旋转角度，总区域面积极小。</div>
+  </div>
+
+  <div class="section">
+    <h2>三、现代的"挂谷猜想"：从二维到高维<span data-ai-q="二维和三维的挂谷猜想有什么区别？"></span></h2>
+    <p>别西科维奇解决了平面（二维）的问题：针可以旋转，所需面积可以任意小。但数学家不满足于此——他们把问题升级了：在三维空间里会怎样？在n维空间呢？</p>
+    <p>这就引出了当代数学中一个极其重要的猜想——<strong>挂谷极大函数猜想</strong>。它不再只关心"针的面积"，而是问了一个更深刻的问题：在高维空间里，一根"针"旋转时，它所经过的区域的"维度"和"大小"之间，存在怎样的深层关系？</p>
+    <p>听起来很抽象？我们来打个比方：</p>
+  </div>
+
+  <div class="analogy">
+    <h3>🔍 打个比方：在拥挤的公交车上转身</h3>
+    <p>你和朋友背着一个长条形的书包坐公交车。你想转身跟后排的同学说话。车越空——你需要的空间越大，想怎么转都行（这就是"圆盘方案"）。车越挤——你只能在有限的小空间里左扭右扭，最后居然也能完成转身（这就是"别西科维奇方案"）。</p>
+    <p>挂谷猜想要问的是：在多维的"公交车"里，到底能挤到什么极限？这个问题的答案，和信号处理、雷达成像甚至现代通信技术都有关联！</p>
+  </div>
+
+  <div class="takeaway">
+    <h3>🌟 记住这个</h3>
+    <p>挂谷猜想从一个"针能挤多小"的几何谜题开始，生长为当代数学最深刻的未解问题之一。它告诉我们：<strong>看似简单的日常问题，背后可能藏着宇宙级别的数学奥秘。</strong>而直到今天，三维空间中的挂谷猜想还没有被完全证明——它仍然在等待着未来的数学家，也许就是你！</p>
+  </div>
+
+  <div class="audio-player">
+    <span class="audio-label">🎧 听播客</span>
+    <audio controls src="audio/kakeya.mp3"></audio>
+  </div><!-- /.story-pane -->
+
+  <div class="tech-pane">
+    <div class="section">
+      <h2>技术摘要</h2>
+      <p><b>挂谷猜想（Kakeya Conjecture）</b> 在 ℝⁿ 中的陈述：对任意 ε&gt;0，存在面积为 ε 的<b>挂谷集</b>——包含任意方向的单位线段。</p>
+      <p>在二维（Davies 1971），三维（Wang 2025 with Zahl），高维（未解）。</p>
+      <p>关键工具：<span data-ai-q="调和分析怎么解决挂谷猜想？">调和分析</span>、多线性 Kakeya 最大估计、Fourier 限制性估计、组合几何。</p>
+    </div>
+    <div class="section">
+      <h2>前沿状态</h2>
+      <p>二维 ThW: |K| ≥ c·ε²。3D: 证明到 ≥ c·ε²（Wang-Zahl 2025）。高维: 最佳下界 Ω(εᵈ) 仍未到。</p>
+      <p>2026 年菲尔兹奖：王虹（Wang）因在三维挂谷猜想上的突破获奖。</p>
+    </div>
+    <div class="section">
+      <h2>相关数学家</h2>
+      <p>王虹 · Joshua Zahl · Charles Fefferman · Nets Katz · Larry Guth · Marina Ratner</p>
+    </div>
+  </div>
+
+  <div class="related">
+    <span style="color:var(--ink-dim);font-size:14px">探索更多：</span>
+    <a href="../design-proposal-v11.html?open=kakeya">科学边界主页</a>
+    <a href="dark-energy.html">暗能量：宇宙的终极命运</a>
+    <a href="quantum-error.html">量子纠错：给信息穿上铠甲</a>
+    <a href="fusion.html">可控核聚变</a>
+    <a href="agi.html">通用人工智能</a>
+    <a href="sleep.html">睡眠的奥秘</a>
+  </div>
+</div>
+
+  <script>
+    // 专题 tab 切换
+    document.querySelectorAll('.tab-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var tab = btn.getAttribute('data-tab');
+        document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.toggle('active', b===btn); });
+        document.querySelectorAll('.story-pane, .tech-pane').forEach(function(p){
+          p.classList.toggle('active', (tab==='story' && p.classList.contains('story-pane')) || (tab==='tech' && p.classList.contains('tech-pane')));
+        });
+      });
+    });
+  </script>
+  <script>window.__AI_CONTEXT={topic:"挂谷猜想",icebreakers:["挂谷猜想到底在问什么？用日常例子解释", "为什么挂谷猜想能得菲尔兹奖？", "王虹和Zahl证明的三维情形是什么意思？高维情形能解吗？", "挂谷猜想和日常有关系吗？"]};</script>
+  <script src="ai-widget.js"></script>
+</body>
+</html>

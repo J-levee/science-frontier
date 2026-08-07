@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>暗能量：宇宙的终极命运 — 科学边界</title>
+  <style>
+    :root {
+    --bg: #07070b; --bg-2: #0b0b13; --ink: #e9eaf2; --ink-dim: #9aa0b8;
+    --line: rgba(255,255,255,.08); --accent: #6366f1; --accent2: #818cf8;
+    --accent3: #a78bfa; --warm: #f59e0b; --hot: #ef4444; --cool: #06b6d4;
+    --green: #10b981; --gold: #fbbf24;
+    --serif: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Georgia,serif;
+    --radius: 12px;
+  }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.8; }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+    .back { display: inline-block; color: var(--accent2); text-decoration: none; font-size: 14px; margin-bottom: 30px; }
+    h1 { font-size: 2.2em; font-weight: 800; margin-bottom: 10px; background: linear-gradient(135deg, var(--accent2), #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hook { font-size: 1.15em; color: var(--warm); margin-bottom: 30px; padding: 16px 20px; background: rgba(251,191,36,0.06); border-left: 3px solid var(--warm); border-radius: 0 8px 8px 0; }
+    .section { margin: 40px 0; }
+    h2 { font-size: 1.4em; color: #c4b5fd; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { margin-bottom: 14px; font-size: 1.05em; }
+    .analogy { background: var(--bg-2); border-radius: 12px; padding: 20px 24px; margin: 24px 0; border: 1px solid var(--line); }
+    .analogy h3 { color: var(--accent2); font-size: 1em; margin-bottom: 8px; }
+    .takeaway { background: linear-gradient(135deg, rgba(251,191,36,0.08), rgba(96,165,250,0.04)); border: 1px solid rgba(251,191,36,0.25); border-radius: 12px; padding: 20px 24px; margin: 30px 0; }
+    .takeaway h3 { color: var(--warm); }
+    .audio-player { background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 30px 0; display: flex; align-items: center; gap: 14px; }
+    .audio-player audio { flex: 1; }
+    .audio-label { font-size: 13px; color: var(--ink-dim); white-space: nowrap; }
+    svg { max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 8px; background: var(--bg-2); }
+    .svg-caption { text-align: center; font-size: 13px; color: var(--ink-dim); margin-top: -16px; margin-bottom: 20px; }
+    .related { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .related a { color: var(--accent2); text-decoration: none; font-size: 14px; padding: 6px 14px; border: 1px solid rgba(96,165,250,0.25); border-radius: 20px; transition: all .2s; }
+    .related a:hover { background: rgba(96,165,250,0.12); }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../design-proposal-v11.html">← 返回科学边界</a>
+  <h1>暗能量：宇宙的终极命运</h1>
+  <div class="hook">💡 你、我、地球、太阳、所有星星——加起来只占整个宇宙的不到5%。剩下95%是什么？科学家给它们起了两个神秘的名字：暗物质（25%）和暗能量（70%）。而暗能量，正在悄悄决定宇宙最后的结局。</div>
+
+  <div class="section">
+    <h2>一、宇宙在膨胀——而且越来越快<span data-ai-q="宇宙为什么在加速膨胀？"></span></h2>
+    <p>1929年，美国天文学家哈勃发现了一个惊人的现象：天上的星系都在远离我们！就像你站在操场上，发现所有同学都在往远处跑——不是他们在跑，而是操场本身在不停地扩张。</p>
+    <p>一开始大家以为，引力会像橡皮筋一样把膨胀拉回来——就像你往天上扔一个球，它最终会掉下来。但1998年，天文学家观测到<strong>宇宙不但没有减速，反而在加速膨胀</strong>。就好像你把球往上一扔，球不但不掉下来，反而越飞越快——直接冲出了太阳系！</p>
+
+    <svg viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="starGlow"><feGaussianBlur stdDeviation="1.5"/></filter>
+        <radialGradient id="galaxy1"><stop offset="0%" stop-color="#fbbf24"/><stop offset="100%" stop-color="rgba(251,191,36,0)"/></radialGradient>
+        <radialGradient id="galaxy2"><stop offset="0%" stop-color="#60a5fa"/><stop offset="100%" stop-color="rgba(96,165,250,0)"/></radialGradient>
+      </defs>
+      <rect width="680" height="320" fill="#111827" rx="8"/>
+
+      <!-- 大爆炸点 -->
+      <circle cx="70" cy="160" r="8" fill="#fbbf24" filter="url(#starGlow)"/>
+      <text x="70" y="140" text-anchor="middle" fill="#fbbf24" font-size="11">大爆炸</text>
+
+      <!-- 时间轴 -->
+      <line x1="70" y1="175" x2="610" y2="175" stroke="rgba(255,255,255,0.1)" stroke-width="1.5"/>
+
+      <!-- 早期（正常膨胀） -->
+      <text x="130" y="120" text-anchor="middle" fill="#94a3b8" font-size="11">引力主导时期</text>
+      <text x="130" y="134" text-anchor="middle" fill="#64748b" font-size="10">膨胀在减速</text>
+      <!-- 星系小间距 -->
+      <circle cx="120" cy="165" r="4" fill="#60a5fa" opacity="0.7"/>
+      <circle cx="145" cy="170" r="4" fill="#a78bfa" opacity="0.7"/>
+      <circle cx="170" cy="163" r="4" fill="#f472b6" opacity="0.7"/>
+      <circle cx="195" cy="172" r="4" fill="#34d399" opacity="0.7"/>
+
+      <!-- 中期（转折点） -->
+      <text x="280" y="120" text-anchor="middle" fill="#fbbf24" font-size="11">约 50 亿年前：加速开始！</text>
+      <line x1="280" y1="145" x2="280" y2="200" stroke="rgba(251,191,36,0.3)" stroke-width="1" stroke-dasharray="3,3"/>
+      <!-- 星系间距变大 -->
+      <circle cx="255" cy="160" r="5" fill="#60a5fa" opacity="0.8"/>
+      <circle cx="290" cy="170" r="5" fill="#a78bfa" opacity="0.8"/>
+      <circle cx="325" cy="158" r="5" fill="#f472b6" opacity="0.8"/>
+      <circle cx="360" cy="172" r="5" fill="#34d399" opacity="0.8"/>
+
+      <!-- 现在/未来（加速膨胀） -->
+      <text x="420" y="120" text-anchor="middle" fill="#60a5fa" font-size="11">暗能量主导时期</text>
+      <text x="420" y="134" text-anchor="middle" fill="#64748b" font-size="10">加速膨胀中</text>
+      <!-- 星系间距极大 -->
+      <circle cx="400" cy="155" r="6" fill="#60a5fa" opacity="0.9"/>
+      <circle cx="450" cy="175" r="6" fill="#a78bfa" opacity="0.9"/>
+      <circle cx="500" cy="152" r="6" fill="#f472b6" opacity="0.9"/>
+      <circle cx="550" cy="178" r="6" fill="#34d399" opacity="0.9"/>
+
+      <!-- 未来箭头 -->
+      <text x="640" y="170" text-anchor="end" fill="#64748b" font-size="10">未来 →</text>
+
+      <!-- 膨胀速率曲线（下方） -->
+      <text x="340" y="230" text-anchor="middle" fill="#94a3b8" font-size="11">宇宙膨胀速率变化曲线</text>
+      <path d="M100,260 Q200,275 280,258 Q320,250 380,240 Q450,225 580,205" fill="none" stroke="#a78bfa" stroke-width="2.5" stroke-linecap="round"/>
+      <!-- 标注 -->
+      <circle cx="280" cy="258" r="3" fill="#fbbf24"/>
+      <text x="310" y="260" fill="#fbbf24" font-size="10">加速转折点</text>
+      <line x1="100" y1="262" x2="100" y2="295" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="100" y="305" text-anchor="middle" fill="#64748b" font-size="10">过去</text>
+      <line x1="580" y1="207" x2="580" y2="295" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+      <text x="580" y="305" text-anchor="middle" fill="#64748b" font-size="10">现在</text>
+    </svg>
+    <div class="svg-caption">图：宇宙膨胀的历史——前70亿年引力主导、膨胀减速；约50亿年前暗能量"接手"，膨胀开始加速。</div>
+  </div>
+
+  <div class="section">
+    <h2>二、暗能量是什么？宇宙中最神秘的力量<span data-ai-q="暗能量到底是什么？最简单的解释是什么？"></span></h2>
+    <p>如果宇宙在加速膨胀，那就意味着一定有种力在<strong>往外推</strong>——它和引力相反，引力把东西拉近，它把东西推开。科学家将这种推动宇宙加速膨胀的神秘力量称为"暗能量"。</p>
+    <p>它为什么"暗"？因为你看不到它、摸不到它，目前的任何仪器都检测不到它的存在。我们只知道它的"效果"——宇宙在加速膨胀。就好像你在家里听到门"嘭"地一声关上了，你知道有力推了门，但你没看到是谁推的。这就是暗能量：我们看到宇宙在加速，但找不到推手。</p>
+
+    <svg viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="glow3"><feGaussianBlur stdDeviation="2"/></filter>
+      </defs>
+      <rect width="680" height="320" fill="#111827" rx="8"/>
+
+      <!-- 气球比喻 -->
+      <text x="340" y="28" text-anchor="middle" fill="#94a3b8" font-size="13">气球比喻：宇宙就像被吹胀的气球，星系是气球上的斑点</text>
+
+      <!-- 3个阶段的气球 -->
+      <ellipse cx="160" cy="170" rx="55" ry="70" fill="none" stroke="rgba(96,165,250,0.25)" stroke-width="1.5"/>
+      <circle cx="150" cy="150" r="3" fill="#34d399"/>
+      <circle cx="175" cy="160" r="3" fill="#f472b6"/>
+      <circle cx="145" cy="170" r="3" fill="#a78bfa"/>
+      <text x="160" y="260" text-anchor="middle" fill="#64748b" font-size="11">早期宇宙</text>
+
+      <ellipse cx="340" cy="165" rx="90" ry="115" fill="none" stroke="rgba(96,165,250,0.4)" stroke-width="1.5"/>
+      <circle cx="315" cy="140" r="3.5" fill="#34d399"/>
+      <circle cx="370" cy="150" r="3.5" fill="#f472b6"/>
+      <circle cx="320" cy="175" r="3.5" fill="#a78bfa"/>
+      <text x="340" y="300" text-anchor="middle" fill="#64748b" font-size="11">现在</text>
+      <!-- 间距线标注 -->
+      <line x1="315" y1="140" x2="370" y2="150" stroke="#fbbf24" stroke-width="0.8" stroke-dasharray="2,2"/>
+      <text x="342" y="138" fill="#fbbf24" font-size="9">距离变远</text>
+
+      <ellipse cx="540" cy="160" rx="130" ry="165" fill="none" stroke="rgba(96,165,250,0.55)" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <circle cx="495" cy="125" r="4" fill="#34d399"/>
+      <circle cx="585" cy="135" r="4" fill="#f472b6"/>
+      <circle cx="510" cy="185" r="4" fill="#a78bfa"/>
+      <text x="540" y="345" text-anchor="middle" fill="#64748b" font-size="11">遥远未来</text>
+
+      <!-- 箭头 -->
+      <text x="255" y="175" text-anchor="middle" fill="#60a5fa" font-size="18">→</text>
+      <text x="445" y="175" text-anchor="middle" fill="#60a5fa" font-size="18">→</text>
+    </svg>
+    <div class="svg-caption">图：就像吹气球——气球越大，上面画的斑点（星系）之间距离越远。暗能量就是那个"不停吹气"的力量。</div>
+  </div>
+
+  <div class="section">
+    <h2>三、宇宙的三种结局</h2>
+    <p>暗能量的强度将直接决定宇宙最终走向何方。科学家描绘了三种可能的结局：</p>
+    <p><strong>大冻结：</strong>如果暗能量保持稳定，宇宙将永远加速膨胀下去。星系之间的距离大到光都追不上，夜空将变得一片漆黑，所有恒星燃烧殆尽，宇宙变成冰冷寂静的虚空。这是目前最被看好的结局。</p>
+    <p><strong>大撕裂：</strong>如果暗能量越来越强，最终连原子、原子核都会被撕碎——行星、恒星、分子、原子，一切都被拉成一条线，宇宙在"撕裂"中终结。</p>
+    <p><strong>大坍缩：</strong>如果暗能量突然减弱或消失，引力将重新夺回主导权，宇宙开始收缩——所有物质重新挤回一个无限小的点，回到"大爆炸之前"的状态。不过这个结局可能性最小。</p>
+  </div>
+
+  <div class="analogy">
+    <h3>🔍 打个比方：操场上的口香糖</h3>
+    <p>想象你在操场上放了一块口香糖，然后用力往两边拉——口香糖越来越薄、越来越长，上面的小气泡（就像星系）也越分越远。如果你一直拉，口香糖最终会变成透明的一层薄片，变得看不见（大冻结）。</p>
+    <p>如果你突然用超级大的力猛地一扯——口香糖直接断开，裂成两半（大撕裂）。如果你拉到一半没力气了，口香糖弹了回来，缩成一小团（大坍缩）。暗能量就是你拉口香糖的那只"看不见的手"。</p>
+  </div>
+
+  <div class="takeaway">
+    <h3>🌟 记住这个</h3>
+    <p>暗能量是宇宙中最大的谜题之一。它占宇宙总能量的约70%，但我们完全不知道它是什么、从哪里来。它决定了宇宙的最终命运，而我们正生活在它开始"接管"宇宙的时代。<strong>你此刻的每一次呼吸，都发生在宇宙加速膨胀的进程中——想想看，是不是很酷？</strong></p>
+  </div>
+
+  <div class="audio-player">
+    <span class="audio-label">🎧 听播客</span>
+    <audio controls src="audio/dark-energy.mp3"></audio>
+  </div>
+
+  <div class="related">
+    <span style="color:var(--ink-dim);font-size:14px">探索更多：</span>
+    <a href="../design-proposal-v11.html">科学边界主页</a>
+    <a href="kakeya.html">挂谷猜想：一根针的旋转之谜</a>
+    <a href="quantum-error.html">量子纠错：给信息穿上铠甲</a>
+    <a href="fusion.html">可控核聚变</a>
+    <a href="agi.html">通用人工智能</a>
+    <a href="sleep.html">睡眠的奥秘</a>
+  </div>
+</div>
+
+  <script>window.__AI_CONTEXT={topic:"暗能量与宇宙命运",icebreakers:["暗能量是什么？为什么它让宇宙加速膨胀？", "暗能量和暗物质是一回事吗？", "宇宙最后会怎么灭亡？三种结局是什么？", "科学家怎么探测暗能量？望远镜能看到吗？"]};</script>
+  <script src="ai-widget.js"></script>
+</body>
+</html>

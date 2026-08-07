@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>可控核聚变：在地球上造一颗太阳 — 科学边界</title>
+  <style>
+    :root {
+    --bg: #07070b; --bg-2: #0b0b13; --ink: #e9eaf2; --ink-dim: #9aa0b8;
+    --line: rgba(255,255,255,.08); --accent: #6366f1; --accent2: #818cf8;
+    --accent3: #a78bfa; --warm: #f59e0b; --hot: #ef4444; --cool: #06b6d4;
+    --green: #10b981; --gold: #fbbf24;
+    --serif: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Georgia,serif;
+    --radius: 12px;
+  }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.8; }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+    .back { display: inline-block; color: var(--accent2); text-decoration: none; font-size: 14px; margin-bottom: 30px; }
+    h1 { font-size: 2.2em; font-weight: 800; margin-bottom: 10px; background: linear-gradient(135deg, var(--accent2), #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hook { font-size: 1.15em; color: var(--warm); margin-bottom: 30px; padding: 16px 20px; background: rgba(251,191,36,0.06); border-left: 3px solid var(--warm); border-radius: 0 8px 8px 0; }
+    .section { margin: 40px 0; }
+    h2 { font-size: 1.4em; color: #c4b5fd; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { margin-bottom: 14px; font-size: 1.05em; }
+    .analogy { background: var(--bg-2); border-radius: 12px; padding: 20px 24px; margin: 24px 0; border: 1px solid var(--line); }
+    .analogy h3 { color: var(--accent2); font-size: 1em; margin-bottom: 8px; }
+    .takeaway { background: linear-gradient(135deg, rgba(251,191,36,0.08), rgba(96,165,250,0.04)); border: 1px solid rgba(251,191,36,0.25); border-radius: 12px; padding: 20px 24px; margin: 30px 0; }
+    .takeaway h3 { color: var(--warm); }
+    .audio-player { background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 30px 0; display: flex; align-items: center; gap: 14px; }
+    .audio-player audio { flex: 1; }
+    .audio-label { font-size: 13px; color: var(--ink-dim); white-space: nowrap; }
+    svg { max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 8px; background: var(--bg-2); }
+    .svg-caption { text-align: center; font-size: 13px; color: var(--ink-dim); margin-top: -16px; margin-bottom: 20px; }
+    .related { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .related a { color: var(--accent2); text-decoration: none; font-size: 14px; padding: 6px 14px; border: 1px solid rgba(96,165,250,0.25); border-radius: 20px; transition: all .2s; }
+    .related a:hover { background: rgba(96,165,250,0.12); }
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="../design-proposal-v11.html">← 返回科学边界</a>
+  <h1>可控核聚变：在地球上造一颗太阳</h1>
+  <div class="hook">💡 太阳已经持续"燃烧"了46亿年，靠的不是烧煤也不是烧油，而是一种叫"核聚变"的反应。如果人类能在地球上复制这个过程，一浴缸海水就能提供你一辈子用的所有能量——而且没有污染、没有核废料。这个梦想，叫"可控核聚变"。</div>
+
+  <div class="section">
+    <h2>一、人造太阳：核聚变是什么？<span data-ai-q="核聚变是怎么产生能量的？"></span></h2>
+    <p>核聚变就是让两个<strong>非常轻</strong>的原子核，在极高的温度和压力下，撞在一起"粘"成一个更重的原子核。这个过程会释放出巨大的能量——这就是太阳发光发热的秘诀。</p>
+    <p>具体来说，在太阳中心，每秒钟有6亿吨氢原子核撞在一起变成氦，释放的能量相当于几十亿颗原子弹同时爆炸。但这些能量被太阳庞大的体积稳稳"兜住"，以温和的阳光形式撒到地球上。</p>
+    <p>人类也想在地球上做类似的事：把氢的两个"亲戚"——<strong>氘（dāo）和氚（chuān）</strong>——加热到上亿度，让它们相互碰撞、融合，释放能量。氘在海水中到处都是，每升海水里有33毫克；氚虽然自然界很少，但可以用金属锂来"制造"。原材料几乎取之不尽。</p>
+
+    <svg viewBox="0 0 680 340" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="sunGlow"><feGaussianBlur stdDeviation="3"/></filter>
+        <radialGradient id="sunCore"><stop offset="0%" stop-color="#fbbf24"/><stop offset="30%" stop-color="#f59e0b"/><stop offset="60%" stop-color="#ef4444"/><stop offset="100%" stop-color="rgba(239,68,68,0)"/></radialGradient>
+        <radialGradient id="sunOuter"><stop offset="0%" stop-color="rgba(251,191,36,0)"/><stop offset="70%" stop-color="rgba(251,191,36,0.1)"/><stop offset="100%" stop-color="rgba(251,191,36,0.06)"/></radialGradient>
+      </defs>
+      <rect width="680" height="340" fill="#111827" rx="8"/>
+
+      <text x="340" y="28" text-anchor="middle" fill="#94a3b8" font-size="13">太阳内部的核聚变是怎样发生的</text>
+
+      <!-- 太阳主体 -->
+      <circle cx="200" cy="180" r="100" fill="url(#sunOuter)"/>
+      <circle cx="200" cy="180" r="70" fill="url(#sunCore)" filter="url(#sunGlow)"/>
+
+      <!-- 太阳内部反应示意 -->
+      <text x="200" y="185" text-anchor="middle" fill="#fbbf24" font-size="13" font-weight="bold">核聚变核心</text>
+      <text x="200" y="205" text-anchor="middle" fill="#fcd34d" font-size="11">1500万°C</text>
+
+      <!-- 右侧：氢核聚变过程 -->
+      <text x="480" y="65" text-anchor="middle" fill="#a78bfa" font-size="13" font-weight="bold">聚变反应过程</text>
+
+      <!-- 氘核 + 氚核 -->
+      <circle cx="430" cy="120" r="20" fill="rgba(96,165,250,0.25)" stroke="#60a5fa" stroke-width="2"/>
+      <text x="430" y="117" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="bold">氘</text>
+      <text x="430" y="132" text-anchor="middle" fill="#94a3b8" font-size="9">¹H²</text>
+
+      <text x="478" y="122" text-anchor="middle" fill="#fbbf24" font-size="18">+</text>
+
+      <circle cx="530" cy="120" r="20" fill="rgba(167,139,250,0.25)" stroke="#a78bfa" stroke-width="2"/>
+      <text x="530" y="117" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="bold">氚</text>
+      <text x="530" y="132" text-anchor="middle" fill="#94a3b8" font-size="9">¹H³</text>
+
+      <!-- 箭头向下 -->
+      <line x1="480" y1="145" x2="480" y2="175" stroke="#fbbf24" stroke-width="2" marker-end="url(#arrowGold)"/>
+      <text x="450" y="168" fill="#fbbf24" font-size="10">上亿度 + 高压</text>
+
+      <defs>
+        <marker id="arrowGold" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill="#fbbf24"/>
+        </marker>
+      </defs>
+
+      <!-- 产物：氦 + 中子 + 能量 -->
+      <circle cx="420" cy="215" r="22" fill="rgba(52,211,153,0.25)" stroke="#34d399" stroke-width="2.5"/>
+      <text x="420" y="212" text-anchor="middle" fill="#e2e8f0" font-size="12" font-weight="bold">氦</text>
+      <text x="420" y="227" text-anchor="middle" fill="#94a3b8" font-size="9">稳定</text>
+
+      <text x="478" y="217" text-anchor="middle" fill="#fbbf24" font-size="18">=</text>
+
+      <circle cx="540" cy="215" r="18" fill="rgba(248,113,113,0.25)" stroke="#f87171" stroke-width="2"/>
+      <text x="540" y="218" text-anchor="middle" fill="#e2e8f0" font-size="11" font-weight="bold">n</text>
+
+      <!-- 能量释放 -->
+      <text x="480" y="265" text-anchor="middle" fill="#fbbf24" font-size="13">⚡ 释放巨大能量 ⚡</text>
+    </svg>
+    <div class="svg-caption">图：太阳内部的核聚变——两个轻核（氘+氚）撞在一起，生成氦核和中子，释放巨大能量。地球上要复现它，需要上亿度高温！</div>
+  </div>
+
+  <div class="section">
+    <h2>二、核聚变为什么这么难？</h2>
+    <p>你可能觉得：既然原理这么简单，为什么不直接造一个"人造太阳"呢？问题出在"上亿度"这个条件上。</p>
+    <p>原子核都带正电。正电荷之间会相互排斥——就像让两块磁铁的同一极靠近，它们会拼命弹开。要让两个原子核撞在一起融合，必须让它们<strong>以极快的速度冲向对方</strong>，快到能克服排斥力。提高温度就是让原子核变得"暴躁"的方法——温度越高，它们跑得越快。</p>
+    <p>上亿度是什么概念？铁的熔点是1538°C，太阳表面也只有5500°C。一亿度是太阳表面温度的近两万倍。没有任何材料——没有钢、没有陶瓷、没有钻石——能在这种温度下保持固体状态。</p>
+    <p>所以科学家面临一个巨大的难题：<strong>你得把一团上亿度的"等离子体火球"悬在半空中，不让它碰任何墙壁</strong>——因为碰到墙壁不仅设备会熔化，等离子体自己也会迅速冷却，聚变就停下来了。</p>
+  </div>
+
+  <div class="section">
+    <h2>三、托卡马克：一个有"磁场牢笼"的面包圈<span data-ai-q="托卡马克装置为什么做成甜甜圈的形状？"></span></h2>
+    <p>科学家想到的办法是：<strong>用磁场做牢笼。</strong>等离子体（就是高温下电子脱离了原子核的"带电气体"）可以被磁场控制——就像铁屑能被磁铁指挥着排队一样。</p>
+    <p>把等离子体装进一个做成<strong>甜甜圈形状</strong>的巨大容器里，外面缠绕着超强磁线圈。磁线圈产生的磁场像隐形的墙壁，把等离子体稳稳"悬浮"在甜甜圈的中间，离壁面远远的。这个装置叫<strong>托卡马克（Tokamak）</strong>，名字来自俄语，意思是"环形磁场真空室"。</p>
+
+    <svg viewBox="0 0 680 360" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="plasmaGlow"><feGaussianBlur stdDeviation="3.5"/></filter>
+        <radialGradient id="plasmaGrad"><stop offset="0%" stop-color="#fbbf24"/><stop offset="40%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ef4444"/></radialGradient>
+      </defs>
+      <rect width="680" height="360" fill="#111827" rx="8"/>
+
+      <text x="340" y="30" text-anchor="middle" fill="#94a3b8" font-size="13">托卡马克剖面图：甜甜圈形的"磁场牢笼"</text>
+
+      <!-- 甜甜圈外壳（横截面） -->
+      <ellipse cx="260" cy="195" rx="180" ry="110" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <ellipse cx="260" cy="195" rx="160" ry="95" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+      <!-- 等离子体区域 -->
+      <ellipse cx="260" cy="195" rx="75" ry="55" fill="rgba(251,191,36,0.08)" stroke="rgba(251,191,36,0.35)" stroke-width="1.5"/>
+      <ellipse cx="260" cy="195" rx="55" ry="38" fill="url(#plasmaGrad)" opacity="0.5" filter="url(#plasmaGlow)"/>
+      <text x="260" y="200" text-anchor="middle" fill="#fff" font-size="12" font-weight="bold">等离子体</text>
+      <text x="260" y="216" text-anchor="middle" fill="#fcd34d" font-size="10">~1.5亿°C</text>
+
+      <!-- 磁线圈（环形场 + 极向场） -->
+      <!-- 顶部线圈 -->
+      <rect x="225" y="88" width="70" height="16" rx="3" fill="rgba(96,165,250,0.2)" stroke="#60a5fa" stroke-width="1.5"/>
+      <text x="260" y="100" text-anchor="middle" fill="#60a5fa" font-size="9">环形场线圈 (TF)</text>
+
+      <!-- 底部线圈 -->
+      <rect x="225" y="298" width="70" height="16" rx="3" fill="rgba(96,165,250,0.2)" stroke="#60a5fa" stroke-width="1.5"/>
+      <text x="260" y="310" text-anchor="middle" fill="#60a5fa" font-size="9">环形场线圈 (TF)</text>
+
+      <!-- 外侧线圈 -->
+      <rect x="105" y="180" width="16" height="35" rx="3" fill="rgba(167,139,250,0.25)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="90" y="200" text-anchor="end" fill="#a78bfa" font-size="9">极向场</text>
+
+      <rect x="398" y="180" width="16" height="35" rx="3" fill="rgba(167,139,250,0.25)" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="430" y="200" text-anchor="start" fill="#a78bfa" font-size="9">PF线圈</text>
+
+      <!-- 中心螺线管 -->
+      <rect x="230" y="175" width="60" height="14" rx="3" fill="rgba(52,211,153,0.2)" stroke="#34d399" stroke-width="1"/>
+      <text x="260" y="185" text-anchor="middle" fill="#34d399" font-size="8">中心螺线管</text>
+
+      <!-- 磁场线示意 -->
+      <ellipse cx="260" cy="195" rx="85" ry="65" fill="none" stroke="rgba(96,165,250,0.2)" stroke-width="0.8" stroke-dasharray="4,3"/>
+      <ellipse cx="260" cy="195" rx="95" ry="72" fill="none" stroke="rgba(167,139,250,0.15)" stroke-width="0.8" stroke-dasharray="4,3"/>
+
+      <!-- 右侧图例 -->
+      <text x="510" y="100" fill="#94a3b8" font-size="12" font-weight="bold">关键部件</text>
+      <line x1="510" y1="118" x2="550" y2="118" stroke="#60a5fa" stroke-width="2"/>
+      <text x="558" y="123" fill="#e2e8f0" font-size="11">环形场线圈：产生主磁场</text>
+      <line x1="510" y1="148" x2="550" y2="148" stroke="#a78bfa" stroke-width="2"/>
+      <text x="558" y="153" fill="#e2e8f0" font-size="11">极向场线圈：控制等离子体形状</text>
+      <line x1="510" y1="178" x2="550" y2="178" stroke="#fbbf24" stroke-width="2"/>
+      <text x="558" y="183" fill="#e2e8f0" font-size="11">等离子体：1.5亿°C的"火球"</text>
+      <line x1="510" y1="208" x2="550" y2="208" stroke="#34d399" stroke-width="2"/>
+      <text x="558" y="213" fill="#e2e8f0" font-size="11">中心螺线管：驱动等离子体电流</text>
+      <text x="510" y="248" fill="#94a3b8" font-size="10">磁场是唯一的"容器"</text>
+      <text x="510" y="264" fill="#94a3b8" font-size="10">任何物质接触等离子体</text>
+      <text x="510" y="280" fill="#94a3b8" font-size="10">都会瞬间蒸发</text>
+    </svg>
+    <div class="svg-caption">图：托卡马克剖面——等离子体被磁场"悬浮"在甜甜圈中心，环形场线圈和极向场线圈共同作用，形成无形的磁牢笼。</div>
+  </div>
+
+  <div class="section">
+    <h2>四、我们离核聚变发电还有多远？</h2>
+    <p>目前全球最大的核聚变项目叫<strong>ITER（国际热核聚变实验堆）</strong>，由35个国家联合建造在法国南部。它的目标不是发电，而是证明一件事：人类可以让核聚变"点火"——也就是聚变释放的能量大于加热它消耗的能量。</p>
+    <p>2022年底，美国劳伦斯利弗莫尔国家实验室用一种不同的方案（用巨型激光照射米粒大小的燃料球）首次实现了"净能量增益"——输入的2.05兆焦耳激光，换回了3.15兆焦耳的聚变输出。虽然只是短暂的"打了个喷嚏"，但证明了原理上行得通。</p>
+    <p>中国也有自己的"人造太阳"——<strong>东方超环（EAST）</strong>，2023年成功在7000万°C下维持了超过17分钟的等离子体。这打破了世界纪录，朝稳定运行迈出了关键一步。</p>
+    <p>乐观估计，第一批核聚变发电站可能在2050年前后投入运行。不过科学家常说一句话：<strong>"核聚变永远还要30年——但这次可能真的是30年。"</strong></p>
+  </div>
+
+  <div class="analogy">
+    <h3>🔍 打个比方：双手捧住一团闪电</h3>
+    <p>可控核聚变有点像——你试图用双手捧住一团闪电。闪电温度高到能瞬间把你的手蒸发，但如果你在手的外面套了一层特殊的"力场手套"（磁场），闪电就不会碰到你的手，而是乖乖悬浮在你手心上方。</p>
+    <p>难就难在：只要你的手稍微抖一下，或者"力场手套"有一个微小的裂缝，闪电就会炸开——几十年的努力在一瞬间化为乌有。托卡马克面对的挑战正是如此：要把上亿度的等离子体稳定地"捧住"很长时间，哪怕一个微小的扰动都不能发生。</p>
+  </div>
+
+  <div class="takeaway">
+    <h3>🌟 记住这个</h3>
+    <p>可控核聚变是人类最接近"终极能源"的技术路线：原材料近乎无限（海水中的氘）、零碳排放、不产生高放射性核废料。它的核心挑战是把一团上亿度的等离子体，用强大的磁场"悬浮"在巨型甜甜圈容器中稳定运行。一旦攻克，人类将获得近乎永久的清洁能源——<strong>这或许是21世纪科学送给人类最伟大的礼物。</strong></p>
+  </div>
+
+  <div class="audio-player">
+    <span class="audio-label">🎧 听播客</span>
+    <audio controls src="audio/fusion.mp3"></audio>
+  </div>
+
+  <div class="related">
+    <span style="color:var(--ink-dim);font-size:14px">探索更多：</span>
+    <a href="../design-proposal-v11.html">科学边界主页</a>
+    <a href="agi.html">通用人工智能：会思考的机器</a>
+    <a href="sleep.html">睡眠的奥秘：为什么需要睡觉</a>
+    <a href="kakeya.html">挂谷猜想：一根针的旋转之谜</a>
+    <a href="dark-energy.html">暗能量：宇宙的终极命运</a>
+    <a href="quantum-error.html">量子纠错：给信息穿上铠甲</a>
+  </div>
+</div>
+
+  <script>window.__AI_CONTEXT={topic:"可控核聚变",icebreakers:["核聚变和核裂变有什么区别？为什么聚变更难？", "托卡马克是什么？为什么形状像甜甜圈？", "我们离可控核聚变还有多远？", "核聚变如果实现了，世界会变成什么样？"]};</script>
+  <script src="ai-widget.js"></script>
+</body>
+</html>
