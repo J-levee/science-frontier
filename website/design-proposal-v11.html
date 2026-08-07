@@ -2405,6 +2405,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     if(!window.__AWARDS_READY && typeof window.__ensureAwards==='function') window.__ensureAwards(function(){});
     return window.__PROB_LAUREATES || {};
   };
+  // 短键→长键规范化：恢复为完整键名供后续代码使用
+  function normRec(r){
     if(!r || r.name!==undefined) return r;   // already long-key
     return {id:r.id, name:r.name, award:r.award, year:r.year, star:r.st,
       domain:r.d, affiliation:r.affiliation, country:r.country,
