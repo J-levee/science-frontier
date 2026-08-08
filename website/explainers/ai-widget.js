@@ -125,4 +125,32 @@
       el.appendChild(btn);
     });
   })();
+
+  /* ---- 旁白：用浏览器内置语音合成朗读本文（零资源、离线可用，替代缺失的 mp3） ---- */
+  (function(){
+    function speak(){
+      if(!window.speechSynthesis) return;
+      var btn = this;
+      if(window.speechSynthesis.speaking){
+        window.speechSynthesis.cancel();
+        document.querySelectorAll('.tts-btn.playing').forEach(function(b){ b.classList.remove('playing'); b.textContent='🔊 朗读本文'; });
+        return;
+      }
+      var text = (document.body.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 4000);
+      var u = new SpeechSynthesisUtterance(text);
+      u.lang = 'zh-CN'; u.rate = 0.98;
+      u.onend = function(){ btn.classList.remove('playing'); btn.textContent = '🔊 朗读本文'; };
+      u.onerror = function(){ btn.classList.remove('playing'); btn.textContent = '🔊 朗读本文'; };
+      try { window.speechSynthesis.speak(u); } catch (e) { return; }
+      btn.classList.add('playing'); btn.textContent = '⏹ 停止朗读';
+    }
+    document.querySelectorAll('.audio-player').forEach(function(box){
+      box.innerHTML = '';
+      var btn = document.createElement('button');
+      btn.type = 'button'; btn.className = 'tts-btn';
+      btn.textContent = '🔊 朗读本文';
+      btn.addEventListener('click', speak);
+      box.appendChild(btn);
+    });
+  })();
 })();

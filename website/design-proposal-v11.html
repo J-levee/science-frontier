@@ -1930,15 +1930,16 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     for(var i=0;i<STARS.length;i++){
       var s=STARS[i];
       var showByDomainTier = (!d || s.p.d===d) && (!t || s.tier===t);
-      var showByStar = selStar === s.id;
+      var showByStar = selStar === s.p.id;   // STARS 元素无 .id 字段，真实 id 在 s.p.id
       var show = anyDomainTier ? showByDomainTier : (selStar ? showByStar : true);
       s.el.classList.toggle('dim', !!anyDomainTier && !showByDomainTier);
       s.el.classList.toggle('hi',  anyDomainTier ? showByDomainTier : showByStar);
     }
-    // 单颗星选中模式：未应用域/层筛选时，给选中的星再加一个 focused 类
+    // 单颗星选中模式：无论是否处于域/层 hover 筛选，选中的星都加 focused 类
+    // （避免 hover 筛选卡死时压制选中反馈，见 selectStar 同样清除 hov 态）
     var focusedEls = document.querySelectorAll('.bc-star.focused-sel');
     focusedEls.forEach(function(el){ el.classList.remove('focused-sel'); });
-    if (selStar && !anyDomainTier) {
+    if (selStar) {
       var starEl = document.querySelector('.bc-star[data-id="'+selStar+'"]');
       if (starEl) starEl.classList.add('focused-sel');
     }
@@ -1953,7 +1954,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   }
   function selectDomain(d){ selStar=null; if(selDom===d && !selTier){ selDom=null; } else { selDom=d; selTier=null; } renderFilter(); }
   function selectTier(t){ selStar=null; if(selTier===t && !selDom){ selTier=null; } else { selTier=t; selDom=null; } renderFilter(); }
-  function selectStar(id){ selDom=null; selTier=null; selStar = (selStar===id ? null : id); renderFilter(); }
+  function selectStar(id){ selDom=null; selTier=null; hovDom=null; hovTier=null; selStar = (selStar===id ? null : id); renderFilter(); }
   legendChips.forEach(function(c){
     c.addEventListener('mouseenter',function(){ hovDom=c.dataset.dom; renderFilter(); });
     c.addEventListener('mouseleave',function(){ hovDom=null; renderFilter(); });
@@ -2518,6 +2519,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     });
   }
   window.openDetail = openDetail;
+  window.closeDetail = closeDetail;
 
   /* 全局委托：hover 卡 / 面板里的 [data-detail] 都走这里 */
   document.addEventListener('click', function (e) {
