@@ -555,9 +555,11 @@
   .d-award-head b{font-weight:600}
   .d-award-head .d-year{color:rgba(180,200,255,.7);font-size:13px;margin-left:8px}
   .d-meta{margin-top:8px;font-size:12px;letter-spacing:.04em;color:rgba(255,255,255,.45)}
-  .d-sources{display:flex;flex-wrap:wrap;gap:8px}
-  .d-sources span{font-size:11.5px;color:rgba(200,214,255,.7);border:1px solid rgba(150,170,255,.18);
-    border-radius:8px;padding:5px 11px;background:rgba(255,255,255,.02)}
+  .d-sources{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+  .d-sources a{font-size:11.5px;color:rgba(200,214,255,.85);border:1px solid rgba(150,170,255,.28);
+    border-radius:8px;padding:5px 11px;background:rgba(255,255,255,.02);text-decoration:none;transition:all .15s}
+  .d-sources a:hover{background:rgba(120,140,255,.18);border-color:rgba(150,170,255,.5);color:#fff}
+  .d-life{color:rgba(255,255,255,.6)}
   .d-empty{padding:40px 10px;text-align:center;color:rgba(255,255,255,.5);font-size:15px;line-height:1.7}
   @keyframes detFade{from{opacity:0}to{opacity:1}}
   @keyframes detPop{from{opacity:0;transform:translate(-50%,-46%) scale(.96)}to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
@@ -2398,9 +2400,15 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   var overlay, panel, body;
   var PF = function () { return window.__PROBS_FULL || {}; };
   var AW = function () {
-    // 若数据未加载 → 触发懒加载，返回空占位
+    // 若数据未加载 → 触发懒加载
     if(!window.__AWARDS_READY && typeof window.__ensureAwards==='function') window.__ensureAwards(function(){});
-    return window.__AWARDS_LONG || window.__AWARDS_BY_NAME || {};
+    // 懒加载数据是短键格式；长键索引(__AWARDS_LONG)需在数据就绪后重建一次
+    if(window.__AWARDS_BY_NAME && Object.keys(window.__AWARDS_BY_NAME).length &&
+       (!window.__AWARDS_LONG || !Object.keys(window.__AWARDS_LONG).length)) {
+      normAwards();
+    }
+    return (window.__AWARDS_LONG && Object.keys(window.__AWARDS_LONG).length)
+      ? window.__AWARDS_LONG : (window.__AWARDS_BY_NAME || {});
   };
   var PL = function () {
     if(!window.__AWARDS_READY && typeof window.__ensureAwards==='function') window.__ensureAwards(function(){});
@@ -2408,15 +2416,18 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   };
   // 短键→长键规范化：恢复为完整键名供后续代码使用
   function normRec(r){
-    if(!r || r.name!==undefined) return r;   // already long-key
-    return {id:r.id, name:r.name, award:r.award, year:r.year, star:r.st,
-      domain:r.d, affiliation:r.affiliation, country:r.country,
-      wikidata:r.wd, discovery:r.discovery, motivation:r.motivation, links:r.links,
-      cn:r.cn, problemLinks:r.problemLinks};
+    if(!r) return r;
+    if(r.name!==undefined) return r;   // already long-key
+    // 懒加载数据为短键 (n/aw/y/st/d/af/co/wd/dc/mt/lk/cn/pl/by/dy)
+    return {id:r.id, name:r.n, award:r.aw, year:r.y, star:r.st,
+      domain:r.d, affiliation:r.af, country:r.co,
+      wikidata:r.wd, discovery:r.dc, motivation:r.mt, links:r.lk,
+      cn:r.cn, problemLinks:r.pl, birthYear:r.by, deathYear:r.dy};
   }
   function normAwards(){
     var aw=window.__AWARDS_BY_NAME||{};
-    if(window.__AWARDS_LONG) return;
+    // 仅在尚未填充（或数据就绪后首次重建）时执行；空对象 {} 视为未填充
+    if(window.__AWARDS_LONG && Object.keys(window.__AWARDS_LONG).length) return;
     var nl={};
     for(var k in aw){
       nl[k]=aw[k].map(normRec);
@@ -2433,6 +2444,9 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   function esc(s) {
     return String(s == null ? '' : s)
       .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+  function shortHost(u) {
+    try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return u; }
   }
   // 姓名解析失败的数据会把 Wikidata 的 Q 编号（如 "Q132968784"）直接存进 name 字段，
   // 直接显示会暴露内部编号、且读起来不像人名。这里做守卫：裸 Q 编号或空名 → 用
@@ -2742,6 +2756,12 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     if (yearList.length > 1) {
       h += '<div class="d-years">获奖年份：' + esc(yearList.join(' · ')) + '</div>';
     }
+    // 生卒年（任一记录有即显示）
+    var by = r0.birthYear, dy = r0.deathYear;
+    if (by || dy) {
+      var life = (by ? String(by) : '?') + (dy ? '–' + dy : (by ? '–今' : ''));
+      h += '<div class="d-meta d-life">生卒：' + esc(life) + '</div>';
+    }
     recs.forEach(function (r) {
       h += '<section class="d-sec d-award">';
       h += '<div class="d-award-head"><b>' + esc(r.award || '奖项') + '</b>' +
@@ -2751,6 +2771,11 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       else if (r.discovery) h += '<p>' + esc(r.discovery) + '</p>';
       if (r.affiliation || r.country)
         h += '<div class="d-meta">所属机构：' + esc([r.affiliation, r.country].filter(Boolean).join(' · ')) + '</div>';
+      if (r.links && r.links.length) {
+        h += '<div class="d-meta d-sources">来源：' + r.links.map(function (u) {
+          return '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(shortHost(u)) + '</a>';
+        }).join(' · ') + '</div>';
+      }
       var pids = (r.problemLinks || []).filter(function (pid) { return PF()[pid]; });
       if (pids.length) {
         h += '<h4 class="d-related-h">关联的前沿问题（' + pids.length + '）</h4>';

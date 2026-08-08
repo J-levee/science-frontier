@@ -1,5 +1,6 @@
 // Science Frontier P1 — 获奖者数据
-// updated: 2026-08-05 | total=1479 | nobel=662 nonNobel=817 | backfill=817 | source=official
+// updated: 2026-08-07 | total=1479 | nobel=662 nonNobel=817 | backfill=817 | source=official
+// links: 662/662 诺奖记录已回填 nobelprize.org 官方奖项页（确定性构造，零虚构）
 const awards = [
   {
     "id": "nobel-physics-1975-aage-niels-bohr",
@@ -14,7 +15,9 @@ const awards = [
     "country": "Denmark",
     "photo": "",
     "wikidata": "Q103854",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1975/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -83,7 +86,9 @@ const awards = [
     "country": "Israel",
     "photo": "",
     "wikidata": "Q233205",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2004/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -109,7 +114,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q190626",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1982/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -135,7 +142,9 @@ const awards = [
     "country": "Italy",
     "photo": "",
     "wikidata": "Q28189",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1979/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -204,7 +213,9 @@ const awards = [
     "country": "Israel",
     "photo": "",
     "wikidata": "Q7426",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2009/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -230,7 +241,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106454",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2011/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -299,7 +312,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q5327",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1939/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -325,7 +340,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57078",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1905/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -351,7 +368,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q77142",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1928/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -377,7 +396,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106624",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1999/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -403,7 +424,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q105949",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2010/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -429,7 +452,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q4701206",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2019/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -455,7 +480,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q364997",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2022/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -524,7 +551,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106751",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2000/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -550,7 +579,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q193650",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1963/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -588,7 +619,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q110942",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2000/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -614,7 +647,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q127234",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1907/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -683,7 +718,9 @@ const awards = [
     "country": "Belgium",
     "photo": "",
     "wikidata": "Q233943",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1974/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -721,7 +758,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q937",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1921/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -790,7 +829,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q153219",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2007/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -859,7 +900,9 @@ const awards = [
     "country": "Hungary",
     "photo": "",
     "wikidata": "Q180468",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1937/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -897,7 +940,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57128",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1910/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -935,7 +980,9 @@ const awards = [
     "country": "USSR",
     "photo": "",
     "wikidata": "Q83552",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1964/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -1004,7 +1051,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1547368",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2023/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -1030,7 +1079,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q188128",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2003/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -1099,7 +1150,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q185777",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1912/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1137,7 +1190,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q271703",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1969/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1175,7 +1230,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q296423",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1994/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1213,7 +1270,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q71023",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1966/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -1282,7 +1341,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q123014",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1913/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -1308,7 +1369,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q223542",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1979/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1346,7 +1409,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q192651",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1911/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1384,7 +1449,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q189006",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1907/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1422,7 +1489,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q271757",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1956/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1460,7 +1529,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q104104",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2010/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -1529,7 +1600,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q223309",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1965/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1567,7 +1640,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q493956",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2020/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -1636,7 +1711,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q104607",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1963/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1674,7 +1751,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q141147",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1977/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1712,7 +1791,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q202152",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2006/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -1750,7 +1831,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q565544",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2023/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -1819,7 +1902,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q192718",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2003/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -1888,7 +1973,9 @@ const awards = [
     "country": "Austria",
     "photo": "",
     "wikidata": "Q78610",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2022/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -1957,7 +2044,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q189990",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1974/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -2026,7 +2115,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q48977",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1952/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -2052,7 +2143,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q155375",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1922/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -2090,7 +2183,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q60322501",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2021/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -2128,7 +2223,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q4790366",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2013/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -2154,7 +2251,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q233026",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1948/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -2180,7 +2279,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q172877",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1978/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -2249,7 +2350,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q708472",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2018/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -2318,7 +2421,9 @@ const awards = [
     "country": "Canada",
     "photo": "",
     "wikidata": "Q710597",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2015/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -2387,7 +2492,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q127944",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1927/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -2456,7 +2563,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q189803",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1929/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -2482,7 +2591,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q295678",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1959/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -2520,7 +2631,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q190503",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1981/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -2589,7 +2702,9 @@ const awards = [
     "country": "Finland",
     "photo": "",
     "wikidata": "Q157239",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1945/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -2615,7 +2730,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q298045",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2000/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -2653,7 +2770,9 @@ const awards = [
     "country": "Denmark",
     "photo": "",
     "wikidata": "Q152187",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1920/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -2691,7 +2810,9 @@ const awards = [
     "country": "Israel",
     "photo": "",
     "wikidata": "Q232302",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2004/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -2717,7 +2838,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q15118973",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2015/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -2743,7 +2866,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q199654",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1983/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -2781,7 +2906,9 @@ const awards = [
     "country": "",
     "photo": "",
     "wikidata": "Q15900993",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2017/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -2850,7 +2977,9 @@ const awards = [
     "country": "Australia",
     "photo": "",
     "wikidata": "Q202136",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2005/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -2888,7 +3017,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q105830",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1976/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -2926,7 +3057,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q234701",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1980/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -2964,7 +3097,9 @@ const awards = [
     "country": "Denmark",
     "photo": "",
     "wikidata": "Q107423",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1975/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -3033,7 +3168,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q295768",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1982/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -3071,7 +3208,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q105572",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2021/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -3097,7 +3236,9 @@ const awards = [
     "country": "the Netherlands",
     "photo": "",
     "wikidata": "Q3259614",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2016/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -3123,7 +3264,9 @@ const awards = [
     "country": "Argentina",
     "photo": "",
     "wikidata": "Q237160",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1947/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -3161,7 +3304,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q77081",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1991/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -3199,7 +3344,9 @@ const awards = [
     "country": "Canada",
     "photo": "",
     "wikidata": "Q192689",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1994/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -3268,7 +3415,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q181363",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1973/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -3337,7 +3486,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q80907",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2012/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -3363,7 +3514,9 @@ const awards = [
     "country": "Australia",
     "photo": "",
     "wikidata": "Q201452",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2011/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -3432,7 +3585,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q104592",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2011/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -3470,7 +3625,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q224153",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1984/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -3496,7 +3653,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q192106",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1976/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -3565,7 +3724,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q162900",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1927/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -3634,7 +3795,9 @@ const awards = [
     "country": "Italy",
     "photo": "",
     "wikidata": "Q150630",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1906/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -3672,7 +3835,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76606",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1931/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -3698,7 +3863,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q78501",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1947/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -3736,7 +3903,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q169366",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1936/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -3805,7 +3974,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q206379",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2001/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -3874,7 +4045,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q187199",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1984/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -3943,7 +4116,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q26322",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2009/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -3981,7 +4156,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q7442",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2022/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -4007,7 +4184,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q178103",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1950/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -4076,7 +4255,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q155525",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1984/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -4114,7 +4295,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q155371",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1966/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -4152,7 +4335,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q123026",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1920/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -4221,7 +4406,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q160522",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1917/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -4290,7 +4477,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q184566",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1964/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -4359,7 +4548,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q244998",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1987/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -4385,7 +4576,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q16389",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2009/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -4454,7 +4647,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q22669757",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2020/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -4492,7 +4687,9 @@ const awards = [
     "country": "Tunisia",
     "photo": "",
     "wikidata": "Q233965",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1928/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -4530,7 +4727,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q214851",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1913/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -4568,7 +4767,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q181369",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1957/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -4637,7 +4838,9 @@ const awards = [
     "country": "the Netherlands",
     "photo": "",
     "wikidata": "Q107609",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1929/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -4675,7 +4878,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q102278",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1972/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -4701,7 +4906,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q234590",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1974/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -4739,7 +4946,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q77174",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1995/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -4777,7 +4986,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q190697",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1997/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -4846,7 +5057,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q201506",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1994/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -4915,7 +5128,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q133222",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1937/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -4984,7 +5199,9 @@ const awards = [
     "country": "Belgium",
     "photo": "",
     "wikidata": "Q156482",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1938/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -5022,7 +5239,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q206455",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2006/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -5060,7 +5279,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q108576",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1976/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -5098,7 +5319,9 @@ const awards = [
     "country": "Israel",
     "photo": "",
     "wikidata": "Q44111",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2011/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -5124,7 +5347,9 @@ const awards = [
     "country": "Italy",
     "photo": "",
     "wikidata": "Q115448",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1957/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -5162,7 +5387,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q202138",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1998/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -5231,7 +5458,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q295706",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1978/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -5269,7 +5498,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q3814528",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2024/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -5295,7 +5526,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q234949",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1975/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -5333,7 +5566,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q295644",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1981/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -5371,7 +5606,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q40262",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2004/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -5440,7 +5677,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q726394",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2016/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -5509,7 +5748,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q61045",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2012/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -5578,7 +5819,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1174906",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2021/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -5616,7 +5859,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q201853",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1996/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -5685,7 +5930,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q5237001",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2021/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -5711,7 +5958,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q3022141",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2024/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -5737,7 +5986,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q155786",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1971/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -5806,7 +6057,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q102419",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1969/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -5832,7 +6085,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q312963",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1956/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -5870,7 +6125,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q124013",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2019/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -5939,7 +6196,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q80905",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1960/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -6008,7 +6267,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q135151",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1987/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -6034,7 +6295,9 @@ const awards = [
     "country": "Canada",
     "photo": "",
     "wikidata": "Q56855591",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2018/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -6103,7 +6366,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q7487",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1964/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -6129,7 +6394,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q206405",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1996/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -6198,7 +6465,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q88608402",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2023/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6236,7 +6505,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q243196",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1986/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -6262,7 +6533,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q310485",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1990/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6300,7 +6573,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q183270",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1952/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -6369,7 +6644,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q68118",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1971/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6407,7 +6684,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q231292",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1932/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6445,7 +6724,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q109726",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1992/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6483,7 +6764,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q43917",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1907/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -6509,7 +6792,9 @@ const awards = [
     "country": "Norway",
     "photo": "",
     "wikidata": "Q5341373",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2014/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6547,7 +6832,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q230612",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1943/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6585,7 +6872,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q274123",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1995/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6623,7 +6912,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q110101",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1950/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6661,7 +6952,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q237499",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1958/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6699,7 +6992,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q153194",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1947/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -6768,7 +7063,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q109731",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1992/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6806,7 +7103,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q19009",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1951/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -6832,7 +7131,9 @@ const awards = [
     "country": "Portugal",
     "photo": "",
     "wikidata": "Q273219",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1949/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6870,7 +7171,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q105927",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2010/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -6896,7 +7199,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q135171",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1990/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -6922,7 +7227,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q26321",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2009/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -6960,7 +7267,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q70554",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1902/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -6986,7 +7295,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76425",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1901/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -7024,7 +7335,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q173028",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1959/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -7093,7 +7406,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q17280087",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2020/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -7119,7 +7434,9 @@ const awards = [
     "country": "Italy",
     "photo": "",
     "wikidata": "Q8753",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1938/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -7188,7 +7505,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1351105",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2014/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -7214,7 +7533,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q205954",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2001/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -7283,7 +7604,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q301438",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1995/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -7321,7 +7644,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q155529",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2000/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -7359,7 +7684,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q169577",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1939/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -7428,7 +7755,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q9123",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1908/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -7454,7 +7783,9 @@ const awards = [
     "country": "Ireland",
     "photo": "",
     "wikidata": "Q183631",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1951/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -7523,7 +7854,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q58054",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1945/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -7561,7 +7894,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q44594",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1973/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -7587,7 +7922,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q71022",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1986/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -7656,7 +7993,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q77126",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1991/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -7694,7 +8033,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q9130",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1933/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -7763,7 +8104,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q155790",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1963/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -7832,7 +8175,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1002250",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2016/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -7901,7 +8246,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q111190",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1995/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -7927,7 +8274,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q123022",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1952/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -7996,7 +8345,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q44597",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1964/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -8034,7 +8385,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57077",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1909/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -8103,7 +8456,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q86970",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2023/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -8172,7 +8527,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q295999",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1998/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -8210,7 +8567,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q4273363",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2018/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -8236,7 +8595,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q123280",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1962/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -8274,7 +8635,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q102291",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1922/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -8300,7 +8663,9 @@ const awards = [
     "country": "Belgium",
     "photo": "",
     "wikidata": "Q151746",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2013/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -8369,7 +8734,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q218311",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1965/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -8407,7 +8774,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q103844",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2008/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -8445,7 +8814,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q107450",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2004/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -8514,7 +8885,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q28212107",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2025/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -8552,7 +8925,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q150989",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1935/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -8578,7 +8953,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q309885",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1954/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -8616,7 +8993,9 @@ const awards = [
     "country": "Canada",
     "photo": "",
     "wikidata": "Q180350",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1923/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -8654,7 +9033,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q191922",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1995/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -8723,7 +9104,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q151564",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1958/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -8749,7 +9132,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q151564",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1980/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -8775,7 +9160,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q102830",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1921/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -8801,7 +9188,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76614",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1931/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -8827,7 +9216,9 @@ const awards = [
     "country": "the Netherlands",
     "photo": "",
     "wikidata": "Q188293",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1953/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -8896,7 +9287,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57075",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1918/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -8922,7 +9315,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q77104",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1953/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -8960,7 +9355,9 @@ const awards = [
     "country": "Austria",
     "photo": "",
     "wikidata": "Q78482",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1923/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -8986,7 +9383,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q133232",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1908/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -9055,7 +9454,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q504021",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2024/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9093,7 +9494,9 @@ const awards = [
     "country": "Canada",
     "photo": "",
     "wikidata": "Q92894",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2024/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -9162,7 +9565,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q274128",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1973/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -9188,7 +9593,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q238716",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1961/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9226,7 +9633,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q77171",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1979/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -9252,7 +9661,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q192603",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1994/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -9278,7 +9689,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q238739",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1958/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9316,7 +9729,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q295666",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1980/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9354,7 +9769,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q76951",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1943/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -9380,7 +9797,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q219718",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1974/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9418,7 +9837,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q76373",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2009/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -9487,7 +9908,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q179572",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2006/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -9556,7 +9979,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q310487",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1988/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9594,7 +10019,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q273238",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1934/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9632,7 +10059,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q56868017",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2018/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -9658,7 +10087,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q133846",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1937/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -9727,7 +10158,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q106762",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1967/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -9753,7 +10186,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q245000",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1934/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9791,7 +10226,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q295724",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1967/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9829,7 +10266,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q153178",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1992/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -9898,7 +10337,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q77160",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1984/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9936,7 +10377,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q271766",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1972/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -9974,7 +10417,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q556543",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2018/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -10043,7 +10488,9 @@ const awards = [
     "country": "the Netherlands",
     "photo": "",
     "wikidata": "Q184592",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1999/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -10112,7 +10559,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q76766",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1986/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -10181,7 +10630,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57192",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1939/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -10219,7 +10670,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q60066",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2007/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -10245,7 +10698,9 @@ const awards = [
     "country": "Canada",
     "photo": "",
     "wikidata": "Q76602",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1971/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -10271,7 +10726,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q35703",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1988/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -10309,7 +10766,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q204733",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1947/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -10347,7 +10806,9 @@ const awards = [
     "country": "Italy",
     "photo": "",
     "wikidata": "Q1235614",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2021/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -10416,7 +10877,9 @@ const awards = [
     "country": "Italy",
     "photo": "",
     "wikidata": "Q234145",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1963/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -10442,7 +10905,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q48973",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1951/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -10468,7 +10933,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q273769",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1979/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -10506,7 +10973,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1545025",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2019/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -10544,7 +11013,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q36488",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1909/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -10613,7 +11084,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q60108",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1999/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -10651,7 +11124,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q160518",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1912/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -10720,7 +11195,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57070",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1925/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -10789,7 +11266,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q107407",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2004/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -10858,7 +11337,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q107462",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1968/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -10896,7 +11377,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q295659",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2002/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -10934,7 +11417,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q108896",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1978/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -10972,7 +11457,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q54945",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1970/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -11041,7 +11528,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q155794",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1967/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -11110,7 +11599,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76604",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1930/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -11136,7 +11627,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q70532",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1989/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -11205,7 +11698,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q57191",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1953/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -11243,7 +11738,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57568",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1935/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -11281,7 +11778,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q76613",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1929/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -11307,7 +11806,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q75847",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2008/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -11345,7 +11846,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q179777",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1934/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -11371,7 +11874,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q295691",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1989/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -11409,7 +11914,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q77086",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1988/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -11435,7 +11942,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q5677307",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2020/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -11473,7 +11982,9 @@ const awards = [
     "country": "the Netherlands",
     "photo": "",
     "wikidata": "Q62891",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1913/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -11542,7 +12053,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q123029",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1986/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -11611,7 +12124,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76610",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1927/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -11637,7 +12152,9 @@ const awards = [
     "country": "the Netherlands",
     "photo": "",
     "wikidata": "Q41688",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1902/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -11706,7 +12223,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q41269",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1903/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -11775,7 +12294,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q102804",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1906/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -11801,7 +12322,9 @@ const awards = [
     "country": "Denmark",
     "photo": "",
     "wikidata": "Q190501",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1943/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -11839,7 +12362,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q235983",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1983/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -11865,7 +12390,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q190495",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1990/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -11934,7 +12461,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q107422",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1985/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -11960,7 +12489,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q102406",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1979/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -11986,7 +12517,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q71016",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2000/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -12055,7 +12588,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q273201",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1944/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -12093,7 +12628,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q83598",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1946/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -12131,7 +12668,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q48956",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1953/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -12157,7 +12696,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q110916",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2000/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -12183,7 +12724,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q155777",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1949/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -12252,7 +12795,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q11443689",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2014/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -12321,7 +12866,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q71015",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1998/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -12390,7 +12937,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q243536",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1975/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -12428,7 +12977,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q156480",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1955/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -12466,7 +13017,9 @@ const awards = [
     "country": "USSR",
     "photo": "",
     "wikidata": "Q155759",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1958/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -12535,7 +13088,9 @@ const awards = [
     "country": "USSR",
     "photo": "",
     "wikidata": "Q192703",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1958/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -12604,7 +13159,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q172254",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1908/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -12642,7 +13199,9 @@ const awards = [
     "country": "Belgium",
     "photo": "",
     "wikidata": "Q183509",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1977/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -12668,7 +13227,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q7504",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1935/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -12694,7 +13255,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q184286",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1932/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -12720,7 +13283,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q230652",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2004/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -12746,7 +13311,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q1673706",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2014/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -12815,7 +13382,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q165969",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1944/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -12884,7 +13453,9 @@ const awards = [
     "country": "Russia",
     "photo": "",
     "wikidata": "Q42985",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1904/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -12922,7 +13493,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q192688",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1973/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -12991,7 +13564,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q76687",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1987/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -13060,7 +13635,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76797",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1963/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -13129,7 +13706,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q311358",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1989/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -13167,7 +13746,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1700920",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2016/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -13236,7 +13817,9 @@ const awards = [
     "country": "",
     "photo": "",
     "wikidata": "Q208670",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2005/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -13274,7 +13857,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q47285",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1906/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -13343,7 +13928,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q182031",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2000/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -13412,7 +13999,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q153210",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1988/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -13481,7 +14070,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q104600",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2009/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -13519,7 +14110,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q102822",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1901/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -13545,7 +14138,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q41585344",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2017/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -13571,7 +14166,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q231402",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1965/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -13609,7 +14206,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106756",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1946/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -13635,7 +14234,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q80884",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1935/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -13704,7 +14305,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q193496",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1980/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -13773,7 +14376,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q444270",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2013/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -13811,7 +14416,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57066",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1925/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -13880,7 +14487,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q6140731",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2018/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -13918,7 +14527,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q728331",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2019/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -13987,7 +14598,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q190745",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1975/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -14056,7 +14669,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q83333",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1962/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -14094,7 +14709,9 @@ const awards = [
     "country": "Czechoslovakia",
     "photo": "",
     "wikidata": "Q157701",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1959/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14120,7 +14737,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q134085",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1926/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -14189,7 +14808,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q152760",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1980/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -14227,7 +14848,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q107690",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1987/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14253,7 +14876,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q3169751",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2016/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14279,7 +14904,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1686435",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2017/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -14317,7 +14944,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q56068",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2020/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14343,7 +14972,9 @@ const awards = [
     "country": "Denmark",
     "photo": "",
     "wikidata": "Q1687170",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1997/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14369,7 +15000,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q187822",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1990/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -14438,7 +15071,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106733",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1985/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14464,7 +15099,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q28833112",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2017/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14490,7 +15127,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q76612",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1988/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14516,7 +15155,9 @@ const awards = [
     "country": "the Netherlands",
     "photo": "",
     "wikidata": "Q131721",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1910/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -14585,7 +15226,9 @@ const awards = [
     "country": "Denmark",
     "photo": "",
     "wikidata": "Q216324",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1926/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -14623,7 +15266,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57092",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1919/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -14692,7 +15337,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106738",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2002/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14718,7 +15365,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q906529",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2019/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14744,7 +15393,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q949",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1956/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -14813,7 +15464,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q949",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1972/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -14882,7 +15535,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q232295",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1962/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -14908,7 +15563,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q104651",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2006/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -14977,7 +15634,9 @@ const awards = [
     "country": "Canada",
     "photo": "",
     "wikidata": "Q237825",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1986/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -15003,7 +15662,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q555849",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2025/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -15072,7 +15733,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1365270",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2022/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -15141,7 +15804,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q62897",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1951/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -15210,7 +15875,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q135154",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1975/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -15236,7 +15903,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q271532",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2002/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -15274,7 +15943,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q235184",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1997/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -15300,7 +15971,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q312961",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1954/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -15338,7 +16011,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106399",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1946/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -15364,7 +16039,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q193655",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1977/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -15433,7 +16110,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q391237",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2024/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -15502,7 +16181,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q89620738",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2024/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -15528,7 +16209,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q206390",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2005/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -15597,7 +16280,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q28976188",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2025/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -15666,7 +16351,9 @@ const awards = [
     "country": "Canada",
     "photo": "",
     "wikidata": "Q232024",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1923/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -15704,7 +16391,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q1701279",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2014/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -15742,7 +16431,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q233973",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1998/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -15768,7 +16459,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q309971",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1982/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -15806,7 +16499,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q192282",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1990/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -15844,7 +16539,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q243532",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1944/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -15882,7 +16579,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q192685",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1993/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -15951,7 +16650,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q271424",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1985/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -15989,7 +16690,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q218823",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1958/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -16027,7 +16730,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q105605",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2011/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -16065,7 +16770,9 @@ const awards = [
     "country": "Belgium",
     "photo": "",
     "wikidata": "Q211787",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1919/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -16103,7 +16810,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q186465",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1965/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -16172,7 +16881,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q110106",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1970/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -16210,7 +16921,9 @@ const awards = [
     "country": "Austria",
     "photo": "",
     "wikidata": "Q78479",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1927/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -16248,7 +16961,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q122298",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1987/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -16317,7 +17032,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q110925",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2001/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -16343,7 +17060,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q110925",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2022/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -16369,7 +17088,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q192712",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1981/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -16438,7 +17159,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q84405",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1930/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -16476,7 +17199,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q60060",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1973/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -16514,7 +17239,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76624",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1963/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -16540,7 +17267,9 @@ const awards = [
     "country": "",
     "photo": "",
     "wikidata": "Q157224",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1993/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -16566,7 +17295,9 @@ const awards = [
     "country": "Hungary",
     "photo": "",
     "wikidata": "Q88608397",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2023/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -16604,7 +17335,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q309879",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1967/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -16642,7 +17375,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q217734",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1981/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -16668,7 +17403,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q193503",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1982/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -16737,7 +17474,9 @@ const awards = [
     "country": "",
     "photo": "",
     "wikidata": "Q323320",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2017/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -16806,7 +17545,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q109370",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2021/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -16875,7 +17616,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q71024",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1985/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -16944,7 +17687,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q110963",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2002/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -16970,7 +17715,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q35698",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1964/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -17008,7 +17755,9 @@ const awards = [
     "country": "Austria",
     "photo": "",
     "wikidata": "Q78496",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1973/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -17046,7 +17795,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q106494",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2010/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -17115,7 +17866,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76595",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1950/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -17141,7 +17894,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q110957",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2002/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -17167,7 +17922,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q107405",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1968/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -17193,7 +17950,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q131729",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1915/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -17262,7 +18021,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q295869",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2001/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -17300,7 +18061,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q179852",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1973/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -17369,7 +18132,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q192695",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1988/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -17438,7 +18203,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q82563",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1972/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -17507,7 +18274,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q122996",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1939/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -17533,7 +18302,9 @@ const awards = [
     "country": "USSR",
     "photo": "",
     "wikidata": "Q133267",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1962/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -17602,7 +18373,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q200136",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2004/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -17640,7 +18413,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q48983",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1954/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -17666,7 +18441,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q83297",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1904/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -17735,7 +18512,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q157242",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1957/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -17761,7 +18540,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q194646",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2023/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -17787,7 +18568,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q83331",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1929/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -17856,7 +18639,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q309820",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1998/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -17894,7 +18679,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q155781",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1970/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -17963,7 +18750,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q103598",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2008/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -18001,7 +18790,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q178344",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1968/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -18070,7 +18861,9 @@ const awards = [
     "country": "Argentina",
     "photo": "",
     "wikidata": "Q233985",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1970/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -18096,7 +18889,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q285062",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2019/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -18122,7 +18917,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q202164",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2008/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -18191,7 +18988,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76600",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1967/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -18217,7 +19016,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q170741",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1924/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -18286,7 +19087,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q57100",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1963/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -18355,7 +19158,9 @@ const awards = [
     "country": "",
     "photo": "",
     "wikidata": "Q7186",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1903/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -18424,7 +19229,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q7186",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1911/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -18450,7 +19257,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q19045",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1995/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -18476,7 +19285,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q215574",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2007/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -18514,7 +19325,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q110060",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1968/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -18552,7 +19365,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106699",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2008/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -18578,7 +19393,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q903471",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2013/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -18604,7 +19421,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q107416",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1995/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -18673,7 +19492,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q60031",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1994/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -18711,7 +19532,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q190766",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1974/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -18780,7 +19603,9 @@ const awards = [
     "country": "",
     "photo": "",
     "wikidata": "Q202149",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1999/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -18849,7 +19674,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q136445350",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2025/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -18887,7 +19714,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q155773",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2002/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -18956,7 +19785,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q184659",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1962/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -18994,7 +19825,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q58978",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1954/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -19063,7 +19896,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q76807",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1969/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -19101,7 +19936,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q78480",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1962/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -19127,7 +19964,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q9021",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1918/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -19196,7 +20035,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q46928",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1951/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -19234,7 +20075,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57067",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1914/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -19303,7 +20146,9 @@ const awards = [
     "country": "Norway",
     "photo": "",
     "wikidata": "Q6796222",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2014/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -19341,7 +20186,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q49347",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1961/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -19367,7 +20214,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q189741",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1988/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -19436,7 +20285,9 @@ const awards = [
     "country": "Canada",
     "photo": "",
     "wikidata": "Q1927895",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2020/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -19474,7 +20325,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q6832227",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2013/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -19500,7 +20353,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1297741",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2017/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -19538,7 +20393,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q295684",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1985/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -19576,7 +20433,9 @@ const awards = [
     "country": "Canada",
     "photo": "",
     "wikidata": "Q232289",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1993/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -19602,7 +20461,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1929672",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2017/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -19640,7 +20501,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q26703310",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2025/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -19709,7 +20572,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q123975",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2019/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -19778,7 +20643,9 @@ const awards = [
     "country": "Denmark",
     "photo": "",
     "wikidata": "Q6914509",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2022/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -19804,7 +20671,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q15433043",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2023/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -19830,7 +20699,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q172840",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1969/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -19899,7 +20770,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q189987",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1981/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -19968,7 +20841,9 @@ const awards = [
     "country": "USSR",
     "photo": "",
     "wikidata": "Q83557",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1964/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -20037,7 +20912,9 @@ const awards = [
     "country": "Denmark",
     "photo": "",
     "wikidata": "Q7085",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1922/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -20106,7 +20983,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q309876",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1984/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -20144,7 +21023,9 @@ const awards = [
     "country": "Denmark",
     "photo": "",
     "wikidata": "Q182964",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1903/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -20182,7 +21063,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q153890",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1973/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -20220,7 +21103,9 @@ const awards = [
     "country": "USSR",
     "photo": "",
     "wikidata": "Q48990",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1956/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -20246,7 +21131,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q107419",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1989/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -20315,7 +21202,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q204600",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1937/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -20341,7 +21230,9 @@ const awards = [
     "country": "Norway",
     "photo": "",
     "wikidata": "Q157212",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1969/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -20367,7 +21258,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q216318",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2007/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -20405,7 +21298,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q743252",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2025/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -20431,7 +21326,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q205345",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2008/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -20457,7 +21354,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76616",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1950/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -20483,7 +21382,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57065",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1944/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -20509,7 +21410,9 @@ const awards = [
     "country": "Austria",
     "photo": "",
     "wikidata": "Q77173",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1936/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -20547,7 +21450,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57132",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1922/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -20585,7 +21490,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q57072",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1943/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -20654,7 +21561,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57127",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1910/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -20680,7 +21589,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76464",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1931/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -20718,7 +21629,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q183655",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1959/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -20787,7 +21700,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q169330",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1928/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -20856,7 +21771,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q184499",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1948/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -20925,7 +21842,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q47480",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1933/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -20994,7 +21913,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q102379",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1980/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -21020,7 +21941,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106547",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2003/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -21058,7 +21981,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q102395",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1997/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -21084,7 +22009,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57089",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1908/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -21122,7 +22049,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q309979",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2000/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -21160,7 +22089,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q135139",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1995/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -21186,7 +22117,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q176351",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1974/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -21212,7 +22145,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q73093",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1937/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -21238,7 +22173,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q7151888",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2015/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -21264,7 +22201,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q115475",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1948/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -21302,7 +22241,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q104575",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1912/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -21328,7 +22269,9 @@ const awards = [
     "country": "USSR",
     "photo": "",
     "wikidata": "Q76970",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1958/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -21397,7 +22340,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q172118",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1946/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -21466,7 +22411,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q102250",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2003/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -21492,7 +22439,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q309814",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1996/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -21530,7 +22479,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q103835",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1936/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -21556,7 +22507,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57120",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2007/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -21625,7 +22578,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q192112",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2013/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -21694,7 +22649,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q214209",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1960/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -21732,7 +22689,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q207992",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1978/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -21758,7 +22717,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q298707",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1966/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -21796,7 +22757,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q235651",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1950/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -21834,7 +22797,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q190770",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1977/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -21903,7 +22868,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57063",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1905/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -21972,7 +22939,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q312977",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1993/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -22010,7 +22979,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q122921025",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2023/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22079,7 +23050,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q37463",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1903/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22148,7 +23121,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q187224",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1991/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22217,7 +23192,9 @@ const awards = [
     "country": "the Netherlands",
     "photo": "",
     "wikidata": "Q79000",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1902/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22286,7 +23263,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q184571",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1955/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22355,7 +23334,9 @@ const awards = [
     "country": "USSR",
     "photo": "",
     "wikidata": "Q172844",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1978/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22424,7 +23405,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q217722",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1967/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -22462,7 +23445,9 @@ const awards = [
     "country": "",
     "photo": "",
     "wikidata": "Q2128461",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2017/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22531,7 +23516,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q105494",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2011/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -22569,7 +23556,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q740638",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2013/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -22607,7 +23596,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q175519",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2002/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22676,7 +23667,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q65807",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2020/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22745,7 +23738,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q109553",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1975/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -22783,7 +23778,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q186481",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2002/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22852,7 +23849,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q211940",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2004/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -22890,7 +23889,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106746",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1996/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -22916,7 +23917,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q201470",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1990/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -22985,7 +23988,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106471",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2010/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23011,7 +24016,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q1678456",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2017/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23037,7 +24044,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q309816",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1993/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -23075,7 +24084,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q78483",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1938/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23101,7 +24112,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q48979",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1952/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23127,7 +24140,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q39246",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1965/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -23196,7 +24211,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q122272",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1991/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23222,7 +24239,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q202159",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2005/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23248,7 +24267,9 @@ const awards = [
     "country": "Australia",
     "photo": "",
     "wikidata": "Q23073819",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2025/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23274,7 +24295,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q77072",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1915/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23300,7 +24323,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q78481",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1925/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23326,7 +24351,9 @@ const awards = [
     "country": "Italy",
     "photo": "",
     "wikidata": "Q185007",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1986/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -23364,7 +24391,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q273279",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1981/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23390,7 +24419,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q130975",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1923/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -23459,7 +24490,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q189997",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1998/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -23528,7 +24561,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q232316",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1965/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23554,7 +24589,9 @@ const awards = [
     "country": "Austria",
     "photo": "",
     "wikidata": "Q78478",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1914/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -23592,7 +24629,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q192708",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1996/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -23661,7 +24700,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q110930",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1996/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23687,7 +24728,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q108880",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1998/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -23725,7 +24768,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q104913",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2010/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -23763,7 +24808,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q202140",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2005/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23789,7 +24836,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q130113",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1961/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -23858,7 +24907,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76623",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1988/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23884,7 +24935,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q80910",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2012/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23910,7 +24963,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q37193",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1905/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -23948,7 +25003,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q233355",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1966/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -23974,7 +25031,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q153201",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1972/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -24043,7 +25102,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q108891",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1968/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -24081,7 +25142,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q171034",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1978/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -24150,7 +25213,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q211482",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2003/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -24176,7 +25241,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q295700",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1972/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -24214,7 +25281,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q170676",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2006/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -24240,7 +25309,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q242169",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1977/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -24278,7 +25349,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q193803",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2020/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -24347,7 +25420,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q232305",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1981/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -24385,7 +25460,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q200470",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2008/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -24411,7 +25488,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q116064",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1996/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -24449,7 +25528,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q235834",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1967/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -24475,7 +25556,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q102034",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1902/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -24513,7 +25596,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q107402",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1977/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -24551,7 +25636,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q64188",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2005/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -24620,7 +25707,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q44286",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1961/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -24689,7 +25778,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q239067",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1992/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -24715,7 +25806,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q156286",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1993/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -24784,7 +25877,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q157210",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2001/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -24810,7 +25905,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q205667",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1969/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -24848,7 +25945,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q192715",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1976/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -24917,7 +26016,9 @@ const awards = [
     "country": "Spain",
     "photo": "",
     "wikidata": "Q150526",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1906/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -24955,7 +26056,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q21061207",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2015/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -24993,7 +26096,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q106949",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2011/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -25062,7 +26167,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q232308",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1952/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25100,7 +26207,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q109588",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2012/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -25169,7 +26278,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q233957",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1959/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25207,7 +26318,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q107420",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1979/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -25276,7 +26389,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q17502433",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2025/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25314,7 +26429,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q80917",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2012/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25352,7 +26469,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q730065",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2014/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -25421,7 +26540,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q102266",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1989/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -25447,7 +26568,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q104779",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1984/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -25516,7 +26639,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q184563",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1965/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -25585,7 +26710,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q37064",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1945/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25623,7 +26750,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q4517",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1970/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25661,7 +26790,9 @@ const awards = [
     "country": "India",
     "photo": "",
     "wikidata": "Q60429",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1930/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -25730,7 +26861,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q213504",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1932/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25768,7 +26901,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q48986",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1956/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -25794,7 +26929,9 @@ const awards = [
     "country": "Australia",
     "photo": "",
     "wikidata": "Q193550",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1960/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25832,7 +26969,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q233976",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1929/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25870,7 +27009,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q1545000",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2018/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -25896,7 +27037,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q157250",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1996/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -25922,7 +27065,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q72194",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1936/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25960,7 +27105,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q137106",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1945/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -25998,7 +27145,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q376243",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2016/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -26024,7 +27173,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q110974",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1988/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26062,7 +27213,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q81218",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2012/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26100,7 +27253,9 @@ const awards = [
     "country": "Australia",
     "photo": "",
     "wikidata": "Q273223",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1963/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26138,7 +27293,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q207719",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2007/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26176,7 +27333,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q189485",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1977/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -26245,7 +27404,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q219716",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2001/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26283,7 +27444,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q2075967",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2019/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26321,7 +27484,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q243601",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2003/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26359,7 +27524,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q49351",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1947/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -26385,7 +27552,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q950726",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1904/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -26411,7 +27580,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q110952",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1972/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -26437,7 +27608,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q155380",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1997/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26475,7 +27648,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q232299",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1986/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26513,7 +27688,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q91410",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2014/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -26539,7 +27716,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q172466",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1997/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -26608,7 +27787,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q179282",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1979/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -26677,7 +27858,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q148109",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1983/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -26746,7 +27929,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q295696",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1982/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26784,7 +27969,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q11401680",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2025/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -26810,7 +27997,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q108602",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1987/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26848,7 +28037,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q80956",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1903/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -26874,7 +28065,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q170342",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2022/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26912,7 +28105,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q234463",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2002/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -26950,7 +28145,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q3675789",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2021/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -27019,7 +28216,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q115490",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1950/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27057,7 +28256,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q11538917",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2015/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -27126,7 +28327,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q2395341",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2018/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27164,7 +28367,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q186391",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1926/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -27190,7 +28395,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q115478",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1909/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27228,7 +28435,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q71013",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2005/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -27297,7 +28506,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q189465",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1914/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -27323,7 +28534,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q109559",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2009/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -27349,7 +28562,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q97270",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2013/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27387,7 +28602,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q177681",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1933/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27425,7 +28642,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q310131",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1954/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27463,7 +28682,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q135180",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1989/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -27489,7 +28710,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q309977",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2001/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27527,7 +28750,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q1886068",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2015/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -27553,7 +28778,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q271421",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1981/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27591,7 +28818,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q202168",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2008/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -27660,7 +28889,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q183679",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1957/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -27729,7 +28960,9 @@ const awards = [
     "country": "China",
     "photo": "",
     "wikidata": "Q462843",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2015/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27767,7 +29000,9 @@ const awards = [
     "country": "Sweden",
     "photo": "",
     "wikidata": "Q237142",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1970/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27805,7 +29040,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q206499",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1980/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -27874,7 +29111,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q60061",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2009/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -27900,7 +29139,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q983858",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2024/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -27938,7 +29179,9 @@ const awards = [
     "country": "Austria",
     "photo": "",
     "wikidata": "Q78520",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1936/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -28007,7 +29250,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q104582",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1912/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -28033,7 +29278,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q33128",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1955/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -28059,7 +29306,9 @@ const awards = [
     "country": "Russia",
     "photo": "",
     "wikidata": "Q104668",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2003/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -28128,7 +29377,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q83501",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1975/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -28154,7 +29405,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q217486",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1980/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -28180,7 +29433,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q184577",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1956/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -28249,7 +29504,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q115470",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1949/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -28287,7 +29544,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q78510",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1998/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -28313,7 +29572,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q76474",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1954/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -28382,7 +29643,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57125",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1920/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -28408,7 +29671,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q105937",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1946/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -28434,7 +29699,9 @@ const awards = [
     "country": "Switzerland",
     "photo": "",
     "wikidata": "Q115495",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1978/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -28472,7 +29739,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q77152",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1956/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -28510,7 +29779,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q40904",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1932/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -28579,7 +29850,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q35149",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1901/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -28648,7 +29921,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q12658",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1909/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -28674,7 +29949,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57068",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1911/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -28743,7 +30020,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q190486",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1960/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -28769,7 +30048,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q73058",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2009/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -28838,7 +30119,9 @@ const awards = [
     "country": "the Netherlands",
     "photo": "",
     "wikidata": "Q189488",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1924/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -28876,7 +30159,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q46120",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1983/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -28945,7 +30230,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q163415",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1956/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -29014,7 +30301,9 @@ const awards = [
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q133747",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1915/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -29083,7 +30372,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q21061212",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2015/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -29121,7 +30412,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q190756",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1997/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -29190,7 +30483,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1387059",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2014/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -29216,7 +30511,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q110073",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1949/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -29242,7 +30539,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q1603351",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2019/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -29280,7 +30579,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q156492",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1972/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -29306,7 +30607,9 @@ const awards = [
     "country": "",
     "photo": "",
     "wikidata": "Q110947",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2001/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -29332,7 +30635,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q110935",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1976/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -29358,7 +30663,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q80323",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/1934/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -29396,7 +30703,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q186497",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1955/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -29465,7 +30774,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q76462",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2001/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -29534,7 +30845,9 @@ const awards = [
     "country": "Germany",
     "photo": "",
     "wikidata": "Q57227",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1989/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -29603,7 +30916,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q65989",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/1945/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -29672,7 +30987,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q188120",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2008/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
@@ -29741,7 +31058,9 @@ const awards = [
     "country": "Japan",
     "photo": "",
     "wikidata": "Q8056214",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/medicine/2016/"
+    ],
     "problemLinks": [
       "LIF-001",
       "LIF-002",
@@ -29779,7 +31098,9 @@ const awards = [
     "country": "USA",
     "photo": "",
     "wikidata": "Q243190",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/1986/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -29805,7 +31126,9 @@ const awards = [
     "country": "France",
     "photo": "",
     "wikidata": "Q202146",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/chemistry/2005/"
+    ],
     "problemLinks": [
       "CHE-001",
       "CHE-002",
@@ -29831,7 +31154,9 @@ const awards = [
     "country": "Russia",
     "photo": "",
     "wikidata": "Q183279",
-    "links": [],
+    "links": [
+      "https://www.nobelprize.org/prizes/physics/2000/"
+    ],
     "problemLinks": [
       "PHY-001",
       "PHY-002",
