@@ -507,6 +507,16 @@
   .d-motivation{font-family:var(--serif);font-size:14.5px;line-height:1.85;color:rgba(226,234,255,.92);
     background:rgba(120,140,255,.04);padding:12px 14px;border-radius:8px;border-left:2px solid rgba(140,180,255,.4);
     margin-top:6px}
+  .d-discovery{font-family:var(--serif);font-size:15.5px;line-height:1.9;color:rgba(232,240,255,.96);margin:0 0 4px}
+  .d-tag-domain{display:inline-block;margin-left:8px;padding:2px 10px;border-radius:20px;
+    background:rgba(120,160,255,.18);border:1px solid rgba(150,170,255,.26);
+    font-size:11px;letter-spacing:.06em;color:rgba(205,222,255,.92);font-weight:500;vertical-align:middle}
+  .d-en-orig{margin-top:12px;font-size:13px}
+  .d-en-orig summary{cursor:pointer;color:rgba(160,190,255,.82);letter-spacing:.04em;
+    font-size:12.5px;user-select:none;padding:4px 0;transition:color .2s ease}
+  .d-en-orig summary:hover{color:#cfe0ff}
+  .d-en-orig[open] summary{color:rgba(190,210,255,.95)}
+  .d-motivation-en{font-family:var(--serif);font-size:13.5px;line-height:1.78;color:rgba(210,220,245,.78);margin:8px 0 0}
   .d-related-h{margin:18px 0 10px;font-size:13px;letter-spacing:.06em;color:rgba(180,200,255,.7);
     font-weight:500;font-family:var(--serif)}
   .d-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
@@ -1991,6 +2001,12 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     }
 
     window.addEventListener('wheel', function(e){
+      // 浮层（详情/教学中枢/来源modal）打开时，放手交还原生滚动，
+      // 否则下方 preventDefault 会吞掉滚轮，导致面板内部内容滚不动
+      if(document.documentElement.classList.contains('detail-open') ||
+         document.documentElement.classList.contains('teach-open') ||
+         document.querySelector('.modal.open') ||
+         document.querySelector('#ai-chat-panel.open')) return;
       var max=document.documentElement.scrollHeight-window.innerHeight;
       if(!max || max<=0) return;
       var cp = clamp(window.scrollY/max, 0, 1);
@@ -2764,13 +2780,18 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     }
     recs.forEach(function (r) {
       h += '<section class="d-sec d-award">';
+      var domLabel = r.domain || '';
       h += '<div class="d-award-head"><b>' + esc(r.award || '奖项') + '</b>' +
-        (r.year ? ' <span class="d-year">' + esc(r.year) + '</span>' : '') + '</div>';
-      // motivation（英文原文）放最显眼的位置，discovery 是中文译本
-      if (r.motivation) h += '<p class="d-motivation">' + esc(r.motivation) + '</p>';
-      else if (r.discovery) h += '<p>' + esc(r.discovery) + '</p>';
+        (r.year ? ' <span class="d-year">' + esc(r.year) + '</span>' : '') +
+        (domLabel ? ' <span class="d-tag-domain">' + esc(domLabel) + '</span>' : '') + '</div>';
+      // 中文获奖说明 discovery 优先（面向中文读者直接读懂），英文原文收进可展开
+      if (r.discovery) h += '<p class="d-discovery">' + esc(r.discovery) + '</p>';
+      if (r.motivation) {
+        h += '<details class="d-en-orig"><summary>获奖词原文（英文）</summary>' +
+             '<p class="d-motivation-en">' + esc(r.motivation) + '</p></details>';
+      }
       if (r.affiliation || r.country)
-        h += '<div class="d-meta">所属机构：' + esc([r.affiliation, r.country].filter(Boolean).join(' · ')) + '</div>';
+        h += '<div class="d-meta">所属：' + esc([r.affiliation, r.country].filter(Boolean).join(' · ')) + '</div>';
       if (r.links && r.links.length) {
         h += '<div class="d-meta d-sources">来源：' + r.links.map(function (u) {
           return '<a href="' + esc(u) + '" target="_blank" rel="noopener">' + esc(shortHost(u)) + '</a>';
