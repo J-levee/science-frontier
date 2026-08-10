@@ -1,7 +1,9 @@
 /* ===== AI 科普问答组件 · 独立版（可嵌入任意页面） ===== */
 (function(){
   /* ---- 配置 ---- */
-  var API_KEY = 'sk-ws-H.ELHIRIP.Xt4O.MEUCIQDm0tpqpeam5rmWXORqXiVbg-vHC6fnvKl7QF5m7EPm5AIgT6jddNsoRs5Wh0KCY5J0Gvf16eTQOp8hYfelPm-PAdk';
+  // API KEY 不再硬编码：优先读取 window.__DASHSCOPE_API_KEY，未配置则提示用户
+  // 注意：前端静态站点无法真正隐藏 key；已泄露的 key 请到 DashScope 控制台撤销/轮换
+  var API_KEY = (typeof window !== 'undefined' && window.__DASHSCOPE_API_KEY ? String(window.__DASHSCOPE_API_KEY).trim() : '');
   var API_URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
   var MODEL = 'qwen-plus';
   var CORS_PROXIES = [function(u){return'https://corsproxy.io/?'+encodeURIComponent(u);},function(u){return'https://api.allorigins.win/raw?url='+encodeURIComponent(u);}];
@@ -20,14 +22,25 @@
     return '你是"科学边界"知识星图项目的 AI 科普助手，受众是 10-16 岁青少年。当前用户正在阅读《'+topic+'》的主题页面。请针对这个话题深入浅出地回答，多用比喻，每个概念附注英文名，末尾列 2-4 条来源 [名称](URL)。回答 300-500 字。如果问题超出范围，就给搜索建议。';
   }
 
+  /* ---- 通用粒子点图标（与主页问科学按钮统一） ---- */
+  function particleIconSVG(size){
+    size = size || 22;
+    return '<svg viewBox="0 0 32 32" width="'+size+'" height="'+size+'" aria-hidden="true" focusable="false">'
+      + '<circle cx="16" cy="16" r="15" fill="none" stroke="#7dd3fc" stroke-opacity="0.35" stroke-width="1"/>'
+      + '<circle cx="16" cy="16" r="10" fill="none" stroke="#7dd3fc" stroke-opacity="0.6" stroke-width="1.2"/>'
+      + '<circle cx="16" cy="16" r="4.2" fill="#67e8f9"/>'
+      + '<circle cx="16" cy="16" r="4.2" fill="#a5f3fc" fill-opacity="0.5"/>'
+      + '</svg>';
+  }
+
   /* ---- DOM ---- */
   function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   var btn = document.createElement('div');
-  btn.id = 'aw-btn'; btn.innerHTML = '💬'; btn.title = '向 AI 提问关于 '+topic;
+  btn.id = 'aw-btn'; btn.innerHTML = particleIconSVG(22); btn.title = '问科学 · 向 AI 提问关于 '+topic;
   document.body.appendChild(btn);
   var panel = document.createElement('div');
   panel.id = 'aw-panel';
-  panel.innerHTML = '<div class="aw-head">🤖 AI · 聊一聊「'+esc(topic)+'」<button class="aw-close">✕</button></div>'
+  panel.innerHTML = '<div class="aw-head">'+particleIconSVG(18)+' <span>问科学 · 聊一聊「'+esc(topic)+'」</span><button class="aw-close">✕</button></div>'
     +'<div class="aw-msgs"><div class="aw-msg aw-welcome">'
     +'<p class="aw-hi">👋 你好！你对「<b>'+esc(topic)+'</b>」有什么想知道的？</p>'
     +'<div class="aw-suggest">'+icebreakers.slice(0,4).map(function(q){
@@ -51,7 +64,13 @@
   /* ---- API 调用 ---- */
   function callAPI(url,payload,n){n=n||0;var fu=n===0?url:CORS_PROXIES[n-1](url);return fetch(fu,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+API_KEY},body:JSON.stringify(payload)}).then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json();}).catch(function(e){if(n<CORS_PROXIES.length)return callAPI(url,payload,n+1);throw e;});}
   function ask(question){
-    if(loading)return; loading=true; send.disabled=true; send.textContent='...';
+    if(loading)return;
+    if(!API_KEY){
+      addMsg('user','<p>'+esc(question)+'</p>');
+      addMsg('assistant','<p class="aw-err">⚠️ AI 功能尚未配置 API key。<br><br>本页演示版暂不联网调用大模型。如需体验完整回答，请在页面中设置 <code>window.__DASHSCOPE_API_KEY</code>，或使用后端代理转发请求。<br><br>小提示：此前意外提交到仓库的 key 已删除，请到 DashScope 控制台检查并轮换该 key。</p>');
+      return;
+    }
+    loading=true; send.disabled=true; send.textContent='...';
     addMsg('user','<p>'+esc(question)+'</p>');
     var ld=addMsg('assistant','<p class="aw-loading"><span></span><span></span><span></span> 思考中…</p>');
     if(!messages.length) messages.push({role:'system',content:systemPrompt()});
@@ -114,7 +133,7 @@
       if(el.querySelector('.ai-inline')) return; // already has one
       var btn = document.createElement('span');
       btn.className = 'ai-inline';
-      btn.textContent = '💬';
+      btn.innerHTML = particleIconSVG(14);
       btn.title = '问问 AI 关于这个概念';
       btn.addEventListener('click', function(e){
         e.stopPropagation(); e.preventDefault();

@@ -54,6 +54,13 @@ async function runTest(name, vw, vh) {
   const qFloats = await page.evaluate(() => document.querySelectorAll('.q-float').length);
   check('Q-floats render (>=8)', qFloats >= 8, 'got ' + qFloats);
   check('hotKakeya visible', await page.evaluate(() => !!document.getElementById('hotKakeya')));
+  // 统计数字不能显示 0 或 —（awards-lazy 加载前后都要正确）
+  const heroStats = await page.evaluate(() => ({
+    probs: (document.querySelector('[data-stat="total-problems"]') || {}).textContent || '',
+    awardees: (document.querySelector('[data-stat="total-awardees"]') || {}).textContent || '',
+  }));
+  check('Hero stats: problems not 0/—', heroStats.probs !== '0' && heroStats.probs !== '—' && heroStats.probs.length > 0, heroStats.probs);
+  check('Hero stats: awardees not 0/—', heroStats.awardees !== '0' && heroStats.awardees !== '—' && heroStats.awardees.length > 0, heroStats.awardees);
 
   // ─── 3. hotKakeya → detail ───
   await page.evaluate(() => { const hk = document.getElementById('hotKakeya'); if (hk) hk.click(); });
@@ -81,6 +88,13 @@ async function runTest(name, vw, vh) {
   await page.evaluate(() => { const qf = document.querySelector('.q-float'); if (qf) qf.dispatchEvent(new MouseEvent('mouseenter', { bubbles: true })); });
   await sleep(500);
   check('Q-float hover → card', await page.evaluate(() => document.getElementById('hoverCard').classList.contains('on')));
+  // 水滴光标 (#probe) 在弹出的卡片上应隐藏
+  const probeOnCard = await page.evaluate(() => {
+    const probe = document.getElementById('probe');
+    const card = document.getElementById('hoverCard');
+    return { probeExists: !!probe, cardOn: card && card.classList.contains('on'), probeDisplay: probe ? probe.style.display : 'none' };
+  });
+  check('Water-drop probe hidden over hover card', probeOnCard.probeExists && (probeOnCard.probeDisplay === 'none' || probeOnCard.probeDisplay === ''), JSON.stringify(probeOnCard));
   await page.evaluate(() => window.cardHideNow ? window.cardHideNow() : null);
   await sleep(300);
 
@@ -219,6 +233,11 @@ async function runTest(name, vw, vh) {
 
   // ─── 11. Honor beacons + beams + avatars (no 404) ───
   await scrollTo(page, 0.74); await sleep(1100);
+  // Honor 屏的 total-awardees 统计同样不能为 0/—
+  const honorStats = await page.evaluate(() => ({
+    awardees: (document.querySelector('#sHonor [data-stat="total-awardees"]') || {}).textContent || '',
+  }));
+  check('Honor stats: awardees not 0/—', honorStats.awardees !== '0' && honorStats.awardees !== '—' && honorStats.awardees.length > 0, honorStats.awardees);
   const beacons = await page.evaluate(() => document.querySelectorAll('.beacon').length);
   check('Honor beacons render (>=15)', beacons >= 15, 'got ' + beacons);
   const beams = await page.evaluate(() => document.querySelectorAll('.beam').length);
@@ -255,11 +274,40 @@ async function runTest(name, vw, vh) {
     await sleep(300);
   }
 
+  // ─── 13b. Text selection → ask launcher ───
+  // 组件已初始化并包含正确的 SVG+提问内容（puppeteer 中 synthetic selectionchange 不一定触发真实显示，人工验证兜底）
+  const selLauncher = await page.evaluate(() => {
+    const l = document.getElementById('ai-ask-launcher');
+    return { exists: !!l, hasSvg: l ? !!l.querySelector('svg') : false, hasText: l ? l.innerHTML.includes('提问') : false };
+  });
+  check('Text selection → ask launcher initialized (SVG + 提问)', selLauncher.exists && selLauncher.hasSvg && selLauncher.hasText, JSON.stringify(selLauncher));
+
   // ─── 14. AI chat panel ───
   check('AI chat button exists', await page.evaluate(() => !!document.getElementById('ai-chat-btn')));
+  // 图标应已替换为 SVG 粒子点（不再是 💬 emoji）
+  const aiBtnIcon = await page.evaluate(() => {
+    const b = document.getElementById('ai-chat-btn');
+    return b ? { hasSvg: !!b.querySelector('svg'), text: b.textContent || '' } : null;
+  });
+  check('AI chat button uses SVG icon (not emoji)', aiBtnIcon && aiBtnIcon.hasSvg && !aiBtnIcon.text.includes('💬'), aiBtnIcon && aiBtnIcon.text);
+  // 未配置 API key 时发送问题应给出配置提示，而不是报错/空白
+  const hasApiKey = await page.evaluate(() => !!(window.__DASHSCOPE_API_KEY && String(window.__DASHSCOPE_API_KEY).trim()));
   await page.evaluate(() => { const b = document.getElementById('ai-chat-btn'); if (b) b.click(); });
   await sleep(400);
   check('AI chat panel opens', await page.evaluate(() => { const p = document.getElementById('ai-chat-panel'); return p && p.classList.contains('open'); }));
+  if (!hasApiKey) {
+    await page.evaluate(() => {
+      const input = document.querySelector('#ai-chat-panel .ai-input');
+      if (input) { input.value = '测试问题'; input.dispatchEvent(new Event('input', { bubbles: true })); }
+    });
+    await page.evaluate(() => { const s = document.querySelector('#ai-chat-panel .ai-send'); if (s) s.click(); });
+    await sleep(400);
+    const keyHint = await page.evaluate(() => {
+      const pnl = document.getElementById('ai-chat-panel');
+      return pnl ? pnl.innerHTML.includes('尚未配置 API key') || pnl.innerText.includes('尚未配置 API key') : false;
+    });
+    check('AI chat shows API-key hint when unconfigured', keyHint);
+  }
   await page.evaluate(() => { const c = document.querySelector('#ai-chat-panel .ai-close'); if (c) c.click(); });
   await sleep(300);
 
@@ -437,10 +485,27 @@ async function runExplainerTests() {
     check('Explainer ' + p + ' · substantial content', info.len > 800, 'len=' + info.len);
     check('Explainer ' + p + ' · no pageerror', errs.length === 0, errs.join('|'));
     check('Explainer ' + p + ' · no missing resources (audio excluded)', notFound.length === 0, notFound.join('|'));
-    // test AI panel open
+    // test AI panel open + icon + unconfigured hint
+    const explainerAiIcon = await page.evaluate(() => {
+      const b = document.getElementById('aw-btn');
+      return b ? { hasSvg: !!b.querySelector('svg'), text: b.textContent || '' } : null;
+    });
+    check('Explainer ' + p + ' · AI button uses SVG icon', explainerAiIcon && explainerAiIcon.hasSvg && !explainerAiIcon.text.includes('💬'), explainerAiIcon && explainerAiIcon.text);
     await page.evaluate(() => { const b = document.getElementById('aw-btn'); if (b) b.click(); });
     await sleep(300);
     check('Explainer ' + p + ' · AI panel opens', await page.evaluate(() => { const pnl = document.getElementById('aw-panel'); return pnl && pnl.classList.contains('open'); }));
+    // 未配置 key 时点击发送才会出现提示
+    await page.evaluate(() => {
+      const input = document.querySelector('#aw-panel .aw-input');
+      if (input) { input.value = '测试问题'; input.dispatchEvent(new Event('input', { bubbles: true })); }
+    });
+    await page.evaluate(() => { const s = document.querySelector('#aw-panel .aw-send'); if (s) s.click(); });
+    await sleep(400);
+    const explainerKeyHint = await page.evaluate(() => {
+      const pnl = document.getElementById('aw-panel');
+      return pnl ? (pnl.innerHTML.includes('尚未配置 API key') || pnl.innerText.includes('尚未配置 API key')) : false;
+    });
+    check('Explainer ' + p + ' · AI send shows API-key hint when unconfigured', explainerKeyHint);
     // kakeya tabs
     if (p === 'kakeya') {
       const tabCount = await page.evaluate(() => document.querySelectorAll('.tab-btn').length);

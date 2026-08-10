@@ -1483,7 +1483,11 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     cardShow(c.html, c.col, 'body:'+idx);
     if(dragIdx<0) paused=true;              // freeze so the reader can aim at the card
   }
-  function onCardHidden(){ if(dragIdx<0){ paused=false; hoverIdx=-1; } }
+  function onCardHidden(){
+    if(dragIdx<0){ paused=false; hoverIdx=-1; }
+    // 卡片消失 → 首屏问题星点一并复位（变暗 + 恢复上升漂移），避免高亮残留
+    if(typeof window.__releaseHeldQ==='function') window.__releaseHeldQ();
+  }
 
   stage.addEventListener('pointerdown', function(e){
     if(!gActive) return; var p=gPos(e); var b=gHit(p.x,p.y); if(b<0){ downPt=null; return; }
@@ -1783,6 +1787,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
         s.style.setProperty('--by', np[1].toFixed(1)+'%');
       });
       s.addEventListener('mouseenter',function(){
+        // 重新进入 → 取消待复位计时，避免刚回来又被复位
+        if(s.__relT){ clearTimeout(s.__relT); s.__relT=null; }
         // hold the question in place so the user can read it and aim at the card
         // without the drift keyframe pulling the text out from under the cursor
         s.classList.add('held');
@@ -1798,12 +1804,29 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
           (followup?'<div class="hc-followup"><span class="hc-fu-ic">→</span><span class="hc-fu-txt">想得更深一步：<br>'+esc(followup)+'</span></div>':''),
           q.col, 'qfloat:'+q.id);
       });
+      // 复位：摘掉暂停(held)与高亮(linked)，让问题恢复变暗并继续上升漂移
+      function releaseQ(){
+        if(s.__relT){ clearTimeout(s.__relT); s.__relT=null; }
+        s.classList.remove('held'); s.classList.remove('linked');
+        if(hovDom){ hovDom=null; renderFilter(); }
+      }
+      s.__releaseQ = releaseQ;
       s.addEventListener('mouseleave',function(){
-        // 若悬浮卡仍是这张问题的（用户可能移到了卡片上）→ 保持 held 不漂走
+        // 指针可能正移向这张问题的悬浮卡。此前这里直接 return，但 cardOwner 只在卡片
+        // 隐藏时才清空，导致条件恒真 → held/linked 永久残留（星点卡在高亮且不再上升）。
+        // 改为给 240ms 宽限，宽限后指针若没真的落在卡片上就复位。
         var cardOwner = (typeof window.getCardOwner==='function') ? window.getCardOwner() : null;
-        if(cardOwner === 'qfloat:'+q.id) return;
-        s.classList.remove('held');
-        hovDom=null; renderFilter(); s.classList.remove('linked'); cardLeaveSoft();
+        if(cardOwner === 'qfloat:'+q.id){
+          if(s.__relT) clearTimeout(s.__relT);
+          s.__relT = setTimeout(function(){
+            s.__relT = null;
+            var hc = document.getElementById('hoverCard');
+            if(hc && hc.classList.contains('on') && hc.matches(':hover')) return;  // 确在读卡片 → 保持
+            releaseQ(); cardLeaveSoft();
+          }, 240);
+          return;
+        }
+        releaseQ(); cardLeaveSoft();
       });
       s.addEventListener('click',function(){
         // 直接打开对应问题的详情卡（背景的星星自动闪烁高亮）
@@ -1875,7 +1898,9 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     for(var i=0;i<3;i++){
       var b=bodies[i]; if(!b) continue;
       var s=bodyScreen(b), list=groups[i]||[], N=list.length||1;
-      var stagger=0.22/N, dur=0.30;
+      // 放慢「星光落入人间」：单束耗时 0.30→0.50、错峰总跨度 0.22→0.34，
+      // 整段降落占 lp 从 0.52 拉长到 0.84（约 1.6 倍时长），给观众看清"落下"的过程
+      var stagger=0.34/N, dur=0.50;
       for(var k=0;k<N;k++){
         var a=list[k];
         var raw=(lp - k*stagger)/dur;
@@ -1967,6 +1992,16 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   function selectDomain(d){ selStar=null; if(selDom===d && !selTier){ selDom=null; } else { selDom=d; selTier=null; } renderFilter(); }
   function selectTier(t){ selStar=null; if(selTier===t && !selDom){ selTier=null; } else { selTier=t; selDom=null; } renderFilter(); }
   function selectStar(id){ selDom=null; selTier=null; hovDom=null; hovTier=null; selStar = (selStar===id ? null : id); renderFilter(); }
+  /* 兜底：悬浮卡以任意路径隐藏时，释放所有仍处于 held/linked 的首屏问题星点。
+     单靠 mouseleave 不够——指针移到卡片再移走、或点击别处关卡片，都不会回到星点。 */
+  window.__releaseHeldQ = function(){
+    var any = false;
+    [].forEach.call(document.querySelectorAll('.ambient .q-float.held, .ambient .q-float.linked'), function(el){
+      if(el.__relT){ clearTimeout(el.__relT); el.__relT = null; }
+      el.classList.remove('held'); el.classList.remove('linked'); any = true;
+    });
+    if(any && hovDom){ hovDom = null; renderFilter(); }
+  };
   legendChips.forEach(function(c){
     c.addEventListener('mouseenter',function(){ hovDom=c.dataset.dom; renderFilter(); });
     c.addEventListener('mouseleave',function(){ hovDom=null; renderFilter(); });
@@ -1990,8 +2025,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   (function(){
     // 五个场景中心位置（与 C 常量一致）
     var sceneP = [0.05, 0.26, 0.52, 0.80, 0.99];
-    // 每个场景中心前后 8% 为"临界区"
-    var ZONE = 0.08;
+    // 每个场景中心前后 6% 为"临界区"（原 8%，收窄以降低整体阻尼感）
+    var ZONE = 0.06;
     var lastBoundary = -1;  // 上次所处的场景编号
 
     function findScene(p){
@@ -2017,8 +2052,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       if(dist < ZONE){
         var movingAway = (e.deltaY > 0 && cp >= sceneP[scene] - 0.01) || (e.deltaY < 0 && cp <= sceneP[scene] + 0.01);
         if(movingAway){
-          // 阻尼系数：离场景中心越近阻尼越大（0.25~0.55 倍速）
-          var factor = 0.25 + 0.30 * (1 - dist/ZONE);
+          // 阻尼系数：离场景中心越近阻尼越大（0.52~0.80 倍速；原 0.25~0.55 过粘手）
+          var factor = 0.52 + 0.28 * (1 - dist/ZONE);
           window.scrollBy(0, e.deltaY * factor);
           e.preventDefault();
           e.stopPropagation();
@@ -2031,7 +2066,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
 
       // 最后一屏→启程屏/启程屏→最后一屏：超强阻尼
       if((scene===4 && e.deltaY>0) || (scene===4 && e.deltaY<0 && cp<0.95)){
-        window.scrollBy(0, e.deltaY * 0.18);
+        window.scrollBy(0, e.deltaY * 0.45);
         e.preventDefault();
         e.stopPropagation();
       }
@@ -2185,9 +2220,29 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
      hollow expanding rings (deep blue -> cyan -> bright yellow -> orange -> dark red),
      2-3 per second. No streak trail: the canvas is fully cleared every frame, so when
      the cursor stops there is nothing left behind but the rings already in flight. */
+  // 指针是否落在某个「覆盖层 / 浮卡」上——这些容器 head.css 已恢复系统指针
+  // （cursor:auto / pointer），自定义水滴必须让位。要求可见态 class，避免隐藏中的
+  // #hoverCard（停在 left:0,top:0 且 opacity:0 但仍可命中）误伤其它区域。
+  function _overUIOverlay(x,y){
+    if(x<0||y<0) return false;
+    var el=document.elementFromPoint(x,y);
+    if(!el||!el.closest) return false;
+    var hc=el.closest('#hoverCard');      if(hc && hc.classList.contains('on')) return true;
+    var ap=el.closest('#ai-chat-panel');  if(ap && ap.classList.contains('open')) return true;
+    if(el.closest('#ai-chat-btn')) return true;
+    var am=el.closest('#attribModal');    if(am && (am.classList.contains('on')||am.classList.contains('show'))) return true;
+    if(el.closest('#footBar')) return true;
+    return false;
+  }
   function drawProbe(ts){
-    // 详情弹层打开时自定义水滴会被遮住，这里直接隐藏并交还系统指针（head.css 已恢复 cursor:auto）
-    if(document.documentElement.classList.contains('detail-open')||document.documentElement.classList.contains('teach-open')){ if(typeof probe!=='undefined'&&probe) probe.style.display='none'; return; }
+    // 自定义水滴「只在首页背景出现」——一旦指针落到任意弹层 / 浮卡 / 工具栏 / AI 按钮上，
+    // 立即隐藏水滴并交还系统指针（这些容器 head.css 已恢复 cursor:auto / pointer）
+    var overUI=_overUIOverlay(mx,my);
+    if(document.documentElement.classList.contains('detail-open')||document.documentElement.classList.contains('teach-open')||overUI){
+      if(typeof probe!=='undefined'&&probe) probe.style.display='none';
+      if(tctx) tctx.clearRect(0,0,window.innerWidth,window.innerHeight); // 同步清掉尾迹光晕，免得压在卡片上
+      return;
+    }
     if(typeof probe!=='undefined'&&probe&&probe.style.display==='none'){ probe.style.display=''; }
     if(mx<-100){ if(tctx) tctx.clearRect(0,0,window.innerWidth,window.innerHeight); return; }
 
@@ -2249,7 +2304,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   var lastRail=-1, lastAlpha=0, wasGActive=false;
   function frame(ts){
     ts = ts || performance.now();
-    curP += (targetP-curP)*(reduce?1:0.12);
+    curP += (targetP-curP)*(reduce?1:0.18);
     var p=curP;
     setScene(scenes.hero,     focus(p,C.hero,Wf));
     setScene(scenes.boundary, focus(p,C.boundary,Wf));
@@ -2844,7 +2899,9 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
 <script>
 /* ===== AI 科普问答组件 — 百炼 DashScope API + CORS proxy fallback ===== */
 (function(){
-  var API_KEY = 'sk-ws-H.ELHIRIP.Xt4O.MEUCIQDm0tpqpeam5rmWXORqXiVbg-vHC6fnvKl7QF5m7EPm5AIgT6jddNsoRs5Wh0KCY5J0Gvf16eTQOp8hYfelPm-PAdk';
+  // API KEY 不再硬编码：优先读取 window.__DASHSCOPE_API_KEY，未配置则提示用户
+  // 注意：前端静态站点无法真正隐藏 key；已泄露的 key 请到 DashScope 控制台撤销/轮换
+  var API_KEY = (typeof window !== 'undefined' && window.__DASHSCOPE_API_KEY ? String(window.__DASHSCOPE_API_KEY).trim() : '');
   var API_URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
   var MODEL = 'qwen-plus';
   // CORS 代理：直接调百炼会被浏览器拦截，依次尝试几个公开代理
@@ -2935,16 +2992,26 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       + '6. 不要用学术术语，要解释';
   }
 
+  // 极简粒子点图标（方向 C）：中心发光点 + 两道细环，冷色青，通用科技感，不指向任何特定作品
+  function particleIconSVG(){
+    return '<svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true" focusable="false">'
+      + '<circle cx="16" cy="16" r="15" fill="none" stroke="#7dd3fc" stroke-opacity="0.35" stroke-width="1"/>'
+      + '<circle cx="16" cy="16" r="10" fill="none" stroke="#7dd3fc" stroke-opacity="0.6" stroke-width="1.2"/>'
+      + '<circle cx="16" cy="16" r="4.2" fill="#67e8f9"/>'
+      + '<circle cx="16" cy="16" r="4.2" fill="#a5f3fc" fill-opacity="0.5"/>'
+      + '</svg>';
+  }
+
   // ---- DOM 构建 ----
   var btn = document.createElement('div');
   btn.id = 'ai-chat-btn';
-  btn.innerHTML = '💬';
-  btn.title = '向 AI 提问科普问题';
+  btn.innerHTML = particleIconSVG();
+  btn.title = '问科学 · 向 AI 提问科普问题';
   document.body.appendChild(btn);
 
   var panel = document.createElement('div');
   panel.id = 'ai-chat-panel';
-  panel.innerHTML = '<div class="ai-head">🤖 AI 科普助手 <span class="ai-head-sub">基于本站数据 · 百炼驱动</span><button class="ai-close">✕</button></div>'
+  panel.innerHTML = '<div class="ai-head">' + particleIconSVG() + '<span class="ai-head-title">问科学</span><span class="ai-head-sub">基于本站数据 · 百炼驱动</span><button class="ai-close">✕</button></div>'
     + '<div class="ai-msgs"><div class="ai-msg ai-welcome">'
     + '<p>👋 你好！我是科学边界的 AI 科普助手。</p>'
     + '<p>你可以问我任何科学问题——我会用最简单的语言为你解释，并告诉你我的信息来源。</p>'
@@ -2979,6 +3046,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     if(!panel.classList.contains('open')) return;
     if(panel.contains(e.target)) return;
     if(e.target.closest('#ai-chat-btn')) return;
+    if(e.target.closest('#ai-ask-launcher')) return;
     panel.classList.remove('open');
     btn.style.display = '';
   });
@@ -3032,6 +3100,11 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   // ---- askAI 主流程 ----
   function askAI(question){
     if(loading) return;
+    if(!API_KEY){
+      addMsg('user', '<p>' + escHtml(question) + '</p>');
+      addMsg('assistant', '<p class="ai-error">⚠️ AI 功能尚未配置 API key。<br><br>本页演示版暂不联网调用大模型。如需体验完整回答，请在本地构建时设置环境变量 <code>DASHSCOPE_API_KEY</code>，或使用后端代理转发请求。<br><br>小提示：此前意外提交到仓库的 key 已删除，请到 DashScope 控制台检查并轮换该 key。</p>');
+      return;
+    }
     loading = true;
     sendBtn.disabled = true;
     sendBtn.textContent = '...';
@@ -3087,6 +3160,76 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   sendBtn.addEventListener('click', doSend);
   inputEl.addEventListener('keydown', function(e){ if(e.key === 'Enter') doSend(); });
 
+  // ---- 划词提问：选区浮标「提问」 ----
+  var launcher = document.createElement('button');
+  launcher.id = 'ai-ask-launcher';
+  launcher.type = 'button';
+  launcher.setAttribute('aria-label', '就选中的内容向 AI 提问');
+  launcher.innerHTML = particleIconSVG().replace('width="22" height="22"', 'width="16" height="16"') + '<span>提问</span>';
+  document.body.appendChild(launcher);
+
+  function openPanel(){
+    if(!panel.classList.contains('open')){
+      panel.classList.add('open');
+      btn.style.display = 'none';
+    }
+    setTimeout(function(){ try{ inputEl.focus(); }catch(e){} }, 200);
+  }
+
+  var lastSelText = '';
+  var launcherT = 0;
+  var SEL_BLACKLIST = '#sHero, #rail, #footBar, .nav, header, .ai-chat-panel, #hoverCard, #attribModal';
+  function selectionText(){
+    var sel = window.getSelection();
+    if(!sel || sel.isCollapsed) return '';
+    var txt = (sel.toString() || '').trim();
+    if(txt.length < 2) return '';
+    var node = sel.anchorNode;
+    if(node && node.nodeType === 3) node = node.parentElement;
+    while(node){
+      if(node.matches && node.matches(SEL_BLACKLIST)) return '';
+      node = node.parentElement;
+    }
+    return txt;
+  }
+  function placeLauncher(){
+    var sel = window.getSelection();
+    if(!sel || !sel.rangeCount) return;
+    var rect = sel.getRangeAt(0).getBoundingClientRect();
+    if(!rect || (rect.width === 0 && rect.height === 0)) return;
+    var w = launcher.offsetWidth || 92, h = launcher.offsetHeight || 34;
+    var x = rect.right + 8, y = rect.top - h - 6;
+    if(x + w > window.innerWidth - 8) x = rect.left - w - 8;
+    if(y < 8) y = rect.bottom + 8;
+    launcher.style.left = Math.max(8, x) + 'px';
+    launcher.style.top = Math.max(8, y) + 'px';
+  }
+  function showLauncher(){
+    var txt = selectionText();
+    if(!txt){ launcher.classList.remove('on'); return; }
+    lastSelText = txt;
+    placeLauncher();
+    launcher.classList.add('on');
+  }
+  function hideLauncher(){ launcher.classList.remove('on'); }
+  document.addEventListener('selectionchange', function(){
+    if(launcherT) cancelAnimationFrame(launcherT);
+    launcherT = requestAnimationFrame(showLauncher);
+  });
+  window.addEventListener('scroll', hideLauncher, true);
+  launcher.addEventListener('mousedown', function(e){ e.preventDefault(); }); // 点击浮标时不清空选区
+  launcher.addEventListener('click', function(e){
+    e.preventDefault();
+    e.stopPropagation();
+    var txt = lastSelText || selectionText();
+    hideLauncher();
+    if(!txt) return;
+    if(txt.length > 120) txt = txt.slice(0, 120) + '…';
+    openPanel();
+    inputEl.value = '';
+    askAI('请讲解这段话：' + txt);
+  });
+
   // ---- 样式 ----
   var style = document.createElement('style');
   style.textContent = [
@@ -3134,6 +3277,14 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     '#ai-chat-btn,#ai-chat-panel,#ai-chat-panel *{cursor:auto !important}',
     '#ai-chat-btn,.ai-followup,.ai-send,.ai-close{cursor:pointer !important}',
     '.ai-input{cursor:text !important}',
+    '.ai-head-title{font-weight:600;color:#c7d2fe}',
+    '#ai-ask-launcher{position:fixed;z-index:100002;display:none;align-items:center;gap:6px;',
+    'padding:7px 12px;border-radius:999px;border:1px solid rgba(125,211,252,.5);',
+    'background:rgba(15,23,42,.94);color:#e0f2fe;font-size:13px;font-family:inherit;cursor:pointer !important;',
+    'box-shadow:0 6px 24px rgba(0,0,0,.5);opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s;pointer-events:auto}',
+    '#ai-ask-launcher.on{display:flex;opacity:1;transform:none}',
+    '#ai-ask-launcher:hover{background:rgba(15,23,42,1);border-color:#7dd3fc}',
+    '#ai-ask-launcher svg{width:16px;height:16px;flex:0 0 16px}',
     '@media(max-width:640px){#ai-chat-panel{right:8px;bottom:8px;width:calc(100vw-16px);height:440px;border-radius:12px}}'
   ].join('\n');
   document.head.appendChild(style);
@@ -3189,10 +3340,13 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   onScroll();
 
   // ---- 统计数字自动计算 ----
-  function fillStats(){
+  // 静态兜底：即使 awards-lazy.js 尚未加载，也不显示 0 或 —
+  var STATIC_PROB_COUNT = 110;
+  var STATIC_AWARD_COUNT = 1479;
+  function computeStats(){
     var pf = window.__PROBS_FULL || {};
     var probKeys = Object.keys(pf).filter(function(k){ return k !== '__arr'; });
-    var probCount = probKeys.length;
+    var probCount = probKeys.length || STATIC_PROB_COUNT;
     var awardCount = 0;
     var awardKeys = {};
     if (window.__AWARDS_BY_NAME) {
@@ -3204,13 +3358,25 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
         });
       });
     }
+    if (!awardCount) awardCount = STATIC_AWARD_COUNT;
+    return { probCount: probCount, awardCount: awardCount, awardKeys: awardKeys };
+  }
+  function renderStats(stats){
+    stats = stats || computeStats();
     var statEls = document.querySelectorAll('[data-stat]');
     statEls.forEach(function(el){
       var key = el.getAttribute('data-stat');
-      if (key === 'total-problems') el.textContent = probCount;
-      else if (key === 'total-awardees') el.textContent = awardCount;
-      else if (key === 'award-keys') el.textContent = Object.keys(awardKeys).length;
+      if (key === 'total-problems') el.textContent = stats.probCount;
+      else if (key === 'total-awardees') el.textContent = stats.awardCount;
+      else if (key === 'award-keys') el.textContent = Object.keys(stats.awardKeys).length;
     });
+  }
+  function fillStats(){
+    renderStats(computeStats());
+    // awards-lazy.js 加载完成后再次刷新为真实数字
+    if (typeof window.__ensureAwards === 'function') {
+      window.__ensureAwards(function(){ renderStats(computeStats()); });
+    }
   }
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', fillStats);
