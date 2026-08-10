@@ -292,7 +292,7 @@
   .beacon.flash{animation:beaconFlash 1.6s ease-out 2}
   @keyframes beaconFlash{0%{background:rgba(150,170,255,.28)}100%{background:transparent}}
   .beacon .b-name{font-size:13px;color:var(--ink);font-weight:500}
-  .beacon .b-cn{font-size:11.5px;color:rgba(255,255,255,.55);font-weight:400;margin-left:6px;font-family:var(--serif)}
+  .beacon .b-en{font-size:11.5px;color:rgba(255,255,255,.5);font-weight:400;margin-left:6px;font-family:var(--serif)}
   .beacon .b-award{font-size:10.5px;color:var(--ink-dim);letter-spacing:.04em;margin-top:1px;display:flex;align-items:center}
   .beacon .mini-medal{width:12px;height:12px;flex:0 0 12px;margin-right:4px;opacity:.92}
   .beacon .b-note{font-size:11.5px;color:rgba(255,255,255,.62);margin-top:2px}
@@ -1651,7 +1651,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
         var inner = it.img ? '<img src="'+esc(it.img)+'" alt="'+esc(it.cn)+'"/>' : bustSVG();
         var mono  = it.img ? '' : '<span class="mono">'+it.av+'</span>';
         html+='<div class="beacon" data-t="'+it.t+'"><div class="avatar" style="--c:'+col+'">'+inner+mono+'</div>'
-          +'<div class="info"><div class="b-name">'+it.n+'<span class="b-cn">'+it.cn+'</span></div>'
+          +'<div class="info"><div class="b-name">'+esc(it.cn||it.n)+'<span class="b-en">'+esc(it.n)+'</span></div>'
           +'<div class="b-award">'+medalMini(col)+it.a+'</div>'
           +'<div class="b-note">'+it.d+'</div></div></div>';
       });
@@ -1674,7 +1674,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
             var mono =it.img?'':'<span class="mono">'+it.av+'</span>';
             var n=document.createElement('div'); n.className='beacon'; n.dataset.t=it.t;
             n.innerHTML='<div class="avatar" style="--c:'+col+'">'+inner+mono+'</div>'
-              +'<div class="info"><div class="b-name">'+it.n+'<span class="b-cn">'+it.cn+'</span></div>'
+              +'<div class="info"><div class="b-name">'+esc(it.cn||it.n)+'<span class="b-en">'+esc(it.n)+'</span></div>'
               +'<div class="b-award">'+medalMini(col)+it.a+'</div>'
               +'<div class="b-note">'+it.d+'</div></div>';
             n.__it=it; n.__bi=bi; list.appendChild(n); wireBeacon(n);
@@ -2479,6 +2479,16 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     }
     return n;
   }
+  // 显示用姓名：中文优先，无中文则回退英文（含裸 Q 编号守卫）
+  function cnOrName(rec) {
+    if (rec && rec.cn) return rec.cn;
+    // 相关获奖者/相关科学家对象常仅带 name，尝试反查全量库的中文名
+    if (rec && rec.name) {
+      var full = findAwardRecords(rec.name);
+      if (full && full[0] && full[0].cn) return full[0].cn;
+    }
+    return personLabel(rec);
+  }
 
   /* 扁平获奖者数组，用于按「问题 + 姓氏 token」容错匹配 reps（如钱德拉塞卡） */
   var ALL = [];
@@ -2650,7 +2660,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
         las.slice(0, 40).map(function (l) {
           // PL 数据为数组格式 [name, award]；转为对象传给 personLabel
           var lo = typeof l === 'object' && !Array.isArray(l) ? l : {name:l[0], award:l[1]};
-          return '<a class="d-link" data-detail="person:' + esc(lo.name) + '">' + esc(personLabel(lo)) +
+          return '<a class="d-link" data-detail="person:' + esc(lo.name) + '">' + esc(cnOrName(lo)) +
             (lo.award ? ' · ' + esc(lo.award) : '') + ' →</a>';
         }).join('') +
         (las.length > 40 ? '<span class="d-more">… 共 ' + las.length + ' 位</span>' : '') + '</div></section>';
@@ -2660,7 +2670,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       h += '<section class="d-sec"><h3>相关科学家</h3><div class="d-links">';
       rs.forEach(function(s){
         var clickable = s.awardId ? (' data-detail="award:'+esc(s.awardId)+'"') : (' data-detail="person:'+esc(s.name)+'"');
-        h += '<a class="d-link d-sci-link"'+clickable+'><b>' + esc(s.name) + '</b>'
+        h += '<a class="d-link d-sci-link"'+clickable+'><b>' + esc(cnOrName(s)) + '</b>'
           + (s.note ? '<span class="d-sci-note">' + esc(s.note) + '</span>' : '') + ' →</a>';
       });
       h += '</div></section>';
