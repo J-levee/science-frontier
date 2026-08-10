@@ -290,25 +290,14 @@ async function runTest(name, vw, vh) {
     return b ? { hasSvg: !!b.querySelector('svg'), text: b.textContent || '' } : null;
   });
   check('AI chat button uses SVG icon (not emoji)', aiBtnIcon && aiBtnIcon.hasSvg && !aiBtnIcon.text.includes('💬'), aiBtnIcon && aiBtnIcon.text);
-  // 部署版应通过构建注入 key（新 key 已轮换）；未配置时发送问题应给出配置提示
-  const hasApiKey = await page.evaluate(() => !!(window.__DASHSCOPE_API_KEY && String(window.__DASHSCOPE_API_KEY).trim()));
-  check('AI chat API key configured (new key wired)', hasApiKey);
+  // 生产环境统一走服务端代理：前端不再持有 key，改为配置 AI_PROXY_URL
+  const proxyOk = await page.evaluate(() => !!(window.__AI_PROXY_URL && String(window.__AI_PROXY_URL).trim()));
+  check('AI chat uses server proxy (AI_PROXY_URL configured)', proxyOk);
+  const leaksKey = await page.evaluate(() => !!(window.__DASHSCOPE_API_KEY && String(window.__DASHSCOPE_API_KEY).trim()));
+  check('AI chat does NOT expose API key in frontend', !leaksKey);
   await page.evaluate(() => { const b = document.getElementById('ai-chat-btn'); if (b) b.click(); });
   await sleep(400);
   check('AI chat panel opens', await page.evaluate(() => { const p = document.getElementById('ai-chat-panel'); return p && p.classList.contains('open'); }));
-  if (!hasApiKey) {
-    await page.evaluate(() => {
-      const input = document.querySelector('#ai-chat-panel .ai-input');
-      if (input) { input.value = '测试问题'; input.dispatchEvent(new Event('input', { bubbles: true })); }
-    });
-    await page.evaluate(() => { const s = document.querySelector('#ai-chat-panel .ai-send'); if (s) s.click(); });
-    await sleep(400);
-    const keyHint = await page.evaluate(() => {
-      const pnl = document.getElementById('ai-chat-panel');
-      return pnl ? pnl.innerHTML.includes('尚未配置 API key') || pnl.innerText.includes('尚未配置 API key') : false;
-    });
-    check('AI chat shows API-key hint when unconfigured', keyHint);
-  }
   await page.evaluate(() => { const c = document.querySelector('#ai-chat-panel .ai-close'); if (c) c.click(); });
   await sleep(300);
 
@@ -495,22 +484,11 @@ async function runExplainerTests() {
     await page.evaluate(() => { const b = document.getElementById('aw-btn'); if (b) b.click(); });
     await sleep(300);
     check('Explainer ' + p + ' · AI panel opens', await page.evaluate(() => { const pnl = document.getElementById('aw-panel'); return pnl && pnl.classList.contains('open'); }));
-    // 检测本页是否配置了 key（主站通过构建注入；子页若未注入则为未配置）
-    const explainerHasKey = await page.evaluate(() => !!(window.__DASHSCOPE_API_KEY && String(window.__DASHSCOPE_API_KEY).trim()));
-    check('Explainer ' + p + ' · API key configured', explainerHasKey);
-    if (!explainerHasKey) {
-      await page.evaluate(() => {
-        const input = document.querySelector('#aw-panel .aw-input');
-        if (input) { input.value = '测试问题'; input.dispatchEvent(new Event('input', { bubbles: true })); }
-      });
-      await page.evaluate(() => { const s = document.querySelector('#aw-panel .aw-send'); if (s) s.click(); });
-      await sleep(400);
-      const explainerKeyHint = await page.evaluate(() => {
-        const pnl = document.getElementById('aw-panel');
-        return pnl ? (pnl.innerHTML.includes('尚未配置 API key') || pnl.innerText.includes('尚未配置 API key')) : false;
-      });
-      check('Explainer ' + p + ' · AI send shows API-key hint when unconfigured', explainerKeyHint);
-    }
+    // 生产环境走代理：本页不再内联 key，改为配置 AI_PROXY_URL
+    const explainerProxy = await page.evaluate(() => !!(window.__AI_PROXY_URL && String(window.__AI_PROXY_URL).trim()));
+    check('Explainer ' + p + ' · AI proxy configured (no inline key)', explainerProxy);
+    const explainerLeaks = await page.evaluate(() => !!(window.__DASHSCOPE_API_KEY && String(window.__DASHSCOPE_API_KEY).trim()));
+    check('Explainer ' + p + ' · does NOT expose API key in frontend', !explainerLeaks);
     // kakeya tabs
     if (p === 'kakeya') {
       const tabCount = await page.evaluate(() => document.querySelectorAll('.tab-btn').length);
