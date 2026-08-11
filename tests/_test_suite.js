@@ -680,13 +680,13 @@ async function runExplainerTests() {
     await sleep(800);
     const info = await page.evaluate(() => ({
       h2: (document.querySelector('h2,h1') || {}).textContent || '',
-      back: !!document.querySelector('.back, a[href*="design-proposal-v11"]'),
+      back: (function(){ var b=document.querySelector('.back'); return b ? (b.getAttribute('href')||'') : null; })(),
       aiBtns: document.querySelectorAll('[data-ai-q]').length,
       aiWidget: !!document.getElementById('aw-btn'),
       len: document.body.innerText.length,
     }));
     check('Explainer ' + p + ' · has title', info.h2.length > 0, info.h2.slice(0, 24));
-    check('Explainer ' + p + ' · back link', info.back);
+    check('Explainer ' + p + ' · back link correct (no stale entry)', info.back !== null && info.back.indexOf('design-proposal-v11') === -1, JSON.stringify(info.back));
     check('Explainer ' + p + ' · inline AI buttons (>=1)', info.aiBtns >= 1, 'got ' + info.aiBtns);
     check('Explainer ' + p + ' · AI widget mounted', info.aiWidget);
     check('Explainer ' + p + ' · substantial content', info.len > 800, 'len=' + info.len);
@@ -730,6 +730,25 @@ async function runExplainerTests() {
     check('Explainer ' + p + ' · AI proxy configured (no inline key)', explainerProxy);
     const explainerLeaks = await page.evaluate(() => !!(window.__DASHSCOPE_API_KEY && String(window.__DASHSCOPE_API_KEY).trim()));
     check('Explainer ' + p + ' · does NOT expose API key in frontend', !explainerLeaks);
+    // 划词提问（本次新增移植自主页）：选中正文 → 浮动「提问」浮标 (#aw-ask-launcher.on) 出现
+    const selAsk = await page.evaluate(() => {
+      const para = document.querySelector('.wrap p, .article p, article p, .content p, main p');
+      if (!para) return { ok: false, reason: 'no-para' };
+      const range = document.createRange();
+      range.selectNodeContents(para);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      document.dispatchEvent(new Event('selectionchange'));
+      return new Promise(res => {
+        setTimeout(() => {
+          const el = document.getElementById('aw-ask-launcher');
+          if (!el) return res({ ok: false, reason: 'no-launcher' });
+          res({ ok: el.classList.contains('on'), on: el.classList.contains('on') });
+        }, 350);
+      });
+    });
+    check('Explainer ' + p + ' · 划词提问浮标出现', selAsk.ok, JSON.stringify(selAsk));
     // footer + 关于我们（explainer chrome 注入）
     check('Explainer ' + p + ' · footer present', await page.evaluate(() => !!document.getElementById('exFootBar')));
     check('Explainer ' + p + ' · about link present', await page.evaluate(() => !!document.getElementById('ex-openAbout')));
@@ -754,6 +773,45 @@ async function runExplainerTests() {
     }
     await page.close();
   }
+
+  // ─── 移动端 explainer 专项（375×812）：回答用户"其他功能移动端是否都更新"的诉求 ───
+  {
+    const mUrl = 'file://' + path.join(ROOT, 'website', 'explainers', 'dark-energy.html');
+    const mp = await browser.newPage();
+    const mErrs = [];
+    mp.on('pageerror', e => { mErrs.push(e.message); errorsAll.push('[explainer:mobile-dark-energy] ' + e.message); });
+    await mp.setViewport({ width: 375, height: 812 });
+    await mp.goto(mUrl + '?t=' + Date.now(), { waitUntil: 'networkidle0' });
+    await sleep(600);
+    const mInfo = await mp.evaluate(() => {
+      const b = document.querySelector('.back');
+      return { back: b ? (b.getAttribute('href') || '') : null, widget: !!document.getElementById('aw-btn') };
+    });
+    check('Mobile Explainer dark-energy · back link correct (no stale entry)', mInfo.back !== null && mInfo.back.indexOf('design-proposal-v11') === -1, JSON.stringify(mInfo.back));
+    check('Mobile Explainer dark-energy · AI widget mounted', mInfo.widget);
+    const mSel = await mp.evaluate(() => {
+      const para = document.querySelector('.wrap p, .article p, article p, .content p, main p');
+      if (!para) return { ok: false, reason: 'no-para' };
+      const range = document.createRange();
+      range.selectNodeContents(para);
+      const sel = window.getSelection();
+      sel.removeAllRanges();
+      sel.addRange(range);
+      document.dispatchEvent(new Event('selectionchange'));
+      return new Promise(res => {
+        setTimeout(() => {
+          const el = document.getElementById('aw-ask-launcher');
+          if (!el) return res({ ok: false, reason: 'no-launcher' });
+          const cs = getComputedStyle(el);
+          res({ ok: el.classList.contains('on') && cs.display !== 'none' && cs.visibility !== 'hidden', on: el.classList.contains('on'), display: cs.display });
+        }, 350);
+      });
+    });
+    check('Mobile Explainer dark-energy · 划词提问浮标出现', mSel.ok, JSON.stringify(mSel));
+    check('Mobile Explainer dark-energy · no pageerror', mErrs.length === 0, mErrs.join('|'));
+    await mp.close();
+  }
+
   await browser.close();
 }
 
