@@ -56,19 +56,19 @@
 
 ```bash
 # 方式一：直接打开
-open design-proposal-v11.html
+open index.html
 
 # 方式二：本地服务
 cd 科学边界项目
 python -m http.server 8767
-# 浏览器打开 http://127.0.0.1:8767/design-proposal-v11.html
+# 浏览器打开 http://127.0.0.1:8767/index.html
 ```
 
 ## 📂 结构
 
 ```
 科学边界项目/
-├── design-proposal-v11.html    ← 主入口（单文件应用）
+├── index.html    ← 主入口（单文件应用）
 ├── explainers/                 ← 6 个深度科普页面
 │   ├── kakeya.html             ← 挂谷猜想
 │   ├── dark-energy.html        ← 暗能量与宇宙命运

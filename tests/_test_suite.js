@@ -689,6 +689,12 @@ async function runExplainerTests() {
     check('Explainer ' + p + ' · back link correct (no stale entry)', info.back !== null && info.back.indexOf('design-proposal-v11') === -1, JSON.stringify(info.back));
     check('Explainer ' + p + ' · inline AI buttons (>=1)', info.aiBtns >= 1, 'got ' + info.aiBtns);
     check('Explainer ' + p + ' · AI widget mounted', info.aiWidget);
+    // 缓存破坏：ai-widget.js 必须带 ?v= 查询参数，否则浏览器/CDN 会缓存旧 JS（划词提问/语音等失效，用户看不到更新）
+    const cacheBust = await page.evaluate(() => {
+      const s = document.querySelector('script[src*="ai-widget.js"]');
+      return s ? s.getAttribute('src') : '';
+    });
+    check('Explainer ' + p + ' · ai-widget.js has cache-bust (?v=)', /ai-widget\.js\?v=/.test(cacheBust), cacheBust);
     check('Explainer ' + p + ' · substantial content', info.len > 800, 'len=' + info.len);
     // 页面级朗读全文（article TTS）已注入每个 explainer 页，且位于标题/副标题下方
     const tts = await page.evaluate(() => {
