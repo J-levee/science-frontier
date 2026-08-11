@@ -561,6 +561,45 @@ async function runTest(name, vw, vh) {
 async function runExplainerTests() {
   console.log('\n═══ Explainer pages ═══');
   const browser = await puppeteer.launch({ executablePath: CHROME, headless: 'new', args: ['--no-sandbox', '--disable-gpu'] });
+  // ─── 深度科普讲解首页（explainers/index.html）：挂谷猜想卡片已移除，其余卡片完好 ───
+  {
+    const idxUrl = 'file://' + path.join(ROOT, 'website', 'explainers', 'index.html');
+    const ip = await browser.newPage();
+    const iErrs = [], i404 = [];
+    ip.on('pageerror', e => { iErrs.push(e.message); errorsAll.push('[explainer:index] ' + e.message); });
+    ip.on('console', m => { if (m.type() === 'error') { iErrs.push(m.text()); errorsAll.push('[explainer:index] ' + m.text()); } });
+    ip.on('response', r => { if (r.status() >= 400 && !/audio\//.test(r.url())) { i404.push(r.status() + ' ' + r.url()); errorsAll.push('[explainer:index] 404 ' + r.url()); } });
+    await ip.goto(idxUrl + '?t=' + Date.now(), { waitUntil: 'networkidle0' });
+    await sleep(500);
+    const idx = await ip.evaluate(() => {
+      const cards = [].slice.call(document.querySelectorAll('.grid .card'));
+      const hrefs = cards.map(c => c.getAttribute('href') || '');
+      const titles = cards.map(c => (c.querySelector('h3') ? c.querySelector('h3').textContent : ''));
+      return {
+        title: (document.querySelector('h1') || {}).textContent || '',
+        count: cards.length,
+        kakeyaHref: hrefs.filter(h => /kakeya/i.test(h)).length,
+        kakeyaTitle: titles.filter(t => /挂谷/.test(t)).length,
+        titlesStr: titles.join(' | '),
+      };
+    });
+    // 核心：挂谷猜想内容块已从深度讲解首页移除
+    check('深度讲解首页 · 标题含「深度科普讲解」', idx.title.includes('深度科普讲解'), idx.title);
+    check('深度讲解首页 · 挂谷猜想卡片已移除 (href)', idx.kakeyaHref === 0, 'kakeya href count=' + idx.kakeyaHref);
+    check('深度讲解首页 · 挂谷猜想卡片已移除 (标题)', idx.kakeyaTitle === 0, 'kakeya title count=' + idx.kakeyaTitle);
+    // 扩展同类验证：删除一张卡后，其余卡片必须完好，防止误删其他专题
+    check('深度讲解首页 · 其余卡片数量正确 (6)', idx.count === 6, 'got ' + idx.count + ' [' + idx.titlesStr + ']');
+    check('深度讲解首页 · 含 暗能量 卡片', /暗能量/.test(idx.titlesStr));
+    check('深度讲解首页 · 含 量子纠错 卡片', /量子纠错/.test(idx.titlesStr));
+    check('深度讲解首页 · 含 可控核聚变 卡片', /可控核聚变|核聚变/.test(idx.titlesStr));
+    check('深度讲解首页 · 含 AGI 卡片', /AGI|通用人工智能/.test(idx.titlesStr));
+    check('深度讲解首页 · 含 睡眠 卡片', /睡眠/.test(idx.titlesStr));
+    check('深度讲解首页 · 含 脑机接口 卡片', /脑机接口/.test(idx.titlesStr));
+    check('深度讲解首页 · 无 pageerror', iErrs.length === 0, iErrs.join('|'));
+    check('深度讲解首页 · 无缺失资源', i404.length === 0, i404.join('|'));
+    await ip.close();
+  }
+
   const pages = ['kakeya', 'agi', 'dark-energy', 'fusion', 'quantum-error', 'sleep'];
   for (const p of pages) {
     const url = 'file://' + path.join(ROOT, 'website', 'explainers', p + '.html');
