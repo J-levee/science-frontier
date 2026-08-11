@@ -2802,10 +2802,29 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     return h;
   }
 
+  function tokenize(s) {
+    return (s || '').toLowerCase().normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .replace(/[.·,]/g, ' ')
+      .trim().split(/\s+/)
+      .filter(function (x) { return x.length > 0; });
+  }
   function findAwardRecords(name) {
     var nm = normName(name);
     if (AW()[nm] && AW()[nm].length) return AW()[nm];
-    // 容错：reps 名称可能与奖项库略有出入（如「S. Chandrasekhar」vs「Subrahmanyan Chandrasekhar」）
+    // 容错 1：中间名/缩写省略（如 "Francis Crick" vs "Francis Harry Compton Crick"）
+    // 按空格分词，找包含所有 token 的 key（至少 2 个 token 才容错，避免单 token 误配）。
+    var tokens = tokenize(name).filter(function (t) { return t.length >= 2; });
+    if (tokens.length) {
+      var aw = AW();
+      var keys = Object.keys(aw);
+      for (var i = 0; i < keys.length; i++) {
+        var k = keys[i];
+        var all = tokens.every(function (tok) { return k.indexOf(tok) >= 0; });
+        if (all && aw[k] && aw[k].length) return aw[k];
+      }
+    }
+    // 容错 2：reps 名称可能与奖项库略有出入（如「S. Chandrasekhar」vs「Subrahmanyan Chandrasekhar」）
     var t = null;
     if (window.BEAMS) window.BEAMS.forEach(function (b) {
       b.items.forEach(function (it) { if (it.n === name) t = it.t; });
@@ -2827,7 +2846,12 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     var enName = personLabel(r0);
     var cnName = r0.cn || '';
     var hasCN = cnName && cnName !== enName;
-    var portrait = r0.photo || (window.AVATAR_MAP || {})[normName(name)];
+    // 头像优先用本地 AVATAR_MAP（avatars/ 目录已有 47 张本地图），
+    // 其次才用奖项库中的远程 Commons 照片；传入的 name 可能是中文显示名，
+    // 所以用记录真实英文名 r0.name 查映射，最后再用传入 name 兜底。
+    var portrait = (window.AVATAR_MAP || {})[normName(r0.name || name)]
+      || (window.AVATAR_MAP || {})[normName(name)]
+      || r0.photo;
     // Commons 原图常为数 MB；限制宽度减少带宽（性能优化）
     if (portrait && portrait.indexOf('Special:FilePath') >= 0 && portrait.indexOf('width=') < 0) {
       portrait += (portrait.indexOf('?') >= 0 ? '&' : '?') + 'width=240';
@@ -2974,9 +2998,14 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     // 文本清洗：剥离 markdown 粗体、[名](url) 链接、裸 URL —— 避免朗读器逐字读 URL
     function cleanText(t){
       return String(t || '')
-        .replace(/\*\*(.+?)\*\*/g, '$1')
-        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
-        .replace(/https?:\/\/[^\s\)\]]+/g, '')
+        .replace(/\*\*(.+?)\*\*/g, '$1')                         // markdown 粗体 → 纯文本
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')              // markdown 链接 → 保留名称，去掉 URL
+        .replace(/<a\b[^>]*href="[^"]*"[^>]*>([^<]*)<\/a>/gi, '$1') // 防御：HTML 链接 → 保留文本
+        .replace(/https?:\/\/[^\s\)\]）]+/g, '')                // http(s) 裸 URL
+        .replace(/www\.[a-zA-Z0-9][^\s]*\.[a-zA-Z]{2,}[^\s]*/g, '') // 无 scheme 的 www.xxx.com
+        .replace(/[\(\（]\s*(?:https?:\/\/|www\.)[^\s\)\）]*\s*[\)\）]/g, '') // (URL) /（URL）
+        .replace(/(?:来源|参考|References|Refs|来源链接)[：:\s]+(?:https?:\/\/|www\.)[^\s]+/g, '') // 来源：URL
+        .replace(/\[\d+\]\s*/g, '')                             // [1] [2] 引用标号
         .replace(/[<>]/g, '')
         .replace(/\s+/g, ' ')
         .trim();
@@ -3018,7 +3047,9 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       }
       next();
     }
-    return { supported: supported, isOn: isOn, setOn: setOn, speak: speak, stop: stop, cleanText: cleanText };
+    var api = { supported: supported, isOn: isOn, setOn: setOn, speak: speak, stop: stop, cleanText: cleanText };
+    window.__AI_CHAT_TTS = api; // QA hook for regression tests
+    return api;
   })();
 
   // 给一条 AI 回答挂上「朗读本条」按钮
@@ -3113,7 +3144,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       + '## 规则\n'
       + '1. 用最简单的语言（如同给小学生讲课），多用比喻\n'
       + '2. 第一次出现的概念括号注英文原名\n'
-      + '3. 末尾列 2-4 条来源 [来源名](URL)\n'
+      + '3. 末尾列 2-4 条来源，必须使用 [来源名](URL) 格式；只写来源名称，不要把 URL 写成裸链接或 www.xxx.com 形式\n'
       + '4. 超出的范围就如实说，并给搜索建议\n'
       + '5. 300-500 字，3-5 个自然段\n'
       + '6. 不要用学术术语，要解释';

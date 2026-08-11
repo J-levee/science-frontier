@@ -168,6 +168,9 @@ async function runTest(name, vw, vh) {
   // 旧测试只断言 detail-open 类，曾让「1479 位科学家点开全是暂无详情」躲过全绿测试。
   await page.evaluate(() => { if (window.closeDetail) window.closeDetail(); });
   await sleep(200);
+  // 确保获奖懒加载数据就绪，避免 openDetail 时数据未回返
+  await page.evaluate(() => new Promise(resolve => window.__ensureAwards(resolve)));
+  await sleep(400);
   await page.evaluate(() => { if (window.openDetail) window.openDetail('person', 'Albert Einstein'); });
   await sleep(600);
   const person = await page.evaluate(() => {
@@ -176,6 +179,7 @@ async function runTest(name, vw, vh) {
     if (!panel) return { open, exists: false };
     const titleEl = panel.querySelector('.d-title');
     const title = titleEl ? (titleEl.textContent || '').trim() : '';
+    const img = panel.querySelector('.d-portrait-img');
     return {
       open, exists: true,
       isEmpty: !!panel.querySelector('.d-empty'),
@@ -183,6 +187,8 @@ async function runTest(name, vw, vh) {
       title,
       hasAward: !!panel.querySelector('.d-award'),
       hasSource: !!panel.querySelector('.d-sources a'),
+      portraitImg: img ? img.src : '',
+      hasPortrait: img && img.src && img.src.includes('/avatars/'),
     };
   });
   check('Person detail opens (Albert Einstein)', person.open);
@@ -190,6 +196,7 @@ async function runTest(name, vw, vh) {
   check('Person detail has .d-title with real name', person.hasTitle, person.title);
   check('Person detail has ≥1 award record (.d-award)', person.hasAward);
   check('Person detail shows official source link (A批 662 链接)', person.hasSource);
+  check('Person detail shows real portrait avatar (not only fallback)', person.hasPortrait, person.portraitImg);
   // 回归：浮层打开时全局 wheel 劫持不得吞掉滚轮，否则面板内部内容滚不动
   const wheelOk = await page.evaluate(() => {
     const e = new WheelEvent('wheel', { deltaY: 300, bubbles: true, cancelable: true });
@@ -199,6 +206,27 @@ async function runTest(name, vw, vh) {
   check('Person detail open → wheel NOT hijacked (panel内部可滚动)', wheelOk);
   await page.evaluate(() => { if (window.closeDetail) window.closeDetail(); });
   await sleep(200);
+
+  // ─── 8c. 科学家简称也能打开详情（中间名省略容错）───
+  await page.evaluate(() => { if (window.openDetail) window.openDetail('person', 'Francis Crick'); });
+  await sleep(700);
+  const crick = await page.evaluate(() => {
+    const panel = document.getElementById('detail');
+    return { open: document.documentElement.classList.contains('detail-open'), isEmpty: !!(panel && panel.querySelector('.d-empty')) };
+  });
+  check('Person detail opens for short name "Francis Crick"', crick.open);
+  check('Francis Crick detail NOT empty', !crick.isEmpty, crick.isEmpty ? '中间名省略导致查无此人' : '');
+  await page.evaluate(() => { if (window.closeDetail) window.closeDetail(); });
+  await sleep(200);
+
+  // ─── 8d. AI TTS 清洗来源链接 ───
+  const ttsClean = await page.evaluate(() => {
+    if (!window.__AI_CHAT_TTS || !window.__AI_CHAT_TTS.cleanText) return { ok: false, reason: 'no hook' };
+    var sample = '黑洞是时空极度弯曲的区域。来源：[诺贝尔奖官网](https://www.nobelprize.org/) 与 www.nasa.gov 以及（https://example.com）参考：https://arxiv.org/abs/1234 。';
+    var out = window.__AI_CHAT_TTS.cleanText(sample);
+    return { ok: !/https?:\/\/|www\.|nasa\.gov|arxiv/.test(out), out: out };
+  });
+  check('AI TTS cleanText strips source URLs', ttsClean.ok, ttsClean.out);
 
   // ─── 9. Star click → independent selection (.focused-sel + .hi) ───
   await page.evaluate(() => { const s = document.querySelector('.bc-star'); if (s) s.click(); });
