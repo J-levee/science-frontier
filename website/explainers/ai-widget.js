@@ -4,6 +4,7 @@
   // API KEY 不再硬编码：优先读取 window.__DASHSCOPE_API_KEY，未配置则提示用户
   // 注意：前端静态站点无法真正隐藏 key；已泄露的 key 请到 DashScope 控制台撤销/轮换
   var API_KEY = (typeof window !== 'undefined' && window.__DASHSCOPE_API_KEY ? String(window.__DASHSCOPE_API_KEY).trim() : '');
+  var PROXY_URL = (typeof window !== 'undefined' && window.__AI_PROXY_URL ? String(window.__AI_PROXY_URL).trim() : '');
   var API_URL = 'https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions';
   var MODEL = 'qwen-plus';
   var CORS_PROXIES = [function(u){return'https://corsproxy.io/?'+encodeURIComponent(u);},function(u){return'https://api.allorigins.win/raw?url='+encodeURIComponent(u);}];
@@ -61,13 +62,18 @@
   function addMsg(role,html){var d=document.createElement('div');d.className='aw-msg aw-'+role;d.innerHTML=html;msgs.appendChild(d);msgs.scrollTop=msgs.scrollHeight;return d;}
   function md2html(t){return t.replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\[([^\]]+)\]\(([^)]+)\)/g,'<a href="$2" target="_blank">$1</a>').replace(/\n\n/g,'</p><p>').replace(/\n/g,'<br/>');}
 
-  /* ---- API 调用 ---- */
-  function callAPI(url,payload,n){n=n||0;var fu=n===0?url:CORS_PROXIES[n-1](url);return fetch(fu,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+API_KEY},body:JSON.stringify(payload)}).then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json();}).catch(function(e){if(n<CORS_PROXIES.length)return callAPI(url,payload,n+1);throw e;});}
+  /* ---- API 调用：优先走服务端代理（key 不落前端）；无代理时直连 + CORS 兜底 ---- */
+  function callAPI(url,payload,n){
+    if(PROXY_URL){
+      return fetch(PROXY_URL,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)}).then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json();});
+    }
+    n=n||0;var fu=n===0?url:CORS_PROXIES[n-1](url);return fetch(fu,{method:'POST',headers:{'Content-Type':'application/json','Authorization':'Bearer '+API_KEY},body:JSON.stringify(payload)}).then(function(r){if(!r.ok)throw Error('HTTP '+r.status);return r.json();}).catch(function(e){if(n<CORS_PROXIES.length)return callAPI(url,payload,n+1);throw e;});
+  }
   function ask(question){
     if(loading)return;
-    if(!API_KEY){
+    if(!API_KEY && !PROXY_URL){
       addMsg('user','<p>'+esc(question)+'</p>');
-      addMsg('assistant','<p class="aw-err">⚠️ AI 功能尚未配置 API key。<br><br>本页演示版暂不联网调用大模型。如需体验完整回答，请在页面中设置 <code>window.__DASHSCOPE_API_KEY</code>，或使用后端代理转发请求。<br><br>小提示：此前意外提交到仓库的 key 已删除，请到 DashScope 控制台检查并轮换该 key。</p>');
+      addMsg('assistant','<p class="aw-err">⚠️ AI 功能尚未配置。<br><br>本页演示版暂不联网调用大模型。请通过后端代理（推荐）或页面中设置 <code>window.__DASHSCOPE_API_KEY</code> 来启用。</p>');
       return;
     }
     loading=true; send.disabled=true; send.textContent='...';

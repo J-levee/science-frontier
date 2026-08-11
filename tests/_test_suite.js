@@ -3,7 +3,7 @@ const path = require('path');
 const fs = require('fs');
 
 const ROOT = path.resolve('.');
-const FILE = 'file://' + path.join(ROOT, 'design-proposal-v11.html');
+const FILE = 'file://' + path.join(ROOT, 'website/index.html');
 const CHROME = 'C:/Users/zyd/.cache/puppeteer/chrome/win64-127.0.6533.88/chrome-win64/chrome.exe';
 const OUT = path.join(ROOT, 'verify_shots/test-report');
 fs.mkdirSync(OUT, { recursive: true });
@@ -47,6 +47,9 @@ async function runTest(name, vw, vh) {
   // ─── 1. Title & no fatal errors at load ───
   const title = await page.title();
   check('Page title contains 科学边界', title.includes('科学边界'));
+  check('Page title is 科学边界 · 事件视界观测站', title === '科学边界 · 事件视界观测站', title);
+  const favicon = await page.evaluate(() => !!document.querySelector('link[rel*="icon"]'));
+  check('Page has favicon link', favicon);
 
   // ─── 2. Hero screen ───
   const h1 = await page.evaluate(() => document.querySelector('h1')?.textContent || '');
@@ -452,7 +455,7 @@ async function runExplainerTests() {
   const browser = await puppeteer.launch({ executablePath: CHROME, headless: 'new', args: ['--no-sandbox', '--disable-gpu'] });
   const pages = ['kakeya', 'agi', 'dark-energy', 'fusion', 'quantum-error', 'sleep'];
   for (const p of pages) {
-    const url = 'file://' + path.join(ROOT, 'explainers', p + '.html');
+    const url = 'file://' + path.join(ROOT, 'website', 'explainers', p + '.html');
     const page = await browser.newPage();
     const errs = [];
     const notFound = [];
