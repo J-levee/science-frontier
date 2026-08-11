@@ -611,7 +611,7 @@
   #sHero .sub{font-size:clamp(13px,3.8vw,17px)}
   #sHero .quiet{font-size:11px}
   .hero-explain-chip{font-size:11px;padding:6px 14px}
-  #hotKakeya{position:fixed;left:8px;bottom:80px;transform:none;z-index:30;max-width:calc(100vw-16px)}
+  #hotKakeya{position:fixed;left:50%;bottom:80px;transform:translateX(-50%);z-index:30;max-width:calc(100vw-16px);width:max-content}
   #hotKakeya .hk-t{font-size:14px}
   #hotKakeya .hk-s{font-size:10px}
   .ambient .q-float{font-size:12px;animation-duration:18s !important}
@@ -637,7 +637,8 @@
   .beam .b-hd{flex:0 0 auto;margin-bottom:6px}
   .beam .b-list{flex:1 1 auto;min-height:0;overflow-y:visible;overflow-x:hidden;padding:6px 4px 6px 0;display:flex;flex-wrap:wrap;gap:8px 6px;max-height:none !important}
   .beam .b-avatars{display:contents}
-  .beam .beacon{width:36px;height:36px}
+  .beam .beacon{width:36px;height:36px;position:relative}
+  .beam .beacon .info{display:none}
   .beam .b-nm{margin-top:2px;font-size:9px;line-height:1.1}
   .beam .b-hd h3{font-size:12.5px}
   .beam .b-hd .n{font-size:10px}
@@ -2816,14 +2817,28 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     if (AW()[nm] && AW()[nm].length) return AW()[nm];
     // 容错 1：中间名/缩写省略（如 "Francis Crick" vs "Francis Harry Compton Crick"）
     // 按空格分词，找包含所有 token 的 key（至少 2 个 token 才容错，避免单 token 误配）。
+    // 额外约束：候选记录的真实姓氏（name 最后一个有效 token）必须与输入的姓氏一致，
+    // 否则 "James D. Watson" 会误命中 "James Watson Cronin"（都含 james + watson）。
     var tokens = tokenize(name).filter(function (t) { return t.length >= 2; });
     if (tokens.length) {
       var aw = AW();
       var keys = Object.keys(aw);
+      var hits = [];
       for (var i = 0; i < keys.length; i++) {
         var k = keys[i];
         var all = tokens.every(function (tok) { return k.indexOf(tok) >= 0; });
-        if (all && aw[k] && aw[k].length) return aw[k];
+        if (all && aw[k] && aw[k].length) hits = hits.concat(aw[k]);
+      }
+      if (hits.length) {
+        var inputLast = tokens[tokens.length - 1];
+        var withSurname = hits.filter(function (r) {
+          var recTokens = tokenize(r.name).filter(function (t) { return t.length >= 2; });
+          return recTokens.length && recTokens[recTokens.length - 1] === inputLast;
+        });
+        if (withSurname.length) return withSurname;
+        // 若所有候选姓氏都不匹配（可能是数据本身缺少姓氏或 token 规则不适用），
+        // 回退到第一个命中，避免旧兼容路径断裂。
+        return [hits[0]];
       }
     }
     // 容错 2：reps 名称可能与奖项库略有出入（如「S. Chandrasekhar」vs「Subrahmanyan Chandrasekhar」）

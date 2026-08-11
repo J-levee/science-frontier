@@ -550,6 +550,73 @@ async function runTest(name, vw, vh) {
     await page.evaluate(() => { const b = document.querySelector('.beacon'); if (b) b.click(); });
     await sleep(400);
     check('Mobile tap beacon → select', await page.evaluate(() => !!document.querySelector('.beacon.is-selected')));
+
+    // ─── 24b. Mobile: hotKakeya horizontally centered ───
+    // 首屏挂谷猜想卡在移动端必须水平居中（用户反馈未居中）
+    const hkCenter = await page.evaluate(() => {
+      const el = document.getElementById('hotKakeya');
+      if (!el) return null;
+      const r = el.getBoundingClientRect();
+      const cx = r.left + r.width / 2;
+      return { cx: Math.round(cx), vw: window.innerWidth, diff: Math.abs(cx - window.innerWidth / 2) };
+    });
+    check('Mobile: hotKakeya horizontally centered', !!hkCenter && hkCenter.diff <= 2,
+      hkCenter ? JSON.stringify(hkCenter) : 'element missing');
+
+    // ─── 24c. Mobile: honor screen shows avatar only (info hidden) ───
+    // 科学家信息屏在移动端只显示头像圆，不显示姓名/奖项/说明，避免排不下
+    const beaconInfo = await page.evaluate(() => {
+      const info = document.querySelector('.beam .beacon .info');
+      if (!info) return { exists: false, display: 'n/a' };
+      return { exists: true, display: getComputedStyle(info).display };
+    });
+    check('Mobile: honor beacon info hidden (avatar-only)', beaconInfo.exists && beaconInfo.display === 'none',
+      JSON.stringify(beaconInfo));
+
+    // ─── 24d. Mobile: scientist name ↔ content correctness guard ───
+    // 修复 findAwardRecords 姓氏约束后：James Cronin（物理学家）不得错配 Watson 的核酸结构内容；
+    // 而 James D. Watson 必须正确路由到其本人记录（含 "nucleic acids" 的获奖说明）。
+    // 直接调用 openDetail 验证渲染正确性。注意：获奖词英文原文在 <details> 折叠区内，
+    // 必须用 textContent（含隐藏内容）而非 innerText（折叠区不计入）。
+    await page.evaluate(() => new Promise(res => {
+      if (typeof window.__ensureAwards === 'function') window.__ensureAwards(() => res());
+      else res();
+    }));
+    // 轮询等待奖项数据真正就绪（懒加载为异步）
+    await page.evaluate(() => new Promise(res => {
+      let n = 0;
+      const t = setInterval(() => {
+        const ok = window.__AWARDS_LONG && Object.keys(window.__AWARDS_LONG).length > 0;
+        if (ok || n++ > 40) { clearInterval(t); res(); }
+      }, 150);
+    }));
+    await sleep(400);
+    // James Cronin —— 必须显示 Cronin 本人，且绝不能混入 Watson 的核酸结构内容
+    await page.evaluate(() => { if (window.closeDetail) window.closeDetail(); });
+    await sleep(300);
+    await page.evaluate(() => { if (window.openDetail) window.openDetail('person', 'James Cronin'); });
+    await sleep(600);
+    const cronin = await page.evaluate(() => {
+      const en = (document.querySelector('.d-name-en') || {}).textContent || '';
+      const body = (document.querySelector('.detail-body') || document.body).textContent || '';
+      return { enName: en, hasWatsonContent: /nucleic acids/i.test(body), isCronin: /cronin/i.test(en) };
+    });
+    check('Mobile: James Cronin → correct person (no Watson leak)',
+      cronin.isCronin && !cronin.hasWatsonContent, JSON.stringify(cronin));
+    // James D. Watson —— 必须路由到 Watson 本人（含 nucleic acids 说明），且不能是 Cronin
+    await page.evaluate(() => { if (window.closeDetail) window.closeDetail(); });
+    await sleep(300);
+    await page.evaluate(() => { if (window.openDetail) window.openDetail('person', 'James D. Watson'); });
+    await sleep(600);
+    const watson = await page.evaluate(() => {
+      const en = (document.querySelector('.d-name-en') || {}).textContent || '';
+      const body = (document.querySelector('.detail-body') || document.body).textContent || '';
+      return { enName: en, hasWatsonContent: /nucleic acids/i.test(body), isWatson: /watson/i.test(en) && !/cronin/i.test(en) };
+    });
+    check('Mobile: James Watson → correct person (nucleic acids content)',
+      watson.isWatson && watson.hasWatsonContent, JSON.stringify(watson));
+    await page.evaluate(() => { if (window.closeDetail) window.closeDetail(); });
+    await sleep(300);
   }
 
   console.log('  viewport errors:', errs.length);
