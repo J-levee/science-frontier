@@ -301,6 +301,14 @@ async function runTest(name, vw, vh) {
   await page.evaluate(() => { const b = document.getElementById('ai-chat-btn'); if (b) b.click(); });
   await sleep(400);
   check('AI chat panel opens', await page.evaluate(() => { const p = document.getElementById('ai-chat-panel'); return p && p.classList.contains('open'); }));
+  // ─── 14b. TTS 语音播报开关 ───
+  const ttsToggle = await page.evaluate(() => {
+    const t = document.querySelector('#ai-chat-panel .ai-tts-toggle');
+    if (!t) return null;
+    return { exists: true, role: t.getAttribute('role'), checked: t.getAttribute('aria-checked'), hidden: t.style.display === 'none' };
+  });
+  check('TTS toggle exists with role=switch', ttsToggle && ttsToggle.exists && ttsToggle.role === 'switch', JSON.stringify(ttsToggle));
+  check('TTS toggle default ON (aria-checked=true)', ttsToggle && ttsToggle.checked === 'true', JSON.stringify(ttsToggle));
   await page.evaluate(() => { const c = document.querySelector('#ai-chat-panel .ai-close'); if (c) c.click(); });
   await sleep(300);
 
@@ -312,6 +320,14 @@ async function runTest(name, vw, vh) {
   await sleep(400);
   check('Attribution modal opens', await page.evaluate(() => { const m = document.getElementById('attribModal'); return m && m.classList.contains('open'); }));
   await page.evaluate(() => { const c = document.querySelector('#attribModal .modal-close'); if (c) c.click(); });
+  await sleep(300);
+  // ─── 15b. About modal ───
+  check('About button exists', await page.evaluate(() => !!document.getElementById('openAbout')));
+  await page.evaluate(() => { const a = document.getElementById('openAbout'); if (a) a.click(); });
+  await sleep(400);
+  check('About modal opens', await page.evaluate(() => { const m = document.getElementById('aboutModal'); return m && m.classList.contains('open'); }));
+  check('About modal shows contact email', await page.evaluate(() => { const m = document.getElementById('aboutModal'); return m && m.innerText.includes('vipsmart@vipslib.com'); }));
+  await page.evaluate(() => { const c = document.querySelector('#aboutModal .modal-close'); if (c) c.click(); });
   await sleep(300);
 
   // ─── 16. Landing animation window ───
@@ -492,6 +508,15 @@ async function runExplainerTests() {
     check('Explainer ' + p + ' · AI proxy configured (no inline key)', explainerProxy);
     const explainerLeaks = await page.evaluate(() => !!(window.__DASHSCOPE_API_KEY && String(window.__DASHSCOPE_API_KEY).trim()));
     check('Explainer ' + p + ' · does NOT expose API key in frontend', !explainerLeaks);
+    // footer + 关于我们（explainer chrome 注入）
+    check('Explainer ' + p + ' · footer present', await page.evaluate(() => !!document.getElementById('exFootBar')));
+    check('Explainer ' + p + ' · about link present', await page.evaluate(() => !!document.getElementById('ex-openAbout')));
+    await page.evaluate(() => { const a = document.getElementById('ex-openAbout'); if (a) a.click(); });
+    await sleep(300);
+    check('Explainer ' + p + ' · about modal opens', await page.evaluate(() => { const m = document.getElementById('ex-aboutModal'); return m && m.classList.contains('open'); }));
+    check('Explainer ' + p + ' · about modal shows email', await page.evaluate(() => { const m = document.getElementById('ex-aboutModal'); return m && m.innerText.includes('vipsmart@vipslib.com'); }));
+    await page.evaluate(() => { const c = document.querySelector('#ex-aboutModal .ex-modal-close'); if (c) c.click(); });
+    await sleep(200);
     // kakeya tabs
     if (p === 'kakeya') {
       const tabCount = await page.evaluate(() => document.querySelectorAll('.tab-btn').length);

@@ -282,5 +282,106 @@ section h2::before{content:"";width:4px;height:20px;background:var(--accent);bor
   else document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in');});
 })();
 </script>
+<style id="ex-chrome-style">
+#exFootBar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 20px;pointer-events:none;opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease;background:linear-gradient(to top,rgba(7,7,11,.85),rgba(7,7,11,0));color:rgba(200,210,240,.5);font-size:11.5px;letter-spacing:.04em;flex-wrap:wrap}
+#exFootBar.visible{opacity:1;transform:none;pointer-events:auto}
+#exFootBar .foot-link{cursor:pointer;color:rgba(220,230,255,.7);transition:color .2s;padding:2px 4px;user-select:none}
+#exFootBar .foot-link:hover{color:#fff}
+#exFootBar .foot-link:focus-visible{outline:1px solid rgba(180,200,255,.4);outline-offset:2px;border-radius:2px}
+#exFootBar .foot-sep{color:rgba(255,255,255,.2)}
+#exFootBar .foot-meta{color:rgba(180,200,255,.4);font-size:10.5px;letter-spacing:.06em}
+@media(max-width:640px){#exFootBar{padding:10px 12px;font-size:10.5px;gap:8px}#exFootBar .foot-meta{display:none}}
+.ex-modal{position:fixed;inset:0;z-index:200;display:none}
+.ex-modal.open{display:flex;align-items:center;justify-content:center}
+.ex-modal-scrim{position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px)}
+.ex-modal-panel{position:relative;max-width:560px;width:90vw;max-height:80vh;overflow-y:auto;background:#11131f;border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:30px 36px;color:#e2e8f0;font-size:14px;line-height:1.85;animation:exModalIn .25s ease}
+@keyframes exModalIn{from{opacity:0;transform:translateY(20px) scale(.96)}to{opacity:1;transform:none}}
+.ex-modal-close{position:absolute;top:12px;right:14px;background:none;border:none;color:rgba(255,255,255,.5);font-size:18px;cursor:pointer;padding:4px 10px;min-height:44px;min-width:44px}
+.ex-modal-close:hover{color:#fff}
+.ex-modal-panel h2{font-size:18px;margin:0 0 18px;color:#fff}
+.ex-modal-panel h3{font-size:14px;color:rgba(180,200,255,.85);margin:18px 0 8px;letter-spacing:.06em;font-weight:600}
+.ex-modal-panel p{margin:0 0 12px;color:rgba(220,230,255,.85)}
+.ex-modal-panel a{color:#93c5fd;text-decoration:underline}
+.ex-modal-panel code{font-family:'JetBrains Mono',monospace;font-size:12px;color:rgba(220,210,140,.85);background:rgba(255,255,255,.04);padding:1px 6px;border-radius:4px}
+@media(max-width:640px){.ex-modal-panel{width:92vw;padding:20px 24px}}
+</style>
+<footer id="exFootBar">
+  <span class="foot-link" id="ex-backTop" role="button" tabindex="0">↑ 顶部</span>
+  <span class="foot-sep">·</span>
+  <span class="foot-link" id="ex-openAttribution" role="button" tabindex="0">来源说明</span>
+  <span class="foot-sep">·</span>
+  <span class="foot-link" id="ex-openAbout" role="button" tabindex="0">关于我们</span>
+  <span class="foot-sep">·</span>
+  <span class="foot-meta">公益科普 · 100% 溯源</span>
+</footer>
+
+<div id="ex-attribModal" class="ex-modal" aria-hidden="true">
+  <div class="ex-modal-scrim"></div>
+  <div class="ex-modal-panel" role="dialog" aria-modal="true" aria-labelledby="ex-attrib-title">
+    <button class="ex-modal-close" aria-label="关闭">✕</button>
+    <h2 id="ex-attrib-title">关于肖像与数据来源</h2>
+    <h3>肖像来源</h3>
+    <p>获奖者肖像来自 <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener">Wikimedia Commons</a> 公共资源库，均以知识共享协议（Creative Commons）或公共领域授权发布。如暂无公开肖像，页面会显示姓名首字符替代。</p>
+    <h3>获奖词来源</h3>
+    <p>获奖词的原文与中译均来自权威官方来源：诺贝尔奖官网（nobelprize.org）、邵逸夫奖官网、图灵奖 ACM 页面、沃尔夫奖官网、京都奖官网、菲尔兹/阿贝尔奖综述、突破奖官网等。每位获奖者均可通过其官方页面链接溯源。</p>
+    <h3>问题来源</h3>
+    <p>前沿问题来源于公开学术文献与权威综述，每条均可通过来源链接点击溯源。</p>
+    <h3>📜 数据质量证书</h3>
+    <div style="font-size:12px;color:rgba(200,210,240,.8);line-height:1.8">
+      <p>✅ <b>100% 溯源</b> — 全站 1479 条获奖记录均链接至官方权威页面，无虚构、无 LLM 编造</p>
+      <p>✅ <b>数据清洗</b> — 已删除 2 条虚构记录；817 条非诺贝尔奖获奖词已于 2026 年 8 月逐个回填至官方原文</p>
+      <p>✅ <b>覆盖奖项</b> — 诺贝尔 / 菲尔兹 / 图灵 / 沃尔夫 / 京都 / 邵逸夫 / 阿贝尔 / 克劳福德 / 突破 / 狄拉克 / 哥德尔 / 拉克斯 / 拉斯克 / 波尔/ 麦克阿瑟 / 拉斯维加斯等 23 项国际科学奖</p>
+      <p>✅ <b>可验证性</b> — 每条链接均可公开访问，无需登录或付费</p>
+    </div>
+    <p style="color:rgba(255,255,255,.5);font-size:12px;margin-top:20px">数据截至 2026 年 7-8 月。本项目是公益科普用途，不做任何商业使用。</p>
+  </div>
+</div>
+
+<div id="ex-aboutModal" class="ex-modal" aria-hidden="true">
+  <div class="ex-modal-scrim"></div>
+  <div class="ex-modal-panel" role="dialog" aria-modal="true" aria-labelledby="ex-about-title">
+    <button class="ex-modal-close" aria-label="关闭">✕</button>
+    <h2 id="ex-about-title">关于「科学边界」</h2>
+    <p>「科学边界」是一个面向 10–16 岁青少年——尤其是山区与乡村师生——的公益科普项目。我们用可交互的星图，把人类最前沿的科学问题，与回应这些问题的获奖科学家，连成一条"从现象到机制、从问题到探索者"的可见路径。</p>
+    <h3>这个网站有什么</h3>
+    <p>· <b>同一片星海</b>：109 个前沿问题，覆盖 10 个科学领域，悬停即可点亮。<br/>· <b>三星引力星系</b>：用三颗恒星代表广阔的学科群，行星守护着未解的问题。<br/>· <b>星光落入人间</b>：1479 位获奖者的故事，100% 链接至官方权威来源。<br/>· <b>问科学</b>：随时向 AI 科普助手提问，答案用最简单的语言讲给你听，并标注来源。</p>
+    <h3>我们的承诺</h3>
+    <p>全部数据 100% 可溯源，绝不虚构、绝不用 AI 编造事实；界面默认开启语音播报，让识字不多的孩子也能"听"懂科学。这是一份送给乡村教室的礼物。</p>
+    <h3>联系我们</h3>
+    <p>合作、建议或数据纠错，欢迎来信：<a href="mailto:vipsmart@vipslib.com">vipsmart@vipslib.com</a></p>
+  </div>
+</div>
+<script id="ex-chrome-js">
+(function(){
+  function wire(modalId, linkId){
+    var modal=document.getElementById(modalId);
+    var link=document.getElementById(linkId);
+    if(!modal||!link) return null;
+    var closeBtn=modal.querySelector('.ex-modal-close');
+    var scrim=modal.querySelector('.ex-modal-scrim');
+    function open(){modal.classList.add('open');modal.setAttribute('aria-hidden','false');}
+    function close(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');}
+    link.addEventListener('click',open);
+    link.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();open();}});
+    if(closeBtn) closeBtn.addEventListener('click',close);
+    if(scrim) scrim.addEventListener('click',close);
+    return close;
+  }
+  var closeAttrib=wire('ex-attribModal','ex-openAttribution');
+  var closeAbout=wire('ex-aboutModal','ex-openAbout');
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){if(closeAttrib)closeAttrib();if(closeAbout)closeAbout();}});
+  var back=document.getElementById('ex-backTop');
+  if(back){
+    function toTop(){window.scrollTo({top:0,behavior:'smooth'});}
+    back.addEventListener('click',toTop);
+    back.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();toTop();}});
+  }
+  var foot=document.getElementById('exFootBar');
+  if(foot){
+    function onScroll(){ if(window.scrollY>window.innerHeight*0.85) foot.classList.add('visible'); else foot.classList.remove('visible'); }
+    window.addEventListener('scroll',onScroll,{passive:true}); onScroll();
+  }
+})();
+</script>
 </body>
 </html>
