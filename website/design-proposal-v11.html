@@ -2061,6 +2061,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
          document.documentElement.classList.contains('teach-open') ||
          document.querySelector('.modal.open') ||
          document.querySelector('#ai-chat-panel.open')) return;
+      // 荣誉光束内部的科学家列表可滚动，滚轮事件应交还给它
+      if(e.target.closest('.b-list')) return;
       var max=document.documentElement.scrollHeight-window.innerHeight;
       if(!max || max<=0) return;
       var cp = clamp(window.scrollY/max, 0, 1);

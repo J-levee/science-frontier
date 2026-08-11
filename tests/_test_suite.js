@@ -492,6 +492,22 @@ async function runExplainerTests() {
     check('Explainer ' + p + ' · inline AI buttons (>=1)', info.aiBtns >= 1, 'got ' + info.aiBtns);
     check('Explainer ' + p + ' · AI widget mounted', info.aiWidget);
     check('Explainer ' + p + ' · substantial content', info.len > 800, 'len=' + info.len);
+    // 页面级朗读全文（article TTS）已注入每个 explainer 页，且位于标题/副标题下方
+    const tts = await page.evaluate(() => {
+      const bar = document.getElementById('exArticleTts');
+      if (!bar) return { ok: false, afterTitle: false };
+      const btn = bar.querySelector('.ex-tts-btn');
+      const h1 = document.querySelector('h1');
+      let afterTitle = false;
+      if (h1) {
+        let n = h1.nextElementSibling;
+        if (n && n.classList && n.classList.contains('hook')) n = n.nextElementSibling;
+        afterTitle = (n === bar);
+      }
+      return { ok: !!btn && bar.textContent.includes('朗读'), afterTitle };
+    });
+    check('Explainer ' + p + ' · article TTS bar injected', tts.ok, JSON.stringify(tts));
+    check('Explainer ' + p + ' · TTS bar placed under title', tts.afterTitle);
     check('Explainer ' + p + ' · no pageerror', errs.length === 0, errs.join('|'));
     check('Explainer ' + p + ' · no missing resources (audio excluded)', notFound.length === 0, notFound.join('|'));
     // test AI panel open + icon + unconfigured hint
