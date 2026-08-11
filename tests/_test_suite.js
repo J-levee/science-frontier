@@ -262,6 +262,31 @@ async function runTest(name, vw, vh) {
   check('Galaxy canvas exists', p1 !== null && p1 !== 'noctx');
   check('Galaxy N-body animating (center pixels change)', p1 !== p2, 'p1=' + p1 + ' p2=' + p2);
 
+  // ─── 10b. 三体星系恒星/行星 → 学科群/领域详情不得「未找到」 ───
+  const galaxyDetails = await page.evaluate(() => {
+    const out = { macros: [], domains: [] };
+    for (let i = 0; i < 3; i++) {
+      if (window.openDetail) window.openDetail('macro', String(i));
+      const p = document.getElementById('detail');
+      const empty = !!(p && p.querySelector('.d-empty'));
+      const title = ((p && p.querySelector('.d-title')) || {}).textContent || '';
+      out.macros.push({ i, empty, title: title.slice(0, 30) });
+      if (window.closeDetail) window.closeDetail();
+    }
+    const domainNames = ['宇宙学','物理学','数学与计算','材料与能源','生命科学','化学','地球科学与气候','信息与智能','航天与太空探索','社会科学与认知'];
+    domainNames.forEach(function(d){
+      if (window.openDetail) window.openDetail('domain', d);
+      const p = document.getElementById('detail');
+      const empty = !!(p && p.querySelector('.d-empty'));
+      const title = ((p && p.querySelector('.d-title')) || {}).textContent || '';
+      out.domains.push({ d, empty, title: title.slice(0, 30) });
+      if (window.closeDetail) window.closeDetail();
+    });
+    return out;
+  });
+  galaxyDetails.macros.forEach(m => check('Galaxy star macro ' + m.i + ' NOT empty', !m.empty, m.title));
+  galaxyDetails.domains.forEach(d => check('Galaxy planet domain ' + d.d + ' NOT empty', !d.empty, d.title));
+
   // ─── 11. Honor beacons + beams + avatars (no 404) ───
   await scrollTo(page, 0.74); await sleep(1100);
   // Honor 屏的 total-awardees 统计同样不能为 0/—
@@ -337,6 +362,45 @@ async function runTest(name, vw, vh) {
   });
   check('TTS toggle exists with role=switch', ttsToggle && ttsToggle.exists && ttsToggle.role === 'switch', JSON.stringify(ttsToggle));
   check('TTS toggle default ON (aria-checked=true)', ttsToggle && ttsToggle.checked === 'true', JSON.stringify(ttsToggle));
+  // ─── 14c. TTS 会话隔离：stop/新朗读不得让旧分句链继续 ───
+  const ttsOverlap = await page.evaluate(() => {
+    if (!window.__AI_CHAT_TTS || !window.__AI_CHAT_TTS.supported) return { ok: false, reason: 'unsupported' };
+    const synth = window.speechSynthesis;
+    const origSpeak = synth.speak;
+    let speakCalls = 0;
+    let lastU = null;
+    // 替换 speak 以阻止真实朗读，并捕获最后一个 utterance
+    synth.speak = function(u){ speakCalls++; lastU = u; };
+    const el = document.createElement('div'); el.className = 'ai-msg ai-msg-assistant';
+    window.__AI_CHAT_TTS.speak('第一段。第二段。第三段测试文本。', el);
+    const afterStart = speakCalls;
+    // 模拟用户提交新问题或点击静音：stop() 会 cancel 当前 utterance，
+    // 浏览器通常会触发 onerror；旧实现里旧分句链会借此继续，导致两段交叉朗读。
+    window.__AI_CHAT_TTS.stop();
+    if (lastU && typeof lastU.onerror === 'function') lastU.onerror();
+    const afterStop = speakCalls;
+    synth.speak = origSpeak;
+    return { afterStart, afterStop };
+  });
+  check('TTS speak starts at least one utterance', ttsOverlap.afterStart >= 1, 'calls=' + ttsOverlap.afterStart);
+  check('TTS stop prevents old chunk chain from continuing (no overlap)', ttsOverlap.afterStart === ttsOverlap.afterStop, 'start=' + ttsOverlap.afterStart + ' after=' + ttsOverlap.afterStop);
+  // ─── 14d. TTS 静音按钮响应：状态翻转且朗读停止 ───
+  const ttsMute = await page.evaluate(() => {
+    if (!window.__AI_CHAT_TTS || !window.__AI_CHAT_TTS.supported) return { ok: false, reason: 'unsupported' };
+    const el = document.createElement('div'); el.className = 'ai-msg ai-msg-assistant';
+    window.__AI_CHAT_TTS.speak('测试静音按钮。', el);
+    const wasSpeaking = el.classList.contains('speaking');
+    // 模拟点击静音开关：先关状态再 stop
+    window.__AI_CHAT_TTS.setOn(false);
+    window.__AI_CHAT_TTS.stop();
+    const muted = !window.__AI_CHAT_TTS.isOn();
+    const stopped = !el.classList.contains('speaking');
+    // 恢复默认开启，避免影响后续测试
+    window.__AI_CHAT_TTS.setOn(true);
+    return { wasSpeaking, muted, stopped };
+  });
+  check('TTS mute toggles state OFF', ttsMute.muted);
+  check('TTS mute stops current playback', ttsMute.stopped);
   await page.evaluate(() => { const c = document.querySelector('#ai-chat-panel .ai-close'); if (c) c.click(); });
   await sleep(300);
 

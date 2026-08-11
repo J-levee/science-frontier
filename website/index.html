@@ -969,6 +969,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     m.top   = m.doms.reduce(function(a,d){ return a.concat(domProbs[d]||[]); },[])
                     .sort(function(a,b){ return (b.i||0)-(a.i||0); }).slice(0,4);
   });
+  // detail.js 在独立 IIFE 中，需把 MACRO 暴露到 window 才能渲染「学科群详情」
+  window.MACRO = MACRO;
   // colour continuity: the honour beams inherit the mixed star colours
   document.documentElement.style.setProperty('--star-physics', MIX[0]);
   document.documentElement.style.setProperty('--star-life',    MIX[1]);
@@ -1440,7 +1442,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       // domain — pulse with a glowing ring + soft halo. This is the canvas-side counterpart of
       // the .hi / .active emphasis used by the DOM boundary stars, legend chips and HUD ruler.
       if(typeof selDom!=='undefined' && selDom){
-        var selHit = (!isStar && b.dom===selDom) || (isStar && MACRO[b.macro] && MACRO[b.macro].doms.indexOf(selDom)>=0);
+        var selHit = (!isStar && b.dom===selDom) || (isStar && b.macro && b.macro.doms && b.macro.doms.indexOf(selDom)>=0);
         if(selHit){
           var ph=(performance.now()%1300)/1300;
           var ringR=rad+9+ph*9;
@@ -2965,6 +2967,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     var enabled = supported ? (localStorage.getItem(KEY) !== 'off') : false; // 默认开启
     var voices = [];
     var current = null;        // 当前正在朗读的 .ai-msg 元素
+    var session = 0;           // 朗读会话世代：stop/新 speak 会递增，防止旧分句链在 cancel 后继续
     var unlocked = false;      // iOS Safari 需首次手势解锁
 
     function cacheVoices(){
@@ -3023,6 +3026,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     }
     function stop(){
       if(!supported) return;
+      session++;                 // 使当前 speak 的分句链失效
       try { window.speechSynthesis.cancel(); } catch(e){}
       if(current){ current.classList.remove('speaking'); current = null; }
     }
@@ -3034,7 +3038,13 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       var chunks = splitChunks(clean);
       if(el){ el.classList.add('speaking'); current = el; }
       var i = 0;
+      var mySession = ++session;   // 绑定本次朗读会话
       function next(){
+        // 会话已被新 speak/stop 取代 → 立即清状态并退出，避免两段语音交叉
+        if(mySession !== session){
+          if(current === el){ current.classList.remove('speaking'); current = null; }
+          return;
+        }
         if(i >= chunks.length){ if(el) el.classList.remove('speaking'); current = null; return; }
         var u = new SpeechSynthesisUtterance(chunks[i]);
         u.lang = 'zh-CN';
