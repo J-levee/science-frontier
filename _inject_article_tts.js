@@ -3,6 +3,7 @@
    - 按钮放在 h1 与副标题(.hook) 下方，样式与 AI 面板 TTS 按钮统一
    - 只朗读标题、副标题、正文（.section 内的 h2/p/.analogy/.takeaway）
    - 跳过 svg、.svg-caption、table、.audio-player、.related、script、style、按钮
+   - 朗读文本清洗时剔除装饰性 emoji（💡🔍🌟 等 pictograph/dingbat 符号），不朗读这些装饰
    - 对带 tab 的页面（如 kakeya），只朗读当前激活的 pane
    - 幂等：已存在 #exArticleTts 则跳过 */
 const fs = require('fs');
@@ -44,7 +45,10 @@ const JS = `<script id="ex-article-tts-js">
   var speaking = false;
 
   function cleanText(t){
-    return String(t||'').replace(/\\*\\*(.+?)\\*\\*/g,'$1').replace(/\\[([^\\]]+)\\]\\(([^)]+)\\)/g,'$1').replace(/https?:\\/\\/[^\\s\\)\\]]+/g,'').replace(/[<>]/g,'').replace(/\\s+/g,' ').trim();
+    return String(t||'')
+      // 剔除装饰性 emoji（💡🔍🌟 等 pictograph / dingbat 符号），这些只作版面装饰不朗读
+      .replace(/[\\u{1F000}-\\u{1FAFF}\\u{2600}-\\u{27BF}\\u{2B00}-\\u{2BFF}\\u{FE0F}\\u{20E3}]/gu, '')
+      .replace(/\\*\\*(.+?)\\*\\*/g,'$1').replace(/\\[([^\\]]+)\\]\\(([^)]+)\\)/g,'$1').replace(/https?:\\/\\/[^\\s\\)\\]]+/g,'').replace(/[<>]/g,'').replace(/\\s+/g,' ').trim();
   }
   function splitChunks(t){
     var segs = t.split(/(?<=[。！？；?!;\\n])/).map(function(s){return s.trim();}).filter(Boolean);
@@ -103,6 +107,9 @@ const JS = `<script id="ex-article-tts-js">
     }
     next();
   });
+
+  // 轻量 QA 钩子：供回归测试断言朗读文本已剔除装饰 emoji（不影响正常功能）
+  window.__exTTS = { collect: collectText, clean: cleanText };
 
   window.addEventListener('beforeunload', stop);
 })();

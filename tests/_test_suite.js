@@ -508,6 +508,14 @@ async function runExplainerTests() {
     });
     check('Explainer ' + p + ' · article TTS bar injected', tts.ok, JSON.stringify(tts));
     check('Explainer ' + p + ' · TTS bar placed under title', tts.afterTitle);
+    // 朗读文本应剔除装饰性 emoji（💡🔍🌟 等），不朗读这些版面装饰
+    const ttsClean = await page.evaluate(() => {
+      if (!window.__exTTS) return { ok: false, bad: 'no-hook' };
+      const clean = window.__exTTS.clean(window.__exTTS.collect());
+      const bad = ['💡', '🔍', '🌟'].filter(e => clean.includes(e));
+      return { ok: bad.length === 0, bad: bad.join('') };
+    });
+    check('Explainer ' + p + ' · TTS omits decorative emoji', ttsClean.ok, JSON.stringify(ttsClean));
     check('Explainer ' + p + ' · no pageerror', errs.length === 0, errs.join('|'));
     check('Explainer ' + p + ' · no missing resources (audio excluded)', notFound.length === 0, notFound.join('|'));
     // test AI panel open + icon + unconfigured hint

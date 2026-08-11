@@ -348,7 +348,10 @@
   var speaking = false;
 
   function cleanText(t){
-    return String(t||'').replace(/\*\*(.+?)\*\*/g,'$1').replace(/\[([^\]]+)\]\(([^)]+)\)/g,'$1').replace(/https?:\/\/[^\s\)\]]+/g,'').replace(/[<>]/g,'').replace(/\s+/g,' ').trim();
+    return String(t||'')
+      // 剔除装饰性 emoji（💡🔍🌟 等 pictograph / dingbat 符号），这些只作版面装饰不朗读
+      .replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{20E3}]/gu, '')
+      .replace(/\*\*(.+?)\*\*/g,'$1').replace(/\[([^\]]+)\]\(([^)]+)\)/g,'$1').replace(/https?:\/\/[^\s\)\]]+/g,'').replace(/[<>]/g,'').replace(/\s+/g,' ').trim();
   }
   function splitChunks(t){
     var segs = t.split(/(?<=[。！？；?!;\n])/).map(function(s){return s.trim();}).filter(Boolean);
@@ -407,6 +410,9 @@
     }
     next();
   });
+
+  // 轻量 QA 钩子：供回归测试断言朗读文本已剔除装饰 emoji（不影响正常功能）
+  window.__exTTS = { collect: collectText, clean: cleanText };
 
   window.addEventListener('beforeunload', stop);
 })();
