@@ -252,7 +252,7 @@ const awards = [
     "motivation": "for the discovery of the accelerating expansion of the Universe through observations of distant supernovae",
     "affiliation": "Johns Hopkins University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Press%20Conference%20KVA-DSC%207707.jpg",
     "wikidata": "Q106454",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2011/"
@@ -310,7 +310,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因通过观测遥远超新星发现宇宙加速膨胀。"
+    "discovery": "因通过观测遥远超新星发现宇宙加速膨胀。",
+    "cn": "亚当·里斯",
+    "birthYear": "1969"
   },
   {
     "id": "nobel-chemistry-1939-adolf-friedrich-johann-butenandt",
@@ -507,7 +509,7 @@ const awards = [
     "motivation": "for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science",
     "affiliation": "Institut d’Optique Graduate School – Université Paris-Saclay",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alain%20Aspect%20(26341660894)%20(cropped).jpg",
     "wikidata": "Q364997",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2022/"
@@ -565,7 +567,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "通过纠缠光子实验，证实贝尔不等式不成立，开创量子信息科学。"
+    "discovery": "通过纠缠光子实验，证实贝尔不等式不成立，开创量子信息科学。",
+    "cn": "阿兰·阿斯佩",
+    "birthYear": "1947"
   },
   {
     "id": "nobel-chemistry-2000-alan-j-heeger",
@@ -873,7 +877,7 @@ const awards = [
     "motivation": "for the discovery of Giant Magnetoresistance",
     "affiliation": "Universit&eacute; Paris-Sud",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Albert%20fert%2015%20janvier%202009%20Spintronique%20Paris%20Descartes.JPG",
     "wikidata": "Q153219",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2007/"
@@ -931,7 +935,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "发现巨磁电阻效应。"
+    "discovery": "发现巨磁电阻效应。",
+    "cn": "阿尔贝·费尔",
+    "birthYear": "1938"
   },
   {
     "id": "nobel-medicine-1937-albert-von-szent-gyorgyi-nagyrapolt",
@@ -1931,7 +1937,7 @@ const awards = [
     "motivation": "for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter",
     "affiliation": "Lund University",
     "country": "Sweden",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Anne%20LHuiller%2001.JPG",
     "wikidata": "Q565544",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2023/"
@@ -1989,7 +1995,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "开创产生阿秒光脉冲的实验方法，实现对物质中电子动力学的直接观测。"
+    "discovery": "开创产生阿秒光脉冲的实验方法，实现对物质中电子动力学的直接观测。",
+    "cn": "安妮·呂利耶",
+    "birthYear": "1958"
   },
   {
     "id": "nobel-physics-2003-anthony-j-leggett",
@@ -2002,7 +2010,7 @@ const awards = [
     "motivation": "for pioneering contributions to the theory of superconductors and superfluids",
     "affiliation": "University of Illinois",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Laureate%20Sir%20Anthony%20James%20Leggett%20in%202007.jpg",
     "wikidata": "Q192718",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2003/"
@@ -2060,7 +2068,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "在超导体与超流体理论方面的开创性贡献。"
+    "discovery": "在超导体与超流体理论方面的开创性贡献。",
+    "cn": "安東尼·萊格特",
+    "birthYear": "1938",
+    "deathYear": "2026"
   },
   {
     "id": "nobel-physics-2022-anton-zeilinger",
@@ -2073,7 +2084,7 @@ const awards = [
     "motivation": "for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science",
     "affiliation": "University of Vienna",
     "country": "Austria",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/A.%20Zeilinger%20(cropped).jpg",
     "wikidata": "Q78610",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2022/"
@@ -2131,7 +2142,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "通过纠缠光子实验，证实贝尔不等式不成立，开创量子信息科学。"
+    "discovery": "通过纠缠光子实验，证实贝尔不等式不成立，开创量子信息科学。",
+    "cn": "安东·蔡林格",
+    "birthYear": "1945"
   },
   {
     "id": "nobel-physics-1974-antony-hewish",
@@ -2292,7 +2305,7 @@ const awards = [
     "motivation": "for their discoveries of receptors for temperature and touch",
     "affiliation": "Scripps Research",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ardem%20Patapoutian%20at%20Scripps%20in%202022%2003.jpg",
     "wikidata": "Q60322501",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2021/"
@@ -2319,7 +2332,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现温度与触觉感受器"
+    "discovery": "因发现温度与触觉感受器",
+    "cn": "阿登·帕塔普蒂安",
+    "birthYear": "1967"
   },
   {
     "id": "nobel-chemistry-2013-arieh-warshel",
@@ -2541,7 +2556,7 @@ const awards = [
     "motivation": "for the discovery of neutrino oscillations, which shows that neutrinos have mass",
     "affiliation": "Queen's University",
     "country": "Canada",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Arthur%20B.%20McDonald%205139-2015.jpg",
     "wikidata": "Q710597",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2015/"
@@ -2599,7 +2614,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "发现中微子振荡现象，证明中微子具有质量。"
+    "discovery": "发现中微子振荡现象，证明中微子具有质量。",
+    "cn": "阿瑟·麦克唐纳",
+    "birthYear": "1943"
   },
   {
     "id": "nobel-physics-1927-arthur-holly-compton",
@@ -2865,7 +2882,7 @@ const awards = [
     "motivation": "for their discoveries concerning signal transduction in the nervous system",
     "affiliation": "Göteborg University",
     "country": "Sweden",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Arvid%20Carlsson%202011a.jpg",
     "wikidata": "Q298045",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2000/"
@@ -2892,7 +2909,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现神经系统中的信号转导机制。"
+    "discovery": "因发现神经系统中的信号转导机制。",
+    "cn": "阿尔维德·卡尔森",
+    "birthYear": "1923",
+    "deathYear": "2018"
   },
   {
     "id": "nobel-medicine-1920-schack-august-steenberg-krogh",
@@ -2948,7 +2968,7 @@ const awards = [
     "motivation": "for the discovery of ubiquitin-mediated protein degradation",
     "affiliation": "Technion - Israel Institute of Technology",
     "country": "Israel",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Avram%20Hershko.jpg",
     "wikidata": "Q232302",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2004/"
@@ -2963,7 +2983,9 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "发现泛素介导的蛋白质降解机制。"
+    "discovery": "发现泛素介导的蛋白质降解机制。",
+    "cn": "阿夫拉姆·赫什科",
+    "birthYear": "1937"
   },
   {
     "id": "nobel-chemistry-2015-aziz-sancar",
@@ -3006,7 +3028,7 @@ const awards = [
     "motivation": "for her discovery of mobile genetic elements",
     "affiliation": "Cold Spring Harbor Laboratory",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Barbara%20McClintock%20(1902-1992)%20shown%20in%20her%20laboratory%20in%201947.jpg",
     "wikidata": "Q199654",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/1983/"
@@ -3033,7 +3055,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其发现可移动遗传元件。"
+    "discovery": "因其发现可移动遗传元件。",
+    "cn": "巴巴拉·麦克林托克",
+    "birthYear": "1902",
+    "deathYear": "1992"
   },
   {
     "id": "nobel-physics-2017-barry-c-barish",
@@ -3045,7 +3070,7 @@ const awards = [
     "domain": "物理",
     "motivation": "for decisive contributions to the LIGO detector and the observation of gravitational waves",
     "affiliation": "LIGO/VIRGO Collaboration",
-    "country": "",
+    "country": "美國",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/05-0367-92D.hr.jpg",
     "wikidata": "Q15900993",
     "links": [
@@ -3686,7 +3711,7 @@ const awards = [
     "motivation": "for the discovery of the accelerating expansion of the Universe through observations of distant supernovae",
     "affiliation": "Australian National University",
     "country": "Australia",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Brian%20Schmidt%20portrait%201.jpg",
     "wikidata": "Q201452",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2011/"
@@ -3744,7 +3769,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因通过观测遥远超新星发现宇宙加速膨胀。"
+    "discovery": "因通过观测遥远超新星发现宇宙加速膨胀。",
+    "cn": "布莱恩·施密特",
+    "birthYear": "1967"
   },
   {
     "id": "nobel-medicine-2011-bruce-a-beutler",
@@ -3757,7 +3784,7 @@ const awards = [
     "motivation": "for their discoveries concerning the activation of innate immunity",
     "affiliation": "University of Texas Southwestern Medical Center at Dallas",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bruce%20Beutler%20-%20Nobel%20Prize%202011-Press%20Conference%20KI-DSC%207508.jpg",
     "wikidata": "Q104592",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2011/"
@@ -3784,7 +3811,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其在先天免疫激活机制方面的发现。"
+    "discovery": "因其在先天免疫激活机制方面的发现。",
+    "cn": "布鲁斯·博伊特勒",
+    "birthYear": "1957"
   },
   {
     "id": "nobel-chemistry-1984-robert-bruce-merrifield",
@@ -4459,7 +4488,7 @@ const awards = [
     "motivation": "for theories concerning the specificity in development and control of the immune system and the discovery of the principle for production of monoclonal antibodies",
     "affiliation": "MRC Laboratory of Molecular Biology",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Milstein%20lnp%20restauraci%C3%B3n.jpg",
     "wikidata": "Q155525",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/1984/"
@@ -4486,7 +4515,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "提出免疫系统发育与调控特异性的理论，并发现单克隆抗体的制备原理。"
+    "discovery": "提出免疫系统发育与调控特异性的理论，并发现单克隆抗体的制备原理。",
+    "cn": "塞萨尔·米尔斯坦",
+    "birthYear": "1927",
+    "deathYear": "2002"
   },
   {
     "id": "nobel-medicine-1966-charles-brenton-huggins",
@@ -5579,7 +5611,7 @@ const awards = [
     "motivation": "for the discovery of quasicrystals",
     "affiliation": "Technion - Israel Institute of Technology",
     "country": "Israel",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Nobel%20interviews%20KVA-DSC%208049.jpg",
     "wikidata": "Q44111",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2011/"
@@ -5594,7 +5626,9 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "因发现准晶体。"
+    "discovery": "因发现准晶体。",
+    "cn": "丹·舍特曼",
+    "birthYear": "1941"
   },
   {
     "id": "nobel-medicine-1957-daniel-bovet",
@@ -5766,7 +5800,7 @@ const awards = [
     "motivation": "for computational protein design",
     "affiliation": "University of Washington",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/DBaker%20SparkPlugMtn%20July2013.JPG",
     "wikidata": "Q3814528",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2024/"
@@ -5781,7 +5815,9 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "表彰其在计算蛋白质设计领域的开创性贡献，实现了从头设计具有特定结构与功能的蛋白质。"
+    "discovery": "表彰其在计算蛋白质设计领域的开创性贡献，实现了从头设计具有特定结构与功能的蛋白质。",
+    "cn": "大衛·貝克 (生化學家)",
+    "birthYear": "1962"
   },
   {
     "id": "nobel-medicine-1975-david-baltimore",
@@ -5953,7 +5989,7 @@ const awards = [
     "motivation": "for theoretical discoveries of topological phase transitions and topological phases of matter",
     "affiliation": "University of Washington",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/DavidThouless%201995%20UW.jpg",
     "wikidata": "Q726394",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2016/"
@@ -6011,7 +6047,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因在拓扑相变和物质拓扑相方面的理论发现。"
+    "discovery": "因在拓扑相变和物质拓扑相方面的理论发现。",
+    "cn": "戴维·J·索利斯",
+    "birthYear": "1934",
+    "deathYear": "2019"
   },
   {
     "id": "nobel-physics-2012-david-j-wineland",
@@ -6097,7 +6136,7 @@ const awards = [
     "motivation": "for their discoveries of receptors for temperature and touch",
     "affiliation": "University of California",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Davidjuliuswithsnake.jpg",
     "wikidata": "Q1174906",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2021/"
@@ -6124,7 +6163,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现温度与触觉感受器。"
+    "discovery": "因发现温度与触觉感受器。",
+    "cn": "戴维·朱利叶斯",
+    "birthYear": "1955"
   },
   {
     "id": "nobel-physics-1996-david-m-lee",
@@ -6240,7 +6281,7 @@ const awards = [
     "motivation": "for protein structure prediction",
     "affiliation": "Google DeepMind",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Demis%20Hassabis%2C%202024%20Nobel%20Prize%20Laureate%20in%20Chemistry%207%20(cropped).jpg",
     "wikidata": "Q3022141",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2024/"
@@ -6255,7 +6296,9 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "开创性开发蛋白质结构预测人工智能方法，实现原子级精度的从序列到结构的精准解析。"
+    "discovery": "开创性开发蛋白质结构预测人工智能方法，实现原子级精度的从序列到结构的精准解析。",
+    "cn": "杰米斯·哈萨比斯",
+    "birthYear": "1976"
   },
   {
     "id": "nobel-physics-1971-dennis-gabor",
@@ -6416,7 +6459,7 @@ const awards = [
     "motivation": "for the discovery of an exoplanet orbiting a solar-type star",
     "affiliation": "University of Geneva",
     "country": "Switzerland",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Didier%20Queloz%2C%202012%20(cropped).jpg",
     "wikidata": "Q124013",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2019/"
@@ -6474,7 +6517,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因发现首颗绕类太阳恒星运行的系外行星。"
+    "discovery": "因发现首颗绕类太阳恒星运行的系外行星。",
+    "cn": "迪迪埃·奎洛兹",
+    "birthYear": "1966"
   },
   {
     "id": "nobel-physics-1960-donald-arthur-glaser",
@@ -6769,7 +6814,7 @@ const awards = [
     "motivation": "for their discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19",
     "affiliation": "Penn Institute for RNA Innovations, University of Pennsylvania",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Drew%20Weissman%20Life%20Science%20medalist.jpg",
     "wikidata": "Q88608402",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2023/"
@@ -6796,7 +6841,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现核苷碱基修饰技术，从而促成高效抗新冠mRNA疫苗的研发。"
+    "discovery": "因发现核苷碱基修饰技术，从而促成高效抗新冠mRNA疫苗的研发。",
+    "cn": "德鲁·魏斯曼",
+    "birthYear": "1959"
   },
   {
     "id": "nobel-chemistry-1986-dudley-r-herschbach",
@@ -7201,7 +7248,7 @@ const awards = [
     "motivation": "for their discoveries concerning the genetic control of early embryonic development",
     "affiliation": "California Institute of Technology (Caltech)",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ed%20Lewis%201986.png",
     "wikidata": "Q274123",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/1995/"
@@ -7228,7 +7275,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现早期胚胎发育的遗传调控机制。"
+    "discovery": "因发现早期胚胎发育的遗传调控机制。",
+    "cn": "愛德華·路易斯",
+    "birthYear": "1918",
+    "deathYear": "2004"
   },
   {
     "id": "nobel-medicine-1950-edward-calvin-kendall",
@@ -7579,7 +7629,7 @@ const awards = [
     "motivation": "for the discovery of how chromosomes are protected by telomeres and the enzyme telomerase",
     "affiliation": "University of California",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Elizabeth%20Blackburn%202009-01.JPG",
     "wikidata": "Q26321",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2009/"
@@ -7606,7 +7656,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "发现染色体末端的端粒及其保护酶端粒酶的作用机制。"
+    "discovery": "发现染色体末端的端粒及其保护酶端粒酶的作用机制。",
+    "cn": "伊丽莎白·布莱克本",
+    "birthYear": "1948"
   },
   {
     "id": "nobel-chemistry-1902-hermann-emil-fischer",
@@ -7767,7 +7819,7 @@ const awards = [
     "motivation": "for the development of a method for genome editing",
     "affiliation": "Max Planck Unit for the Science of Pathogens",
     "country": "Germany",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Emmanuelle%20Charpentier.jpg",
     "wikidata": "Q17280087",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2020/"
@@ -7782,7 +7834,9 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "因开发基因组编辑方法而获奖。"
+    "discovery": "因开发基因组编辑方法而获奖。",
+    "cn": "伊曼紐•夏彭提耶",
+    "birthYear": "1968"
   },
   {
     "id": "nobel-physics-1938-enrico-fermi",
@@ -8014,7 +8068,7 @@ const awards = [
     "motivation": "for their discoveries concerning signal transduction in the nervous system",
     "affiliation": "Columbia University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eric%20Kandel%20by%20aquaris3.jpg",
     "wikidata": "Q155529",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2000/"
@@ -8041,7 +8095,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其在神经系统信号转导机制方面的发现。"
+    "discovery": "因其在神经系统信号转导机制方面的发现。",
+    "cn": "埃里克·坎德尔",
+    "birthYear": "1929"
   },
   {
     "id": "nobel-physics-1939-ernest-orlando-lawrence",
@@ -8866,7 +8922,7 @@ const awards = [
     "motivation": "for experimental methods that generate attosecond pulses of light for the study of electron dynamics in matter",
     "affiliation": "Max Planck Institute of Quantum Optics",
     "country": "Germany",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferenc%20Krausz%20(cropped).jpg",
     "wikidata": "Q86970",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2023/"
@@ -8924,7 +8980,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "开创产生阿秒光脉冲的实验方法，实现对物质中电子动力学的直接观测。"
+    "discovery": "开创产生阿秒光脉冲的实验方法，实现对物质中电子动力学的直接观测。",
+    "cn": "费伦茨·克劳斯",
+    "birthYear": "1962"
   },
   {
     "id": "nobel-medicine-1998-ferid-murad",
@@ -9084,7 +9142,7 @@ const awards = [
     "motivation": "for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which recently was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider",
     "affiliation": "Université Libre de Bruxelles",
     "country": "Belgium",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Francois%20Englert%20(3x4%20cropped).jpg",
     "wikidata": "Q151746",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2013/"
@@ -9142,7 +9200,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因理论上发现一种机制，深化了人类对亚原子粒子质量起源的理解；该机制预言的基本粒子， recently 由CERN大型强子对撞机ATLAS和CMS实验确证。"
+    "discovery": "因理论上发现一种机制，深化了人类对亚原子粒子质量起源的理解；该机制预言的基本粒子， recently 由CERN大型强子对撞机ATLAS和CMS实验确证。",
+    "cn": "弗朗索瓦·恩格勒",
+    "birthYear": "1932",
+    "deathYear": "2026"
   },
   {
     "id": "nobel-medicine-1965-francois-jacob",
@@ -9923,7 +9984,7 @@ const awards = [
     "motivation": "for the discovery of microRNA and its role in post-transcriptional gene regulation",
     "affiliation": "Massachusetts General Hospital",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gary%20Ruvkun%2C%202024%20Nobel%20Prize%20Laureate%20in%20Medicine.jpg",
     "wikidata": "Q504021",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2024/"
@@ -9950,7 +10011,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "发现微小RNA（microRNA）及其在转录后基因调控中的关键作用。"
+    "discovery": "发现微小RNA（microRNA）及其在转录后基因调控中的关键作用。",
+    "cn": "加里·鲁夫昆",
+    "birthYear": "1952"
   },
   {
     "id": "nobel-physics-2024-geoffrey-hinton",
@@ -9963,7 +10026,7 @@ const awards = [
     "motivation": "for foundational discoveries and inventions that enable machine learning with artificial neural networks",
     "affiliation": "University of Toronto",
     "country": "Canada",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoffrey%20Hinton%20in%202026.jpg",
     "wikidata": "Q92894",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2024/"
@@ -10021,7 +10084,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "在人工神经网络领域作出奠基性发现与发明，推动机器学习发展。"
+    "discovery": "在人工神经网络领域作出奠基性发现与发明，推动机器学习发展。",
+    "cn": "杰弗里·欣顿",
+    "birthYear": "1947"
   },
   {
     "id": "nobel-chemistry-1973-geoffrey-wilkinson",
@@ -10240,7 +10305,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其发现细胞表面由基因决定、调控免疫反应的结构。"
+    "discovery": "因其发现细胞表面由基因决定、调控免疫反应的结构。",
+    "cn": "乔治·斯内尔",
+    "birthYear": "1903",
+    "deathYear": "1996"
   },
   {
     "id": "nobel-chemistry-1943-george-de-hevesy",
@@ -11015,7 +11083,7 @@ const awards = [
     "motivation": "for elucidating the quantum structure of electroweak interactions in physics",
     "affiliation": "Utrecht University",
     "country": "the Netherlands",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20't%20Hooft.jpg",
     "wikidata": "Q184592",
     "links": [
       "https://www.nobelprize.org/prizes/physics/1999/"
@@ -11073,7 +11141,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "阐明了弱电相互作用的量子结构。"
+    "discovery": "阐明了弱电相互作用的量子结构。",
+    "cn": "杰拉德·特·胡夫特",
+    "birthYear": "1946"
   },
   {
     "id": "nobel-physics-1986-gerd-binnig",
@@ -11086,7 +11156,7 @@ const awards = [
     "motivation": "for their design of the scanning tunneling microscope",
     "affiliation": "IBM Zurich Research Laboratory",
     "country": "Switzerland",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerd%20Binnig%20sw.jpg",
     "wikidata": "Q76766",
     "links": [
       "https://www.nobelprize.org/prizes/physics/1986/"
@@ -11144,7 +11214,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因设计扫描隧道显微镜。"
+    "discovery": "因设计扫描隧道显微镜。",
+    "cn": "格尔德·宾宁",
+    "birthYear": "1947"
   },
   {
     "id": "nobel-medicine-1939-gerhard-domagk",
@@ -11347,7 +11419,7 @@ const awards = [
     "motivation": "for the discovery of the interplay of disorder and fluctuations in physical systems from atomic to planetary scales",
     "affiliation": "Sapienza University of Rome",
     "country": "Italy",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Parisi%20giorgio.jpg",
     "wikidata": "Q1235614",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2021/"
@@ -11405,7 +11477,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "发现无序性与涨落现象在从原子到行星尺度物理系统中的相互作用。"
+    "discovery": "发现无序性与涨落现象在从原子到行星尺度物理系统中的相互作用。",
+    "cn": "喬吉歐·巴雷西",
+    "birthYear": "1948"
   },
   {
     "id": "nobel-chemistry-1963-giulio-natta",
@@ -11973,7 +12047,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "发现器官发育的遗传调控机制及程序性细胞死亡。"
+    "discovery": "发现器官发育的遗传调控机制及程序性细胞死亡。",
+    "cn": "H·罗伯特·霍维茨",
+    "birthYear": "1947"
   },
   {
     "id": "nobel-medicine-1978-hamilton-o-smith",
@@ -14523,8 +14599,8 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of the bacterium <i>Helicobacter pylori</i> and its role in gastritis and peptic ulcer disease",
-    "affiliation": "",
-    "country": "",
+    "affiliation": "西澳大学",
+    "country": "澳大利亚",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Robin%20Warren.jpg",
     "wikidata": "Q208670",
     "links": [
@@ -15115,7 +15191,7 @@ const awards = [
     "motivation": "for their discoveries of machinery regulating vesicle traffic, a major transport system in our cells",
     "affiliation": "Yale University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Edward%20Rothman.jpg",
     "wikidata": "Q444270",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2013/"
@@ -15142,7 +15218,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现调控囊泡运输的分子机制——细胞内主要物质转运系统。"
+    "discovery": "因发现调控囊泡运输的分子机制——细胞内主要物质转运系统。",
+    "cn": "詹姆斯·罗斯曼",
+    "birthYear": "1950"
   },
   {
     "id": "nobel-physics-1925-james-franck",
@@ -15229,7 +15307,7 @@ const awards = [
     "motivation": "for their discovery of cancer therapy by inhibition of negative immune regulation",
     "affiliation": "Parker Institute for Cancer Immunotherapy",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20P.%20Allison%20EM1B5525%20(46207775441).jpg",
     "wikidata": "Q6140731",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2018/"
@@ -15256,7 +15334,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其发现通过抑制负向免疫调节实现癌症治疗。"
+    "discovery": "因其发现通过抑制负向免疫调节实现癌症治疗。",
+    "cn": "詹姆斯·艾利森",
+    "birthYear": "1948"
   },
   {
     "id": "nobel-physics-2019-james-peebles",
@@ -15269,7 +15349,7 @@ const awards = [
     "motivation": "for theoretical discoveries in physical cosmology",
     "affiliation": "Princeton University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jim%20Peebles%202010.jpg",
     "wikidata": "Q728331",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2019/"
@@ -15327,7 +15407,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因在物理宇宙学领域的理论发现。"
+    "discovery": "因在物理宇宙学领域的理论发现。",
+    "cn": "吉姆·皮布尔斯",
+    "birthYear": "1935"
   },
   {
     "id": "nobel-physics-1975-leo-james-rainwater",
@@ -15562,7 +15644,7 @@ const awards = [
     "motivation": "for their discoveries concerning genetically determined structures on the cell surface that regulate immunological reactions",
     "affiliation": "Université de Paris, Laboratoire Immuno-Hématologie",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Dausset%201968.jpg",
     "wikidata": "Q152760",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/1980/"
@@ -15589,7 +15671,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现细胞表面由基因决定、调控免疫反应的结构。"
+    "discovery": "因发现细胞表面由基因决定、调控免疫反应的结构。",
+    "cn": "让·多塞",
+    "birthYear": "1916",
+    "deathYear": "2009"
   },
   {
     "id": "nobel-chemistry-1987-jean-marie-lehn",
@@ -15662,7 +15747,7 @@ const awards = [
     "motivation": "for their discoveries of molecular mechanisms controlling the circadian rhythm",
     "affiliation": "University of Maine",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeffrey%20C.%20Hall%20D81%204349%20(25006040668).jpg",
     "wikidata": "Q1686435",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2017/"
@@ -15689,7 +15774,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现调控昼夜节律的分子机制。"
+    "discovery": "因发现调控昼夜节律的分子机制。",
+    "cn": "杰弗里·霍尔",
+    "birthYear": "1945"
   },
   {
     "id": "nobel-chemistry-2020-jennifer-a-doudna",
@@ -15702,7 +15789,7 @@ const awards = [
     "motivation": "for the development of a method for genome editing",
     "affiliation": "University of California",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Jennifer%20Doudna%20ForMemRS%20(cropped).jpg",
     "wikidata": "Q56068",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2020/"
@@ -15717,7 +15804,9 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "因开发基因组编辑方法而获奖。"
+    "discovery": "因开发基因组编辑方法而获奖。",
+    "cn": "詹妮弗·杜德纳",
+    "birthYear": "1964"
   },
   {
     "id": "nobel-chemistry-1997-jens-c-skou",
@@ -16357,7 +16446,7 @@ const awards = [
     "motivation": "for their discovery of the blackbody form and anisotropy of the cosmic microwave background radiation",
     "affiliation": "NASA Goddard Space Flight Center",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John-C-Mather.jpg",
     "wikidata": "Q104651",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2006/"
@@ -16415,7 +16504,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "发现宇宙微波背景辐射的黑体谱形及其各向异性。"
+    "discovery": "发现宇宙微波背景辐射的黑体谱形及其各向异性。",
+    "cn": "约翰·马瑟",
+    "birthYear": "1946"
   },
   {
     "id": "nobel-chemistry-1986-john-c-polanyi",
@@ -16531,7 +16622,7 @@ const awards = [
     "motivation": "for experiments with entangled photons, establishing the violation of Bell inequalities and  pioneering quantum information science",
     "affiliation": "J.F. Clauser & Assoc.",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Francis%20Clauser%20(cropped).jpg",
     "wikidata": "Q1365270",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2022/"
@@ -16589,7 +16680,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "通过纠缠光子实验，证实贝尔不等式不成立，开创量子信息科学。"
+    "discovery": "通过纠缠光子实验，证实贝尔不等式不成立，开创量子信息科学。",
+    "cn": "约翰·克劳泽",
+    "birthYear": "1942"
   },
   {
     "id": "nobel-physics-1951-sir-john-douglas-cockcroft",
@@ -17001,7 +17094,7 @@ const awards = [
     "motivation": "for protein structure prediction",
     "affiliation": "Google DeepMind",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Jumper%2C%202024%20Nobel%20Prize%20Laureate%20in%20Chemistry%207%20(cropped).jpg",
     "wikidata": "Q89620738",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2024/"
@@ -17016,7 +17109,9 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "开创性地发展了蛋白质结构预测方法，特别是基于深度学习的AlphaFold系统，实现了原子级精度的结构预测。"
+    "discovery": "开创性地发展了蛋白质结构预测方法，特别是基于深度学习的AlphaFold系统，实现了原子级精度的结构预测。",
+    "cn": "约翰·M·江珀",
+    "birthYear": "1985"
   },
   {
     "id": "nobel-physics-2005-john-l-hall",
@@ -17218,7 +17313,7 @@ const awards = [
     "motivation": "for their discoveries of cells that constitute a positioning system in the brain",
     "affiliation": "University College",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20O'Keefe%20(neuroscientist)%202014.jpg",
     "wikidata": "Q1701279",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2014/"
@@ -17245,7 +17340,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其发现构成大脑定位系统的细胞。"
+    "discovery": "因其发现构成大脑定位系统的细胞。",
+    "cn": "约翰·奥基夫",
+    "birthYear": "1939"
   },
   {
     "id": "nobel-chemistry-1998-john-a-pople",
@@ -17418,7 +17515,7 @@ const awards = [
     "motivation": "for the discovery of a new type of pulsar, a discovery that has opened up new possibilities for the study of gravitation",
     "affiliation": "Princeton University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2008JosephTaylor.jpg",
     "wikidata": "Q192685",
     "links": [
       "https://www.nobelprize.org/prizes/physics/1993/"
@@ -17476,7 +17573,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因发现新型脉冲星，为引力研究开辟了新途径。"
+    "discovery": "因发现新型脉冲星，为引力研究开辟了新途径。",
+    "cn": "约瑟夫·泰勒",
+    "birthYear": "1941"
   },
   {
     "id": "nobel-medicine-1985-joseph-l-goldstein",
@@ -17574,7 +17673,7 @@ const awards = [
     "motivation": "for their discoveries concerning the activation of innate immunity",
     "affiliation": "University of Strasbourg",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Press%20Conference%20KI-DSC%207584.jpg",
     "wikidata": "Q105605",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2011/"
@@ -17601,7 +17700,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其在先天免疫激活机制方面的发现。"
+    "discovery": "因其在先天免疫激活机制方面的发现。",
+    "cn": "朱尔·A·奥夫曼",
+    "birthYear": "1941"
   },
   {
     "id": "nobel-medicine-1919-jules-bordet",
@@ -17891,7 +17992,7 @@ const awards = [
     "motivation": "for his work on chirally catalysed oxidation reactions",
     "affiliation": "The Scripps Research Institute",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Barry%20Sharpless%2002.jpg",
     "wikidata": "Q110925",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2001/"
@@ -17906,7 +18007,9 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "因其在手性催化氧化反应方面的开创性工作。"
+    "discovery": "因其在手性催化氧化反应方面的开创性工作。",
+    "cn": "卡尔·巴里·沙普利斯",
+    "birthYear": "1941"
   },
   {
     "id": "nobel-chemistry-2022-k-barry-sharpless",
@@ -18139,7 +18242,7 @@ const awards = [
     "domain": "化学",
     "motivation": "for his invention of the polymerase chain reaction (PCR) method",
     "affiliation": "",
-    "country": "",
+    "country": "美國",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kary%20Mullis.jpg",
     "wikidata": "Q157224",
     "links": [
@@ -18171,7 +18274,7 @@ const awards = [
     "motivation": "for their discoveries concerning nucleoside base modifications that enabled the development of effective mRNA vaccines against COVID-19",
     "affiliation": "Szeged University",
     "country": "Hungary",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Katalin%20Kariko%20light%20corrected.jpeg",
     "wikidata": "Q88608397",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2023/"
@@ -18198,7 +18301,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现核苷碱基修饰，促成高效新冠mRNA疫苗的研发。"
+    "discovery": "因发现核苷碱基修饰，促成高效新冠mRNA疫苗的研发。",
+    "cn": "卡里科·卡塔琳",
+    "birthYear": "1955"
   },
   {
     "id": "nobel-medicine-1967-haldan-keffer-hartline",
@@ -18285,7 +18390,7 @@ const awards = [
     "motivation": "for his theory for critical phenomena in connection with phase transitions",
     "affiliation": "Cornell University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenneth%20G.%20Wilson.121.png",
     "wikidata": "Q193503",
     "links": [
       "https://www.nobelprize.org/prizes/physics/1982/"
@@ -18343,7 +18448,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因其关于相变临界现象的理论。"
+    "discovery": "因其关于相变临界现象的理论。",
+    "cn": "肯尼斯·威爾森",
+    "birthYear": "1936",
+    "deathYear": "2013"
   },
   {
     "id": "nobel-physics-2017-kip-s-thorne",
@@ -18355,8 +18463,8 @@ const awards = [
     "domain": "物理",
     "motivation": "for decisive contributions to the LIGO detector and the observation of gravitational waves",
     "affiliation": "LIGO/VIRGO Collaboration",
-    "country": "",
-    "photo": "",
+    "country": "美國",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kip%20Thorne%20at%20Caltech.jpg",
     "wikidata": "Q323320",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2017/"
@@ -18414,7 +18522,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "为LIGO探测器的决定性贡献及引力波的首次观测。"
+    "discovery": "为LIGO探测器的决定性贡献及引力波的首次观测。",
+    "cn": "基普·索恩",
+    "birthYear": "1940"
   },
   {
     "id": "nobel-physics-2021-klaus-hasselmann",
@@ -19043,7 +19153,7 @@ const awards = [
     "motivation": "for the neutrino beam method and the demonstration of the doublet structure of the leptons through the discovery of the muon neutrino",
     "affiliation": "Fermi National Accelerator Laboratory",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Leon%20M.%20Lederman.jpg",
     "wikidata": "Q192695",
     "links": [
       "https://www.nobelprize.org/prizes/physics/1988/"
@@ -19101,7 +19211,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因开创中微子束方法，并通过发现μ子中微子证实轻子的二重态结构。"
+    "discovery": "因开创中微子束方法，并通过发现μ子中微子证实轻子的二重态结构。",
+    "cn": "利昂·萊德曼",
+    "birthYear": "1922",
+    "deathYear": "2018"
   },
   {
     "id": "nobel-physics-1972-leon-neil-cooper",
@@ -19471,7 +19584,7 @@ const awards = [
     "motivation": "for the discovery and synthesis of quantum dots",
     "affiliation": "Columbia University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis%20E%20Brus.jpg",
     "wikidata": "Q194646",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2023/"
@@ -19486,7 +19599,10 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "因发现与合成量子点。"
+    "discovery": "因发现与合成量子点。",
+    "cn": "路易斯·布鲁斯",
+    "birthYear": "1943",
+    "deathYear": "2026"
   },
   {
     "id": "nobel-physics-1929-prince-louis-victor-pierre-raymond-de-broglie",
@@ -20117,8 +20233,8 @@ const awards = [
     "star": "physics",
     "domain": "物理",
     "motivation": "in recognition of the extraordinary services they have rendered by their joint researches on the radiation phenomena discovered by Professor Henri Becquerel",
-    "affiliation": "",
-    "country": "",
+    "affiliation": "巴黎大学",
+    "country": "波蘭第二共和國",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Marie%20Curie%20(1900)%20(cropped).jpg",
     "wikidata": "Q7186",
     "links": [
@@ -20255,7 +20371,7 @@ const awards = [
     "motivation": "for their discoveries of principles for introducing specific gene modifications in mice by the use of embryonic stem cells",
     "affiliation": "University of Utah",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/MarioCapecchiFotoThalerTamas2.JPG",
     "wikidata": "Q215574",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2007/"
@@ -20282,7 +20398,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现利用胚胎干细胞在小鼠中引入特异性基因修饰的原理。"
+    "discovery": "因发现利用胚胎干细胞在小鼠中引入特异性基因修饰的原理。",
+    "cn": "马里奥·卡佩奇",
+    "birthYear": "1937"
   },
   {
     "id": "nobel-medicine-1968-marshall-w-nirenberg",
@@ -20399,7 +20517,7 @@ const awards = [
     "motivation": "for the discovery of the tau lepton",
     "affiliation": "Stanford University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Perl%20-%20tau.jpg",
     "wikidata": "Q107416",
     "links": [
       "https://www.nobelprize.org/prizes/physics/1995/"
@@ -20457,7 +20575,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因发现τ轻子。"
+    "discovery": "因发现τ轻子。",
+    "cn": "马丁·佩尔",
+    "birthYear": "1927",
+    "deathYear": "2014"
   },
   {
     "id": "nobel-medicine-1994-martin-rodbell",
@@ -20585,8 +20706,8 @@ const awards = [
     "star": "physics",
     "domain": "物理",
     "motivation": "for elucidating the quantum structure of electroweak interactions in physics",
-    "affiliation": "",
-    "country": "",
+    "affiliation": "乌特勒支大学",
+    "country": "荷兰王国",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Martinus%20Veltman.jpg",
     "wikidata": "Q202149",
     "links": [
@@ -20703,7 +20824,7 @@ const awards = [
     "motivation": "for pioneering contributions to astrophysics, in particular for the detection of cosmic neutrinos",
     "affiliation": "University of Tokyo",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Masatoshi%20Koshiba%202002.jpg",
     "wikidata": "Q155773",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2002/"
@@ -20761,7 +20882,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "在天体物理学领域作出开创性贡献，尤其因首次探测到宇宙中微子。"
+    "discovery": "在天体物理学领域作出开创性贡献，尤其因首次探测到宇宙中微子。",
+    "cn": "小柴昌俊",
+    "birthYear": "1926",
+    "deathYear": "2020"
   },
   {
     "id": "nobel-medicine-1962-maurice-hugh-frederick-wilkins",
@@ -21375,7 +21499,7 @@ const awards = [
     "motivation": "for their discoveries of molecular mechanisms controlling the circadian rhythm",
     "affiliation": "Brandeis University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Rosbash%2C%202017%20Nobel%20Laureate%20in%20Medicine%20(cropped).jpg",
     "wikidata": "Q1297741",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2017/"
@@ -21402,7 +21526,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现调控昼夜节律的分子机制。"
+    "discovery": "因发现调控昼夜节律的分子机制。",
+    "cn": "迈克尔·罗斯巴什",
+    "birthYear": "1944"
   },
   {
     "id": "nobel-medicine-1985-michael-s-brown",
@@ -21488,7 +21614,7 @@ const awards = [
     "motivation": "for their discoveries of molecular mechanisms controlling the circadian rhythm",
     "affiliation": "Rockefeller University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20W.%20Young%20D81%204345%20(38162439194).jpg",
     "wikidata": "Q1929672",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2017/"
@@ -21515,7 +21641,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "发现控制昼夜节律的分子机制。"
+    "discovery": "发现控制昼夜节律的分子机制。",
+    "cn": "迈克尔·扬",
+    "birthYear": "1949"
   },
   {
     "id": "nobel-physics-2025-michel-h-devoret",
@@ -21601,7 +21729,7 @@ const awards = [
     "motivation": "for the discovery of an exoplanet orbiting a solar-type star",
     "affiliation": "University of Geneva",
     "country": "Switzerland",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel%20Mayor%20astrophysicien.JPG",
     "wikidata": "Q123975",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2019/"
@@ -21659,7 +21787,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因发现首颗围绕类太阳恒星运行的系外行星。"
+    "discovery": "因发现首颗围绕类太阳恒星运行的系外行星。",
+    "cn": "米歇爾·麥耶",
+    "birthYear": "1942"
   },
   {
     "id": "nobel-chemistry-2022-morten-meldal",
@@ -22324,7 +22454,7 @@ const awards = [
     "motivation": "for their discoveries of principles for introducing specific gene modifications in mice by the use of embryonic stem cells",
     "affiliation": "University of North Carolina",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oliver%20Smithies%20HD2009%20AIC%20Gold%20Medal%20portrait%20(cropped).JPG",
     "wikidata": "Q216318",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2007/"
@@ -22351,7 +22481,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现利用胚胎干细胞在小鼠中引入特异性基因修饰的原理。"
+    "discovery": "因发现利用胚胎干细胞在小鼠中引入特异性基因修饰的原理。",
+    "cn": "奥利弗·史密西斯",
+    "birthYear": "1925",
+    "deathYear": "2017"
   },
   {
     "id": "nobel-chemistry-2025-omar-m-yaghi",
@@ -23656,7 +23789,7 @@ const awards = [
     "motivation": "for the discovery of Giant Magnetoresistance",
     "affiliation": "Forschungszentrum J&uuml;lich",
     "country": "Germany",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Gruenberg%2001.jpg",
     "wikidata": "Q57120",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2007/"
@@ -23714,7 +23847,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "发现巨磁阻效应。"
+    "discovery": "发现巨磁阻效应。",
+    "cn": "彼得·格林贝格",
+    "birthYear": "1939",
+    "deathYear": "2018"
   },
   {
     "id": "nobel-physics-2013-peter-w-higgs",
@@ -23727,7 +23863,7 @@ const awards = [
     "motivation": "for the theoretical discovery of a mechanism that contributes to our understanding of the origin of mass of subatomic particles, and which recently was confirmed through the discovery of the predicted fundamental particle, by the ATLAS and CMS experiments at CERN's Large Hadron Collider",
     "affiliation": "University of Edinburgh",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%2024%202013.jpg",
     "wikidata": "Q192112",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2013/"
@@ -23785,7 +23921,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因理论上发现赋予亚原子粒子质量的机制，该机制预言的基本粒子 recently 经CERN大型强子对撞机ATLAS和CMS实验确证。"
+    "discovery": "因理论上发现赋予亚原子粒子质量的机制，该机制预言的基本粒子 recently 经CERN大型强子对撞机ATLAS和CMS实验确证。",
+    "cn": "彼得·希格斯",
+    "birthYear": "1929",
+    "deathYear": "2024"
   },
   {
     "id": "nobel-medicine-1960-peter-brian-medawar",
@@ -24295,7 +24434,7 @@ const awards = [
     "motivation": "for discovering that methods developed for studying order phenomena in simple systems can be generalized to more complex forms of matter, in particular to liquid crystals and polymers",
     "affiliation": "Collège de France",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre-Gilles%20de%20Gennes.jpg",
     "wikidata": "Q187224",
     "links": [
       "https://www.nobelprize.org/prizes/physics/1991/"
@@ -24353,7 +24492,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "发现用于研究简单系统有序现象的方法可推广至复杂物质，特别是液晶和高分子。"
+    "discovery": "发现用于研究简单系统有序现象的方法可推广至复杂物质，特别是液晶和高分子。",
+    "cn": "皮埃尔-吉勒·德热纳",
+    "birthYear": "1932",
+    "deathYear": "2007"
   },
   {
     "id": "nobel-physics-1902-pieter-zeeman",
@@ -24630,8 +24772,8 @@ const awards = [
     "domain": "物理",
     "motivation": "for decisive contributions to the LIGO detector and the observation of gravitational waves",
     "affiliation": "LIGO/VIRGO Collaboration",
-    "country": "",
-    "photo": "",
+    "country": "美國",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rainer%20Weiss%20EM1B8841%20(24027015857).jpg",
     "wikidata": "Q2128461",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2017/"
@@ -24689,7 +24831,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "为LIGO探测器的决定性贡献及引力波的首次观测。"
+    "discovery": "为LIGO探测器的决定性贡献及引力波的首次观测。",
+    "cn": "莱纳·魏斯",
+    "birthYear": "1932",
+    "deathYear": "2025"
   },
   {
     "id": "nobel-medicine-2011-ralph-m-steinman",
@@ -24787,7 +24932,7 @@ const awards = [
     "motivation": "for pioneering contributions to astrophysics, in particular for the detection of cosmic neutrinos",
     "affiliation": "University of Pennsylvania",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Raymond%20Davis%2C%20Jr%202001.jpg",
     "wikidata": "Q175519",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2002/"
@@ -24845,7 +24990,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "在天体物理学领域的开创性贡献，特别是首次探测到宇宙中微子。"
+    "discovery": "在天体物理学领域的开创性贡献，特别是首次探测到宇宙中微子。",
+    "cn": "雷蒙德·戴维斯",
+    "birthYear": "1914",
+    "deathYear": "2006"
   },
   {
     "id": "nobel-physics-2020-reinhard-genzel",
@@ -24858,7 +25006,7 @@ const awards = [
     "motivation": "for the discovery of a supermassive compact object at the centre of our galaxy",
     "affiliation": "Max Planck Institute for Extraterrestrial Physics",
     "country": "Germany",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Reinhard%20Genzel.jpg",
     "wikidata": "Q65807",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2020/"
@@ -24916,7 +25064,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "发现银河系中心存在一个超大质量致密天体。"
+    "discovery": "发现银河系中心存在一个超大质量致密天体。",
+    "cn": "萊因哈德·根舍",
+    "birthYear": "1952"
   },
   {
     "id": "nobel-medicine-1975-renato-dulbecco",
@@ -24972,7 +25122,7 @@ const awards = [
     "motivation": "for pioneering contributions to astrophysics, which have led to the discovery of cosmic X-ray sources",
     "affiliation": "Associated Universities Inc.",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RiccardoGiacconi.jpg",
     "wikidata": "Q186481",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2002/"
@@ -25030,7 +25180,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "在天体物理学领域的开创性贡献，促成宇宙X射线源的发现。"
+    "discovery": "在天体物理学领域的开创性贡献，促成宇宙X射线源的发现。",
+    "cn": "里卡尔多·贾科尼",
+    "birthYear": "1931",
+    "deathYear": "2018"
   },
   {
     "id": "nobel-medicine-2004-richard-axel",
@@ -26202,7 +26355,7 @@ const awards = [
     "motivation": "for studies of G-protein-coupled receptors",
     "affiliation": "Howard Hughes Medical Institute",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Lefkowitz%201%202012%20(cropped).jpg",
     "wikidata": "Q80910",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2012/"
@@ -26217,7 +26370,9 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "因对G蛋白偶联受体的研究。"
+    "discovery": "因对G蛋白偶联受体的研究。",
+    "cn": "罗伯特·莱夫科维茨",
+    "birthYear": "1943"
   },
   {
     "id": "nobel-medicine-1905-robert-koch",
@@ -26640,7 +26795,7 @@ const awards = [
     "motivation": "for the discovery that black hole formation is a robust prediction of the general theory of relativity",
     "affiliation": "University of Oxford",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Roger%20Penrose%209560.JPG",
     "wikidata": "Q193803",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2020/"
@@ -26698,7 +26853,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因发现黑洞形成是广义相对论的稳健预言。"
+    "discovery": "因发现黑洞形成是广义相对论的稳健预言。",
+    "cn": "羅傑·潘洛斯",
+    "birthYear": "1931"
   },
   {
     "id": "nobel-medicine-1981-roger-w-sperry",
@@ -26711,7 +26868,7 @@ const awards = [
     "motivation": "for his discoveries concerning the functional specialization of the cerebral hemispheres",
     "affiliation": "California Institute of Technology (Caltech)",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Roger%20Wolcott%20Sperry.jpg",
     "wikidata": "Q232305",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/1981/"
@@ -26738,7 +26895,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其关于大脑半球功能特化的发现。"
+    "discovery": "因其关于大脑半球功能特化的发现。",
+    "cn": "罗杰·斯佩里",
+    "birthYear": "1913",
+    "deathYear": "1994"
   },
   {
     "id": "nobel-chemistry-2008-roger-y-tsien",
@@ -26751,7 +26911,7 @@ const awards = [
     "motivation": "for the discovery and development of the green fluorescent protein, GFP",
     "affiliation": "University of California",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Roger%20Tsien-press%20conference%20Dec%2007th%2C%202008-2.jpg",
     "wikidata": "Q200470",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2008/"
@@ -26766,7 +26926,10 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "因发现并发展绿色荧光蛋白（GFP）而获奖。"
+    "discovery": "因发现并发展绿色荧光蛋白（GFP）而获奖。",
+    "cn": "钱永健",
+    "birthYear": "1952",
+    "deathYear": "2016"
   },
   {
     "id": "nobel-medicine-1996-rolf-m-zinkernagel",
@@ -27421,7 +27584,7 @@ const awards = [
     "motivation": "for the discovery of the accelerating expansion of the Universe through observations of distant supernovae",
     "affiliation": "Lawrence Berkeley National Laboratory",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Press%20Conference%20KVA-DSC%207744.jpg",
     "wikidata": "Q106949",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2011/"
@@ -27479,7 +27642,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "因通过观测遥远超新星发现宇宙加速膨胀。"
+    "discovery": "因通过观测遥远超新星发现宇宙加速膨胀。",
+    "cn": "索尔·珀尔马特",
+    "birthYear": "1959"
   },
   {
     "id": "nobel-medicine-1952-selman-abraham-waksman",
@@ -27766,7 +27931,7 @@ const awards = [
     "motivation": "for the discovery that mature cells can be reprogrammed to become pluripotent",
     "affiliation": "Kyoto University",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shinya%20Yamanaka%2020141226.jpg",
     "wikidata": "Q80917",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2012/"
@@ -27793,7 +27958,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "发现成熟细胞可被重编程为多能干细胞。"
+    "discovery": "发现成熟细胞可被重编程为多能干细胞。",
+    "cn": "山中伸彌",
+    "birthYear": "1962"
   },
   {
     "id": "nobel-physics-2014-shuji-nakamura",
@@ -28556,7 +28723,7 @@ const awards = [
     "motivation": "for their discoveries of important principles for drug treatment",
     "affiliation": "London University, King's College Hospital Medical School",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Black%20(pharmacologist).jpg",
     "wikidata": "Q110974",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/1988/"
@@ -28583,7 +28750,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其在药物治疗重要原理方面的开创性发现。"
+    "discovery": "因其在药物治疗重要原理方面的开创性发现。",
+    "cn": "詹姆士·W·布拉克",
+    "birthYear": "1924",
+    "deathYear": "2010"
   },
   {
     "id": "nobel-medicine-2012-sir-john-b-gurdon",
@@ -28596,7 +28766,7 @@ const awards = [
     "motivation": "for the discovery that mature cells can be reprogrammed to become pluripotent",
     "affiliation": "Gurdon Institute",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Gurdon%20Cambridge%202012.JPG",
     "wikidata": "Q81218",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2012/"
@@ -28623,7 +28793,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "发现成熟细胞可被重编程为多能干细胞。"
+    "discovery": "发现成熟细胞可被重编程为多能干细胞。",
+    "cn": "约翰·格登",
+    "birthYear": "1933",
+    "deathYear": "2025"
   },
   {
     "id": "nobel-medicine-1963-sir-john-carew-eccles",
@@ -29015,7 +29188,7 @@ const awards = [
     "motivation": "for his discovery of Prions - a new biological principle of infection",
     "affiliation": "University of California School of Medicine",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanley%20B.%20Prusiner%20in%202024%20(3x4%20close%20cropped).jpg",
     "wikidata": "Q155380",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/1997/"
@@ -29042,7 +29215,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现朊病毒——一种新型感染性生物原理。"
+    "discovery": "因发现朊病毒——一种新型感染性生物原理。",
+    "cn": "史坦利·布魯希納",
+    "birthYear": "1942"
   },
   {
     "id": "nobel-medicine-1986-stanley-cohen",
@@ -29098,7 +29273,7 @@ const awards = [
     "motivation": "for the development of super-resolved fluorescence microscopy",
     "affiliation": "Max Planck Institute for Biophysical Chemistry",
     "country": "Germany",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stefan%20W%20Hell.jpg",
     "wikidata": "Q91410",
     "links": [
       "https://www.nobelprize.org/prizes/chemistry/2014/"
@@ -29113,7 +29288,9 @@ const awards = [
       "CHE-007",
       "CHE-008"
     ],
-    "discovery": "因开发超分辨率荧光显微镜技术。"
+    "discovery": "因开发超分辨率荧光显微镜技术。",
+    "cn": "斯特凡·W·赫尔",
+    "birthYear": "1962"
   },
   {
     "id": "nobel-physics-1997-steven-chu",
@@ -29494,7 +29671,7 @@ const awards = [
     "motivation": "for his discoveries concerning the genomes of extinct hominins and human evolution",
     "affiliation": "Max Planck Institute for Evolutionary Anthropology",
     "country": "Germany",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Svante%20Paabo%20ForMemRS%20(cropped).jpg",
     "wikidata": "Q170342",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2022/"
@@ -29521,7 +29698,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其在已灭绝人族基因组及人类演化方面的开创性发现。"
+    "discovery": "因其在已灭绝人族基因组及人类演化方面的开创性发现。",
+    "cn": "斯万特·帕博",
+    "birthYear": "1955"
   },
   {
     "id": "nobel-medicine-2002-sydney-brenner",
@@ -29693,7 +29872,7 @@ const awards = [
     "motivation": "for the discovery of neutrino oscillations, which shows that neutrinos have mass",
     "affiliation": "University of Tokyo",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Takaaki%20Kajita%20cropped%201%20Takaaki%20Kajita%20202010.jpg",
     "wikidata": "Q11538917",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2015/"
@@ -29751,7 +29930,9 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "发现中微子振荡现象，证明中微子具有质量。"
+    "discovery": "发现中微子振荡现象，证明中微子具有质量。",
+    "cn": "梶田隆章",
+    "birthYear": "1959"
   },
   {
     "id": "nobel-medicine-2018-tasuku-honjo",
@@ -29764,7 +29945,7 @@ const awards = [
     "motivation": "for their discovery of cancer therapy by inhibition of negative immune regulation",
     "affiliation": "Kyoto University",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tasuku%20Honjo%20201311.jpg",
     "wikidata": "Q2395341",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2018/"
@@ -29791,7 +29972,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其发现通过抑制负向免疫调节实现癌症治疗。"
+    "discovery": "因其发现通过抑制负向免疫调节实现癌症治疗。",
+    "cn": "本庶佑",
+    "birthYear": "1942"
   },
   {
     "id": "nobel-chemistry-1926-the-theodor-svedberg",
@@ -30013,7 +30196,7 @@ const awards = [
     "motivation": "for their discoveries of machinery regulating vesicle traffic, a major transport system in our cells",
     "affiliation": "Stanford University",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20c%20s%C3%BCdhof.jpg",
     "wikidata": "Q97270",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2013/"
@@ -30040,7 +30223,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现调控囊泡运输的分子机器——细胞内主要物质转运系统。"
+    "discovery": "因发现调控囊泡运输的分子机器——细胞内主要物质转运系统。",
+    "cn": "托马斯·聚德霍夫",
+    "birthYear": "1955"
   },
   {
     "id": "nobel-medicine-1933-thomas-hunt-morgan",
@@ -30620,7 +30805,7 @@ const awards = [
     "motivation": "for the discovery of microRNA and its role in post-transcriptional gene regulation",
     "affiliation": "UMass Chan Medical School",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Victor%20Ambros%2C%202024%20Nobel%20Prize%20Laureate%20in%20Medicine.jpg",
     "wikidata": "Q983858",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2024/"
@@ -30647,7 +30832,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "发现微小RNA（miRNA）及其在转录后基因调控中的关键作用。"
+    "discovery": "发现微小RNA（miRNA）及其在转录后基因调控中的关键作用。",
+    "cn": "维克托·安布罗斯",
+    "birthYear": "1953"
   },
   {
     "id": "nobel-physics-1936-victor-franz-hess",
@@ -30796,7 +30983,7 @@ const awards = [
     "motivation": "for pioneering contributions to the theory of superconductors and superfluids",
     "affiliation": "P.N. Lebedev Physical Institute",
     "country": "Russia",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ginzburg%20in%20MSU%20opaque.jpg",
     "wikidata": "Q104668",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2003/"
@@ -30854,7 +31041,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "在超导体与超流体理论方面的开创性贡献。"
+    "discovery": "在超导体与超流体理论方面的开创性贡献。",
+    "cn": "维塔利·拉扎列维奇·金兹堡",
+    "birthYear": "1916",
+    "deathYear": "2009"
   },
   {
     "id": "nobel-chemistry-1975-vladimir-prelog",
@@ -32167,8 +32357,8 @@ const awards = [
     "star": "physics",
     "domain": "化学",
     "motivation": "for their work on chirally catalysed hydrogenation reactions",
-    "affiliation": "",
-    "country": "",
+    "affiliation": "孟山都",
+    "country": "美國",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bush7NobelLaureates.jpg",
     "wikidata": "Q110947",
     "links": [
@@ -32569,7 +32759,7 @@ const awards = [
     "motivation": "for the discovery of the mechanism of spontaneous broken symmetry in subatomic physics",
     "affiliation": "Enrico Fermi Institute, University of Chicago",
     "country": "USA",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/YoichiroNambu.jpg",
     "wikidata": "Q188120",
     "links": [
       "https://www.nobelprize.org/prizes/physics/2008/"
@@ -32627,7 +32817,10 @@ const awards = [
       "SPA-007",
       "SPA-008"
     ],
-    "discovery": "发现亚原子物理中自发对称性破缺机制。"
+    "discovery": "发现亚原子物理中自发对称性破缺机制。",
+    "cn": "南部阳一郎",
+    "birthYear": "1921",
+    "deathYear": "2015"
   },
   {
     "id": "nobel-medicine-2016-yoshinori-ohsumi",
@@ -32640,7 +32833,7 @@ const awards = [
     "motivation": "for his discoveries of mechanisms for autophagy",
     "affiliation": "Tokyo Institute of Technology",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Laureates%207428%20(30679389523)%20(cropped).jpg",
     "wikidata": "Q8056214",
     "links": [
       "https://www.nobelprize.org/prizes/medicine/2016/"
@@ -32667,7 +32860,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因其在自噬机制方面的发现。"
+    "discovery": "因其在自噬机制方面的发现。",
+    "cn": "大隅良典",
+    "birthYear": "1945"
   },
   {
     "id": "nobel-chemistry-1986-yuan-t-lee",
@@ -32813,7 +33008,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his achievements in symplectic geometry including new approaches to virtual fundamental cycles, Fukaya categories of certain manifolds and counting holomorphic curves, and for his contributions to other areas of geometry and topology, including group actions on 3-manifolds and knot theory",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Pardon%2C%202017%20(cropped).jpg",
     "wikidata": "Q21558134",
@@ -32847,7 +33042,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his contribution in the recasting of o-minimality as a fundamental method of arithmetic and complex algebraic geometry, and his role in the proof of many central conjectures including Griffiths' conjecture on the algebraicity of images of the period maps, and the Andre-Oort conjecture for Siegel modular varieties",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20Tsimerman2%20c.Simons%20Foundation.jpg",
     "wikidata": "Q21823077",
@@ -32881,7 +33076,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his work in partial differential equations, including the rigorous derivation of the Boltzmann equation from hard-sphere dynamics for rarefied gases, the derivation of wave kinetic equations from nonlinear dispersive systems, and probabilistic approaches to nonlinear Schrödinger dynamics",
-    "affiliation": "",
+    "affiliation": "科朗数学研究所",
     "country": "People's Republic of China",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/YuDeng2%20c.Simons%20Foundation.jpg",
     "wikidata": "Q102585127",
@@ -32915,7 +33110,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For her work in harmonic analysis and geometric measure theory, including applications of multiscale and decoupling techniques to the local smoothing conjecture for the planar wave equation, and major advances in Fourier restriction, Falconer distance sets, Furstenberg sets in the plane, and the Kakeya problem in three dimensions",
-    "affiliation": "",
+    "affiliation": "法國高等科學研究所",
     "country": "People's Republic of China",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hong%20Wang1%20c.Simons%20Foundation.jpg",
     "wikidata": "Q132968784",
@@ -32949,9 +33144,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for introducing powerful tools in arithmetic geometry and resolving long-standing diophantine conjectures of Mordell and Lang",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Germany",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerd%20Faltings%20MFO.jpg",
     "wikidata": "Q77137",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2026"
@@ -32970,7 +33165,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在算术几何中引入强有力的工具，并解决了 Mordell 与 Lang 长期悬而未决的丢番图猜想"
+    "discovery": "因在算术几何中引入强有力的工具，并解决了 Mordell 与 Lang 长期悬而未决的丢番图猜想",
+    "cn": "格尔德·法尔廷斯",
+    "birthYear": "1954"
   },
   {
     "id": "bt-math-2026-frank-merle",
@@ -32981,7 +33178,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For breakthroughs in nonlinear evolution equations, with regards to their stability, singularity formation, or resolution into solitons",
-    "affiliation": "",
+    "affiliation": "CY塞尔吉-巴黎大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Frankmerle.jpg",
     "wikidata": "Q1443776",
@@ -33014,7 +33211,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for uncovering the fossil evidence of past mergers proving that the Milky Way galaxy was built through hierarchical accretion",
-    "affiliation": "",
+    "affiliation": "CNRS Délégation Alsace",
     "country": "France",
     "photo": "",
     "wikidata": "Q2756446",
@@ -33045,7 +33242,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the discovery of the molecular and cellular bases of acute promyelocytic leukemia and the pioneering of a synergistic targeted therapy that transformed the disease from one of the most deadly to one of the most curable cancers",
-    "affiliation": "",
+    "affiliation": "巴斯德研究院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Anne%20Dejean-Ass%C3%A9mat.png",
     "wikidata": "Q21481858",
@@ -33086,9 +33283,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental contributions to algebraic analysis and representation theory, in particular the development of the theory of D-modules and the discovery of crystal graphs",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Masaki%20Kashiwara%20(2018)%20(2)%20(cropped).jpg",
     "wikidata": "Q375000",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2025"
@@ -33107,7 +33304,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对代数分析与表示论的奠基性贡献，特别是 D-模理论的发展与晶体图的发现"
+    "discovery": "因对代数分析与表示论的奠基性贡献，特别是 D-模理论的发展与晶体图的发现",
+    "cn": "柏原正樹",
+    "birthYear": "1947"
   },
   {
     "id": "turing-2025-gilles-brassard",
@@ -33118,9 +33317,9 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For their essential role in igniting and shaping the quantum revolution in computer science and in information and communications technology",
-    "affiliation": "",
+    "affiliation": "蒙特利尔大学",
     "country": "Canada",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gilles%20Brassard%20(2019).jpg",
     "wikidata": "Q92938",
     "links": [
       "https://amturing.acm.org/award_winners/brassard_uj34503.cfm"
@@ -33137,7 +33336,9 @@ const awards = [
       "INF-009",
       "INF-010"
     ],
-    "discovery": "因其在点燃并塑造计算机科学以及信息与通信技术中的量子革命方面所起的关键作用"
+    "discovery": "因其在点燃并塑造计算机科学以及信息与通信技术中的量子革命方面所起的关键作用",
+    "cn": "吉勒斯·布拉薩德",
+    "birthYear": "1955"
   },
   {
     "id": "shaw-math-2025-kenji-fukaya",
@@ -33148,7 +33349,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his pioneering work on symplectic geometry, especially for envisioning the existence of a category — nowadays called the Fukaya category — consisting of Lagrangians on a symplectic manifold, for leading the monumental task of constructing it, and for his subsequent ground-breaking and impactful contributions to symplectic topology, mirror symmetry, and gauge theory",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenji%20Fukaya%2020101214.jpg",
     "wikidata": "Q3182153",
@@ -33252,7 +33453,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their pioneering research in cosmology, in particular for their studies of fluctuations in the cosmic microwave background. Their predictions have been verified by an armada of ground-, balloon- and space-based instruments, leading to precise determinations of the age, geometry, and mass-energy content of the universe",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q1507296",
@@ -33271,7 +33472,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "以表彰他们在宇宙学方面的开创性工作，尤其是他们对宇宙微波背景辐射涨落的研究。他们的预测已得到了大量地面、气球和太空观测仪器的验证，从而精确测定出宇宙的年龄、几何结构和质能含量。"
+    "discovery": "以表彰他们在宇宙学方面的开创性工作，尤其是他们对宇宙微波背景辐射涨落的研究。他们的预测已得到了大量地面、气球和太空观测仪器的验证，从而精确测定出宇宙的年龄、几何结构和质能含量。",
+    "cn": "乔治·埃夫斯塔希欧",
+    "birthYear": "1955"
   },
   {
     "id": "shaw-astro-2025-j-richard-bond",
@@ -33282,9 +33485,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their pioneering research in cosmology, in particular for their studies of fluctuations in the cosmic microwave background. Their predictions have been verified by an armada of ground-, balloon- and space-based instruments, leading to precise determinations of the age, geometry, and mass-energy content of the universe",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr%20J%20Richard%20Bond%20(iau0805a).jpg",
     "wikidata": "Q1676381",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/astronomy/year-of-laureates/2025-astronomy"
@@ -33301,7 +33504,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "以表彰他们在宇宙学方面的开创性工作，尤其是他们对宇宙微波背景辐射涨落的研究。他们的预测已得到了大量地面、气球和太空观测仪器的验证，从而精确测定出宇宙的年龄、几何结构和质能含量。"
+    "discovery": "以表彰他们在宇宙学方面的开创性工作，尤其是他们对宇宙微波背景辐射涨落的研究。他们的预测已得到了大量地面、气球和太空观测仪器的验证，从而精确测定出宇宙的年龄、几何结构和质能含量。",
+    "cn": "理查德·邦德",
+    "birthYear": "1950"
   },
   {
     "id": "kyoto-basic-2025-azim-surani",
@@ -33312,7 +33517,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Azim Surani demonstrated that in mammals, male and female genomes receive distinct “imprints” during each germ cell development and these genomes play complementary roles in embryogenesis. Genomic imprinting is a fundamental principle in life sciences that introduces a novel concept to Mendelian genetics. Its discovery represents a pioneering and foundational contribution not only to developmental biology and epigenetics but also to a wide range of life science fields including physiology, regenerative medicine, reproductive medicine, and plant science",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "Kenya",
     "photo": "",
     "wikidata": "Q793786",
@@ -33385,7 +33590,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For advancing our understanding of the surprising properties of two-dimensional electron systems in strong magnetic fields",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "Israel",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mordechai%20heiblum.jpg",
     "wikidata": "Q12408922",
@@ -33421,7 +33626,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For advancing our understanding of the surprising properties of two-dimensional electron systems in strong magnetic fields",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q20028044",
@@ -33457,7 +33662,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For establishing the role of B cells in multiple sclerosis and developing B-cell based treatments, and for revealing that Epstein-Barr virus infection is the leading risk for multiple sclerosis",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr.%20Stephen%20Hauser.jpg",
     "wikidata": "Q7609730",
@@ -33498,7 +33703,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For developing base editing and prime editing, technologies that edit the DNA of living systems without cutting the DNA double helix, and rewrite segments of genes at their native locations, enabling the correction or replacement of virtually any mutation",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/DavidRLiu2012.jpg",
     "wikidata": "Q16214492",
@@ -33540,9 +33745,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery and characterization of GLP-1 and revealing its physiology and potential in treating diabetes and obesity",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Joshua%20Drucker%20FRS.jpg",
     "wikidata": "Q19966099",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L3971"
@@ -33569,7 +33774,8 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现并表征 GLP-1，揭示其生理学特性及其在治疗糖尿病与肥胖症方面的潜力"
+    "discovery": "因发现并表征 GLP-1，揭示其生理学特性及其在治疗糖尿病与肥胖症方面的潜力",
+    "birthYear": "1956"
   },
   {
     "id": "bt-life-2025-jens-juul-holst",
@@ -33789,7 +33995,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his pioneering development and use of cryogenic-electron tomography (cryo-ET), an imaging technique that enables three-dimensional visualisation of biological samples, including proteins, macromolecular complexes, and cellular compartments as they exist in their natural cellular settings",
-    "affiliation": "",
+    "affiliation": "慕尼黑工业大学",
     "country": "Germany",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Prof.%20Dr.%20Wolfgang%20Baumeister.webp",
     "wikidata": "Q2808469",
@@ -33831,7 +34037,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For pioneering innovative strategies to overcome viral defenses through novel antibody-focused approaches",
-    "affiliation": "",
+    "affiliation": "南加州大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Plos%20bjorkman.jpg",
     "wikidata": "Q2048641",
@@ -33873,7 +34079,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For his pioneering scientific work, Sutherland received the Lasker Basic Research Award in 1970 and the Nobel Prize in Physiology or Medicine in 1971 (4)",
-    "affiliation": "",
+    "affiliation": "德州大學西南醫學中心",
     "country": "United States",
     "photo": "",
     "wikidata": "Q15849224",
@@ -33990,7 +34196,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For developing the conceptual and algorithmic foundations of reinforcement learning",
-    "affiliation": "",
+    "affiliation": "阿尔伯塔大学",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Sutton%202021%20(cropped).jpg",
     "wikidata": "Q7328833",
@@ -34022,7 +34228,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental contributions to Combinatorics and Theoretical Computer Science",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "Israel",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Noga2020.jpg",
     "wikidata": "Q92927",
@@ -34056,9 +34262,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental contributions to Mathematical Cryptography",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "Israel",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Adi%20Shamir%20at%20TU%20Darmstadt%20(2013).jpg",
     "wikidata": "Q320624",
     "links": [
       "https://wolffund.org.il/adi-shamir/"
@@ -34077,7 +34283,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对数学密码学的奠基性贡献"
+    "discovery": "因对数学密码学的奠基性贡献",
+    "cn": "阿迪·萨莫尔",
+    "birthYear": "1952"
   },
   {
     "id": "kavli-astro-2024-david-charbonneau",
@@ -34088,7 +34296,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their ground-breaking work on the discovery and characterization of extra-solar planets and their atmospheres",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Charbonneau%20180x240.jpg",
     "wikidata": "Q5232304",
@@ -34184,7 +34392,7 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "for pioneering work integrating synthetic nanoscale materials with biological function for biomedical applications",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Alivisatos%20University%20of%20Chicago%20President%20September%202021.png",
     "wikidata": "Q194559",
@@ -34216,9 +34424,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for fundamental contributions to high-energy astrophysics, galaxies and structure formation, and cosmology",
-    "affiliation": "",
+    "affiliation": "格雷沙姆學院",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20portrait%20of%20Lord%20Rees%20of%20Ludlow%20crop%202.jpg",
     "wikidata": "Q335213",
     "links": [
       "https://wolffund.org.il/martin-rees/"
@@ -34240,7 +34448,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因对高能天体物理学、星系与结构形成以及宇宙学的奠基性贡献"
+    "discovery": "因对高能天体物理学、星系与结构形成以及宇宙学的奠基性贡献",
+    "cn": "马丁·里斯",
+    "birthYear": "1942"
   },
   {
     "id": "gruber-cosmo-2024-q61899742",
@@ -34323,7 +34533,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the development of chimeric antigen receptor T cell immunotherapy whereby the patient’s T cells are modified to target and kill cancer cells",
-    "affiliation": "",
+    "affiliation": "宾夕法尼亚大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Carl%20H.%20June%2C%20M.D.%20(2015).JPG",
     "wikidata": "Q19277113",
@@ -34365,7 +34575,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the development of chimeric antigen receptor T cell immunotherapy whereby the patient’s T cells are modified to target and kill cancer cells",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel%20Sadelain.jpg",
     "wikidata": "Q50880520",
@@ -34516,7 +34726,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因开发出改变患者生活的药物组合，修复囊性纤维化患者体内有缺陷的氯离子通道蛋白"
+    "discovery": "因开发出改变患者生活的药物组合，修复囊性纤维化患者体内有缺陷的氯离子通道蛋白",
+    "cn": "保羅·內古列斯庫",
+    "birthYear": "1962"
   },
   {
     "id": "bt-life-2024-fredrick-van-goor",
@@ -34608,7 +34820,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of the genetic and molecular mechanisms underlying the fetal-to-adult hemoglobin switch, making possible a revolutionary and highly effective genome-editing therapy for sickle cell anemia and β thalassemia, devastating blood diseases that affect millions of people worldwide",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q22095816",
@@ -34692,9 +34904,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the discovery of a highly localized and specialized system for representation of faces in human and non-human primate neocortex",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Langer%20MTMLecture%202008%2009%2025%20portrait.JPG",
     "wikidata": "Q669597",
     "links": [
       "https://www.kavliprize.org/prizes/neuroscience/2024"
@@ -34721,7 +34933,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现了人类与非人灵长类新皮层中表征面孔的、高度局域化且专门化的系统"
+    "discovery": "因发现了人类与非人灵长类新皮层中表征面孔的、高度局域化且专门化的系统",
+    "cn": "伯特·S·兰格",
+    "birthYear": "1948"
   },
   {
     "id": "kavli-neuro-2024-nancy-kanwisher",
@@ -34732,7 +34946,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the discovery of a highly localized and specialized system for representation of faces in human and non-human primate neocortex",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Introduction%20to%20the%20Simons%20Center%2C%20Nancy%20Kanwisher%2C%202m33s.jpg",
     "wikidata": "Q6962770",
@@ -34774,7 +34988,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the discovery of a highly localized and specialized system for representation of faces in human and non-human primate neocortex",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Doris%20Tsao.jpg",
     "wikidata": "Q30135012",
@@ -34816,7 +35030,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the discovery of a highly localized and specialized system for representation of faces in human and non-human primate neocortex",
-    "affiliation": "",
+    "affiliation": "洛克菲勒大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q88745257",
@@ -34939,7 +35153,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of the cGAS enzyme that senses foreign and self DNA, solving the mystery of how DNA stimulates immune and inflammatory responses",
-    "affiliation": "",
+    "affiliation": "德州大學西南醫學中心",
     "country": "United States",
     "photo": "",
     "wikidata": "Q8070836",
@@ -34968,7 +35182,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现能够感知外源与自身 DNA 的 cGAS 酶，解开了 DNA 如何激发免疫与炎症反应之谜"
+    "discovery": "因发现能够感知外源与自身 DNA 的 cGAS 酶，解开了 DNA 如何激发免疫与炎症反应之谜",
+    "cn": "陈志坚",
+    "birthYear": "1966"
   },
   {
     "id": "abel-2023-luis-caffarelli",
@@ -34979,9 +35195,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his seminal contributions to regularity theory for nonlinear partial differential equations including free-boundary problems and the Monge–Ampère equation",
-    "affiliation": "",
+    "affiliation": "德克薩斯州大學奧斯汀分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Luis%20Caffarelli.jpg",
     "wikidata": "Q1076636",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2023"
@@ -35000,7 +35216,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对非线性偏微分方程正则性理论的奠基性贡献，包括自由边界问题与蒙日–安培方程"
+    "discovery": "因对非线性偏微分方程正则性理论的奠基性贡献，包括自由边界问题与蒙日–安培方程",
+    "cn": "路易斯·卡法雷利",
+    "birthYear": "1948"
   },
   {
     "id": "turing-2023-avi-wigderson",
@@ -35011,9 +35229,9 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For foundational contributions to the theory of computation, including reshaping our understanding of the role of randomness in computation and mathematics, and for his decades of intellectual leadership in theoretical computer science",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Avi%20Wigderson%20(2005-11-17).jpg",
     "wikidata": "Q92957",
     "links": [
       "https://amturing.acm.org/award_winners/wigderson_3844537.cfm"
@@ -35030,7 +35248,9 @@ const awards = [
       "INF-009",
       "INF-010"
     ],
-    "discovery": "因对计算理论的奠基性贡献，包括重塑了我们对随机性在计算与数学中所起作用的理解，以及因其数十年来在理论计算机科学领域的思想引领"
+    "discovery": "因对计算理论的奠基性贡献，包括重塑了我们对随机性在计算与数学中所起作用的理解，以及因其数十年来在理论计算机科学领域的思想引领",
+    "cn": "阿维·威格德森",
+    "birthYear": "1956"
   },
   {
     "id": "wolf-math-2023-ingrid-daubechies",
@@ -35041,7 +35261,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for work in wavelet theory and applied harmonic analysis",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ingrid%20Daubechies%20ICM%202018%20(42687401960)%20(cropped).jpg",
     "wikidata": "Q275604",
@@ -35075,9 +35295,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For foundational work in the field of quantum information",
-    "affiliation": "",
+    "affiliation": "蒙特利尔大学",
     "country": "Canada",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gilles%20Brassard%20(2019).jpg",
     "wikidata": "Q92938",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L3934"
@@ -35099,7 +35319,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因在量子信息领域的奠基性工作"
+    "discovery": "因在量子信息领域的奠基性工作",
+    "cn": "吉勒斯·布拉薩德",
+    "birthYear": "1955"
   },
   {
     "id": "bt-physics-2023-alexander-zamolodchikov",
@@ -35147,7 +35369,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Elliott H. Lieb, primarily through his achievements in many-body physics, established a foundation for mathematical research in fields such as physics, chemistry, and quantum information science. He also made significant contributions to the development of mathematical analysis. Few researchers have made such broad and fundamental contributions to modern mathematical sciences",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Elliott-Lieb-07.jpeg",
     "wikidata": "Q371441",
@@ -35184,7 +35406,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2023 Cosmology Prize to Richard S. Ellis for contributions in the fields of galaxy evolution, the onset of cosmic dawn and reionization in the high redshift universe, and the detection of the earliest galaxies via the Hubble Ultra Deep Field study",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Ellis%20recipient%20of%20the%202023%20Gruber%20Cosmology%20Prize%20(iau2302).jpg",
     "wikidata": "Q1153445",
@@ -35257,7 +35479,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For developing a deep learning AI method that rapidly and accurately predicts the three-dimensional structure of proteins from their amino acid sequence",
-    "affiliation": "",
+    "affiliation": "倫敦大學學院",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Demis%20Hassabis%2C%202024%20Nobel%20Prize%20Laureate%20in%20Chemistry%207%20(cropped).jpg",
     "wikidata": "Q3022141",
@@ -35299,7 +35521,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering that narcolepsy is caused by the loss of a small population of brain cells that make a wake-promoting substance, paving the way for the development of new treatments for sleep disorders",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "France",
     "photo": "",
     "wikidata": "Q5373255",
@@ -35340,7 +35562,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering that narcolepsy is caused by the loss of a small population of brain cells that make a wake-promoting substance, paving the way for the development of new treatments for sleep disorders",
-    "affiliation": "",
+    "affiliation": "筑波大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Masashi%20Yanagisawa%20cropped%201%20Masashi%20Yanagisawa%20201911.jpg",
     "wikidata": "Q11534409",
@@ -35382,7 +35604,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For developing a deep learning AI method that rapidly and accurately predicts the three-dimensional structure of proteins from their amino acid sequence",
-    "affiliation": "",
+    "affiliation": "Google DeepMind",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Jumper%2C%202024%20Nobel%20Prize%20Laureate%20in%20Chemistry%207%20(cropped).jpg",
     "wikidata": "Q89620738",
@@ -35465,7 +35687,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for pioneering structural biology that enabled visualisation, at the level of individual atoms, of the protein machines responsible for gene transcription, one of life’s fundamental processes. They revealed the mechanism underlying each step in gene transcription, how proper gene transcription promotes health, and how dysregulation causes disease",
-    "affiliation": "",
+    "affiliation": "慕尼黑大学",
     "country": "Germany",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Max%20Planck%20president%20and%20chemist%20Patrick%20Cramer.jpg",
     "wikidata": "Q107959",
@@ -35507,7 +35729,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for pioneering structural biology that enabled visualisation, at the level of individual atoms, of the protein machines responsible for gene transcription, one of life’s fundamental processes. They revealed the mechanism underlying each step in gene transcription, how proper gene transcription promotes health, and how dysregulation causes disease",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "Spain",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eva%20Nogales%20in%202023%2006.jpg",
     "wikidata": "Q4795157",
@@ -35549,7 +35771,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for pioneering work in elucidating the mechanisms and therapeutic potential of enteroendocrine hormones",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Joshua%20Drucker%20FRS.jpg",
     "wikidata": "Q19966099",
@@ -35592,7 +35814,7 @@ const awards = [
     "motivation": "The Gruber Foundation presents the 2023 Genetics Prize to Allan Jacobson and Lynne Elizabeth Maquat for discoveries and pioneering studies on the mRNA surveillance mechanism known as Nonsense Mediated mRNA Decay (NMD)",
     "affiliation": "",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Maquat-lab.jpg",
     "wikidata": "Q16731956",
     "links": [
       "https://gruber.yale.edu/genetics-laureates"
@@ -35619,7 +35841,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "格鲁伯基金会将 2023 年遗传学奖授予 Allan Jacobson 和 Lynne Elizabeth Maquat，以表彰其在被称为无义介导的 mRNA 降解（Nonsense Mediated mRNA Decay, NMD）的 mRNA 监控机制上的发现与开创性研究"
+    "discovery": "格鲁伯基金会将 2023 年遗传学奖授予 Allan Jacobson 和 Lynne Elizabeth Maquat，以表彰其在被称为无义介导的 mRNA 降解（Nonsense Mediated mRNA Decay, NMD）的 mRNA 监控机制上的发现与开创性研究",
+    "cn": "琳恩·伊丽莎白·马卡特",
+    "birthYear": "1952"
   },
   {
     "id": "fields-2022-hugo-duminil-copin",
@@ -35630,7 +35854,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For solving longstanding problems in the probabilistic theory of phase transitions in statistical physics, especially in dimensions three and four",
-    "affiliation": "",
+    "affiliation": "法國高等科學研究所",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hugo%20Duminil-Copin%20in%20Oberwolfach%20(cropped).jpg",
     "wikidata": "Q15461028",
@@ -35664,7 +35888,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For contributions to analytic number theory, which have led to major advances in the understanding of the structure of prime numbers and in Diophantine approximation",
-    "affiliation": "",
+    "affiliation": "蒙特利尔大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Maynard%20MFO%202013.jpg",
     "wikidata": "Q19655060",
@@ -35732,7 +35956,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For bringing the ideas of Hodge theory to combinatorics, the proof of the Dowling–Wilson conjecture for geometric lattices, the proof of the Heron–Rota–Welsh conjecture for matroids, the development of the theory of Lorentzian polynomials, and the proof of the strong Mason conjecture",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/June%20Huh%20-%20ICM%202018.jpg",
     "wikidata": "Q32538394",
@@ -35768,7 +35992,7 @@ const awards = [
     "motivation": "for his groundbreaking contributions to topology in its broadest sense, and in particular its algebraic, geometric and dynamical aspects",
     "affiliation": "",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dennis%20Sullivan%20at%20MSRI%20(cropped).jpg",
     "wikidata": "Q726376",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2022"
@@ -35787,7 +36011,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对最广义的拓扑学的开创性贡献，特别是其代数、几何与动力学方面"
+    "discovery": "因对最广义的拓扑学的开创性贡献，特别是其代数、几何与动力学方面",
+    "cn": "丹尼斯·蘇利文",
+    "birthYear": "1941"
   },
   {
     "id": "turing-2022-robert-metcalfe",
@@ -35830,7 +36056,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for Groundbreaking contributions to representation theory and related areas",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q426855",
@@ -35851,7 +36077,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对表示论及相关领域的开创性贡献"
+    "discovery": "因对表示论及相关领域的开创性贡献",
+    "cn": "喬治·盧斯蒂格",
+    "birthYear": "1946"
   },
   {
     "id": "kavli-astro-2022-conny-aerts",
@@ -35988,7 +36216,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Pathogens threaten the lives of many organisms, including human beings. Vertebrates have developed adaptive immunity that prevents reinfection with the same pathogen. However, evolution by mutation enables pathogens to evade host immune responses. In 2004, Bryan T. Grenfell proposed “phylodynamics,” a new methodology that predicts the epidemic dynamics of RNA viruses by considering viral evolution and contributed to the development of the research field that integrates immune dynamics, epidemiology, and evolutionary biology",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q4980129",
@@ -36024,7 +36252,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for pioneering contributions to ultrafast laser science and attosecond physics",
-    "affiliation": "",
+    "affiliation": "慕尼黑大学",
     "country": "Hungary",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferenc%20Krausz%20(cropped).jpg",
     "wikidata": "Q86970",
@@ -36061,7 +36289,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for pioneering contributions to ultrafast laser science and attosecond physics",
-    "affiliation": "",
+    "affiliation": "隆德大学",
     "country": "Sweden",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Anne%20LHuiller%2001.JPG",
     "wikidata": "Q565544",
@@ -36167,7 +36395,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For elucidating the molecular basis of neurodegenerative and cardiac transthyretin diseases, and for developing tafamidis, a drug that slows their progression",
-    "affiliation": "",
+    "affiliation": "得克萨斯农工大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q6175781",
@@ -36251,7 +36479,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the development of a robust and affordable method to determine DNA sequences on a massive scale, which has transformed the practice of science and medicine",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Klenerman%20Studio%20shoot%2030%2005%2024%20photos%20taken%20by%20Michael%20Webb%20%C2%A9University%20of%20Cambridge%20R6A%202299.jpg",
     "wikidata": "Q21165838",
@@ -36293,7 +36521,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For engineering modified RNA technology which enabled rapid development of effective COVID-19 vaccines",
-    "affiliation": "",
+    "affiliation": "宾夕法尼亚大学",
     "country": "Hungary",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Katalin%20Kariko%20light%20corrected.jpeg",
     "wikidata": "Q88608397",
@@ -36335,7 +36563,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For engineering modified RNA technology which enabled rapid development of effective COVID-19 vaccines",
-    "affiliation": "",
+    "affiliation": "派瑞曼醫學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Drew%20Weissman%20Life%20Science%20medalist.jpg",
     "wikidata": "Q88608402",
@@ -36463,7 +36691,7 @@ const awards = [
     "motivation": "for pioneering the discovery of genes underlying a range of serious brain disorders",
     "affiliation": "",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Huda%20Zoghbi.jpg",
     "wikidata": "Q1633764",
     "links": [
       "https://www.kavliprize.org/prizes/neuroscience/2022"
@@ -36490,7 +36718,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因开创了导致一系列严重脑部疾病的基因的发现"
+    "discovery": "因开创了导致一系列严重脑部疾病的基因的发现",
+    "cn": "胡達·佐格比",
+    "birthYear": "1954"
   },
   {
     "id": "kavli-neuro-2022-jean-louis-mandel",
@@ -36501,7 +36731,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for pioneering the discovery of genes underlying a range of serious brain disorders",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Louis%20Mandel%20par%20Claude%20Truong-Ngoc%20mai%202013.jpg",
     "wikidata": "Q2279559",
@@ -36543,7 +36773,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for pioneering the discovery of genes underlying a range of serious brain disorders",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Christopher%20A.%20Walsh%20(2022).jpg",
     "wikidata": "Q23135514",
@@ -36626,7 +36856,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2022 Genetics Prize to Ruth Lehmann, James Priess, and Geraldine Seydoux for discovering how early nematode (Priess and Seydoux) and fruitfly (Lehmann) embryos set aside particular cells during development, especially germ cells that result in intergenerational inheritance",
-    "affiliation": "",
+    "affiliation": "约翰斯·霍普金斯大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q5549793",
@@ -36710,7 +36940,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their foundational contributions to theoretical computer science and discrete mathematics, and their leading role in shaping them into central fields of modern mathematics",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Avi%20Wigderson%20(2005-11-17).jpg",
     "wikidata": "Q92957",
@@ -36746,7 +36976,7 @@ const awards = [
     "motivation": "for their foundational contributions to theoretical computer science and discrete mathematics, and their leading role in shaping them into central fields of modern mathematics",
     "affiliation": "",
     "country": "Hungary",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A1szl%C3%B3%20Lov%C3%A1sz%20(2017)%20(cropped).jpg",
     "wikidata": "Q357918",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2021"
@@ -36765,7 +36995,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对理论计算机科学与离散数学的奠基性贡献，以及在将二者塑造为现代数学核心领域中的引领作用"
+    "discovery": "因对理论计算机科学与离散数学的奠基性贡献，以及在将二者塑造为现代数学核心领域中的引领作用",
+    "cn": "洛瓦兹·拉兹洛",
+    "birthYear": "1948"
   },
   {
     "id": "turing-2021-jack-dongarra",
@@ -36776,7 +37008,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his pioneering contributions to numerical algorithms and libraries that enabled high performance computational software to keep pace with exponential hardware improvements for over four decades",
-    "affiliation": "",
+    "affiliation": "曼徹斯特大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jack-dongarra-2022.jpg",
     "wikidata": "Q92670",
@@ -36810,7 +37042,7 @@ const awards = [
     "motivation": "For transformative contributions to the theory of stochastic analysis, particularly the theory of regularity structures in stochastic partial differential equations",
     "affiliation": "",
     "country": "Austria",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Martin%20Hairer%20FRS.jpg",
     "wikidata": "Q89332",
     "links": [
       "https://breakthroughprize.org/Laureates/3/L3884"
@@ -36829,7 +37061,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对随机分析理论的变革性贡献，特别是随机偏微分方程中的正则性结构理论"
+    "discovery": "因对随机分析理论的变革性贡献，特别是随机偏微分方程中的正则性结构理论",
+    "cn": "马丁·海雷尔",
+    "birthYear": "1975"
   },
   {
     "id": "shaw-math-2021-jean-michel-bismut",
@@ -36840,7 +37074,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their remarkable insights that have transformed, and continue to transform, modern geometry",
-    "affiliation": "",
+    "affiliation": "巴黎第十一大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Michel%20Bismut.jpg",
     "wikidata": "Q527925",
@@ -36874,7 +37108,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For precision fundamental measurements that test our understanding of gravity, probe the nature of dark energy, and establish limits on couplings to dark matter",
-    "affiliation": "",
+    "affiliation": "華盛頓大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1351285",
@@ -36911,7 +37145,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For precision fundamental measurements that test our understanding of gravity, probe the nature of dark energy, and establish limits on couplings to dark matter",
-    "affiliation": "",
+    "affiliation": "華盛頓大學",
     "country": "",
     "photo": "",
     "wikidata": "Q90215434",
@@ -36948,7 +37182,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For precision fundamental measurements that test our understanding of gravity, probe the nature of dark energy, and establish limits on couplings to dark matter",
-    "affiliation": "",
+    "affiliation": "華盛頓大學",
     "country": "",
     "photo": "",
     "wikidata": "Q99197311",
@@ -36985,7 +37219,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For precision fundamental measurements that test our understanding of gravity, probe the nature of dark energy, and establish limits on couplings to dark matter",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "Israel",
     "photo": "",
     "wikidata": "Q101427929",
@@ -37022,7 +37256,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Pathogens threaten the lives of many organisms, including human beings. Vertebrates have developed adaptive immunity that prevents reinfection with the same pathogen. However, evolution by mutation enables pathogens to evade host immune responses. In 2004, Bryan T. Grenfell proposed “phylodynamics,” a new methodology that predicts the epidemic dynamics of RNA viruses by considering viral evolution and contributed to the development of the research field that integrates immune dynamics, epidemiology, and evolutionary biology",
-    "affiliation": "",
+    "affiliation": "洛克菲勒大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20G%20Roeder.jpg",
     "wikidata": "Q900586",
@@ -37059,7 +37293,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for ground-breaking discoveries in disordered systems, particle physics and statistical physics",
-    "affiliation": "",
+    "affiliation": "罗马大学",
     "country": "Italy",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Parisi%20giorgio.jpg",
     "wikidata": "Q1235614",
@@ -37128,7 +37362,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2021 Cosmology Prize to Marc Kamionkowski, Uroš Seljak, and Matias Zaldarriaga for work on the Cosmic Microwave Background, the most direct tracer of the primordial universe and of its physics",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Slovenia",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Uros%20Seljak.jpg",
     "wikidata": "Q7901082",
@@ -37160,7 +37394,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For developing a technology that allowed the design of proteins never seen before in nature, including novel proteins that have the potential for therapeutic intervention in human diseases",
-    "affiliation": "",
+    "affiliation": "華盛頓大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/DBaker%20SparkPlugMtn%20July2013.JPG",
     "wikidata": "Q3814528",
@@ -37202,7 +37436,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For deconstructing the complex behavior of parenting to the level of cell-types and their wiring, and demonstrating that the neural circuits governing both male and female-specific parenting behaviors are present in both sexes",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Catherine%20Dulac.jpg",
     "wikidata": "Q5052645",
@@ -37328,7 +37562,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the landmark discovery of the ESCRT (Endosomal Sorting Complex Required for Transport) pathway, which is essential in diverse processes involving membrane biology, including cell division, cell-surface receptor regulation, viral dissemination, and nerve axon pruning. These processes are central to life, health and disease",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Scott%20emr.jpg",
     "wikidata": "Q7436207",
@@ -37370,7 +37604,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for ground-breaking discoveries on RNA processing and its function",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Joan%20A.%20Steitz%20in%20her%20office%20with%20models%20(cropped).jpg",
     "wikidata": "Q1690702",
@@ -37456,7 +37690,7 @@ const awards = [
     "motivation": "for his fundamental mechanistic discoveries on RNA splicing leading to a world’s first treatment for spinal muscular atrophy (SMA)",
     "affiliation": "",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Adrian%20Krainer.jpg",
     "wikidata": "Q40473018",
     "links": [
       "https://wolffund.org.il/adrian-krainer/"
@@ -37483,7 +37717,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因在 RNA 剪接机制上的奠基性发现，并由此带来全球首个脊髓性肌萎缩症（SMA）治疗方法"
+    "discovery": "因在 RNA 剪接机制上的奠基性发现，并由此带来全球首个脊髓性肌萎缩症（SMA）治疗方法",
+    "cn": "亞德里恩·R·克里拿",
+    "birthYear": "1958"
   },
   {
     "id": "abel-2020-grigory-margulis",
@@ -37494,9 +37730,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for pioneering the use of methods from probability and dynamics in group theory, number theory and combinatorics",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grigory%20Margulis%20(2006).jpg",
     "wikidata": "Q325705",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2020"
@@ -37515,7 +37751,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因开创性地将概率与动力学方法用于群论、数论与组合学"
+    "discovery": "因开创性地将概率与动力学方法用于群论、数论与组合学",
+    "cn": "格列戈里·馬爾古利斯",
+    "birthYear": "1946"
   },
   {
     "id": "abel-2020-hillel-furstenberg",
@@ -37528,7 +37766,7 @@ const awards = [
     "motivation": "for pioneering the use of methods from probability and dynamics in group theory, number theory and combinatorics",
     "affiliation": "",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Hillel%20Furstenberg%20Cropped.jpg",
     "wikidata": "Q556862",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2020"
@@ -37547,7 +37785,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因开创性地将概率与动力学方法用于群论、数论与组合学"
+    "discovery": "因开创性地将概率与动力学方法用于群论、数论与组合学",
+    "cn": "哈里·弗斯騰伯格",
+    "birthYear": "1935"
   },
   {
     "id": "turing-2020-alfred-aho",
@@ -37558,7 +37798,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For fundamental algorithms and theory underlying programming language implementation and for synthesizing these results and those of others in their highly influential books, which educated generations of computer scientists",
-    "affiliation": "",
+    "affiliation": "哥倫比亞大學",
     "country": "Canada",
     "photo": "",
     "wikidata": "Q62898",
@@ -37590,7 +37830,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For fundamental algorithms and theory underlying programming language implementation and for synthesizing these results and those of others in their highly influential books, which educated generations of computer scientists",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q92794",
@@ -37622,7 +37862,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For revolutionary discoveries in the dynamics and geometry of moduli spaces of Abelian differentials, including the proof of the “magic wand theorem” with Maryam Mirzakhani",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1748305",
@@ -37658,7 +37898,7 @@ const awards = [
     "motivation": "for their contributions to differential geometry and topology",
     "affiliation": "",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Simon%20Donaldson.jpg",
     "wikidata": "Q334039",
     "links": [
       "https://wolffund.org.il/simon-donaldson/"
@@ -37677,7 +37917,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因他们对微分几何与拓扑学的贡献"
+    "discovery": "因他们对微分几何与拓扑学的贡献",
+    "cn": "西蒙·唐纳森",
+    "birthYear": "1957"
   },
   {
     "id": "wolf-math-2020-yakov-eliashberg",
@@ -37688,7 +37930,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their contributions to differential geometry and topology",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Yakov%20Eliashberg.jpg",
     "wikidata": "Q1399503",
@@ -37722,7 +37964,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the first image of a supermassive black hole, taken by means of an Earth-sized alliance of telescopes",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Galison%2C%20HSS%202007.jpg",
     "wikidata": "Q444025",
@@ -37759,7 +38001,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For his groundbreaking research in the field of observational X-ray astronomy, covering a wide range of topics from gas flows in clusters of galaxies to supermassive black holes at the heart of galaxies",
-    "affiliation": "",
+    "affiliation": "格雷沙姆學院",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20Fabian%2C%20recipient%20of%20the%202020%20Kavli%20Prize%20in%20Astrophysics%20(iau2005a).jpg",
     "wikidata": "Q363059",
@@ -37793,7 +38035,7 @@ const awards = [
     "motivation": "For sub-ångström resolution imaging and chemical analysis using electron beams",
     "affiliation": "",
     "country": "Germany",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/The%202020%20Kavli%20Prize%20Laureate%20Knut%20Urban%20signing%20the%20protocol%20(2022)%20(52337039956)%20(cropped).jpg",
     "wikidata": "Q110765",
     "links": [
       "https://www.kavliprize.org/prizes/nanoscience/2020"
@@ -37810,7 +38052,9 @@ const awards = [
       "ENG-009",
       "ENG-010"
     ],
-    "discovery": "因利用电子束实现亚埃分辨率成像与化学分析"
+    "discovery": "因利用电子束实现亚埃分辨率成像与化学分析",
+    "cn": "克努特·乌尔班",
+    "birthYear": "1941"
   },
   {
     "id": "kavli-nano-2020-ondrej-krivanek",
@@ -37852,7 +38096,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For pioneering theoretical and experimental work on twisted bilayer graphene",
-    "affiliation": "",
+    "affiliation": "德克薩斯州大學奧斯汀分校",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Allan%20MacDonald.jpg",
     "wikidata": "Q4730656",
@@ -37889,7 +38133,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For pioneering theoretical and experimental work on twisted bilayer graphene",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "Spain",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pablo%20Jarillo-Herrero%20(born%201976)%20giving%20the%202024%20Segr%C3%A9%20Lecture%20Magic%20Angle%20Graphene.png",
     "wikidata": "Q56928107",
@@ -37995,7 +38239,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2020 Cosmology Prize to Lars Hernquist and Volker Springel for transformative work on structure formation in the universe and development of numerical algorithms and community codes",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q3218144",
@@ -38027,7 +38271,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering functions of molecular chaperones in mediating protein folding and preventing protein aggregation",
-    "affiliation": "",
+    "affiliation": "慕尼黑大学",
     "country": "Germany",
     "photo": "",
     "wikidata": "Q91435",
@@ -38056,7 +38300,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现分子伴侣在介导蛋白质折叠与防止蛋白质聚集中的功能"
+    "discovery": "因发现分子伴侣在介导蛋白质折叠与防止蛋白质聚集中的功能",
+    "cn": "弗朗兹-乌尔里奇·哈特尔",
+    "birthYear": "1957"
   },
   {
     "id": "bt-life-2020-arthur-l-horwich",
@@ -38067,9 +38313,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering functions of molecular chaperones in mediating protein folding and preventing protein aggregation",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/WALS%201.27.10%20Arthur%20Horwich%204m49s%20(cropped).jpg",
     "wikidata": "Q449737",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L3866"
@@ -38096,7 +38342,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现分子伴侣在介导蛋白质折叠与防止蛋白质聚集中的功能"
+    "discovery": "因发现分子伴侣在介导蛋白质折叠与防止蛋白质聚集中的功能",
+    "cn": "亚瑟·霍里奇",
+    "birthYear": "1951"
   },
   {
     "id": "bt-life-2020-jeffrey-m-friedman",
@@ -38107,9 +38355,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of a new endocrine system through which adipose tissue signals the brain to regulate food intake",
-    "affiliation": "",
+    "affiliation": "洛克菲勒大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeffrey%20M.%20Friedman.jpg",
     "wikidata": "Q505055",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L3869"
@@ -38136,7 +38384,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现一个新的内分泌系统，脂肪组织通过它向大脑发出信号以调节摄食"
+    "discovery": "因发现一个新的内分泌系统，脂肪组织通过它向大脑发出信号以调节摄食",
+    "cn": "杰弗里·弗里德曼",
+    "birthYear": "1954"
   },
   {
     "id": "bt-life-2020-david-julius",
@@ -38147,9 +38397,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering molecules, cells, and mechanisms underlying pain sensation",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Davidjuliuswithsnake.jpg",
     "wikidata": "Q1174906",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L3868"
@@ -38176,7 +38426,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现痛觉背后的分子、细胞与机制"
+    "discovery": "因发现痛觉背后的分子、细胞与机制",
+    "cn": "戴维·朱利叶斯",
+    "birthYear": "1955"
   },
   {
     "id": "bt-life-2020-virginia-man-yee-lee",
@@ -38187,7 +38439,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering TDP43 protein aggregates in frontotemporal dementia and amyotrophic lateral sclerosis, and revealing that different forms of alpha-synuclein, in different cell types, underlie Parkinson’s disease and Multiple System Atrophy",
-    "affiliation": "",
+    "affiliation": "宾夕法尼亚大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Virginia%20M.-Y.%20Lee.png",
     "wikidata": "Q27805732",
@@ -38313,9 +38565,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For their transformative discovery of receptors for temperature and pressure",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Davidjuliuswithsnake.jpg",
     "wikidata": "Q1174906",
     "links": [
       "https://www.kavliprize.org/prizes/neuroscience/2020"
@@ -38342,7 +38594,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因对温度与压力受体的变革性发现"
+    "discovery": "因对温度与压力受体的变革性发现",
+    "cn": "戴维·朱利叶斯",
+    "birthYear": "1955"
   },
   {
     "id": "kavli-neuro-2020-ardem-patapoutian",
@@ -38353,7 +38607,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For their transformative discovery of receptors for temperature and pressure",
-    "affiliation": "",
+    "affiliation": "斯克里普斯研究所",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ardem%20Patapoutian%20at%20Scripps%20in%202022%2003.jpg",
     "wikidata": "Q60322501",
@@ -38395,9 +38649,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for revealing the medicine-revolutionizing mechanism of bacterial immunity via RNA-guided genome editing",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Jennifer%20Doudna%20ForMemRS%20(cropped).jpg",
     "wikidata": "Q56068",
     "links": [
       "https://wolffund.org.il/jennifer-doudna/"
@@ -38424,7 +38678,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因揭示细菌免疫中经 RNA 引导的基因组编辑这一变革医学的机制"
+    "discovery": "因揭示细菌免疫中经 RNA 引导的基因组编辑这一变革医学的机制",
+    "cn": "詹妮弗·杜德纳",
+    "birthYear": "1964"
   },
   {
     "id": "wolf-med-2020-emmanuelle-charpentier",
@@ -38435,9 +38691,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for deciphering and repurposing the bacterial CRISPR/Cas9 immune system for genome editing",
-    "affiliation": "",
+    "affiliation": "汉诺威医科大学",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Emmanuelle%20Charpentier.jpg",
     "wikidata": "Q17280087",
     "links": [
       "https://wolffund.org.il/emmanuelle-charpentier/"
@@ -38464,7 +38720,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因破译细菌 CRISPR/Cas9 免疫系统并将其改用于基因组编辑"
+    "discovery": "因破译细菌 CRISPR/Cas9 免疫系统并将其改用于基因组编辑",
+    "cn": "伊曼紐•夏彭提耶",
+    "birthYear": "1968"
   },
   {
     "id": "gruber-genes-2020-bonnie-l-bassler",
@@ -38475,9 +38733,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2020 Genetics Prize to Bonnie Bassler for pioneering and ground-breaking discoveries illuminating the molecular language of bacterial communication through quorum sensing",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bassler.jpg",
     "wikidata": "Q60545293",
     "links": [
       "https://gruber.yale.edu/genetics-laureates"
@@ -38504,7 +38762,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "格鲁伯基金会将 2020 年遗传学奖授予 Bonnie Bassler，以表彰其通过群体感应阐明细菌通讯分子语言的开创性、突破性发现"
+    "discovery": "格鲁伯基金会将 2020 年遗传学奖授予 Bonnie Bassler，以表彰其通过群体感应阐明细菌通讯分子语言的开创性、突破性发现",
+    "cn": "邦尼·巴斯勒",
+    "birthYear": "1962"
   },
   {
     "id": "abel-2019-karen-uhlenbeck",
@@ -38515,7 +38775,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for her pioneering achievements in geometric partial differential equations, gauge theory and integrable systems, and for the fundamental impact of her work on analysis, geometry and mathematical physics",
-    "affiliation": "",
+    "affiliation": "伊利诺伊大学厄巴纳-香槟分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Uhlenbeck%20Karen%201982%20(cropped).jpg",
     "wikidata": "Q38636",
@@ -38581,7 +38841,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For fundamental contributions to 3D computer graphics, and the impact of computer-generated imagery (CGI) in filmmaking and other applications",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pat%20Hanrahan%20Tableau%20Customer%20Conference%202009.jpg",
     "wikidata": "Q7143512",
@@ -38613,7 +38873,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his deep and elegant work on stochastic processes",
-    "affiliation": "",
+    "affiliation": "巴黎第十一大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Francois%20Le%20Gall%20(2011).jpg",
     "wikidata": "Q1398976",
@@ -38647,7 +38907,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his extensive and groundbreaking research on random paths and loops",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1545334",
@@ -38681,7 +38941,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for his leadership in the Voyager project, which has, over the past four decades, transformed our understanding of the four giant planets and the outer solar system, and has now begun to explore interstellar space",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stone%20Voyager.jpg",
     "wikidata": "Q1291839",
@@ -38714,9 +38974,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. James Gunn conceived and designed the Sloan Digital Sky Survey (SDSS) project (1), which produced a three-dimensional digital cosmic map. He realized the project successfully by developing the necessary innovative technologies for the observations and data analysis. On the basis of the enormous amount of precise data produced by the SDSS, Dr. Gunn made outstanding contributions to the elucidation of cosmic history and the properties of various celestial objects and to determining the parameters of the expanding universe with unprecedented accuracy",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/JamesEGunn2000.jpg",
     "wikidata": "Q1152925",
     "links": [
       "https://www.kyotoprize.org/en/laureates/james_gunn/"
@@ -38738,7 +38998,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "James Gunn 博士构想并设计了斯隆数字巡天（SDSS）项目 (1)，该项目产出了一幅三维数字宇宙图。他通过开发观测与数据分析所需的创新技术，成功实现了这一项目。基于 SDSS 产出的海量精确数据，Gunn 博士在阐明宇宙历史与各类天体的性质、以及以前所未有的精度确定膨胀宇宙的参数方面，作出了杰出贡献"
+    "discovery": "James Gunn 博士构想并设计了斯隆数字巡天（SDSS）项目 (1)，该项目产出了一幅三维数字宇宙图。他通过开发观测与数据分析所需的创新技术，成功实现了这一项目。基于 SDSS 产出的海量精确数据，Gunn 博士在阐明宇宙历史与各类天体的性质、以及以前所未有的精度确定膨胀宇宙的参数方面，作出了杰出贡献",
+    "cn": "詹姆斯·冈恩",
+    "birthYear": "1938"
   },
   {
     "id": "gruber-cosmo-2019-nicholas-kaiser",
@@ -38749,7 +39011,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2019 Cosmology Prize to Nicholas Kaiser and Joseph Ivor Silk, for their contributions to the theory of cosmological structure formation and probes of dark matter",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nick%20Kaiser%20at%20the%202019%20Gruber%20Prize%20ceremony.jpg",
     "wikidata": "Q1984894",
@@ -38782,7 +39044,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering hidden structures in cells by developing super-resolution imaging – a method that transcends the fundamental spatial resolution limit of light microscopy",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q4588704",
@@ -38824,7 +39086,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For determining the consequences of aneuploidy, an abnormal chromosome number resulting from chromosome mis-segregation",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Angelika%20Amon%20(cropped1).jpg",
     "wikidata": "Q4762704",
@@ -38867,7 +39129,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For elucidating how DNA triggers immune and autoimmune responses from the interior of a cell through the discovery of the DNA-sensing enzyme cGAS",
-    "affiliation": "",
+    "affiliation": "德州大學西南醫學中心",
     "country": "United States",
     "photo": "",
     "wikidata": "Q8070836",
@@ -38993,7 +39255,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for her work showing that localized double strand breaks in DNA stimulate recombination in mammalian cells. This seminal work was essential for and led directly to the tools enabling editing at specific sites in mammalian genomes",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q30093154",
@@ -39035,9 +39297,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the identification of Leptin, a new endocrine system regulating body weight",
-    "affiliation": "",
+    "affiliation": "洛克菲勒大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeffrey%20M.%20Friedman.jpg",
     "wikidata": "Q505055",
     "links": [
       "https://wolffund.org.il/jeffrey-friedman/"
@@ -39064,7 +39326,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因鉴定出瘦素（Leptin）这一调节体重的新内分泌系统"
+    "discovery": "因鉴定出瘦素（Leptin）这一调节体重的新内分泌系统",
+    "cn": "杰弗里·弗里德曼",
+    "birthYear": "1954"
   },
   {
     "id": "fields-2018-peter-scholze",
@@ -39075,7 +39339,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For having transformed arithmetic algebraic geometry over p-adic fields",
-    "affiliation": "",
+    "affiliation": "波恩大学",
     "country": "Germany",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Scholze%20(cropped).jpg",
     "wikidata": "Q98034",
@@ -39109,7 +39373,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his synthesis of analytic number theory, homogeneous dynamics, topology, and representation theory, which has resolved long-standing problems in areas such as the equidistribution of arithmetic objects",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "Australia",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Akshay%20Venkatesh%202014%20(cropped).jpg",
     "wikidata": "Q176588",
@@ -39177,7 +39441,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For the proof of the boundedness of Fano varieties and for contributions to the minimal model program",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Caucher%20Birkar%2C%202018%20(cropped).jpg",
     "wikidata": "Q4121788",
@@ -39211,9 +39475,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his visionary program connecting representation theory to number theory",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Canada",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Langlands2.jpg",
     "wikidata": "Q711278",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2018"
@@ -39232,7 +39496,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因其将表示论与数论相联系的富有远见的纲领"
+    "discovery": "因其将表示论与数论相联系的富有远见的纲领",
+    "cn": "罗伯特·朗兰兹",
+    "birthYear": "1936"
   },
   {
     "id": "turing-2018-geoffrey-hinton",
@@ -39243,7 +39509,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For conceptual and engineering breakthroughs that have made deep neural networks a critical component of computing",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoffrey%20Hinton%20in%202026.jpg",
     "wikidata": "Q92894",
@@ -39307,7 +39573,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For conceptual and engineering breakthroughs that have made deep neural networks a critical component of computing",
-    "affiliation": "",
+    "affiliation": "蒙特利尔大学",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Yoshua%20Bengio%202019%20cropped.jpg",
     "wikidata": "Q3572699",
@@ -39373,7 +39639,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For transformational contributions to birational algebraic geometry, especially to the minimal model program in all dimensions",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20McKernan%20(cropped).jpg",
     "wikidata": "Q1680799",
@@ -39441,9 +39707,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his groundbreaking work on partial differential equations, including creating a theory of regularity for nonlinear equations such as the Monge-Ampère equation, and free-boundary problems such as the obstacle problem, work that has influenced a whole generation of researchers in the field",
-    "affiliation": "",
+    "affiliation": "德克薩斯州大學奧斯汀分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Luis%20Caffarelli.jpg",
     "wikidata": "Q1076636",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/mathematical-sciences/year-of-laureates/2018-mathematical-sciences"
@@ -39462,7 +39728,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "以表彰他在偏微分方程上的突破性工作，包括创立一套正则理论，适用於如蒙日−安培方程等非线性方程，及如障碍问题等的自由边界问题，这些工作影响了该领域整个世代的研究。"
+    "discovery": "以表彰他在偏微分方程上的突破性工作，包括创立一套正则理论，适用於如蒙日−安培方程等非线性方程，及如障碍问题等的自由边界问题，这些工作影响了该领域整个世代的研究。",
+    "cn": "路易斯·卡法雷利",
+    "birthYear": "1948"
   },
   {
     "id": "wolf-math-2018-vladimir-drinfeld",
@@ -39473,7 +39741,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their ground-breaking work in algebraic geometry (a field that integrates abstract algebra with geometry), in mathematical physics and in presentation theory, a field which helps to understand complex algebraic structures",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q369561",
@@ -39494,7 +39762,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因他们在代数几何（一个将抽象代数与几何相结合的领域）、数学物理以及 presentation theory（一个有助于理解复杂代数结构的领域）方面的开创性工作"
+    "discovery": "因他们在代数几何（一个将抽象代数与几何相结合的领域）、数学物理以及 presentation theory（一个有助于理解复杂代数结构的领域）方面的开创性工作",
+    "cn": "弗拉基米爾·德林費爾德",
+    "birthYear": "1954"
   },
   {
     "id": "wolf-math-2018-alexander-beilinson",
@@ -39505,7 +39775,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their ground-breaking work in algebraic geometry (a field that integrates abstract algebra with geometry), in mathematical physics and in presentation theory, a field which helps to understand complex algebraic structures",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20Beilinson%20(cropped).jpg",
     "wikidata": "Q369792",
@@ -39558,7 +39828,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "以表彰他对红外到亚毫米光谱范围天文学的贡献。他探测了在过去恒星形成过程中的星系所放出的宇宙远红外背景，并提出星际物质含有芳香族碳氢分子。通过普朗克太空计划，他处理了星际物质前景的影响，因而显著地提升了我们对宇宙学的认识。"
+    "discovery": "以表彰他对红外到亚毫米光谱范围天文学的贡献。他探测了在过去恒星形成过程中的星系所放出的宇宙远红外背景，并提出星际物质含有芳香族碳氢分子。通过普朗克太空计划，他处理了星际物质前景的影响，因而显著地提升了我们对宇宙学的认识。",
+    "cn": "让-卢普·皮热",
+    "birthYear": "1947"
   },
   {
     "id": "kavli-astro-2018-ewine-van-dishoeck",
@@ -39601,9 +39873,9 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For the invention of CRISPR-Cas9, a precise nanotool for editing DNA, causing a revolution in biology, agriculture, and medicine",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Jennifer%20Doudna%20ForMemRS%20(cropped).jpg",
     "wikidata": "Q56068",
     "links": [
       "https://www.kavliprize.org/prizes/nanoscience/2018"
@@ -39620,7 +39892,9 @@ const awards = [
       "ENG-009",
       "ENG-010"
     ],
-    "discovery": "因发明了 CRISPR-Cas9——一种用于编辑 DNA 的精密纳米工具，在生物学、农业与医学领域引发了一场革命"
+    "discovery": "因发明了 CRISPR-Cas9——一种用于编辑 DNA 的精密纳米工具，在生物学、农业与医学领域引发了一场革命",
+    "cn": "詹妮弗·杜德纳",
+    "birthYear": "1964"
   },
   {
     "id": "kavli-nano-2018-emmanuelle-charpentier",
@@ -39631,9 +39905,9 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For the invention of CRISPR-Cas9, a precise nanotool for editing DNA, causing a revolution in biology, agriculture, and medicine",
-    "affiliation": "",
+    "affiliation": "汉诺威医科大学",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Emmanuelle%20Charpentier.jpg",
     "wikidata": "Q17280087",
     "links": [
       "https://www.kavliprize.org/prizes/nanoscience/2018"
@@ -39650,7 +39924,9 @@ const awards = [
       "ENG-009",
       "ENG-010"
     ],
-    "discovery": "因发明了 CRISPR-Cas9——一种用于编辑 DNA 的精密纳米工具，在生物学、农业与医学领域引发了一场革命"
+    "discovery": "因发明了 CRISPR-Cas9——一种用于编辑 DNA 的精密纳米工具，在生物学、农业与医学领域引发了一场革命",
+    "cn": "伊曼紐•夏彭提耶",
+    "birthYear": "1968"
   },
   {
     "id": "kavli-nano-2018-virginijus-siksnys",
@@ -39693,7 +39969,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. Masaki Kashiwara has numerous outstanding achievements including the theory of D-modules, which forms the core of algebraic analysis. Developing this theory from its foundation, he applied it across various fields of modern mathematics",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Masaki%20Kashiwara%20(2018)%20(2)%20(cropped).jpg",
     "wikidata": "Q375000",
@@ -39730,7 +40006,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for founding and advancing the fields of Quantum Cryptography and Quantum Teleportation",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr.%20Charles%20Bennett%20IBM%20Fellow.jpg",
     "wikidata": "Q92931",
@@ -39767,7 +40043,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for founding and advancing the fields of Quantum Cryptography and Quantum Teleportation",
-    "affiliation": "",
+    "affiliation": "蒙特利尔大学",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gilles%20Brassard%20(2019).jpg",
     "wikidata": "Q92938",
@@ -39898,9 +40174,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for her mapping the first breast cancer gene. Using mathematical modeling, King predicted and then demonstrated that breast cancer can be caused by a single gene. She mapped the gene which facilitated its cloning and has saved thousands of lives",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mary-claire%20king.jpg",
     "wikidata": "Q437741",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/life-science-and-medicine/year-of-laureates/2018-life-science-and-medicine"
@@ -39927,7 +40203,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "以表彰她绘制第一个乳腺癌基因的基因图。玛莉-克莱尔・金利用数学模型预测和证明乳腺癌可以由单个基因引起。她绘制的基因图促成了乳腺癌基因的克隆，因而挽救了许多人的生命。"
+    "discovery": "以表彰她绘制第一个乳腺癌基因的基因图。玛莉-克莱尔・金利用数学模型预测和证明乳腺癌可以由单个基因引起。她绘制的基因图促成了乳腺癌基因的克隆，因而挽救了许多人的生命。",
+    "cn": "瑪莉-克萊爾·金",
+    "birthYear": "1946"
   },
   {
     "id": "kavli-neuro-2018-a-james-hudspeth",
@@ -39938,7 +40216,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For their pioneering work on the molecular and neural mechanisms of hearing",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/KavliPrize-7273%20(42704615130).jpg",
     "wikidata": "Q278824",
@@ -39980,7 +40258,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For their pioneering work on the molecular and neural mechanisms of hearing",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/KavliPrize-7148%20(43603979215).jpg",
     "wikidata": "Q510206",
@@ -40022,7 +40300,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For their pioneering work on the molecular and neural mechanisms of hearing",
-    "affiliation": "",
+    "affiliation": "威斯康星大学麦迪逊分校",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/KavliPrize-7111%20(44513568411).jpg",
     "wikidata": "Q7344315",
@@ -40063,7 +40341,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2018 Genetics Prize to Joanne Chory and Elliot Meyerowitz for pioneering discoveries in genetic regulatory and biochemical mechanisms underlying plant development",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q5365528",
@@ -40148,9 +40426,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2018 Neuroscience Prize to Ann M. Graybiel, Okihide Hikosaka, and Wolfram Schultz for discoveries on the organization and function of the basal ganglia",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ann%20Graybiel%202001%20(cropped).jpg",
     "wikidata": "Q4766422",
     "links": [
       "https://gruber.yale.edu/neuroscience-laureates"
@@ -40177,7 +40455,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "格鲁伯基金会将 2018 年神经科学奖授予 Ann M. Graybiel、Okihide Hikosaka 和 Wolfram Schultz，以表彰其在基底神经节的结构与功能方面的发现"
+    "discovery": "格鲁伯基金会将 2018 年神经科学奖授予 Ann M. Graybiel、Okihide Hikosaka 和 Wolfram Schultz，以表彰其在基底神经节的结构与功能方面的发现",
+    "cn": "安·格雷比尔",
+    "birthYear": "1942"
   },
   {
     "id": "gruber-neuro-2018-wolfram-schultz",
@@ -40306,7 +40586,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For pioneering a systematic, quantitative approach to the design and evaluation of computer architectures with enduring impact on the microprocessor industry",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20A%20Patterson.jpg",
     "wikidata": "Q92851",
@@ -40338,7 +40618,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For pioneering a systematic, quantitative approach to the design and evaluation of computer architectures with enduring impact on the microprocessor industry",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20L%20Hennessy.jpg",
     "wikidata": "Q92854",
@@ -40370,9 +40650,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For multiple transformative contributions to analysis, combinatorics, partial differential equations, high-dimensional geometry and number theory",
-    "affiliation": "",
+    "affiliation": "伊利诺伊大学厄巴纳-香槟分校",
     "country": "Belgium",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Bourgain%20(vertical%20crop).jpg",
     "wikidata": "Q260802",
     "links": [
       "https://breakthroughprize.org/Laureates/3/L3798"
@@ -40391,7 +40671,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对分析、组合学、偏微分方程、高维几何与数论的多项变革性贡献"
+    "discovery": "因对分析、组合学、偏微分方程、高维几何与数论的多项变革性贡献",
+    "cn": "讓·布爾甘",
+    "birthYear": "1954",
+    "deathYear": "2018"
   },
   {
     "id": "bt-math-2017-geordie-williamson",
@@ -40403,7 +40686,7 @@ const awards = [
     "domain": "数学与计算",
     "motivation": "For multiple transformative contributions to analysis, combinatorics, partial differential equations, high-dimensional geometry and number theory",
     "affiliation": "",
-    "country": "",
+    "country": "澳大利亚",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Williamson%20geordie.jpg",
     "wikidata": "Q23874534",
     "links": [
@@ -40436,7 +40719,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their remarkable results in many central areas of algebraic geometry, which have transformed the field and led to the solution of long-standing problems that had appeared out of reach",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2009-Claire-Voisin-Scotland.jpg",
     "wikidata": "Q468049",
@@ -40470,7 +40753,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their remarkable results in many central areas of algebraic geometry, which have transformed the field and led to the solution of long-standing problems that had appeared out of reach",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Hungary",
     "photo": "",
     "wikidata": "Q1115371",
@@ -40504,9 +40787,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their striking contributions to analysis and geometry",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Fefferman.jpg",
     "wikidata": "Q284129",
     "links": [
       "https://wolffund.org.il/charles-fefferman/"
@@ -40525,7 +40808,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因他们对分析与几何的卓著贡献"
+    "discovery": "因他们对分析与几何的卓著贡献",
+    "cn": "查尔斯·费夫曼",
+    "birthYear": "1949"
   },
   {
     "id": "wolf-math-2017-richard-schoen",
@@ -40536,7 +40821,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their striking contributions to analysis and geometry",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Schoen.jpeg",
     "wikidata": "Q455610",
@@ -40570,7 +40855,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For transformative advances in quantum field theory, string theory, and quantum gravity",
-    "affiliation": "",
+    "affiliation": "德克薩斯州大學奧斯汀分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Polchinski.jpg",
     "wikidata": "Q1156878",
@@ -40608,9 +40893,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for his contributions to understanding structure formation in the Universe. With powerful numerical simulations he has shown how small density fluctuations in the early Universe develop into galaxies and other nonlinear structures, strongly supporting a cosmology with a flat geometry, and dominated by dark matter and a cosmological constant",
-    "affiliation": "",
+    "affiliation": "慕尼黑大学",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Simon%20White%20at%20RAS%20NAM%202012.jpg",
     "wikidata": "Q549293",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/astronomy/year-of-laureates/2017-astronomy"
@@ -40627,7 +40912,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "以表彰他在理解宇宙里结构形成的贡献。他运用强大的数值模拟揭示在早期的宇宙中的微小密度涨落怎样发展成现今宇宙所看见的星系和其他非线性结构，提供了有力的证据支持具有平直几何、并由暗物质和宇宙常数所支配的宇宙模型。"
+    "discovery": "以表彰他在理解宇宙里结构形成的贡献。他运用强大的数值模拟揭示在早期的宇宙中的微小密度涨落怎样发展成现今宇宙所看见的星系和其他非线性结构，提供了有力的证据支持具有平直几何、并由暗物质和宇宙常数所支配的宇宙模型。",
+    "cn": "西蒙·怀特",
+    "birthYear": "1951"
   },
   {
     "id": "kyoto-basic-2017-graham-farquhar",
@@ -40675,9 +40962,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for the first discovery of an exoplanet orbiting a solar-type star",
-    "affiliation": "",
+    "affiliation": "日內瓦天文台",
     "country": "Switzerland",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel%20Mayor%20astrophysicien.JPG",
     "wikidata": "Q123975",
     "links": [
       "https://wolffund.org.il/michael-mayor/"
@@ -40699,7 +40986,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因首次发现环绕类太阳恒星运行的系外行星"
+    "discovery": "因首次发现环绕类太阳恒星运行的系外行星",
+    "cn": "米歇爾·麥耶",
+    "birthYear": "1942"
   },
   {
     "id": "wolf-physics-2017-didier-queloz",
@@ -40710,7 +40999,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the first discovery of an exoplanet orbiting a solar-type star",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "Switzerland",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Didier%20Queloz%2C%202012%20(cropped).jpg",
     "wikidata": "Q124013",
@@ -40823,7 +41112,7 @@ const awards = [
     "motivation": "For discoveries of the genetic causes and biochemical mechanisms of spinocerebellar ataxia and Rett syndrome, findings that have provided insight into the pathogenesis of neurodegenerative and neurological diseases",
     "affiliation": "",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Huda%20Zoghbi.jpg",
     "wikidata": "Q1633764",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L3794"
@@ -40850,7 +41139,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现脊髓小脑性共济失调与 Rett 综合征的遗传病因与生化机制，这些发现为理解神经退行性疾病与神经系统疾病的发病机制提供了洞见"
+    "discovery": "因发现脊髓小脑性共济失调与 Rett 综合征的遗传病因与生化机制，这些发现为理解神经退行性疾病与神经系统疾病的发病机制提供了洞见",
+    "cn": "胡達·佐格比",
+    "birthYear": "1954"
   },
   {
     "id": "bt-life-2017-stephen-elledge",
@@ -40861,7 +41152,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For elucidating how eukaryotic cells sense and respond to damage in their DNA and providing insights into the development and treatment of cancer",
-    "affiliation": "",
+    "affiliation": "哈佛醫學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q2344805",
@@ -40890,7 +41181,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因阐明真核细胞如何感知并响应其 DNA 中的损伤，并为癌症的发生与治疗提供了洞见"
+    "discovery": "因阐明真核细胞如何感知并响应其 DNA 中的损伤，并为癌症的发生与治疗提供了洞见",
+    "cn": "斯蒂芬·埃利奇",
+    "birthYear": "1956"
   },
   {
     "id": "bt-life-2017-roel-nusse",
@@ -40943,9 +41236,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For elucidating autophagy, the recycling system that cells use to generate nutrients from their own inessential or damaged components",
-    "affiliation": "",
+    "affiliation": "综合研究大学院大学",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Laureates%207428%20(30679389523)%20(cropped).jpg",
     "wikidata": "Q8056214",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L3793"
@@ -40972,7 +41265,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因阐明自噬，即细胞用以从自身非必需或受损组分中生成营养物质的循环利用系统"
+    "discovery": "因阐明自噬，即细胞用以从自身非必需或受损组分中生成营养物质的循环利用系统",
+    "cn": "大隅良典",
+    "birthYear": "1945"
   },
   {
     "id": "shaw-life-2017-ronald-vale",
@@ -40983,7 +41278,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of microtubule-associated motor proteins: engines that power cellular and intracellular movements essential to the growth, division, and survival of human cells",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ronald%20Vale%20in%20September%202018.jpg",
     "wikidata": "Q542242",
@@ -41025,7 +41320,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of microtubule-associated motor proteins: engines that power cellular and intracellular movements essential to the growth, division, and survival of human cells",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ian%20R.%20Gibbons.jpg",
     "wikidata": "Q21165140",
@@ -41068,9 +41363,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for sparking a revolution in cancer therapy through (his) discovery of immune checkpoint blockade",
-    "affiliation": "",
+    "affiliation": "德州大學安德森癌症中心",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20P.%20Allison%20EM1B5525%20(46207775441).jpg",
     "wikidata": "Q6140731",
     "links": [
       "https://wolffund.org.il/james-p-allison/"
@@ -41097,7 +41392,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因通过发现免疫检查点阻断而引发癌症治疗的革命"
+    "discovery": "因通过发现免疫检查点阻断而引发癌症治疗的革命",
+    "cn": "詹姆斯·艾利森",
+    "birthYear": "1948"
   },
   {
     "id": "gruber-genes-2017-stephen-elledge",
@@ -41108,7 +41405,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2017 Genetics Prize to Stephen Elledge for discovering and characterizing the molecular mechanisms of the DNA damage response pathway in eukaryotic cells",
-    "affiliation": "",
+    "affiliation": "哈佛醫學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q2344805",
@@ -41192,9 +41489,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his stunning proof of Fermat’s Last Theorem by way of the modularity conjecture for semistable elliptic curves, opening a new era in number theory",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20wiles1-3.jpg",
     "wikidata": "Q184433",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2016"
@@ -41213,7 +41510,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因借助半稳定椭圆曲线的模性猜想对费马大定理给出惊人的证明，开启了数论的新纪元"
+    "discovery": "因借助半稳定椭圆曲线的模性猜想对费马大定理给出惊人的证明，开启了数论的新纪元",
+    "cn": "安德魯·懷爾斯",
+    "birthYear": "1953"
   },
   {
     "id": "turing-2016-tim-berners-lee",
@@ -41290,7 +41589,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the fundamental discovery and exploration of neutrino oscillations, revealing a new frontier beyond, and possibly far beyond, the Standard Model of particle physics",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Arthur%20B.%20McDonald%205139-2015.jpg",
     "wikidata": "Q710597",
@@ -41366,7 +41665,7 @@ const awards = [
     "motivation": "For the fundamental discovery and exploration of neutrino oscillations, revealing a new frontier beyond, and possibly far beyond, the Standard Model of particle physics",
     "affiliation": "",
     "country": "Hungary",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Zsolt%20Frei.jpg",
     "wikidata": "Q1003794",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L150"
@@ -41388,7 +41687,8 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因对中微子振荡的根本性发现与探索，揭示出超越粒子物理标准模型、甚至可能远远超越标准模型的新前沿"
+    "discovery": "因对中微子振荡的根本性发现与探索，揭示出超越粒子物理标准模型、甚至可能远远超越标准模型的新前沿",
+    "birthYear": "1965"
   },
   {
     "id": "bt-physics-2016-ronald-drever",
@@ -41399,9 +41699,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the fundamental discovery and exploration of neutrino oscillations, revealing a new frontier beyond, and possibly far beyond, the Standard Model of particle physics",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ronald%20Drever%20Glasgow%202007.jpg",
     "wikidata": "Q1633582",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L150"
@@ -41423,7 +41723,10 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因对中微子振荡的根本性发现与探索，揭示出超越粒子物理标准模型、甚至可能远远超越标准模型的新前沿"
+    "discovery": "因对中微子振荡的根本性发现与探索，揭示出超越粒子物理标准模型、甚至可能远远超越标准模型的新前沿",
+    "cn": "朗納·德瑞福",
+    "birthYear": "1931",
+    "deathYear": "2017"
   },
   {
     "id": "bt-physics-2016-yoichiro-suzuki",
@@ -41434,7 +41737,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the fundamental discovery and exploration of neutrino oscillations, revealing a new frontier beyond, and possibly far beyond, the Standard Model of particle physics",
-    "affiliation": "",
+    "affiliation": "东京大学",
     "country": "Japan",
     "photo": "",
     "wikidata": "Q2377935",
@@ -41545,7 +41848,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the fundamental discovery and exploration of neutrino oscillations, revealing a new frontier beyond, and possibly far beyond, the Standard Model of particle physics",
-    "affiliation": "",
+    "affiliation": "东京大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Takaaki%20Kajita%20cropped%201%20Takaaki%20Kajita%20202010.jpg",
     "wikidata": "Q11538917",
@@ -41582,7 +41885,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the fundamental discovery and exploration of neutrino oscillations, revealing a new frontier beyond, and possibly far beyond, the Standard Model of particle physics",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
     "photo": "",
     "wikidata": "Q11628065",
@@ -41619,7 +41922,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the fundamental discovery and exploration of neutrino oscillations, revealing a new frontier beyond, and possibly far beyond, the Standard Model of particle physics",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "People's Republic of China",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kam-Biu%20Luk%20Image.jpg",
     "wikidata": "Q16973826",
@@ -41693,9 +41996,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for conceiving and designing the Laser Interferometer Gravitational-Wave Observatory (LIGO), whose recent direct detection of gravitational waves opens a new window in astronomy, with the first remarkable discovery being the merger of a pair of stellar mass black holes",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kip%20Thorne%20at%20Caltech.jpg",
     "wikidata": "Q323320",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/astronomy/year-of-laureates/2016-astronomy"
@@ -41712,7 +42015,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "以表彰他们对「激光干涉仪重力波观测站」LIGO的构思和设计。LIGO最近首次直接观测到重力波，为天文探索开创了一个新方法，而首先侦测到的非凡事例为两个星级质量的黑洞合并。"
+    "discovery": "以表彰他们对「激光干涉仪重力波观测站」LIGO的构思和设计。LIGO最近首次直接观测到重力波，为天文探索开创了一个新方法，而首先侦测到的非凡事例为两个星级质量的黑洞合并。",
+    "cn": "基普·索恩",
+    "birthYear": "1940"
   },
   {
     "id": "shaw-astro-2016-ronald-drever",
@@ -41723,9 +42028,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for conceiving and designing the Laser Interferometer Gravitational-Wave Observatory (LIGO), whose recent direct detection of gravitational waves opens a new window in astronomy, with the first remarkable discovery being the merger of a pair of stellar mass black holes",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ronald%20Drever%20Glasgow%202007.jpg",
     "wikidata": "Q1633582",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/astronomy/year-of-laureates/2016-astronomy"
@@ -41742,7 +42047,10 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "以表彰他们对「激光干涉仪重力波观测站」LIGO的构思和设计。LIGO最近首次直接观测到重力波，为天文探索开创了一个新方法，而首先侦测到的非凡事例为两个星级质量的黑洞合并。"
+    "discovery": "以表彰他们对「激光干涉仪重力波观测站」LIGO的构思和设计。LIGO最近首次直接观测到重力波，为天文探索开创了一个新方法，而首先侦测到的非凡事例为两个星级质量的黑洞合并。",
+    "cn": "朗納·德瑞福",
+    "birthYear": "1931",
+    "deathYear": "2017"
   },
   {
     "id": "shaw-astro-2016-rainer-weiss",
@@ -41753,9 +42061,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for conceiving and designing the Laser Interferometer Gravitational-Wave Observatory (LIGO), whose recent direct detection of gravitational waves opens a new window in astronomy, with the first remarkable discovery being the merger of a pair of stellar mass black holes",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rainer%20Weiss%20EM1B8841%20(24027015857).jpg",
     "wikidata": "Q2128461",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/astronomy/year-of-laureates/2016-astronomy"
@@ -41772,7 +42080,10 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "以表彰他们对「激光干涉仪重力波观测站」LIGO的构思和设计。LIGO最近首次直接观测到重力波，为天文探索开创了一个新方法，而首先侦测到的非凡事例为两个星级质量的黑洞合并。"
+    "discovery": "以表彰他们对「激光干涉仪重力波观测站」LIGO的构思和设计。LIGO最近首次直接观测到重力波，为天文探索开创了一个新方法，而首先侦测到的非凡事例为两个星级质量的黑洞合并。",
+    "cn": "莱纳·魏斯",
+    "birthYear": "1932",
+    "deathYear": "2025"
   },
   {
     "id": "kavli-astro-2016-kip-s-thorne",
@@ -41783,9 +42094,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For the direct detection of gravitational waves",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kip%20Thorne%20at%20Caltech.jpg",
     "wikidata": "Q323320",
     "links": [
       "https://www.kavliprize.org/prizes/astrophysics/2016"
@@ -41802,7 +42113,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "因直接探测到引力波"
+    "discovery": "因直接探测到引力波",
+    "cn": "基普·索恩",
+    "birthYear": "1940"
   },
   {
     "id": "kavli-astro-2016-ronald-drever",
@@ -41813,9 +42126,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For the direct detection of gravitational waves",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ronald%20Drever%20Glasgow%202007.jpg",
     "wikidata": "Q1633582",
     "links": [
       "https://www.kavliprize.org/prizes/astrophysics/2016"
@@ -41832,7 +42145,10 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "因直接探测到引力波"
+    "discovery": "因直接探测到引力波",
+    "cn": "朗納·德瑞福",
+    "birthYear": "1931",
+    "deathYear": "2017"
   },
   {
     "id": "kavli-astro-2016-rainer-weiss",
@@ -41843,9 +42159,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For the direct detection of gravitational waves",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rainer%20Weiss%20EM1B8841%20(24027015857).jpg",
     "wikidata": "Q2128461",
     "links": [
       "https://www.kavliprize.org/prizes/astrophysics/2016"
@@ -41862,7 +42178,10 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "因直接探测到引力波"
+    "discovery": "因直接探测到引力波",
+    "cn": "莱纳·魏斯",
+    "birthYear": "1932",
+    "deathYear": "2025"
   },
   {
     "id": "kavli-nano-2016-gerd-binnig",
@@ -41873,7 +42192,7 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For the invention and realization of atomic force microscopy, a breakthrough in measurement technology and nanosculpting that continues to have a transformative impact on nanoscience and technology",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "Germany",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerd%20Binnig%20sw.jpg",
     "wikidata": "Q76766",
@@ -41937,7 +42256,7 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For the invention and realization of atomic force microscopy, a breakthrough in measurement technology and nanosculpting that continues to have a transformative impact on nanoscience and technology",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q482334",
@@ -41970,7 +42289,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Antibodies, a major component of the immune system, are produced by B cells. The rearrangements of variable gene fragments of immunoglobulin (Ig) genes during the development of B cells in bone marrow provides antibodies binding activity to a vast variety of potential antigens",
-    "affiliation": "",
+    "affiliation": "东京大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Tasuku%20Honjo%20201311.jpg",
     "wikidata": "Q2395341",
@@ -42045,7 +42364,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2016 Cosmology Prize to Rainer Weiss, Kip Thorne, Ronald Drever, and the entire LIGO team for pursuing a vision to observe the universe in gravitational waves, leading to a first detection that emanated from the collision of two black holes",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kip%20Thorne%20at%20Caltech.jpg",
     "wikidata": "Q323320",
@@ -42108,7 +42427,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2016 Cosmology Prize to Rainer Weiss, Kip Thorne, Ronald Drever, and the entire LIGO team for pursuing a vision to observe the universe in gravitational waves, leading to a first detection that emanated from the collision of two black holes",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ronald%20Drever%20Glasgow%202007.jpg",
     "wikidata": "Q1633582",
@@ -42141,7 +42460,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2016 Cosmology Prize to Rainer Weiss, Kip Thorne, Ronald Drever, and the entire LIGO team for pursuing a vision to observe the universe in gravitational waves, leading to a first detection that emanated from the collision of two black holes",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rainer%20Weiss%20EM1B8841%20(24027015857).jpg",
     "wikidata": "Q2128461",
@@ -42235,9 +42554,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For pioneering the sequencing of ancient DNA and ancient genomes, thereby illuminating the origins of modern humans, our relationships to extinct relatives such as Neanderthals, and the evolution of human populations and traits",
-    "affiliation": "",
+    "affiliation": "慕尼黑大学",
     "country": "Sweden",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Svante%20Paabo%20ForMemRS%20(cropped).jpg",
     "wikidata": "Q170342",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L170"
@@ -42264,7 +42583,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因开创古 DNA 与古基因组的测序，从而阐明现代人类的起源、我们与尼安德特人等已灭绝近亲的关系，以及人类种群与性状的演化"
+    "discovery": "因开创古 DNA 与古基因组的测序，从而阐明现代人类的起源、我们与尼安德特人等已灭绝近亲的关系，以及人类种群与性状的演化",
+    "cn": "斯万特·帕博",
+    "birthYear": "1955"
   },
   {
     "id": "bt-life-2016-karl-deisseroth",
@@ -42275,7 +42596,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the development and implementation of optogenetics — the programming of neurons to express light-activated ion channels and pumps, so that their electrical activity can be controlled by light",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Karl%20Deisseroth%20by%20Christopher%20Michel%2004.jpg",
     "wikidata": "Q935993",
@@ -42317,7 +42638,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering mutations in the amyloid precursor protein gene (APP) that cause early-onset Alzheimer’s disease, thus linking accumulation of APP-derived beta-amyloid peptide to Alzheimer’s pathogenesis and suggesting new approaches to risk assessment, prevention, and treatment",
-    "affiliation": "",
+    "affiliation": "倫敦大學學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q6237755",
@@ -42359,7 +42680,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of human genetic variants that alter the levels and distribution of cholesterol and other lipids, inspiring new approaches to the prevention of cardiovascular and liver disease",
-    "affiliation": "",
+    "affiliation": "德克薩斯大學系統",
     "country": "United States",
     "photo": "",
     "wikidata": "Q21433424",
@@ -42445,7 +42766,7 @@ const awards = [
     "motivation": "for their discovery of the genes and the encoded proteins that recognize one chemical modification of the DNA of chromosomes that influences gene control as the basis of the developmental disorder Rett syndrome",
     "affiliation": "",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Huda%20Zoghbi.jpg",
     "wikidata": "Q1633764",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/life-science-and-medicine/year-of-laureates/2016-life-science-and-medicine"
@@ -42472,7 +42793,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "以表彰他们发现一类基因和蛋白，这些蛋白能够确认染色体脱氧核醣核酸一种可以影响基因调控的化学改变；并确立这基因的突变是发育障碍疾病蕾特氏症的主要成因。"
+    "discovery": "以表彰他们发现一类基因和蛋白，这些蛋白能够确认染色体脱氧核醣核酸一种可以影响基因调控的化学改变；并确立这基因的突变是发育障碍疾病蕾特氏症的主要成因。",
+    "cn": "胡達·佐格比",
+    "birthYear": "1954"
   },
   {
     "id": "kavli-neuro-2016-eve-marder",
@@ -42483,9 +42806,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of mechanisms that allow experience and neural activity to remodel brain function",
-    "affiliation": "",
+    "affiliation": "布兰戴斯大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eve%20Marder.jpg",
     "wikidata": "Q5416184",
     "links": [
       "https://www.kavliprize.org/prizes/neuroscience/2016"
@@ -42512,7 +42835,8 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现了使经验与神经活动得以重塑大脑功能的机制"
+    "discovery": "因发现了使经验与神经活动得以重塑大脑功能的机制",
+    "birthYear": "1948"
   },
   {
     "id": "kavli-neuro-2016-michael-merzenich",
@@ -42523,7 +42847,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of mechanisms that allow experience and neural activity to remodel brain function",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q6832811",
@@ -42565,9 +42889,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of mechanisms that allow experience and neural activity to remodel brain function",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Carla%20shatz.jpg",
     "wikidata": "Q20181198",
     "links": [
       "https://www.kavliprize.org/prizes/neuroscience/2016"
@@ -42594,7 +42918,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现了使经验与神经活动得以重塑大脑功能的机制"
+    "discovery": "因发现了使经验与神经活动得以重塑大脑功能的机制",
+    "cn": "卡拉·沙茨",
+    "birthYear": "1947"
   },
   {
     "id": "wolf-med-2016-lewis-c-cantley",
@@ -42634,7 +42960,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现 phosphoinositide-3 kinases（磷脂酰肌醇3-激酶）及其在生理与疾病中的作用"
+    "discovery": "因发现 phosphoinositide-3 kinases（磷脂酰肌醇3-激酶）及其在生理与疾病中的作用",
+    "cn": "刘易斯·坎特利",
+    "birthYear": "1949"
   },
   {
     "id": "wolf-med-2016-c-ronald-kahn",
@@ -42645,7 +42973,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for pioneering studies defining insulin signaling and its alterations in disease",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr.%20C.%20Ronald%20Kahn.jpg",
     "wikidata": "Q16106681",
@@ -42687,7 +43015,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2016 Genetics Prize to Michael Grunstein and David Allis for the discovery of the role of histone proteins and their covalent modification in the regulation of eukaryotic gene expression",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mgrunstein.jpg",
     "wikidata": "Q31484",
@@ -42730,9 +43058,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2016 Genetics Prize to Michael Grunstein and David Allis for the discovery of the role of histone proteins and their covalent modification in the regulation of eukaryotic gene expression",
-    "affiliation": "",
+    "affiliation": "洛克菲勒大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/C.%20David%20Allis.jpg",
     "wikidata": "Q1064064",
     "links": [
       "https://gruber.yale.edu/genetics-laureates"
@@ -42759,7 +43087,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "格鲁伯基金会将 2016 年遗传学奖授予 Michael Grunstein 和 David Allis，以表彰其发现了组蛋白及其共价修饰在真核基因表达调控中的作用"
+    "discovery": "格鲁伯基金会将 2016 年遗传学奖授予 Michael Grunstein 和 David Allis，以表彰其发现了组蛋白及其共价修饰在真核基因表达调控中的作用",
+    "cn": "查尔斯·戴维·阿利斯",
+    "birthYear": "1951",
+    "deathYear": "2023"
   },
   {
     "id": "gruber-neuro-2016-mu-ming-poo",
@@ -42812,7 +43143,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for striking and seminal contributions to the theory of nonlinear partial differential equations and its applications to geometric analysis",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Forbes%20Nash%2C%20Jr.%20by%20Peter%20Badge.jpg",
     "wikidata": "Q128736",
@@ -42847,7 +43178,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for striking and seminal contributions to the theory of nonlinear partial differential equations and its applications to geometric analysis",
-    "affiliation": "",
+    "affiliation": "科朗数学研究所",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis%20Nirenberg.jpeg",
     "wikidata": "Q596590",
@@ -42914,7 +43245,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For inventing and promulgating both asymmetric public-key cryptography, including its application to digital signatures, and a practical cryptographic key-exchange method",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin-Hellman.jpg",
     "wikidata": "Q476466",
@@ -42946,9 +43277,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For numerous breakthrough contributions to harmonic analysis, combinatorics, partial differential equations, and analytic number theory",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Terence%20Tao%20at%20IPAM's%20Fireside%20Chat%202026%20(50m16s)%20(cropped).jpg",
     "wikidata": "Q295981",
     "links": [
       "https://breakthroughprize.org/Laureates/3/L58"
@@ -42967,7 +43298,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对调和分析、组合学、偏微分方程与解析数论的众多突破性贡献"
+    "discovery": "因对调和分析、组合学、偏微分方程与解析数论的众多突破性贡献",
+    "cn": "陶哲轩",
+    "birthYear": "1975"
   },
   {
     "id": "bt-math-2015-ian-agol",
@@ -42978,7 +43311,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For spectacular contributions to low dimensional topology and geometric group theory, including work on the solutions of the tameness, virtual Haken, and virtual fibering conjectures",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ian%20Agol%2C%20Aarhus%202012.jpg",
     "wikidata": "Q1655425",
@@ -43012,9 +43345,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their introduction and development of fundamental tools in number theory, allowing them as well as others to resolve some longstanding classical problems",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Germany",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerd%20Faltings%20MFO.jpg",
     "wikidata": "Q77137",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/mathematical-sciences/year-of-laureates/2015-mathematical-sciences"
@@ -43033,7 +43366,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "以表彰他们对数论基本工具的推行及发展，让他们及其他人能够解决存在已久的经典问题。"
+    "discovery": "以表彰他们对数论基本工具的推行及发展，让他们及其他人能够解决存在已久的经典问题。",
+    "cn": "格尔德·法尔廷斯",
+    "birthYear": "1954"
   },
   {
     "id": "shaw-math-2015-henryk-iwaniec",
@@ -43078,7 +43413,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his monumental work on the trace formula and his fundamental contributions to the theory of automorphic representations of reductive groups",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
     "photo": "",
     "wikidata": "Q1679964",
@@ -43112,9 +43447,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the most unexpected discovery that the expansion of the universe is accelerating, rather than slowing as had been long assumed",
-    "affiliation": "",
+    "affiliation": "约翰斯·霍普金斯大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Press%20Conference%20KVA-DSC%207707.jpg",
     "wikidata": "Q106454",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L73"
@@ -43136,7 +43471,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因最出人意料地发现宇宙膨胀正在加速，而非长期以来所设想的减速"
+    "discovery": "因最出人意料地发现宇宙膨胀正在加速，而非长期以来所设想的减速",
+    "cn": "亚当·里斯",
+    "birthYear": "1969"
   },
   {
     "id": "bt-physics-2015-saul-perlmutter",
@@ -43147,9 +43484,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the most unexpected discovery that the expansion of the Universe is accelerating, rather than slowing as had been long assumed",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Press%20Conference%20KVA-DSC%207744.jpg",
     "wikidata": "Q106949",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L72"
@@ -43171,7 +43508,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因最出人意料地发现宇宙膨胀正在加速，而非长期以来所设想的减速"
+    "discovery": "因最出人意料地发现宇宙膨胀正在加速，而非长期以来所设想的减速",
+    "cn": "索尔·珀尔马特",
+    "birthYear": "1959"
   },
   {
     "id": "bt-physics-2015-brian-schmidt",
@@ -43182,9 +43521,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the fundamental discovery and exploration of neutrino oscillations, revealing a new frontier beyond, and possibly far beyond, the Standard Model of particle physics",
-    "affiliation": "",
+    "affiliation": "斯壯羅山天文台",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Brian%20Schmidt%20portrait%201.jpg",
     "wikidata": "Q201452",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L150"
@@ -43206,7 +43545,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因对中微子振荡的根本性发现与探索，揭示出超越粒子物理标准模型、甚至可能远远超越标准模型的新前沿"
+    "discovery": "因对中微子振荡的根本性发现与探索，揭示出超越粒子物理标准模型、甚至可能远远超越标准模型的新前沿",
+    "cn": "布莱恩·施密特",
+    "birthYear": "1967"
   },
   {
     "id": "bt-physics-2015-pilar-ruiz-lapuente",
@@ -43219,7 +43560,7 @@ const awards = [
     "motivation": "For the fundamental discovery and exploration of neutrino oscillations, revealing a new frontier beyond, and possibly far beyond, the Standard Model of particle physics",
     "affiliation": "",
     "country": "Spain",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pilar%20Ruiz-Lapuente.jpg",
     "wikidata": "Q3819432",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L150"
@@ -43241,7 +43582,8 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因对中微子振荡的根本性发现与探索，揭示出超越粒子物理标准模型、甚至可能远远超越标准模型的新前沿"
+    "discovery": "因对中微子振荡的根本性发现与探索，揭示出超越粒子物理标准模型、甚至可能远远超越标准模型的新前沿",
+    "birthYear": "1964"
   },
   {
     "id": "shaw-astro-2015-william-j-borucki",
@@ -43284,9 +43626,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For many years, people have wondered whether planets orbiting Sun-like stars exist outside of our own solar system. Enormous advances have been made in recent years with regard to this fundamental question. The discovery of the first such exoplanet by Dr. Michel Mayor served as the catalyst for these advances, opening up a new intellectual horizon",
-    "affiliation": "",
+    "affiliation": "日內瓦天文台",
     "country": "Switzerland",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel%20Mayor%20astrophysicien.JPG",
     "wikidata": "Q123975",
     "links": [
       "https://www.kyotoprize.org/en/laureates/michel_mayor/"
@@ -43308,7 +43650,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "多年来，人们一直想知道在我们自己的太阳系之外是否存在环绕类太阳恒星运行的行星。近年来，围绕这一根本问题已取得巨大进展。Michel Mayor 博士对首颗此类系外行星的发现成为这些进展的催化剂，开辟了新的思想视野"
+    "discovery": "多年来，人们一直想知道在我们自己的太阳系之外是否存在环绕类太阳恒星运行的行星。近年来，围绕这一根本问题已取得巨大进展。Michel Mayor 博士对首颗此类系外行星的发现成为这些进展的催化剂，开辟了新的思想视野",
+    "cn": "米歇爾·麥耶",
+    "birthYear": "1942"
   },
   {
     "id": "wolf-physics-2015-james-bjorken",
@@ -43357,7 +43701,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for forging the path to supernova cosmology through his observations and insights",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RobertKirshnerIMG%202728x.jpg",
     "wikidata": "Q961809",
@@ -43394,7 +43738,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2015 Cosmology Prize to Jeremiah P. Ostriker for wide‐ranging theoretical work over 50 years; and to John Carlstrom and Lyman Page for their leadership in",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1245714",
@@ -43426,7 +43770,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2015 Cosmology Prize to Jeremiah P. Ostriker for wide‐ranging theoretical work over 50 years; and to John Carlstrom and Lyman Page for their leadership in",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1351917",
@@ -43459,9 +43803,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2015 Cosmology Prize to Jeremiah P. Ostriker for wide‐ranging theoretical work over 50 years; and to John Carlstrom and Lyman Page for their leadership in",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/LymanPage1.JPG",
     "wikidata": "Q1878725",
     "links": [
       "https://gruber.yale.edu/cosmology-laureates"
@@ -43478,7 +43822,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "格鲁伯基金会将 2015 年宇宙学奖授予 Jeremiah P. Ostriker，因其五十年间涉猎广泛的理论工作；并授予 John Carlstrom 与 Lyman Page，因其领导了"
+    "discovery": "格鲁伯基金会将 2015 年宇宙学奖授予 Jeremiah P. Ostriker，因其五十年间涉猎广泛的理论工作；并授予 John Carlstrom 与 Lyman Page，因其领导了",
+    "cn": "萊曼·佩治",
+    "birthYear": "1957"
   },
   {
     "id": "bt-life-2015-jennifer-doudna",
@@ -43489,9 +43835,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For harnessing an ancient mechanism of bacterial immunity into a powerful and general technology for editing genomes, with wide-ranging implications across biology and medicine",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Jennifer%20Doudna%20ForMemRS%20(cropped).jpg",
     "wikidata": "Q56068",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L63"
@@ -43518,7 +43864,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因将一种古老的细菌免疫机制转化为强大而通用的基因组编辑技术，在生物学与医学领域产生广泛影响"
+    "discovery": "因将一种古老的细菌免疫机制转化为强大而通用的基因组编辑技术，在生物学与医学领域产生广泛影响",
+    "cn": "詹妮弗·杜德纳",
+    "birthYear": "1964"
   },
   {
     "id": "bt-life-2015-gary-ruvkun",
@@ -43529,9 +43877,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering a new world of genetic regulation by microRNAs, a class of tiny RNA molecules that inhibit translation or destabilize complementary mRNA targets",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gary%20Ruvkun%2C%202024%20Nobel%20Prize%20Laureate%20in%20Medicine.jpg",
     "wikidata": "Q504021",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L65"
@@ -43558,7 +43906,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现由微 RNA（microRNA）实现基因调控的新世界，这类微小的 RNA 分子可抑制翻译或使互补的 mRNA 靶标失稳"
+    "discovery": "因发现由微 RNA（microRNA）实现基因调控的新世界，这类微小的 RNA 分子可抑制翻译或使互补的 mRNA 靶标失稳",
+    "cn": "加里·鲁夫昆",
+    "birthYear": "1952"
   },
   {
     "id": "bt-life-2015-victor-ambros",
@@ -43569,9 +43919,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering a new world of genetic regulation by microRNAs, a class of tiny RNA molecules that inhibit translation or destabilize complementary mRNA targets",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Victor%20Ambros%2C%202024%20Nobel%20Prize%20Laureate%20in%20Medicine.jpg",
     "wikidata": "Q983858",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L64"
@@ -43598,7 +43948,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现由微 RNA（microRNA）实现基因调控的新世界，这类微小的 RNA 分子可抑制翻译或使互补的 mRNA 靶标失稳"
+    "discovery": "因发现由微 RNA（microRNA）实现基因调控的新世界，这类微小的 RNA 分子可抑制翻译或使互补的 mRNA 靶标失稳",
+    "cn": "维克托·安布罗斯",
+    "birthYear": "1953"
   },
   {
     "id": "bt-life-2015-charles-david-allis",
@@ -43609,7 +43961,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of covalent modifications of histone proteins and their critical roles in the regulation of gene expression and chromatin organization, advancing our understanding of diseases ranging from birth defects to cancer",
-    "affiliation": "",
+    "affiliation": "洛克菲勒大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/C.%20David%20Allis.jpg",
     "wikidata": "Q1064064",
@@ -43694,7 +44046,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the development and implementation of optogenetics — the programming of neurons to express light-activated ion channels and pumps, so that their electrical activity can be controlled by light",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Boyden%20World%20Economic%20Forum%202013.jpg",
     "wikidata": "Q5341974",
@@ -43736,9 +44088,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For harnessing an ancient mechanism of bacterial immunity into a powerful and general technology for editing genomes, with wide-ranging implications across biology and medicine",
-    "affiliation": "",
+    "affiliation": "汉诺威医科大学",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Emmanuelle%20Charpentier.jpg",
     "wikidata": "Q17280087",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L62"
@@ -43765,7 +44117,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因将一种古老的细菌免疫机制转化为强大而通用的基因组编辑技术，在生物学与医学领域产生广泛影响"
+    "discovery": "因将一种古老的细菌免疫机制转化为强大而通用的基因组编辑技术，在生物学与医学领域产生广泛影响",
+    "cn": "伊曼紐•夏彭提耶",
+    "birthYear": "1968"
   },
   {
     "id": "shaw-life-2015-everett-peter-greenberg",
@@ -43776,7 +44130,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for elucidating the molecular mechanism of quorum sensing, a process whereby bacteria communicate with each other and which offers innovative ways to interfere with bacterial pathogens or to modulate the microbiome for health applications",
-    "affiliation": "",
+    "affiliation": "華盛頓大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q20026282",
@@ -43818,7 +44172,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for elucidating the molecular mechanism of quorum sensing, a process whereby bacteria communicate with each other and which offers innovative ways to interfere with bacterial pathogens or to modulate the microbiome for health applications",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bassler.jpg",
     "wikidata": "Q60545293",
@@ -43902,7 +44256,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for advancing the understanding of the molecular basis of the immune response",
-    "affiliation": "",
+    "affiliation": "洛克菲勒大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1359564",
@@ -43986,7 +44340,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2015 Genetics Prize to Emmanuelle Charpentier and Jennifer Doudna for establishing a framework for universal genome editing",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Jennifer%20Doudna%20ForMemRS%20(cropped).jpg",
     "wikidata": "Q56068",
@@ -44028,7 +44382,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2015 Genetics Prize to Emmanuelle Charpentier and Jennifer Doudna for establishing a framework for universal genome editing",
-    "affiliation": "",
+    "affiliation": "汉诺威医科大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Emmanuelle%20Charpentier.jpg",
     "wikidata": "Q17280087",
@@ -44070,7 +44424,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2015 Neuroscience Prize to Carla Shatz and Michael Greenberg for elucidation of the molecular mechanisms through which neural activity controls wiring and plasticity of the brain",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q6830021",
@@ -44112,7 +44466,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2015 Neuroscience Prize to Carla Shatz and Michael Greenberg for elucidation of the molecular mechanisms through which neural activity controls wiring and plasticity of the brain",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Carla%20shatz.jpg",
     "wikidata": "Q20181198",
@@ -44222,7 +44576,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For developing powerful new methods in the geometry of numbers, which he applied to count rings of small rank and to bound the average rank of elliptic curves",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Manjul%20Bhargava.jpg",
     "wikidata": "Q1398727",
@@ -44256,7 +44610,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For her outstanding contributions to the dynamics and geometry of Riemann surfaces and their moduli spaces",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Maryam%20Mirzakhani%20in%20Seoul%202014.jpg",
     "wikidata": "Q1771279",
@@ -44291,9 +44645,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental contributions to dynamical systems, ergodic theory, and mathematical physics",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Yakov%20G%20Sinai%20photo.jpg",
     "wikidata": "Q950897",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2014"
@@ -44312,7 +44666,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对动力系统、遍历论与数学物理的奠基性贡献"
+    "discovery": "因对动力系统、遍历论与数学物理的奠基性贡献",
+    "cn": "雅科夫·西奈",
+    "birthYear": "1935"
   },
   {
     "id": "turing-2014-michael-stonebraker",
@@ -44323,7 +44679,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For fundamental contributions to the concepts and practices underlying modern database systems",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Stonebraker%202.jpg",
     "wikidata": "Q92758",
@@ -44357,7 +44713,7 @@ const awards = [
     "motivation": "For the new revolutionary invariants of four-dimensional manifolds and for the study of the relation between stability in algebraic geometry and in global differential geometry, both for bundles and for Fano varieties",
     "affiliation": "",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Simon%20Donaldson.jpg",
     "wikidata": "Q334039",
     "links": [
       "https://breakthroughprize.org/Laureates/3/L55"
@@ -44376,7 +44732,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因四维流形的革命性新不变量，以及对代数几何与整体微分几何中稳定性之间关系的研究，涉及丛与 Fano 簇两方面"
+    "discovery": "因四维流形的革命性新不变量，以及对代数几何与整体微分几何中稳定性之间关系的研究，涉及丛与 Fano 簇两方面",
+    "cn": "西蒙·唐纳森",
+    "birthYear": "1957"
   },
   {
     "id": "bt-math-2014-maxim-kontsevich",
@@ -44389,7 +44747,7 @@ const awards = [
     "motivation": "For work making a deep impact in a vast variety of mathematical disciplines, including algebraic geometry, deformation theory, symplectic topology, homological algebra, and dynamical systems",
     "affiliation": "",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/MaximKontsevich.jpg",
     "wikidata": "Q369588",
     "links": [
       "https://breakthroughprize.org/Laureates/3/L56"
@@ -44408,7 +44766,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因其工作在众多数学分支中产生深远影响，包括代数几何、形变理论、辛拓扑、同调代数与动力系统"
+    "discovery": "因其工作在众多数学分支中产生深远影响，包括代数几何、形变理论、辛拓扑、同调代数与动力系统",
+    "cn": "马克西姆·孔采维奇",
+    "birthYear": "1964"
   },
   {
     "id": "bt-math-2014-richard-taylor",
@@ -44419,9 +44779,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For numerous breakthrough results in the theory of automorphic forms, including the Taniyama-Weil conjecture, the local Langlands conjecture for general linear groups, and the Sato-Tate conjecture",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Taylor%20(mathematician).jpg",
     "wikidata": "Q712170",
     "links": [
       "https://breakthroughprize.org/Laureates/3/L59"
@@ -44440,7 +44800,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在自守形式理论中的众多突破性成果，包括谷山-韦伊猜想、一般线性群的局部朗兰兹猜想与佐藤-泰特猜想"
+    "discovery": "因在自守形式理论中的众多突破性成果，包括谷山-韦伊猜想、一般线性群的局部朗兰兹猜想与佐藤-泰特猜想",
+    "cn": "理查德.泰勒",
+    "birthYear": "1962"
   },
   {
     "id": "bt-math-2014-jacob-lurie",
@@ -44451,7 +44813,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his work on the foundations of higher category theory and derived algebraic geometry; for the classification of fully extended topological quantum field theories; and for providing a moduli-theoretic interpretation of elliptic cohomology",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20Lurie.jpg",
     "wikidata": "Q6333335",
@@ -44485,7 +44847,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental contributions to algebra, algebraic geometry, and representation theory, and for weaving these subjects together to solve old problems and reveal beautiful new connections",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q426855",
@@ -44519,7 +44881,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for deep contributions to Analysis, Number Theory, Geometry, and Combinatorics \". Affiliation at the time of the award: The Institute for Advanced Study Princeton University , NJ, USA",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Sarnak%20(cropped).jpg",
     "wikidata": "Q1384983",
@@ -44553,7 +44915,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For opening new perspectives on quantum gravity and the unification of forces",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20Strominger%20at%20Harvard.jpg",
     "wikidata": "Q507732",
@@ -44590,7 +44952,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For opening new perspectives on quantum gravity and the unification of forces",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q710213",
@@ -44664,7 +45026,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their contributions to the measurements of features in the large-scale structure of galaxies used to constrain the cosmological model including baryon acoustic oscillations and redshift-space distortions",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q17122741",
@@ -44728,7 +45090,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their contributions to the measurements of features in the large-scale structure of galaxies used to constrain the cosmological model including baryon acoustic oscillations and redshift-space distortions",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q17126514",
@@ -44760,9 +45122,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For pioneering the theory of cosmic inflation",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/AlanGuthCambridge.jpg",
     "wikidata": "Q323316",
     "links": [
       "https://www.kavliprize.org/prizes/astrophysics/2014"
@@ -44779,7 +45141,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "因开创了宇宙暴胀理论"
+    "discovery": "因开创了宇宙暴胀理论",
+    "cn": "阿兰·古斯",
+    "birthYear": "1947"
   },
   {
     "id": "kavli-astro-2014-andrei-linde",
@@ -44790,9 +45154,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For pioneering the theory of cosmic inflation",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrei%20Linde.jpg",
     "wikidata": "Q368087",
     "links": [
       "https://www.kavliprize.org/prizes/astrophysics/2014"
@@ -44809,7 +45173,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "因开创了宇宙暴胀理论"
+    "discovery": "因开创了宇宙暴胀理论",
+    "cn": "安德烈·林德",
+    "birthYear": "1948"
   },
   {
     "id": "kavli-astro-2014-alexei-starobinski",
@@ -44822,7 +45188,7 @@ const awards = [
     "motivation": "For pioneering the theory of cosmic inflation",
     "affiliation": "",
     "country": "Russia",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexei%20Starobinsky%2C%20recipient%20of%20the%202013%20Gruber%20Prize%20(iau1304b).jpg",
     "wikidata": "Q2643921",
     "links": [
       "https://www.kavliprize.org/prizes/astrophysics/2014"
@@ -44839,7 +45205,10 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "因开创了宇宙暴胀理论"
+    "discovery": "因开创了宇宙暴胀理论",
+    "cn": "阿列克谢·斯塔罗宾斯基",
+    "birthYear": "1948",
+    "deathYear": "2023"
   },
   {
     "id": "kavli-nano-2014-q91410",
@@ -44850,7 +45219,7 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For their transformative contributions to the field of nano-optics that have broken long-held beliefs about the limitations of the resolution limits of optical microscopy and imaging",
-    "affiliation": "",
+    "affiliation": "哥廷根大学",
     "country": "Germany",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stefan%20W%20Hell.jpg",
     "wikidata": "Q91410",
@@ -44882,7 +45251,7 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For their transformative contributions to the field of nano-optics that have broken long-held beliefs about the limitations of the resolution limits of optical microscopy and imaging",
-    "affiliation": "",
+    "affiliation": "斯特拉斯堡大学",
     "country": "Norway",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Ebbesen%20par%20Claude%20Truong-Ngoc%20septembre%202014.jpg",
     "wikidata": "Q449369",
@@ -44946,9 +45315,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "A look into the progress of quantum field theory and string theory reveals a spectacular drama featuring a large cast of talented scientists. Beginning with the problem of reconciling the theory of general relativity with quantum mechanics, they dream of a theory that would unify the entire spectrum of mechanics, from the theory of elementary particles to macroscopic cosmology",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Witten.jpg",
     "wikidata": "Q201513",
     "links": [
       "https://www.kyotoprize.org/en/laureates/edward_witten/"
@@ -44970,7 +45339,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "回望量子场论与弦论的进展，呈现的是一出由众多才华横溢的科学家出演的壮观戏剧。从调和广义相对论与量子力学这一问题出发，他们梦想着一种能够统一从基本粒子理论到宏观宇宙学的整个力学谱系的理论"
+    "discovery": "回望量子场论与弦论的进展，呈现的是一出由众多才华横溢的科学家出演的壮观戏剧。从调和广义相对论与量子力学这一问题出发，他们梦想着一种能够统一从基本粒子理论到宏观宇宙学的整个力学谱系的理论",
+    "cn": "爱德华·威滕",
+    "birthYear": "1951"
   },
   {
     "id": "gruber-cosmo-2014-r-brent-tully",
@@ -45045,7 +45416,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2014 Cosmology Prize to Jaan Einasto, Kenneth Freeman, Brent Tully and Sidney van den Bergh for contributions to the understanding of the structure and composition of the nearby Universe",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
     "photo": "",
     "wikidata": "Q1354016",
@@ -45109,9 +45480,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering critical molecular determinants and biological functions of intracellular protein degradation",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20Varshavsky.jpg",
     "wikidata": "Q442466",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L42"
@@ -45138,7 +45509,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现细胞内蛋白质降解的关键分子决定因素与生物学功能"
+    "discovery": "因发现细胞内蛋白质降解的关键分子决定因素与生物学功能",
+    "cn": "亚历山大·瓦尔沙夫斯基",
+    "birthYear": "1946"
   },
   {
     "id": "bt-life-2014-robert-s-langer-jr",
@@ -45149,7 +45522,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discoveries leading to the development of controlled drug-release systems and new biomaterials",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Langer%20MTMLecture%202008%2009%2025%20portrait.JPG",
     "wikidata": "Q669597",
@@ -45191,7 +45564,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of genes and biochemical mechanisms that cause hypertension",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1285282",
@@ -45275,7 +45648,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of T cell checkpoint blockade as effective cancer therapy",
-    "affiliation": "",
+    "affiliation": "德州大學安德森癌症中心",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20P.%20Allison%20EM1B5525%20(46207775441).jpg",
     "wikidata": "Q6140731",
@@ -45360,7 +45733,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of the Unfolded Protein Response of the endoplasmic reticulum, a cell signalling pathway that controls organelle homeostasis and quality of protein export in eukaryotic cells",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Walter%20(1954-)%20-%20from%20Flicker%202194972175.jpg",
     "wikidata": "Q106367",
@@ -45402,7 +45775,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of the Unfolded Protein Response of the endoplasmic reticulum, a cell signalling pathway that controls organelle homeostasis and quality of protein export in eukaryotic cells",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/%E6%A3%AE%E5%92%8C%E4%BF%8A%2020240509%201538.jpg",
     "wikidata": "Q1737577",
@@ -45486,9 +45859,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of specialized brain networks for memory and cognition",
-    "affiliation": "",
+    "affiliation": "倫敦大學學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20O'Keefe%20(neuroscientist)%202014.jpg",
     "wikidata": "Q1701279",
     "links": [
       "https://www.kavliprize.org/prizes/neuroscience/2014"
@@ -45515,7 +45888,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现了专司记忆与认知的特化脑网络"
+    "discovery": "因发现了专司记忆与认知的特化脑网络",
+    "cn": "约翰·奥基夫",
+    "birthYear": "1939"
   },
   {
     "id": "kavli-neuro-2014-marcus-e-raichle",
@@ -45568,9 +45943,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for The discovery of microRNA as central regulators of gene expression in health and disease",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gary%20Ruvkun%2C%202024%20Nobel%20Prize%20Laureate%20in%20Medicine.jpg",
     "wikidata": "Q504021",
     "links": [
       "https://wolffund.org.il/gary-ruvkun/"
@@ -45597,7 +45972,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现 microRNA 是健康与疾病中基因表达的核心调控因子"
+    "discovery": "因发现 microRNA 是健康与疾病中基因表达的核心调控因子",
+    "cn": "加里·鲁夫昆",
+    "birthYear": "1952"
   },
   {
     "id": "wolf-med-2014-nahum-sonenberg",
@@ -45650,9 +46027,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for The discovery of microRNA as central regulators of gene expression in health and disease",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Victor%20Ambros%2C%202024%20Nobel%20Prize%20Laureate%20in%20Medicine.jpg",
     "wikidata": "Q983858",
     "links": [
       "https://wolffund.org.il/victor-ambros/"
@@ -45679,7 +46056,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因发现 microRNA 是健康与疾病中基因表达的核心调控因子"
+    "discovery": "因发现 microRNA 是健康与疾病中基因表达的核心调控因子",
+    "cn": "维克托·安布罗斯",
+    "birthYear": "1953"
   },
   {
     "id": "gruber-genes-2014-gary-ruvkun",
@@ -45690,7 +46069,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2014 Genetics Prize to Victor Ambros, David Baulcombe, and Gary Ruvkun for the discovery of small non-coding RNAs and the demonstration of their central roles in the regulation of development and gene expression",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gary%20Ruvkun%2C%202024%20Nobel%20Prize%20Laureate%20in%20Medicine.jpg",
     "wikidata": "Q504021",
@@ -45732,7 +46111,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2014 Genetics Prize to Victor Ambros, David Baulcombe, and Gary Ruvkun for the discovery of small non-coding RNAs and the demonstration of their central roles in the regulation of development and gene expression",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Victor%20Ambros%2C%202024%20Nobel%20Prize%20Laureate%20in%20Medicine.jpg",
     "wikidata": "Q983858",
@@ -45774,7 +46153,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2014 Genetics Prize to Victor Ambros, David Baulcombe, and Gary Ruvkun for the discovery of small non-coding RNAs and the demonstration of their central roles in the regulation of development and gene expression",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Charles%20Baulcombe.jpg",
     "wikidata": "Q1173676",
@@ -45816,7 +46195,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2014 Neuroscience Prize to Thomas Jessell for work on the differentiation of spinal cord neurons and their wiring into networks",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q2425113",
@@ -45845,7 +46224,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "格鲁伯基金会将 2014 年神经科学奖授予 Thomas Jessell，以表彰其在脊髓神经元分化及其连接成网络方面的工作"
+    "discovery": "格鲁伯基金会将 2014 年神经科学奖授予 Thomas Jessell，以表彰其在脊髓神经元分化及其连接成网络方面的工作",
+    "cn": "托马斯·杰塞尔",
+    "birthYear": "1951",
+    "deathYear": "2019"
   },
   {
     "id": "abel-2013-pierre-deligne",
@@ -45858,7 +46240,7 @@ const awards = [
     "motivation": "for seminal contributions to algebraic geometry and for their transformative impact on number theory, representation theory, and related fields",
     "affiliation": "",
     "country": "Belgium",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Deligne%20(2005)%20(cropped).jpg",
     "wikidata": "Q334045",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2013"
@@ -45877,7 +46259,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对代数几何的奠基性贡献，以及这些贡献对数论、表示论及相关领域的变革性影响"
+    "discovery": "因对代数几何的奠基性贡献，以及这些贡献对数论、表示论及相关领域的变革性影响",
+    "cn": "皮埃尔·德利涅",
+    "birthYear": "1944"
   },
   {
     "id": "turing-2013-leslie-lamport",
@@ -45920,7 +46304,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his profound contributions to modern mathematical statistics and in particular the development of optimal algorithms for statistical estimation in the presence of noise and of efficient techniques for sparse representation and recovery in large data-sets",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Donoho%20ICM%202018%20(43006887855)%20(cropped).jpg",
     "wikidata": "Q1114742",
@@ -45954,7 +46338,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for fundamental and pioneering contribution to geometry and Lie group theory",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1507954",
@@ -45989,7 +46373,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for fundamental contributions to algebraic geometry, both commutative and non-commutative",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Artin.jpg",
     "wikidata": "Q1926870",
@@ -46130,7 +46514,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their discovery and study of the magnetorotational instability, and for demonstrating that this instability leads to turbulence and is a viable mechanism for angular momentum transport in astrophysical accretion disks",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/StevenBalbus.jpeg",
     "wikidata": "Q16150522",
@@ -46162,7 +46546,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. Masatoshi Nei contributed greatly to the transformation of evolutionary biology into an exact science by developing diverse statistical methods to analyze variations in proteins and DNA nucleotide sequences. Evolution occurs through the repeated appearance of novel mutations that propagate within a population and ultimately replace earlier genes. Dr",
-    "affiliation": "",
+    "affiliation": "布朗大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Masatoshi%20Nei%20-%202013.jpg",
     "wikidata": "Q964151",
@@ -46274,7 +46658,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2013 Cosmology Prize to Viatcheslav Mukhanov and Alexei Starobinsky for their profound contribution to inflationary cosmology and the theory of inflationary perturbations of the metric",
-    "affiliation": "",
+    "affiliation": "慕尼黑大学",
     "country": "Switzerland",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/SlavaMukhanov.jpg",
     "wikidata": "Q1844592",
@@ -46339,9 +46723,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For induced pluripotent stem cells",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shinya%20Yamanaka%2020141226.jpg",
     "wikidata": "Q80917",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L36"
@@ -46368,7 +46752,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因诱导多能干细胞"
+    "discovery": "因诱导多能干细胞",
+    "cn": "山中伸彌",
+    "birthYear": "1962"
   },
   {
     "id": "bt-life-2013-robert-weinberg",
@@ -46379,7 +46765,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For characterization of human cancer genes",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q701506",
@@ -46408,7 +46794,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因对人类癌症基因的表征"
+    "discovery": "因对人类癌症基因的表征",
+    "cn": "罗伯特·温伯格",
+    "birthYear": "1942"
   },
   {
     "id": "bt-life-2013-bert-vogelstein",
@@ -46419,7 +46807,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For cancer genomics and tumor suppressor genes",
-    "affiliation": "",
+    "affiliation": "霍华德·休斯医学研究所",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bert%20Vogelstein%20giving%20the%20Trent%20Lecture.jpg",
     "wikidata": "Q827502",
@@ -46461,7 +46849,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the discovery of general principles for identifying human disease genes, and enabling their application to medicine through the creation and analysis of genetic, physical and sequence maps of the human genome",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eric%20Lander%20(cropped).jpg",
     "wikidata": "Q970550",
@@ -46503,7 +46891,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For cancer genes and targeted therapy",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Sawyers.jpg",
     "wikidata": "Q1065232",
@@ -46545,9 +46933,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For linkage mapping of Mendelian disease in humans using DNA polymorphisms",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Plos%20botstein.jpg",
     "wikidata": "Q1173787",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L27"
@@ -46574,7 +46962,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因利用 DNA 多态性对人类孟德尔遗传病进行连锁作图"
+    "discovery": "因利用 DNA 多态性对人类孟德尔遗传病进行连锁作图",
+    "cn": "戴维·博特斯坦",
+    "birthYear": "1942",
+    "deathYear": "2026"
   },
   {
     "id": "bt-life-2013-hans-clevers",
@@ -46585,7 +46976,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For describing the role of WNT signaling in tissue stem cells and cancer",
-    "affiliation": "",
+    "affiliation": "乌特勒支大学",
     "country": "Kingdom of the Netherlands",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hans%20Clevers%20(2012).jpg",
     "wikidata": "Q1579050",
@@ -46669,7 +47060,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For research on telomeres, illuminating how they protect chromosome ends and their role in genome instability in cancer",
-    "affiliation": "",
+    "affiliation": "洛克菲勒大學",
     "country": "Kingdom of the Netherlands",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Titia%20de%20Lange%202011.jpg",
     "wikidata": "Q2436934",
@@ -46753,9 +47144,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For the genetics of neural circuits and behavior, and synaptic guidepost molecules",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Cori%20Bargmann%20at%2010th%20International%20Conference%20on%20Zebrafish%20Development%20and%20Genetics.jpg",
     "wikidata": "Q5042508",
     "links": [
       "https://breakthroughprize.org/Laureates/2/L26"
@@ -46782,7 +47173,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因神经环路与行为的遗传学，以及突触路标分子"
+    "discovery": "因神经环路与行为的遗传学，以及突触路标分子",
+    "cn": "科妮莉亚·巴格曼",
+    "birthYear": "1961"
   },
   {
     "id": "shaw-life-2013-michael-rosbash",
@@ -46793,9 +47186,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of molecular mechanisms underlying circadian rhythms",
-    "affiliation": "",
+    "affiliation": "布兰戴斯大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Rosbash%2C%202017%20Nobel%20Laureate%20in%20Medicine%20(cropped).jpg",
     "wikidata": "Q1297741",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/life-science-and-medicine/year-of-laureates/2013-life-science-and-medicine"
@@ -46822,7 +47215,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "以表彰他们发现昼夜节律的分子机制。"
+    "discovery": "以表彰他们发现昼夜节律的分子机制。",
+    "cn": "迈克尔·罗斯巴什",
+    "birthYear": "1944"
   },
   {
     "id": "shaw-life-2013-jeffrey-c-hall",
@@ -46833,9 +47228,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of molecular mechanisms underlying circadian rhythms",
-    "affiliation": "",
+    "affiliation": "布兰戴斯大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeffrey%20C.%20Hall%20D81%204349%20(25006040668).jpg",
     "wikidata": "Q1686435",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/life-science-and-medicine/year-of-laureates/2013-life-science-and-medicine"
@@ -46862,7 +47257,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "以表彰他们发现昼夜节律的分子机制。"
+    "discovery": "以表彰他们发现昼夜节律的分子机制。",
+    "cn": "杰弗里·霍尔",
+    "birthYear": "1945"
   },
   {
     "id": "shaw-life-2013-michael-w-young",
@@ -46873,9 +47270,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of molecular mechanisms underlying circadian rhythms",
-    "affiliation": "",
+    "affiliation": "德克薩斯州大學奧斯汀分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20W.%20Young%20D81%204345%20(38162439194).jpg",
     "wikidata": "Q1929672",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/life-science-and-medicine/year-of-laureates/2013-life-science-and-medicine"
@@ -46902,7 +47299,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "以表彰他们发现昼夜节律的分子机制。"
+    "discovery": "以表彰他们发现昼夜节律的分子机制。",
+    "cn": "迈克尔·扬",
+    "birthYear": "1949"
   },
   {
     "id": "gruber-genes-2013-svante-paabo",
@@ -46913,7 +47312,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2013 Genetics Prize to Svante Pääbo for pioneering the analysis of ancient DNA",
-    "affiliation": "",
+    "affiliation": "慕尼黑大学",
     "country": "Sweden",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Svante%20Paabo%20ForMemRS%20(cropped).jpg",
     "wikidata": "Q170342",
@@ -46955,7 +47354,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2013 Neuroscience Prize to Eve Marder for contributions to understanding how circuit dynamics and behavior arise from the properties of component neurons and their synaptic connections",
-    "affiliation": "",
+    "affiliation": "布兰戴斯大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eve%20Marder.jpg",
     "wikidata": "Q5416184",
@@ -47030,7 +47429,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "Along with Shafi Goldwasser, for transformative work that laid the complexity-theoretic foundations for the science of cryptography, and in the process pioneered new methods for efficient verification of mathematical proofs in complexity theory",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shafi%20Goldwasser.JPG",
     "wikidata": "Q11609",
@@ -47062,7 +47461,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "Along with Shafi Goldwasser, for transformative work that laid the complexity-theoretic foundations for the science of cryptography, and in the process pioneered new methods for efficient verification of mathematical proofs in complexity theory",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Silvio%20Micali%20IMG%200459.jpg",
     "wikidata": "Q93080",
@@ -47096,7 +47495,7 @@ const awards = [
     "motivation": "for his pioneering works in algebra, geometry and mathematical physics and in particular deformation quantization, motivic integration and mirror symmetry",
     "affiliation": "",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/MaximKontsevich.jpg",
     "wikidata": "Q369588",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/mathematical-sciences/year-of-laureates/2012-mathematical-sciences"
@@ -47115,7 +47514,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "以表彰他在代数、几何和数学物理，特别是形变量子化，Motivic积分和镜像对称的开创性工作。"
+    "discovery": "以表彰他在代数、几何和数学物理，特别是形变量子化，Motivic积分和镜像对称的开创性工作。",
+    "cn": "马克西姆·孔采维奇",
+    "birthYear": "1964"
   },
   {
     "id": "wolf-math-2012-luis-caffarelli",
@@ -47126,7 +47527,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for outstanding, visionary, original and fundamental work on partial differential equations, in particular on regularity for elliptic and parabolic equations, free boundary problems and fluid mechanics",
-    "affiliation": "",
+    "affiliation": "德克薩斯州大學奧斯汀分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Luis%20Caffarelli.jpg",
     "wikidata": "Q1076636",
@@ -47160,7 +47561,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for being a principal architect of the classification of finite simple groups. His impact on the theory of finite is extraordinary in its depth, breadth and beauty",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Aschbacher.jpg",
     "wikidata": "Q1385045",
@@ -47194,9 +47595,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For contributions to physics spanning topics such as new applications of topology to physics, non-perturbative duality symmetries, models of particle physics derived from string theory, dark matter detection, and the twistor-string approach to particle scattering amplitudes, as well as numerous applications of quantum field theory to mathematics",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Witten.jpg",
     "wikidata": "Q201513",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L9"
@@ -47218,7 +47619,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因对物理学的贡献，涵盖拓扑学在物理中的新应用、非微扰对偶对称性、由弦论导出的粒子物理模型、暗物质探测、粒子散射振幅的 twistor-string（扭量弦）方法等主题，以及量子场论在数学中的大量应用"
+    "discovery": "因对物理学的贡献，涵盖拓扑学在物理中的新应用、非微扰对偶对称性、由弦论导出的粒子物理模型、暗物质探测、粒子散射振幅的 twistor-string（扭量弦）方法等主题，以及量子场论在数学中的大量应用",
+    "cn": "爱德华·威滕",
+    "birthYear": "1951"
   },
   {
     "id": "bt-physics-2012-alan-guth",
@@ -47229,9 +47632,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the invention of inflationary cosmology, and for his contributions to the theory for the generation of cosmological density fluctuations arising from quantum fluctuations in the early universe, and for his ongoing work on the problem of defining probabilities in eternally inflating spacetimes",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/AlanGuthCambridge.jpg",
     "wikidata": "Q323316",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L2"
@@ -47253,7 +47656,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因创立暴胀宇宙学，因对早期宇宙量子涨落所产生的宇宙学密度扰动之理论的贡献，以及因其在永恒暴胀时空中概率定义问题上的持续工作"
+    "discovery": "因创立暴胀宇宙学，因对早期宇宙量子涨落所产生的宇宙学密度扰动之理论的贡献，以及因其在永恒暴胀时空中概率定义问题上的持续工作",
+    "cn": "阿兰·古斯",
+    "birthYear": "1947"
   },
   {
     "id": "bt-physics-2012-andrei-linde",
@@ -47264,9 +47669,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the development of inflationary cosmology, including the theories of new inflation, eternal chaotic inflation, and the inflationary Multiverse, and for contributing to the development of vacuum stabilization mechanisms in string theory",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrei%20Linde.jpg",
     "wikidata": "Q368087",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L5"
@@ -47288,7 +47693,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因发展暴胀宇宙学，包括新暴胀、永恒混沌暴胀与暴胀多重宇宙等理论，以及因对弦论中真空稳定化机制发展的贡献"
+    "discovery": "因发展暴胀宇宙学，包括新暴胀、永恒混沌暴胀与暴胀多重宇宙等理论，以及因对弦论中真空稳定化机制发展的贡献",
+    "cn": "安德烈·林德",
+    "birthYear": "1948"
   },
   {
     "id": "bt-physics-2012-maxim-kontsevich",
@@ -47301,7 +47708,7 @@ const awards = [
     "motivation": "For numerous contributions which have taken the fruitful interaction between modern theoretical physics and mathematics to new heights, including the development of homological mirror symmetry, and the study of wall-crossing phenomena",
     "affiliation": "",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/MaximKontsevich.jpg",
     "wikidata": "Q369588",
     "links": [
       "https://breakthroughprize.org/Laureates/1/L4"
@@ -47323,7 +47730,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "因诸多贡献将现代理论物理与数学之间富有成果的互动推向新的高度，包括同调镜像对称的发展与 wall-crossing（墙穿越）现象的研究"
+    "discovery": "因诸多贡献将现代理论物理与数学之间富有成果的互动推向新的高度，包括同调镜像对称的发展与 wall-crossing（墙穿越）现象的研究",
+    "cn": "马克西姆·孔采维奇",
+    "birthYear": "1964"
   },
   {
     "id": "bt-physics-2012-nima-arkani-hamed",
@@ -47334,7 +47743,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For original approaches to outstanding problems in particle physics, including the proposal of large extra dimensions, new theories for the Higgs boson, novel realizations of supersymmetry, theories for dark matter, and the exploration of new mathematical structures in gauge theory scattering amplitudes",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nima%20Arkani-Hamed%20at%20Harvard.jpg",
     "wikidata": "Q545142",
@@ -47445,7 +47854,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For uncovering striking evidence of strong-weak duality in certain supersymmetric string theories and gauge theories, opening the path to the realization that all string theories are different limits of the same underlying theory",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "India",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr.%20Ashoke%20Sen%20in%20Physics%20department%20of%20Scottish%20Church%20College.jpg",
     "wikidata": "Q726244",
@@ -47482,7 +47891,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "For the theoretical idea of implementing robust quantum memories and fault-tolerant quantum computation using topological quantum phases with anyons and unpaired Majorana modes",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "Russia",
     "photo": "",
     "wikidata": "Q2643958",
@@ -47519,9 +47928,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their discovery and characterization of trans-Neptunian bodies, an archeological treasure dating back to the formation of the solar system and the long-sought source of short period comets",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/JaneLuu.png",
     "wikidata": "Q197941",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/astronomy/year-of-laureates/2012-astronomy"
@@ -47538,7 +47947,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "以表彰他们发现海王星以外物体及描述其特性，对研究太阳系最初之形成及追寻短周期彗星来源提供寳贵资料。"
+    "discovery": "以表彰他们发现海王星以外物体及描述其特性，对研究太阳系最初之形成及追寻短周期彗星来源提供寳贵资料。",
+    "cn": "劉麗杏",
+    "birthYear": "1963"
   },
   {
     "id": "shaw-astro-2012-david-c-jewitt",
@@ -47549,9 +47960,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their discovery and characterization of trans-Neptunian bodies, an archeological treasure dating back to the formation of the solar system and the long-sought source of short period comets",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Jewitt.jpg",
     "wikidata": "Q382992",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/astronomy/year-of-laureates/2012-astronomy"
@@ -47568,7 +47979,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "以表彰他们发现海王星以外物体及描述其特性，对研究太阳系最初之形成及追寻短周期彗星来源提供寳贵资料。"
+    "discovery": "以表彰他们发现海王星以外物体及描述其特性，对研究太阳系最初之形成及追寻短周期彗星来源提供寳贵资料。",
+    "cn": "大衛·朱維特",
+    "birthYear": "1958"
   },
   {
     "id": "kavli-astro-2012-jane-luu",
@@ -47579,7 +47992,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For discovering and characterizing the Kuiper Belt and its largest members, work that led to a major advance in the understanding of the history of our planetary system",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/JaneLuu.png",
     "wikidata": "Q197941",
@@ -47611,7 +48024,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For discovering and characterizing the Kuiper Belt and its largest members, work that led to a major advance in the understanding of the history of our planetary system",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20E%20Brown%201.jpg",
     "wikidata": "Q298913",
@@ -47643,7 +48056,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For discovering and characterizing the Kuiper Belt and its largest members, work that led to a major advance in the understanding of the history of our planetary system",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Jewitt.jpg",
     "wikidata": "Q382992",
@@ -47675,7 +48088,7 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For her pioneering contributions to the study of phonons, electron-phonon interactions, and thermal transport in nanostructures",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Barack%20Obama%20greets%20Burton%20Richter%20and%20Mildred%20Dresselhaus%20(cropped).jpg",
     "wikidata": "Q29573",
@@ -47708,7 +48121,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. Yoshinori Ohsumi has made groundbreaking contributions to science in his cellular genetic study of autophagy (also known as “cellular self-cannibalization”) in yeast, a cellular process that degrades proteins in order to adapt to the nutritional environment and other factors",
-    "affiliation": "",
+    "affiliation": "综合研究大学院大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Laureates%207428%20(30679389523)%20(cropped).jpg",
     "wikidata": "Q8056214",
@@ -47783,9 +48196,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Gruber Foundation presents the 2012 Cosmology Prize to Charles Bennett and the Wilkinson Microwave Anisotropy Probe team for their exquisite measurements of anisotropies in the relic radiation from the Big Bang---the Cosmic Microwave Background",
-    "affiliation": "",
+    "affiliation": "约翰斯·霍普金斯大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20L.%20Bennett.jpg",
     "wikidata": "Q1065219",
     "links": [
       "https://gruber.yale.edu/cosmology-laureates"
@@ -47802,7 +48215,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "格鲁伯基金会将 2012 年宇宙学奖授予 Charles Bennett 与威尔金森微波各向异性探测器团队，因其对大爆炸遗留辐射——宇宙微波背景——各向异性的精细测量"
+    "discovery": "格鲁伯基金会将 2012 年宇宙学奖授予 Charles Bennett 与威尔金森微波各向异性探测器团队，因其对大爆炸遗留辐射——宇宙微波背景——各向异性的精细测量",
+    "cn": "查尔斯·本内特",
+    "birthYear": "1956"
   },
   {
     "id": "shaw-life-2012-franz-ulrich-hartl",
@@ -47813,7 +48228,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their contributions to the understanding of the molecular mechanism of protein folding. Proper protein folding is essential for many cellular functions",
-    "affiliation": "",
+    "affiliation": "慕尼黑大学",
     "country": "Germany",
     "photo": "",
     "wikidata": "Q91435",
@@ -47855,7 +48270,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their contributions to the understanding of the molecular mechanism of protein folding. Proper protein folding is essential for many cellular functions",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/WALS%201.27.10%20Arthur%20Horwich%204m49s%20(cropped).jpg",
     "wikidata": "Q449737",
@@ -47939,7 +48354,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For elucidating basic neuronal mechanisms underlying perception and decision",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ann%20Graybiel%202001%20(cropped).jpg",
     "wikidata": "Q4766422",
@@ -47981,7 +48396,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For elucidating basic neuronal mechanisms underlying perception and decision",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Cori%20Bargmann%20at%2010th%20International%20Conference%20on%20Zebrafish%20Development%20and%20Genetics.jpg",
     "wikidata": "Q5042508",
@@ -48107,7 +48522,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2012 Neuroscience Prize to Lily and Yuh Nung Jan for fundamental contributions to our understanding of both voltage-gated ion channels and neural development",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1825284",
@@ -48149,7 +48564,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Gruber Foundation presents the 2012 Neuroscience Prize to Lily and Yuh Nung Jan for fundamental contributions to our understanding of both voltage-gated ion channels and neural development",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q2601693",
@@ -48191,9 +48606,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for pioneering discoveries in topology, geometry and algebra",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Milnor.jpg",
     "wikidata": "Q215765",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2011"
@@ -48212,7 +48627,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在拓扑学、几何学与代数学中的开创性发现"
+    "discovery": "因在拓扑学、几何学与代数学中的开创性发现",
+    "cn": "约翰·米尔诺",
+    "birthYear": "1931"
   },
   {
     "id": "turing-2011-judea-pearl",
@@ -48223,7 +48640,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For fundamental contributions to artificial intelligence through the development of a calculus for probabilistic and causal reasoning",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Judea%20Pearl%20at%20NIPS%202013%20(11781981594)%20(cropped).jpg",
     "wikidata": "Q92824",
@@ -48255,7 +48672,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their highly innovative works on nonlinear partial differential equations in Lorentzian and Riemannian geometry and their applications to general relativity and topology",
-    "affiliation": "",
+    "affiliation": "哥倫比亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Hamilton%201982%20(reprint%3B%20headshot).jpg",
     "wikidata": "Q239904",
@@ -48290,7 +48707,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their highly innovative works on nonlinear partial differential equations in Lorentzian and Riemannian geometry and their applications to general relativity and topology",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Demetrios%20Christodoulou.jpeg",
     "wikidata": "Q687024",
@@ -48390,7 +48807,7 @@ const awards = [
     "motivation": "Dr. Rashid Alievich Sunyaev’s primary contributions are to the theories underpinning observational cosmology, which has progressed to become an exact science in this century. In a paper with Dr. Yakov Zel’dovich in 1970, examining the physical process of hydrogen recombination in the hot early universe, Dr. Sunyaev revealed that baryon acoustic oscillations (BAO) of that remote time due to the primordial fluctuations can be observed as intensity variation in today’s cosmic microwave background radiation (CMB)",
     "affiliation": "",
     "country": "Russia",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Rashid%20Sunyaev%20(2012-09-03).jpg",
     "wikidata": "Q836911",
     "links": [
       "https://www.kyotoprize.org/en/laureates/rashid-alievich-sunyaev/"
@@ -48412,7 +48829,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "Rashid Alievich Sunyaev 博士的主要贡献在于支撑观测宇宙学的诸项理论，观测宇宙学在本世纪已发展为一门精确科学。在 1970 年与 Yakov Zel’dovich 博士合著的一篇论文中，Sunyaev 博士考察了炽热早期宇宙中氢复合的物理过程，揭示出那一遥远时期由原初扰动引起的重子声学振荡（BAO）可以作为今日宇宙微波背景辐射（CMB）中的强度变化被观测到"
+    "discovery": "Rashid Alievich Sunyaev 博士的主要贡献在于支撑观测宇宙学的诸项理论，观测宇宙学在本世纪已发展为一门精确科学。在 1970 年与 Yakov Zel’dovich 博士合著的一篇论文中，Sunyaev 博士考察了炽热早期宇宙中氢复合的物理过程，揭示出那一遥远时期由原初扰动引起的重子声学振荡（BAO）可以作为今日宇宙微波背景辐射（CMB）中的强度变化被观测到",
+    "cn": "拉希德·苏尼亚耶夫",
+    "birthYear": "1943"
   },
   {
     "id": "wolf-physics-2011-maximilian-haider",
@@ -48535,7 +48954,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2011 Cosmology Prize to Marc Davis, George Efstathiou, Carlos Frenk and Simon White for their use of numerical simulations to model and interpret the large-scale distribution of matter in the Universe",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q348149",
@@ -48567,7 +48986,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2011 Cosmology Prize to Marc Davis, George Efstathiou, Carlos Frenk and Simon White for their use of numerical simulations to model and interpret the large-scale distribution of matter in the Universe",
-    "affiliation": "",
+    "affiliation": "慕尼黑大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Simon%20White%20at%20RAS%20NAM%202012.jpg",
     "wikidata": "Q549293",
@@ -48631,7 +49050,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2011 Cosmology Prize to Marc Davis, George Efstathiou, Carlos Frenk and Simon White for their use of numerical simulations to model and interpret the large-scale distribution of matter in the Universe",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q1507296",
@@ -48663,7 +49082,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of the molecular mechanism of innate immunity, the first line of defense against pathogens",
-    "affiliation": "",
+    "affiliation": "斯克里普斯研究所",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bruce%20Beutler%20-%20Nobel%20Prize%202011-Press%20Conference%20KI-DSC%207508.jpg",
     "wikidata": "Q104592",
@@ -48705,7 +49124,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of the molecular mechanism of innate immunity, the first line of defense against pathogens",
-    "affiliation": "",
+    "affiliation": "法国科学院",
     "country": "Luxembourg",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Press%20Conference%20KI-DSC%207584.jpg",
     "wikidata": "Q105605",
@@ -48747,7 +49166,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discovery of the molecular mechanism of innate immunity, the first line of defense against pathogens",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q517459",
@@ -48789,9 +49208,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the generation of induced pluripotent stem cells (iPS cells) from skin cells",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shinya%20Yamanaka%2020141226.jpg",
     "wikidata": "Q80917",
     "links": [
       "https://wolffund.org.il/shinya-yamanaka/"
@@ -48818,7 +49237,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因从皮肤细胞制备出诱导多能干细胞（iPS 细胞）"
+    "discovery": "因从皮肤细胞制备出诱导多能干细胞（iPS 细胞）",
+    "cn": "山中伸彌",
+    "birthYear": "1962"
   },
   {
     "id": "wolf-med-2011-rudolf-jaenisch",
@@ -48829,9 +49250,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For demonstration that iPS cells can be used to cure genetic disease in a mammal, thus establishing their therapeutic potential",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaenisch%202003%20by%20Sam%20Ogden.jpg",
     "wikidata": "Q90073",
     "links": [
       "https://wolffund.org.il/rudolf-jaenisch/"
@@ -48858,7 +49279,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因证明 iPS 细胞可用于治愈哺乳动物的遗传性疾病，从而确立其治疗潜力"
+    "discovery": "因证明 iPS 细胞可用于治愈哺乳动物的遗传性疾病，从而确立其治疗潜力",
+    "cn": "鲁道夫·耶尼施",
+    "birthYear": "1942"
   },
   {
     "id": "gruber-genes-2011-ronald-w-davis",
@@ -48869,7 +49292,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2011 Genetics Prize to Ronald W. Davis, a pioneer in the development and application of recombinant-DNA techniques",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ronald%20W.%20Davis.jpg",
     "wikidata": "Q2165770",
@@ -48953,7 +49376,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his proof of the Fundamental Lemma in the theory of automorphic forms through the introduction of new algebro-geometric methods",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ng%C3%B4%20B%E1%BA%A3o%20Ch%C3%A2u.JPG",
     "wikidata": "Q216350",
@@ -49055,7 +49478,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his results on measure rigidity in ergodic theory, and their applications to number theory",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Israel",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Elon%20Lindenstrauss%20MFO.jpg",
     "wikidata": "Q334069",
@@ -49089,9 +49512,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his vast and lasting impact on the theory of numbers",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Tate.jpg",
     "wikidata": "Q351822",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2010"
@@ -49110,7 +49533,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对数论产生广泛而持久的影响"
+    "discovery": "因对数论产生广泛而持久的影响",
+    "cn": "约翰·泰特",
+    "birthYear": "1925",
+    "deathYear": "2019"
   },
   {
     "id": "turing-2010-leslie-valiant",
@@ -49121,7 +49547,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For transformative contributions to the theory of computation, including the theory of probably approximately correct (PAC) learning, the complexity of enumeration and of algebraic computation, and the theory of parallel and distributed computing",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Leslie%20Valiant.jpg",
     "wikidata": "Q93154",
@@ -49153,9 +49579,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his profound work in mathematical analysis and its application to partial differential equations, mathematical physics, combinatorics, number theory, ergodic theory and theoretical computer science",
-    "affiliation": "",
+    "affiliation": "伊利诺伊大学厄巴纳-香槟分校",
     "country": "Belgium",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Bourgain%20(vertical%20crop).jpg",
     "wikidata": "Q260802",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/mathematical-sciences/year-of-laureates/2010-mathematical-sciences"
@@ -49174,7 +49600,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "以表彰他在数学分析方面的工作与其在多项学科上的应用：偏微分方程、数学物理、组合学、数论、遍历理论与理论计算机科学。"
+    "discovery": "以表彰他在数学分析方面的工作与其在多项学科上的应用：偏微分方程、数学物理、组合学、数论、遍历理论与理论计算机科学。",
+    "cn": "讓·布爾甘",
+    "birthYear": "1954",
+    "deathYear": "2018"
   },
   {
     "id": "wolf-math-2010-shing-tung-yau",
@@ -49185,9 +49614,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his work in geometric analysis that has had a profound and dramatic impact on many areas of geometry and physics",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shing-Tung%20Yau.jpg",
     "wikidata": "Q334760",
     "links": [
       "https://wolffund.org.il/shing-tung-yau/"
@@ -49206,7 +49635,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因其在几何分析方面的工作，这些工作对几何与物理的许多领域产生了深刻而显著的影响"
+    "discovery": "因其在几何分析方面的工作，这些工作对几何与物理的许多领域产生了深刻而显著的影响",
+    "cn": "丘成桐",
+    "birthYear": "1949"
   },
   {
     "id": "wolf-math-2010-dennis-sullivan",
@@ -49251,7 +49682,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their leadership of the Wilkinson Microwave Anisotropy Probe (WMAP) experiment, which has enabled precise determinations of the fundamental cosmological parameters, including the geometry, age and composition of the universe",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Spergel.jpg",
     "wikidata": "Q744057",
@@ -49283,7 +49714,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their leadership of the Wilkinson Microwave Anisotropy Probe (WMAP) experiment, which has enabled precise determinations of the fundamental cosmological parameters, including the geometry, age and composition of the universe",
-    "affiliation": "",
+    "affiliation": "约翰斯·霍普金斯大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20L.%20Bennett.jpg",
     "wikidata": "Q1065219",
@@ -49315,7 +49746,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for their leadership of the Wilkinson Microwave Anisotropy Probe (WMAP) experiment, which has enabled precise determinations of the fundamental cosmological parameters, including the geometry, age and composition of the universe",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/LymanPage1.JPG",
     "wikidata": "Q1878725",
@@ -49444,7 +49875,7 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For their development of unprecedented methods to control matter on the nanoscale",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Don%20Eigler%20Neon%20Argon.jpg",
     "wikidata": "Q556926",
@@ -49475,7 +49906,7 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For their development of unprecedented methods to control matter on the nanoscale",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nadrian%20Seeman.jpg",
     "wikidata": "Q6593045",
@@ -49508,7 +49939,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their fundamental conceptual and experimental contributions to the foundations of quantum physics, specifically an increasingly sophisticated series of tests of Bell's inequalities or extensions there of using entangled quantum states",
-    "affiliation": "",
+    "affiliation": "维也纳科技大学",
     "country": "Austria",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/A.%20Zeilinger%20(cropped).jpg",
     "wikidata": "Q78610",
@@ -49545,7 +49976,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their fundamental conceptual and experimental contributions to the foundations of quantum physics, specifically an increasingly sophisticated series of tests of Bell's inequalities or extensions there of using entangled quantum states",
-    "affiliation": "",
+    "affiliation": "卡尚高等师范学校",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alain%20Aspect%20(26341660894)%20(cropped).jpg",
     "wikidata": "Q364997",
@@ -49582,7 +50013,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their fundamental conceptual and experimental contributions to the foundations of quantum physics, specifically an increasingly sophisticated series of tests of Bell's inequalities or extensions there of using entangled quantum states",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Francis%20Clauser%20(cropped).jpg",
     "wikidata": "Q1365270",
@@ -49619,7 +50050,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2010 Cosmology Prize to Charles Steidel for groundbreaking studies of the distant Universe",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1063883",
@@ -49651,7 +50082,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his seminal discoveries of molecular mechanisms by which the skin senses painful stimuli and temperature and produces pain hypersensitivity",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Davidjuliuswithsnake.jpg",
     "wikidata": "Q1174906",
@@ -49693,7 +50124,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering the molecular basis of neurotransmitter release",
-    "affiliation": "",
+    "affiliation": "哥廷根大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20c%20s%C3%BCdhof.jpg",
     "wikidata": "Q97270",
@@ -49735,7 +50166,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering the molecular basis of neurotransmitter release",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Edward%20Rothman.jpg",
     "wikidata": "Q444270",
@@ -49777,7 +50208,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discovering the molecular basis of neurotransmitter release",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Scheller%2C%201980.jpg",
     "wikidata": "Q1283653",
@@ -49861,7 +50292,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2010 Genetics Prize to Gerald R. Fink, a founder of modern yeast genetics and a leader in the use of model-organism genetics to study diverse biological problems",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1393576",
@@ -49944,9 +50375,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his revolutionary contributions to geometry",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mikhael%20Gromov.jpg",
     "wikidata": "Q353451",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2009"
@@ -49965,7 +50396,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对几何学的革命性贡献"
+    "discovery": "因对几何学的革命性贡献",
+    "cn": "米哈伊尔·格罗莫夫",
+    "birthYear": "1943"
   },
   {
     "id": "turing-2009-charles-p-thacker",
@@ -50011,7 +50444,7 @@ const awards = [
     "motivation": "for their many brilliant contributions to geometry in 3 and 4 dimensions",
     "affiliation": "",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Simon%20Donaldson.jpg",
     "wikidata": "Q334039",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/mathematical-sciences/year-of-laureates/2009-mathematical-sciences"
@@ -50030,7 +50463,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "以表彰他们对於3维与4维几何学的卓越贡献。"
+    "discovery": "以表彰他们对於3维与4维几何学的卓越贡献。",
+    "cn": "西蒙·唐纳森",
+    "birthYear": "1957"
   },
   {
     "id": "shaw-math-2009-clifford-taubes",
@@ -50041,7 +50476,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their many brilliant contributions to geometry in 3 and 4 dimensions",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Clifford%20Taubes%202010.jpg",
     "wikidata": "Q544991",
@@ -50075,7 +50510,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "in recognition of his outstanding life-time contributions in theoretical astronomy",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Frank%20Hsia-San%20Shu%2C%20the%20Fellow%20of%20Academia%20Sinica.JPG",
     "wikidata": "Q716516",
@@ -50108,7 +50543,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. Peter Raymond Grant and Dr. Barbara Rosemary Grant have conducted the long-term field study more than thirty-five years since 1973, on Darwin’s finches on the Galápagos Islands, and demonstrated that morphology and behavior of organisms are altered rapidly by natural selection in response to environmental fluctuations. Their detailed work of evolutionary mechanisms has not only made enormous contributions to evolutionary biology and ecology, but also has had a profound influence on the general public through demonstrating the evolution by natural selection in the field",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "",
     "photo": "",
     "wikidata": "Q3657692",
@@ -50144,7 +50579,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2009 Cosmology Prize to Wendy Freedman, Robert Kennicutt and Jeremy Mould for the definitive measurement of the rate of expansion of the universe, Hubble's Constant",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1360581",
@@ -50176,7 +50611,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2009 Cosmology Prize to Wendy Freedman, Robert Kennicutt and Jeremy Mould for the definitive measurement of the rate of expansion of the universe, Hubble's Constant",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "Australia",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeremy%20Mould%20at%20Kitt%20Peak%20National%20Observatory%20(cropped).jpg",
     "wikidata": "Q1687610",
@@ -50283,7 +50718,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their work leading to the discovery of leptin, a hormone that regulates food intake and body weight",
-    "affiliation": "",
+    "affiliation": "洛克菲勒大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeffrey%20M.%20Friedman.jpg",
     "wikidata": "Q505055",
@@ -50325,7 +50760,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2009 Genetics Prize to Janet Davison Rowley, a founder of the field of cancer cytogenetics and a renowned leader in molecular oncology",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Janet%20Rowley%202009.jpg",
     "wikidata": "Q436109",
@@ -50368,7 +50803,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2009 Neuroscience Prize to Jeffrey Hall, Michael Rosbash, and Michael Young for pioneering discoveries of molecular mechanisms that control circadian rhythms in the nervous system",
-    "affiliation": "",
+    "affiliation": "布兰戴斯大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Rosbash%2C%202017%20Nobel%20Laureate%20in%20Medicine%20(cropped).jpg",
     "wikidata": "Q1297741",
@@ -50410,7 +50845,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2009 Neuroscience Prize to Jeffrey Hall, Michael Rosbash, and Michael Young for pioneering discoveries of molecular mechanisms that control circadian rhythms in the nervous system",
-    "affiliation": "",
+    "affiliation": "布兰戴斯大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jeffrey%20C.%20Hall%20D81%204349%20(25006040668).jpg",
     "wikidata": "Q1686435",
@@ -50452,7 +50887,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2009 Neuroscience Prize to Jeffrey Hall, Michael Rosbash, and Michael Young for pioneering discoveries of molecular mechanisms that control circadian rhythms in the nervous system",
-    "affiliation": "",
+    "affiliation": "德克薩斯州大學奧斯汀分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20W.%20Young%20D81%204345%20(38162439194).jpg",
     "wikidata": "Q1929672",
@@ -50494,9 +50929,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their profound achievements in algebra and in particular for shaping modern group theory",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Griggs%20Thompson.jpg",
     "wikidata": "Q313168",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2008"
@@ -50515,7 +50950,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在代数学中的深刻成就，特别是对现代群论的塑造"
+    "discovery": "因在代数学中的深刻成就，特别是对现代群论的塑造",
+    "cn": "約翰·格里格斯·湯普森",
+    "birthYear": "1932"
   },
   {
     "id": "abel-2008-jacques-tits",
@@ -50526,9 +50963,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their profound achievements in algebra and in particular for shaping modern group theory",
-    "affiliation": "",
+    "affiliation": "波恩大学",
     "country": "Belgium",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques%20Tits%20(2008)%20(cropped).jpg",
     "wikidata": "Q451331",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2008"
@@ -50547,7 +50984,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在代数学中的深刻成就，特别是对现代群论的塑造"
+    "discovery": "因在代数学中的深刻成就，特别是对现代群论的塑造",
+    "cn": "雅克·蒂茨",
+    "birthYear": "1930",
+    "deathYear": "2021"
   },
   {
     "id": "turing-2008-barbara-liskov",
@@ -50558,7 +50998,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For contributions to practical and theoretical foundations of programming language and system design, especially related to data abstraction, fault tolerance, and distributed computing",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Turing%20Centenary%20Celebration%20Liskov.jpg",
     "wikidata": "Q16080922",
@@ -50592,7 +51032,7 @@ const awards = [
     "motivation": "for their widespread and influential contributions to Mathematical Physics",
     "affiliation": "",
     "country": "Russia",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vladimir%20Arnold-1.jpg",
     "wikidata": "Q157642",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/mathematical-sciences/year-of-laureates/2008-mathematical-sciences"
@@ -50611,7 +51051,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "以表彰他们对数学物理广泛及富影响力的贡献"
+    "discovery": "以表彰他们对数学物理广泛及富影响力的贡献",
+    "cn": "弗拉基米爾·阿諾爾德",
+    "birthYear": "1937",
+    "deathYear": "2010"
   },
   {
     "id": "shaw-math-2008-ludvig-faddeev",
@@ -50657,9 +51100,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his work on algebraic surfaces, on geometric invariant theory, and for laying the foundations of the modern algebraic theory of moduli of curves and theta functions",
-    "affiliation": "",
+    "affiliation": "布朗大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Mumford.jpg",
     "wikidata": "Q334021",
     "links": [
       "https://wolffund.org.il/david-b-mumford/"
@@ -50678,7 +51121,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在代数曲面、几何不变量理论上的工作，以及为曲线模与 θ 函数的现代代数理论奠定基础"
+    "discovery": "因在代数曲面、几何不变量理论上的工作，以及为曲线模与 θ 函数的现代代数理论奠定基础",
+    "cn": "戴维·芒福德",
+    "birthYear": "1937"
   },
   {
     "id": "wolf-math-2008-pierre-deligne",
@@ -50691,7 +51136,7 @@ const awards = [
     "motivation": "for his work on mixed Hodge theory, the Weil conjectures, the Riemann-Hilbert correspondence, and for his contributions to arithmetic",
     "affiliation": "",
     "country": "Belgium",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre%20Deligne%20(2005)%20(cropped).jpg",
     "wikidata": "Q334045",
     "links": [
       "https://wolffund.org.il/pierre-r-deligne/"
@@ -50710,7 +51155,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在混合霍奇理论、韦伊猜想、黎曼-希尔伯特对应上的工作，以及对算术的贡献"
+    "discovery": "因在混合霍奇理论、韦伊猜想、黎曼-希尔伯特对应上的工作，以及对算术的贡献",
+    "cn": "皮埃尔·德利涅",
+    "birthYear": "1944"
   },
   {
     "id": "wolf-math-2008-phillip-griffiths",
@@ -50721,7 +51168,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his work on variations of Hodge structures, the theory of periods of abelian integrals, and for his contributions to complex differential geometry",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Philip%20Griffiths.jpeg",
     "wikidata": "Q1385013",
@@ -50755,7 +51202,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "in recognition of his outstanding contributions in demonstrating that the Milky Way contains a supermassive black hole at its centre",
-    "affiliation": "",
+    "affiliation": "慕尼黑大学",
     "country": "Germany",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Reinhard%20Genzel.jpg",
     "wikidata": "Q65807",
@@ -50787,7 +51234,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For their seminal contributions to understanding the nature of quasars",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Maarten%20Schmidt%201978.png",
     "wikidata": "Q547240",
@@ -50820,7 +51267,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "For their seminal contributions to understanding the nature of quasars",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Donald%20Lynden-Bell.jpg",
     "wikidata": "Q1240090",
@@ -50853,7 +51300,7 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For their large impact in the development of the nanoscience field of the zero and one-dimensional nanostructures in physics, chemistry, and biology",
-    "affiliation": "",
+    "affiliation": "哥倫比亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis%20E%20Brus.jpg",
     "wikidata": "Q194646",
@@ -50886,7 +51333,7 @@ const awards = [
     "star": "physics",
     "domain": "材料与能源",
     "motivation": "For their large impact in the development of the nanoscience field of the zero and one-dimensional nanostructures in physics, chemistry, and biology",
-    "affiliation": "",
+    "affiliation": "名古屋大學",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Iijima.jpg",
     "wikidata": "Q1349968",
@@ -50918,7 +51365,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. Anthony James Pawson discovered a new mechanism of intracellular signal transduction, revealing an important molecular infrastructure that controls cellular growth and differentiation",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
     "photo": "",
     "wikidata": "Q573751",
@@ -50942,7 +51389,10 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "Anthony James Pawson 博士发现了一种细胞内信号转导的新机制，揭示出控制细胞生长与分化的重要分子基础架构"
+    "discovery": "Anthony James Pawson 博士发现了一种细胞内信号转导的新机制，揭示出控制细胞生长与分化的重要分子基础架构",
+    "cn": "安东尼·鲍森",
+    "birthYear": "1952",
+    "deathYear": "2013"
   },
   {
     "id": "gruber-cosmo-2008-j-richard-bond",
@@ -50953,7 +51403,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The 2008 Peter and Patricia Gruber Foundation Cosmology Prize is presented to J. Richard Bond for contributions to our understanding of the development of structures in the Universe",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr%20J%20Richard%20Bond%20(iau0805a).jpg",
     "wikidata": "Q1676381",
@@ -51028,7 +51478,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their recent pivotal innovations in reversing the process of cell differentiation in mammals, a phenomenon which advances our knowledge of developmental biology and holds great promise for the treatment of human diseases and improvements in agriculture practices",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shinya%20Yamanaka%2020141226.jpg",
     "wikidata": "Q80917",
@@ -51113,7 +51563,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discoveries on the developmental and functional logic of neuronal circuits",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Pasko%20Rakic%20ForMemRS.jpg",
     "wikidata": "Q532002",
@@ -51195,7 +51645,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "For discoveries on the developmental and functional logic of neuronal circuits",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q2425113",
@@ -51323,7 +51773,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2008 Genetics Prize to Allan C. Spradling, a leader in developmental genetics and stem cell biology",
-    "affiliation": "",
+    "affiliation": "约翰斯·霍普金斯大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q2647938",
@@ -51365,7 +51815,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2008 Neuroscience Prize to John O'Keefe for pioneering work concerning the neural basis of complex cognitive functions in freely moving animals",
-    "affiliation": "",
+    "affiliation": "倫敦大學學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20O'Keefe%20(neuroscientist)%202014.jpg",
     "wikidata": "Q1701279",
@@ -51407,7 +51857,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental contributions to probability theory and in particular for creating a unified theory of large deviations",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Srinivasa%20Varadhan%20Heidelberg.JPG",
     "wikidata": "Q370247",
@@ -51473,7 +51923,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "Together with E. Allen Emerson and Joseph Sifakis, for their role in developing Model-Checking into a highly effective verification technology that is widely adopted in the hardware and software industries",
-    "affiliation": "",
+    "affiliation": "杜克大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Edmund%20Clarke%20FLoC%202006.jpg",
     "wikidata": "Q92819",
@@ -51506,7 +51956,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "for their role in developing Model-Checking into a highly effective verification technology that is widely adopted in the hardware and software industries",
-    "affiliation": "",
+    "affiliation": "德克薩斯州大學奧斯汀分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/E-allen-emerson%20(3x4%20cropped).jpg",
     "wikidata": "Q92821",
@@ -51539,9 +51989,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for initiating and developing a grand unifying vision of mathematics that connects prime numbers with symmetry",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Canada",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Langlands2.jpg",
     "wikidata": "Q711278",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/mathematical-sciences/year-of-laureates/2007-mathematical-sciences"
@@ -51560,7 +52010,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "以表彰他们开展了一个集大成的数学体系，连结素数及对称性。"
+    "discovery": "以表彰他们开展了一个集大成的数学体系，连结素数及对称性。",
+    "cn": "罗伯特·朗兰兹",
+    "birthYear": "1936"
   },
   {
     "id": "shaw-math-2007-richard-taylor",
@@ -51571,7 +52023,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for initiating and developing a grand unifying vision of mathematics that connects prime numbers with symmetry",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Taylor%20(mathematician).jpg",
     "wikidata": "Q712170",
@@ -51605,9 +52057,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his groundbreaking contributions that have played a fundamental role in shaping differential topology, dynamical systems, mathematical economics, and other subjects in mathematics",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephen%20Smale%2C%202008%20(cropped).jpg",
     "wikidata": "Q315394",
     "links": [
       "https://wolffund.org.il/stephen-smale/"
@@ -51626,7 +52078,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因其开创性贡献，这些贡献在塑造微分拓扑、动力系统、数理经济学及数学其他学科方面发挥了根本性作用"
+    "discovery": "因其开创性贡献，这些贡献在塑造微分拓扑、动力系统、数理经济学及数学其他学科方面发挥了根本性作用",
+    "cn": "斯蒂芬·斯梅爾",
+    "birthYear": "1930"
   },
   {
     "id": "wolf-math-2007-hillel-furstenberg",
@@ -51671,7 +52125,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "in recognition of his lifetime achievements in theoretical astrophysics and planetary sciences",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/PeterGoldreich1980.jpg",
     "wikidata": "Q1351673",
@@ -51703,7 +52157,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. Hiroo Kanamori has made an epoch-making progress on the study of great earthquakes by establishing analytical method to understand quantitatively all over the process of a great earthquake making full use of seismogram. This study has ushered in a new era in seismology and had a significant impact on the development of earth sciences. He has made practical proposals on how to mitigate earthquake hazards based on the knowledge gained through basic studies and contributed to building up and conducting earthquake hazard mitigation systems",
-    "affiliation": "",
+    "affiliation": "东京大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hiroo%20Kanamori%20by%20Christopher%20Michel%20in%202022%2001.jpg",
     "wikidata": "Q943693",
@@ -51740,9 +52194,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2007 Cosmology Prize to Saul Perlmutter and Brian Schmidt, and to the Supernova Cosmology Project and the High-z Supernova Search teams, for their discovery that the expansion of the Universe is currently accelerating",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Press%20Conference%20KVA-DSC%207744.jpg",
     "wikidata": "Q106949",
     "links": [
       "https://gruber.yale.edu/cosmology-laureates"
@@ -51759,7 +52213,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "彼得与帕特里夏·格鲁伯基金会将 2007 年宇宙学奖授予 Saul Perlmutter 与 Brian Schmidt，以及超新星宇宙学计划（Supernova Cosmology Project）与高红移超新星搜寻（High-z Supernova Search）团队，因其发现宇宙膨胀当前正在加速"
+    "discovery": "彼得与帕特里夏·格鲁伯基金会将 2007 年宇宙学奖授予 Saul Perlmutter 与 Brian Schmidt，以及超新星宇宙学计划（Supernova Cosmology Project）与高红移超新星搜寻（High-z Supernova Search）团队，因其发现宇宙膨胀当前正在加速",
+    "cn": "索尔·珀尔马特",
+    "birthYear": "1959"
   },
   {
     "id": "gruber-cosmo-2007-brian-schmidt",
@@ -51770,9 +52226,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2007 Cosmology Prize to Saul Perlmutter and Brian Schmidt, and to the Supernova Cosmology Project and the High-z Supernova Search teams, for their discovery that the expansion of the Universe is currently accelerating",
-    "affiliation": "",
+    "affiliation": "斯壯羅山天文台",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Brian%20Schmidt%20portrait%201.jpg",
     "wikidata": "Q201452",
     "links": [
       "https://gruber.yale.edu/cosmology-laureates"
@@ -51789,7 +52245,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "彼得与帕特里夏·格鲁伯基金会将 2007 年宇宙学奖授予 Saul Perlmutter 与 Brian Schmidt，以及超新星宇宙学计划（Supernova Cosmology Project）与高红移超新星搜寻（High-z Supernova Search）团队，因其发现宇宙膨胀当前正在加速"
+    "discovery": "彼得与帕特里夏·格鲁伯基金会将 2007 年宇宙学奖授予 Saul Perlmutter 与 Brian Schmidt，以及超新星宇宙学计划（Supernova Cosmology Project）与高红移超新星搜寻（High-z Supernova Search）团队，因其发现宇宙膨胀当前正在加速",
+    "cn": "布莱恩·施密特",
+    "birthYear": "1967"
   },
   {
     "id": "gruber-cosmo-2007-supernova-cosmology-project",
@@ -51893,7 +52351,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his relentless elucidation of the major receptor system that mediates the response of cells and organs to drugs and hormones",
-    "affiliation": "",
+    "affiliation": "杜克大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Lefkowitz%201%202012%20(cropped).jpg",
     "wikidata": "Q80910",
@@ -51935,7 +52393,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2007 Genetics Prize to Maynard V. Olson, a founder of the field of genomics",
-    "affiliation": "",
+    "affiliation": "華盛頓大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Maynard%20Olson%2C%202017.jpg",
     "wikidata": "Q92732",
@@ -51977,7 +52435,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter and Patricia Gruber Foundation presents the 2007 Neuroscience Prize to Shigetada Nakanishi, who developed tools that enabled him and others to probe fundamental molecular mechanisms of nervous system function",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shigetada%20Nakanishi%20cropped%201%20Shigetada%20Nakanishi%20201511.png",
     "wikidata": "Q1467082",
@@ -52053,7 +52511,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his contributions to the development of stochastic Loewner evolution, the geometry of two-dimensional Brownian motion, and conformal field theory",
-    "affiliation": "",
+    "affiliation": "巴黎大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Wendelin%20Werner.jpg",
     "wikidata": "Q164369",
@@ -52087,7 +52545,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his contributions to partial differential equations, combinatorics, harmonic analysis and additive number theory",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Terence%20Tao%20at%20IPAM's%20Fireside%20Chat%202026%20(50m16s)%20(cropped).jpg",
     "wikidata": "Q295981",
@@ -52121,7 +52579,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his contributions bridging probability, representation theory and algebraic geometry",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrei%20Okounkov%202018.jpg",
     "wikidata": "Q315425",
@@ -52157,7 +52615,7 @@ const awards = [
     "motivation": "for his profound and seminal contributions to harmonic analysis and the theory of smooth dynamical systems",
     "affiliation": "",
     "country": "Sweden",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Carleson%20cropped.jpg",
     "wikidata": "Q343420",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2006"
@@ -52176,7 +52634,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对调和分析与光滑动力系统理论的深刻而奠基性的贡献"
+    "discovery": "因对调和分析与光滑动力系统理论的深刻而奠基性的贡献",
+    "cn": "里纳特·卡尔松",
+    "birthYear": "1928"
   },
   {
     "id": "turing-2006-frances-allen",
@@ -52187,7 +52647,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For pioneering contributions to the theory and practice of optimizing compiler techniques that laid the foundation for modern optimizing compilers and automatic parallel execution. press release",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Allen%20mg%202528-3750K-b.jpg",
     "wikidata": "Q9602",
@@ -52220,9 +52680,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for David Mumford's contributions to mathematics, and to the new interdisciplinary fields of pattern theory and vision research; and for Wentsun Wu's contributions to the new interdisciplinary field of mathematics mechanization",
-    "affiliation": "",
+    "affiliation": "布朗大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Mumford.jpg",
     "wikidata": "Q334021",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/mathematical-sciences/year-of-laureates/2006-mathematical-sciences"
@@ -52241,7 +52701,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "为表彰大卫・曼福德 (David Mumfords) 对数学, 与对二类新兴学科的贡献: 图案学与视觉学; 和为表彰吴文俊 (Wentsun Wu) 对一新兴学科的贡献: 数学的机器证明法。"
+    "discovery": "为表彰大卫・曼福德 (David Mumfords) 对数学, 与对二类新兴学科的贡献: 图案学与视觉学; 和为表彰吴文俊 (Wentsun Wu) 对一新兴学科的贡献: 数学的机器证明法。",
+    "cn": "戴维·芒福德",
+    "birthYear": "1937"
   },
   {
     "id": "shaw-math-2006-wu-wenjun",
@@ -52287,7 +52749,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for discovering that the expansion rate of the universe is accelerating, implying in the simplest interpretation that the energy density of space is non-vanishing even in the absence of any matter and radiation",
-    "affiliation": "",
+    "affiliation": "约翰斯·霍普金斯大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Press%20Conference%20KVA-DSC%207707.jpg",
     "wikidata": "Q106454",
@@ -52319,7 +52781,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for discovering that the expansion rate of the universe is accelerating, implying in the simplest interpretation that the energy density of space is non-vanishing even in the absence of any matter and radiation",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Press%20Conference%20KVA-DSC%207744.jpg",
     "wikidata": "Q106949",
@@ -52351,7 +52813,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for discovering that the expansion rate of the universe is accelerating, implying in the simplest interpretation that the energy density of space is non-vanishing even in the absence of any matter and radiation",
-    "affiliation": "",
+    "affiliation": "斯壯羅山天文台",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Brian%20Schmidt%20portrait%201.jpg",
     "wikidata": "Q201452",
@@ -52383,7 +52845,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "In the early 1970s, Dr. Hirotugu Akaike formulated the Akaike Information Criterion (AIC), a new practical, yet versatile criterion for the selection of statistical models, based on fundamental concepts of information mathematics. This criterion established a new paradigm that bridged the world of data and the world of modeling, thus contributing greatly to the information and statistical sciences",
-    "affiliation": "",
+    "affiliation": "综合研究大学院大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Akaike.jpg",
     "wikidata": "Q2559832",
@@ -52421,7 +52883,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their independent discovery of the giant magnetoresistance phenomenon (GMR), thereby launching a new field of research and applications known as spintronics, which utilizes the spin of the electron to store and transport information",
-    "affiliation": "",
+    "affiliation": "科隆大学",
     "country": "Germany",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Gruenberg%2001.jpg",
     "wikidata": "Q57120",
@@ -52459,7 +52921,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their independent discovery of the giant magnetoresistance phenomenon (GMR), thereby launching a new field of research and applications known as spintronics, which utilizes the spin of the electron to store and transport information",
-    "affiliation": "",
+    "affiliation": "巴黎第十一大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Albert%20fert%2015%20janvier%202009%20Spintronique%20Paris%20Descartes.JPG",
     "wikidata": "Q153219",
@@ -52496,7 +52958,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter Gruber Foundation presents the 2006 Cosmology Prize to John Mather and the COBE team for ground-breaking studies of the spectrum and spatial structure of the relic radiation from the Big Bang",
-    "affiliation": "",
+    "affiliation": "马里兰大学科利奇帕克分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John-C-Mather.jpg",
     "wikidata": "Q104651",
@@ -52600,7 +53062,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2006 Genetics Prize to Elizabeth H. Blackburn for telomeres and telomerase",
-    "affiliation": "",
+    "affiliation": "牛津大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Elizabeth%20Blackburn%202009-01.JPG",
     "wikidata": "Q26321",
@@ -52642,7 +53104,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2006 Neuroscience Prize to Masao Ito and Roger Nicoll, whose studies provided the keys for our understanding of the molecular and cellular bases of learning and memory",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1318548",
@@ -52683,7 +53145,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2006 Neuroscience Prize to Masao Ito and Roger Nicoll, whose studies provided the keys for our understanding of the molecular and cellular bases of learning and memory",
-    "affiliation": "",
+    "affiliation": "东京大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Masao%20Ito%20Color.jpg",
     "wikidata": "Q1660659",
@@ -52726,9 +53188,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his groundbreaking contributions to the theory and application of partial differential equations and to the computation of their solutions",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "Hungary",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Lax%20in%20Tokyo.jpg",
     "wikidata": "Q323331",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2005"
@@ -52747,7 +53209,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对偏微分方程的理论与应用以及其解的计算作出开创性贡献"
+    "discovery": "因对偏微分方程的理论与应用以及其解的计算作出开创性贡献",
+    "cn": "彼得·拉克斯",
+    "birthYear": "1926",
+    "deathYear": "2025"
   },
   {
     "id": "turing-2005-peter-naur",
@@ -52791,7 +53256,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his proof of Fermat's Last Theorem",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20wiles1-3.jpg",
     "wikidata": "Q184433",
@@ -52825,9 +53290,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his monumental contributions to algebra, in particular to the theory of lattices in semi-simple Lie groups, and striking applications of this to ergodic theory, representation theory, number theory, combinatorics and measure theory",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grigory%20Margulis%20(2006).jpg",
     "wikidata": "Q325705",
     "links": [
       "https://wolffund.org.il/gregory-a-margulis/"
@@ -52846,7 +53311,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对代数的里程碑式贡献，特别是对半单李群中格的理论的贡献，以及由此在遍历论、表示论、数论、组合数学与测度论中的卓著应用"
+    "discovery": "因对代数的里程碑式贡献，特别是对半单李群中格的理论的贡献，以及由此在遍历论、表示论、数论、组合数学与测度论中的卓著应用",
+    "cn": "格列戈里·馬爾古利斯",
+    "birthYear": "1946"
   },
   {
     "id": "wolf-math-2005-sergei-novikov",
@@ -52878,7 +53345,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对代数拓扑与微分拓扑以及数学物理的奠基性和开创性贡献，尤其是引入了代数几何方法"
+    "discovery": "因对代数拓扑与微分拓扑以及数学物理的奠基性和开创性贡献，尤其是引入了代数几何方法",
+    "cn": "謝爾蓋·彼得羅維奇·諾維科夫",
+    "birthYear": "1938",
+    "deathYear": "2024"
   },
   {
     "id": "shaw-astro-2005-michel-mayor",
@@ -52889,7 +53359,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for finding and characterizing the orbits and masses of the first planets around other stars, thereby revolutionizing our understanding of the processes that form planets and planetary systems",
-    "affiliation": "",
+    "affiliation": "日內瓦天文台",
     "country": "Switzerland",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel%20Mayor%20astrophysicien.JPG",
     "wikidata": "Q123975",
@@ -52921,7 +53391,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for finding and characterizing the orbits and masses of the first planets around other stars, thereby revolutionizing our understanding of the processes that form planets and planetary systems",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Geoffrey%20Marcy.jpg",
     "wikidata": "Q736811",
@@ -52990,7 +53460,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for groundbreaking work in atomic physics of hydrogenic systems, including research on the hydrogen maser, Rydberg atoms and Bose-Einstein condensation",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q530123",
@@ -53028,7 +53498,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter Gruber Foundation presents the 2005 Cosmology Prize to James Gunn, for his central contributions to the theoretical, observational and instrumental development of modern cosmology",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/JamesEGunn2000.jpg",
     "wikidata": "Q1152925",
@@ -53060,7 +53530,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his discoveries on calcium signalling in the regulation of cellular activity",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q1499435",
@@ -53089,7 +53559,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "为表彰他发现调控细胞的运作中钙的关键作用。"
+    "discovery": "为表彰他发现调控细胞的运作中钙的关键作用。",
+    "cn": "迈克尔·贝里奇",
+    "birthYear": "1938",
+    "deathYear": "2020"
   },
   {
     "id": "wolf-med-2005-alexander-levitzki",
@@ -53142,7 +53615,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his discovery of protein domains essential for mediating protein-protein interactions in cellular signaling pathways, and the insights this research has provided into cancer",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
     "photo": "",
     "wikidata": "Q573751",
@@ -53227,7 +53700,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2005 Genetics Prize to Robert Hugh Waterston, a pioneer in the field of genomics",
-    "affiliation": "",
+    "affiliation": "華盛頓大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr%20Robert%20Waterston%2C%20director%20of%20the%20Genome%20Sequencing%20Cente.jpg",
     "wikidata": "Q1111128",
@@ -53269,7 +53742,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2005 Neuroscience Prize to Masakazu Konishi and Eric Knudsen, whose studies provided the keys for our understanding of the basis of sound localization and neural plasticity in the auditory system",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q1351385",
@@ -53310,7 +53783,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2005 Neuroscience Prize to Masakazu Konishi and Eric Knudsen, whose studies provided the keys for our understanding of the basis of sound localization and neural plasticity in the auditory system",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "Japan",
     "photo": "",
     "wikidata": "Q1906715",
@@ -53353,9 +53826,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their discovery and proof of the index theorem, bringing together topology, geometry and analysis, and their outstanding role in building new bridges between mathematics and theoretical physics",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "United Kingdom",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Francis%20Atiyah.jpg",
     "wikidata": "Q208356",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2004"
@@ -53374,7 +53847,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因发现并证明了指标定理，将拓扑学、几何学与分析学融汇一体，以及在数学与理论物理之间架设新桥梁中的杰出作用"
+    "discovery": "因发现并证明了指标定理，将拓扑学、几何学与分析学融汇一体，以及在数学与理论物理之间架设新桥梁中的杰出作用",
+    "cn": "迈克尔·阿蒂亚",
+    "birthYear": "1929",
+    "deathYear": "2019"
   },
   {
     "id": "abel-2004-isadore-singer",
@@ -53385,7 +53861,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for their discovery and proof of the index theorem, bringing together topology, geometry and analysis, and their outstanding role in building new bridges between mathematics and theoretical physics",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Isadore%20Singer%201977%20(re-scanned%202%3B%20border-less)%20(cleaned).jpg",
     "wikidata": "Q353407",
@@ -53420,7 +53896,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "With Vinton Cerf, for pioneering work on internetworking, including the design and implementation of the Internet's basic communications protocols, TCP/IP, and for inspired leadership in networking",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bob%20Kahn.jpg",
     "wikidata": "Q62843",
@@ -53484,9 +53960,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his initiation of the field of global differential geometry and his continued leadership of the field, resulting in beautiful developments that are at the centre of contemporary mathematics, with deep connections to topology, algebra and analysis, in short, to all major branches of mathematics of the last sixty years",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shiing-shen%20Chern%201988%20(re-scanned).jpg",
     "wikidata": "Q328131",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/mathematical-sciences/year-of-laureates/2004-mathematical-sciences"
@@ -53505,7 +53981,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "以表彰他开辟整体微分几何学的成就，以及他对这个数学范畴一直以来的领导。整体微分几何学的精妙发展占著当代数学的核心，与拓朴学、代数学和分析学，简而言之，与过去六十年数学的所有主要范畴都有密切关连。"
+    "discovery": "以表彰他开辟整体微分几何学的成就，以及他对这个数学范畴一直以来的领导。整体微分几何学的精妙发展占著当代数学的核心，与拓朴学、代数学和分析学，简而言之，与过去六十年数学的所有主要范畴都有密切关连。",
+    "cn": "陈省身",
+    "birthYear": "1911",
+    "deathYear": "2004"
   },
   {
     "id": "shaw-astro-2004-jim-peebles",
@@ -53516,9 +53995,9 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "for his groundbreaking contribution to cosmology. He laid the foundations for almost all modern investigations in cosmology, both theoretical and observational, transforming a highly speculative field into a precision science",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Canada",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jim%20Peebles%202010.jpg",
     "wikidata": "Q728331",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/astronomy/year-of-laureates/2004-astronomy"
@@ -53535,7 +54014,9 @@ const awards = [
       "COS-009",
       "COS-010"
     ],
-    "discovery": "以表彰他一生对宇宙学的开创性贡献。现今宇宙学的理论与观测基础，差不多全部由他建立，本来纯为理论推测的学科亦因此脱胎成一门精确科学。"
+    "discovery": "以表彰他一生对宇宙学的开创性贡献。现今宇宙学的理论与观测基础，差不多全部由他建立，本来纯为理论推测的学科亦因此脱胎成一门精确科学。",
+    "cn": "吉姆·皮布尔斯",
+    "birthYear": "1935"
   },
   {
     "id": "kyoto-basic-2004-alfred-g-knudson",
@@ -53584,7 +54065,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for pioneering work that has led to the insight of mass generation, whenever a local gauge symmetry is realized asymmetrically in the world of sub-atomic particles",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "Belgium",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Francois%20Englert%20(3x4%20cropped).jpg",
     "wikidata": "Q151746",
@@ -53622,7 +54103,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for pioneering work that has led to the insight of mass generation, whenever a local gauge symmetry is realized asymmetrically in the world of sub-atomic particles",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Brout.jpg",
     "wikidata": "Q151833",
@@ -53660,7 +54141,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for pioneering work that has led to the insight of mass generation, whenever a local gauge symmetry is realized asymmetrically in the world of sub-atomic particles",
-    "affiliation": "",
+    "affiliation": "Royal Commission for the Exhibition of 1851",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%2024%202013.jpg",
     "wikidata": "Q192112",
@@ -53698,7 +54179,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter Gruber Foundation presents the 2004 Cosmology Prize to Alan Guth and Andrei Linde for their development of fundamental ideas of cosmic inflation",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/AlanGuthCambridge.jpg",
     "wikidata": "Q323316",
@@ -53730,7 +54211,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter Gruber Foundation presents the 2004 Cosmology Prize to Alan Guth and Andrei Linde for their development of fundamental ideas of cosmic inflation",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrei%20Linde.jpg",
     "wikidata": "Q368087",
@@ -53762,7 +54243,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "Prize One Laureates Half jointly to Stanley N Cohen & Herbert W Boyer for their discoveries on DNA cloning and genetic engineering Half to Yuet-Wai Kan for his discoveries on DNA polymorphism and its influence on human genetics. Prize Two to Laureate Richard Doll for his contribution to modern cancer epidemiology",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Herb%20Boyer.jpg",
     "wikidata": "Q354878",
@@ -53804,7 +54285,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "Prize One Laureates Half jointly to Stanley N Cohen & Herbert W Boyer for their discoveries on DNA cloning and genetic engineering Half to Yuet-Wai Kan for his discoveries on DNA polymorphism and its influence on human genetics. Prize Two to Laureate Richard Doll for his contribution to modern cancer epidemiology",
-    "affiliation": "",
+    "affiliation": "牛津大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Doll.jpg",
     "wikidata": "Q740803",
@@ -53847,9 +54328,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "Prize One Laureates Half jointly to Stanley N Cohen & Herbert W Boyer for their discoveries on DNA cloning and genetic engineering Half to Yuet-Wai Kan for his discoveries on DNA polymorphism and its influence on human genetics. Prize Two to Laureate Richard Doll for his contribution to modern cancer epidemiology",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanley%20Norman%20Cohen%20DSC%202027.jpg",
     "wikidata": "Q741299",
     "links": [
       "https://www.shawprize.org/en/prizes-laureates/life-science-and-medicine/year-of-laureates/2004-life-science-and-medicine"
@@ -53876,7 +54357,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "奖项一一半平均分配予史丹利．科恩 (Stanley N Cohen) 和 赫伯特・布瓦耶 (Herbert W Boyer)，以表扬他们发现去氧核糖核酸和基因无性繁殖技术。另一半颁予简悦威 (Yuet-Wai Kan)，以表扬他发现去氧核糖核酸的多形性及该发现对人类遗传学的影响。奖项二颁予理察．多尔 (Richard Doll)，以表扬他对现代癌病流行病学的贡献。"
+    "discovery": "奖项一一半平均分配予史丹利．科恩 (Stanley N Cohen) 和 赫伯特・布瓦耶 (Herbert W Boyer)，以表扬他们发现去氧核糖核酸和基因无性繁殖技术。另一半颁予简悦威 (Yuet-Wai Kan)，以表扬他发现去氧核糖核酸的多形性及该发现对人类遗传学的影响。奖项二颁予理察．多尔 (Richard Doll)，以表扬他对现代癌病流行病学的贡献。",
+    "cn": "斯坦利·诺曼·科恩",
+    "birthYear": "1935"
   },
   {
     "id": "shaw-life-2004-yuet-wai-kan",
@@ -53887,7 +54370,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "Prize One Laureates Half jointly to Stanley N Cohen & Herbert W Boyer for their discoveries on DNA cloning and genetic engineering Half to Yuet-Wai Kan for his discoveries on DNA polymorphism and its influence on human genetics. Prize Two to Laureate Richard Doll for his contribution to modern cancer epidemiology",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q2547334",
@@ -53929,7 +54412,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his seminal contribution to the design and biological application of novel fluorescent and photolabile molecules to analyze and perturb cell signal transduction",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Roger%20Tsien-press%20conference%20Dec%2007th%2C%202008-2.jpg",
     "wikidata": "Q200470",
@@ -53972,7 +54455,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his discovery that cancer cells including human tumor cells, carry somatically mutated genes-oncogenes that operate to drive their malignant proliferation",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q701506",
@@ -54014,7 +54497,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2004 Genetics Prize to Mary-Claire King, for genetically locating a gene predisposing to breast cancer and pioneering the use of DNA testing in human rights",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mary-claire%20king.jpg",
     "wikidata": "Q437741",
@@ -54056,9 +54539,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2004 Neuroscience Prize to Seymour Benzer, who initiated genetic studies of behavioral neuroscience and led the way to discoveries of evolutionarily conserved mechanisms underlying circadian rhythm and neural induction",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Seymour%20Benzer.gif",
     "wikidata": "Q1975294",
     "links": [
       "https://gruber.yale.edu/neuroscience-laureates"
@@ -54085,7 +54568,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "彼得·格鲁伯基金会将 2004 年神经科学奖授予 Seymour Benzer，他开创了行为神经科学的遗传学研究，并引领了对昼夜节律与神经诱导背后进化保守机制的发现"
+    "discovery": "彼得·格鲁伯基金会将 2004 年神经科学奖授予 Seymour Benzer，他开创了行为神经科学的遗传学研究，并引领了对昼夜节律与神经诱导背后进化保守机制的发现",
+    "cn": "西摩·本泽",
+    "birthYear": "1921",
+    "deathYear": "2007"
   },
   {
     "id": "abel-2003-jean-pierre-serre",
@@ -54096,9 +54582,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for playing a key role in shaping the modern form of many parts of mathematics, including topology, algebraic geometry and number theory",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Pierre%20Serre%20(2009)%20cropped.jpg",
     "wikidata": "Q212063",
     "links": [
       "https://abelprize.no/abel-prize-laureates/2003"
@@ -54117,7 +54603,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在塑造数学诸多分支（包括拓扑学、代数几何与数论）的现代形态中发挥关键作用"
+    "discovery": "因在塑造数学诸多分支（包括拓扑学、代数几何与数论）的现代形态中发挥关键作用",
+    "cn": "讓-皮埃爾·塞爾",
+    "birthYear": "1926"
   },
   {
     "id": "turing-2003-alan-kay",
@@ -54128,7 +54616,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For pioneering many of the ideas at the root of contemporary object-oriented programming languages, leading the team that developed Smalltalk, and for fundamental contributions to personal computing",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alan%20Kay%20(3097597186)%20(cropped).jpg",
     "wikidata": "Q92742",
@@ -54160,7 +54648,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his creation of 'algebraic analysis', including hyperfunction and microfunction theory ,holonomic quantum field theory, and a unified theory of soliton equations",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
     "photo": "",
     "wikidata": "Q556143",
@@ -54195,7 +54683,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "During his half-century of research on magnetohydrodynamic phenomena in the solar atmosphere and interstellar space, Professor Eugene Newman Parker has contributed to extending the frontiers of space science and astrophysics through the development of numerous theoretical concepts, not least among them the solar wind",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Dr.%20Eugene%20PKSC-20180809-PH%20KLS02%200003arker%20Speaks%20to%20Media%20(30123740568)%20(cropped).jpg",
     "wikidata": "Q503360",
@@ -54265,7 +54753,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2003 Genetics Prize to David Botstein, for contributions covering much of genetics: from methods of mutagenesis of bacteria and yeast, to analysis of bacteriophage assembly and eukaryotic cell biology, to principles of the application of genetic polymorphisms for mapping the human genome",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Plos%20botstein.jpg",
     "wikidata": "Q1173787",
@@ -54377,7 +54865,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "for their ingenious contribution to making public-key cryptography useful in practice",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "Israel",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Adi%20Shamir%20at%20TU%20Darmstadt%20(2013).jpg",
     "wikidata": "Q320624",
@@ -54409,7 +54897,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "Together with Leonard M. Adleman and Adi Shamir, for their ingenious contribution to making public-key cryptography useful in practice",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Corrado%20Giustozzi%20e%20Ron%20Rivest%201999.jpg",
     "wikidata": "Q578036",
@@ -54441,7 +54929,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "Together with Ronald Rivest and Adi Shamir, for their ingenious contribution to making public-key cryptography useful in practice",
-    "affiliation": "",
+    "affiliation": "南加州大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Len-mankin-pic.jpg",
     "wikidata": "Q918650",
@@ -54473,7 +54961,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his creation of fundamental concepts in algebraic number theory",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Tate.jpg",
     "wikidata": "Q351822",
@@ -54508,9 +54996,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Professor Mikhael L. Gromov’s original insights integrate a variety of fields, including geometry, algebra, and analysis, and have had a substantial impact on all the mathematical sciences.Through the application of innovative ideas and radical nontraditional mathematical methods, he has made major breakthroughs that solve numerous complicated problems in modern geometry",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mikhael%20Gromov.jpg",
     "wikidata": "Q353451",
     "links": [
       "https://www.kyotoprize.org/en/laureates/mikhael_leonidovich_gromov/"
@@ -54532,7 +55020,9 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "Mikhael L. Gromov 教授的原创性洞见整合了几何、代数与分析等多个领域，对整个数理科学产生了实质性影响。通过运用创新的思想与彻底非传统的数学方法，他取得了重大突破，解决了现代几何中众多复杂问题"
+    "discovery": "Mikhael L. Gromov 教授的原创性洞见整合了几何、代数与分析等多个领域，对整个数理科学产生了实质性影响。通过运用创新的思想与彻底非传统的数学方法，他取得了重大突破，解决了现代几何中众多复杂问题",
+    "cn": "米哈伊尔·格罗莫夫",
+    "birthYear": "1943"
   },
   {
     "id": "wolf-physics-2002-anthony-james-leggett",
@@ -54543,7 +55033,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for key insights into the broad range of condensed matter physics: Leggett on superfluidity of the light helium isotope and macroscopic quantum phenomena; and Halperin on two- dimensional melting, disordered systems and strongly interacting electrons",
-    "affiliation": "",
+    "affiliation": "伊利诺伊大学厄巴纳-香槟分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Laureate%20Sir%20Anthony%20James%20Leggett%20in%202007.jpg",
     "wikidata": "Q192718",
@@ -54581,7 +55071,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for key insights into the broad range of condensed matter physics: Leggett on superfluidity of the light helium isotope and macroscopic quantum phenomena; and Halperin on two- dimensional melting, disordered systems and strongly interacting electrons",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bert%20Halperin.JPG",
     "wikidata": "Q735136",
@@ -54618,7 +55108,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter Gruber Foundation presents the 2002 Cosmology Prize to Vera Rubin, whose studies of deviations of galaxy motions from classic Hubble theory demonstrated that large scale structure existed in the universe and whose discovery that most of the universe is unseen dark matter derived from her exploration of the rotation of spiral galaxies",
-    "affiliation": "",
+    "affiliation": "喬治城大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vera%20Rubin%20measuring%20spectra%20(cropped).jpg",
     "wikidata": "Q234888",
@@ -54651,9 +55141,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their contribution to the development of gene-targeting, enabling elucidation of gene function in mice",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/MarioCapecchiFotoThalerTamas2.JPG",
     "wikidata": "Q215574",
     "links": [
       "https://wolffund.org.il/mario-r-capecchi/"
@@ -54680,7 +55170,9 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因对基因打靶技术发展的贡献，使阐明小鼠基因功能成为可能"
+    "discovery": "因对基因打靶技术发展的贡献，使阐明小鼠基因功能成为可能",
+    "cn": "马里奥·卡佩奇",
+    "birthYear": "1937"
   },
   {
     "id": "wolf-med-2002-oliver-smithies",
@@ -54691,7 +55183,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the development of procedures to manipulate mouse ova and embryos, which has enabled transgenesis and its applications in mice",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oliver%20Smithies%20HD2009%20AIC%20Gold%20Medal%20portrait%20(cropped).JPG",
     "wikidata": "Q216318",
@@ -54734,7 +55226,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the development of procedures to manipulate mouse ova and embryos, which has enabled transgenesis and its applications in mice",
-    "affiliation": "",
+    "affiliation": "宾夕法尼亚大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ralph%20L.%20Brinster.jpg",
     "wikidata": "Q2129687",
@@ -54776,7 +55268,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2002 Genetics Prize to Robert Horvitz, for relentless use of genetic tools to reveal and dissect mechanisms of human development and behavior",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "",
     "wikidata": "Q295659",
@@ -54953,7 +55445,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Professor John Maynard Smith has made a groundbreaking contribution to the establishment of a unified understanding of fundamental issues in evolutionary biology, including the social behavior of organisms and the problems of sex and sex ratio, by proposing the idea of the Evolutionarily Stable Strategy (ESS)",
-    "affiliation": "",
+    "affiliation": "倫敦大學學院",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Maynard%20Smith.jpg",
     "wikidata": "Q323207",
@@ -54991,7 +55483,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter Gruber Foundation presents the 2001 Cosmology Prize to Sir Martin Rees, for extraordinary intuition in unraveling the complexities of the universe and for contributions to almost every area of cosmology and astrophysics",
-    "affiliation": "",
+    "affiliation": "格雷沙姆學院",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Official%20portrait%20of%20Lord%20Rees%20of%20Ludlow%20crop%202.jpg",
     "wikidata": "Q335213",
@@ -55023,7 +55515,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the discovery of the ubiquitin system of intracellular protein degradation and the crucial functions of this system in cellular regulation",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "Hungary",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Avram%20Hershko.jpg",
     "wikidata": "Q232302",
@@ -55065,7 +55557,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the discovery of the ubiquitin system of intracellular protein degradation and the crucial functions of this system in cellular regulation",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20Varshavsky.jpg",
     "wikidata": "Q442466",
@@ -55107,7 +55599,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "The Peter Gruber Foundation presents the 2001 Genetics Prize to Rudolf Jaenisch, for fundamental contributions to our knowledge of genome function and regulation",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jaenisch%202003%20by%20Sam%20Ogden.jpg",
     "wikidata": "Q90073",
@@ -55149,7 +55641,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "In recognition of his fundamental contributions to the theory of computation, including the complexity-based theory of pseudorandom number generation, cryptography, and communication complexity",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "People's Republic of China",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrew%20Yao.jpg",
     "wikidata": "Q62888",
@@ -55181,9 +55673,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his many fundamental contributions to topology, algebraic geometry, algebra, and number theory and for his inspirational lectures and writing",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Pierre%20Serre%20(2009)%20cropped.jpg",
     "wikidata": "Q212063",
     "links": [
       "https://wolffund.org.il/jean-pierre-serre/"
@@ -55202,7 +55694,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对拓扑学、代数几何、代数与数论的诸多奠基性贡献，以及富有启发性的讲授与著述"
+    "discovery": "因对拓扑学、代数几何、代数与数论的诸多奠基性贡献，以及富有启发性的讲授与著述",
+    "cn": "讓-皮埃爾·塞爾",
+    "birthYear": "1926"
   },
   {
     "id": "wolf-math-2000-raoul-bott",
@@ -55213,7 +55707,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his deep discoveries in topology and differential geometry and their applications to Lie groups, differential operators and mathematical physics",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Raoul%20Bott%201986.jpeg",
     "wikidata": "Q441185",
@@ -55248,7 +55742,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Professor Gehring, through his research into the developmental process of Drosophila, made a groundbreaking achievement for the understanding of the fundamental rule of the morphogenesis of organisms, and has made significant contributions to recent advances in life sciences",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "Switzerland",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Walter%20Jakob%20Gehring%202014.jpg",
     "wikidata": "Q118909",
@@ -55286,7 +55780,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their pioneering observations of astronomical phenomena by detection of neutrinos, thus creating the emerging field of neutrino astronomy",
-    "affiliation": "",
+    "affiliation": "汉堡大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Masatoshi%20Koshiba%202002.jpg",
     "wikidata": "Q155773",
@@ -55324,7 +55818,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their pioneering observations of astronomical phenomena by detection of neutrinos, thus creating the emerging field of neutrino astronomy",
-    "affiliation": "",
+    "affiliation": "布鲁克黑文国家实验室",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Raymond%20Davis%2C%20Jr%202001.jpg",
     "wikidata": "Q175519",
@@ -55395,7 +55889,7 @@ const awards = [
     "star": "physics",
     "domain": "宇宙学",
     "motivation": "The Peter Gruber Foundation presents the 2000 Cosmology Prize to Allan Sandage, for leading an observational quest to understand the stars, galaxies and universe, and to Phillip James E. Peebles, for contributions to knowledge of the physical processes that have shaped the structure of our universe",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jim%20Peebles%202010.jpg",
     "wikidata": "Q728331",
@@ -55427,7 +55921,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For landmark contributions to computer architecture, operating systems, and software engineering",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fred%20Brooks.jpg",
     "wikidata": "Q92609",
@@ -55494,7 +55988,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his contributions to classical and 'Euclidean' Fourier analysis and for his exceptional impact on a new generation of analysts through his eloquent teaching and writing",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Elias%20Stein.jpeg",
     "wikidata": "Q1329182",
@@ -55567,7 +56061,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for the experimental discovery of quasi-crystals, non periodic solids having long-range order, which inspired the exploration of a new fundamental state of matter",
-    "affiliation": "",
+    "affiliation": "爱荷华州立大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nobel%20Prize%202011-Nobel%20interviews%20KVA-DSC%208049.jpg",
     "wikidata": "Q44111",
@@ -55604,7 +56098,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the elucidation of the organismic, cellular and molecular mechanisms whereby short term memory is converted to a long term form",
-    "affiliation": "",
+    "affiliation": "哥倫比亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Eric%20Kandel%20by%20aquaris3.jpg",
     "wikidata": "Q155529",
@@ -55646,7 +56140,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his contributions to functional analysis and combinatorics, developing a new vision of infinite-dimensional geometry, including the solution of two of Banach's problems and the discovery of the so called Gowers' dichotomy: every infinite dimensional Banach space contains either a subspace with many symmetries (technically, with an unconditional basis) or a subspace every operator on which is Fredholm of index zero",
-    "affiliation": "",
+    "affiliation": "倫敦大學學院",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Timothy%20Gowers%20Washington%202009.jpg",
     "wikidata": "Q220402",
@@ -55680,7 +56174,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his contributions to the theory of holomorphic dynamics and geometrization of three-manifolds, including proofs of Bers' conjecture on the density of cusp points in the boundary of the Teichmüller space, and Kra's theta-function conjecture",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Curtis%20T.%20McMullen.jpg",
     "wikidata": "Q333959",
@@ -55714,7 +56208,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "For his contributions to algebra, the theory of automorphic forms, and mathematical physics, including the introduction of vertex algebras and Borcherds' Lie algebras, the proof of the Conway–Norton moonshine conjecture and the discovery of a new class of automorphic infinite products",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Richard%20Borcherds%2C%201993%20(cropped).jpg",
     "wikidata": "Q334010",
@@ -55815,9 +56309,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Through his study of stochastic analysis, especially his original theory regarding stochastic differential equations, Dr. Itô has made great contributions to the development not only of mathematical sciences, but also of physics, engineering, biology, and economics. His theory marked a new epoch in scientific research regarding random motion and stochastic phenomena in nature and society",
-    "affiliation": "",
+    "affiliation": "名古屋大學",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kiyoshi%20Ito%20cropped%203%20Kiyosi%20Ito.jpg",
     "wikidata": "Q455616",
     "links": [
       "https://www.kyotoprize.org/en/laureates/kiyosi_ito/"
@@ -55839,7 +56333,10 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "通过对随机分析的研究，尤其是关于随机微分方程的原创理论，Itô 博士不仅对数理科学，也对物理学、工程学、生物学与经济学的发展作出了巨大贡献。他的理论在关于自然界与社会中随机运动及随机现象的科学研究中开创了新纪元"
+    "discovery": "通过对随机分析的研究，尤其是关于随机微分方程的原创理论，Itô 博士不仅对数理科学，也对物理学、工程学、生物学与经济学的发展作出了巨大贡献。他的理论在关于自然界与社会中随机运动及随机现象的科学研究中开创了新纪元",
+    "cn": "伊藤清",
+    "birthYear": "1915",
+    "deathYear": "2008"
   },
   {
     "id": "wolf-physics-1998-michael-victor-berry",
@@ -56042,7 +56539,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental contributions to mathematically rigorous methods in statistical mechanics and the ergodic theory of dynamical systems and their applications in physics",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Yakov%20G%20Sinai%20photo.jpg",
     "wikidata": "Q950897",
@@ -56076,7 +56573,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his profound and innovative contributions, in particular to electromagnetic, optical, acoustic wave propagation and to fluid, solid, quantum and statistical mechanics",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q951253",
@@ -56111,7 +56608,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Working mainly in the tropical forests of Costa Rica in Central America, Dr. Daniel Hunt Janzen, a pioneer of tropical biology, has laid the foundation of today’s flourishing tropical biology, appealed to the academic world to realize the importance of tropical biology, and has opened the door to an extremely interesting field of science",
-    "affiliation": "",
+    "affiliation": "密西根大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Daniel%20Janzen%20(3214457162)%20(cropped).jpg",
     "wikidata": "Q1161184",
@@ -56191,7 +56688,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For seminal work introducing temporal logic into computing science and for outstanding contributions to program and system verification",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "Israel",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Amir%20Pnueli%20FLoC%202006%20(cropped).jpg",
     "wikidata": "Q92649",
@@ -56224,7 +56721,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his path-blazing work and extraordinary insight in the fields of number theory, automorphic forms and group representation",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Langlands2.jpg",
     "wikidata": "Q711278",
@@ -56258,7 +56755,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. Mario Renato Capecchi established a new avenue for researching how a gene functions by successfully breeding “knocked-out” mice in which the targeted gene was inactivated. His method of research has since been used around the world, and has immensely benefited the fields of biology, medicine and other branches of the life sciences",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/MarioCapecchiFotoThalerTamas2.JPG",
     "wikidata": "Q215574",
@@ -56295,7 +56792,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for his seminal contributions to black holes physics, to quantum gravity, and to the theories of nuclear scattering and nuclear fission",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Archibald%20Wheeler%201985.jpg",
     "wikidata": "Q202631",
@@ -56333,7 +56830,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "In recognition of his contributions to the foundations of computational complexity theory and its application to cryptography and program checking",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Manuel%20Blum%201973%20(re-scanned%2C%20portioned).jpg",
     "wikidata": "Q92626",
@@ -56365,7 +56862,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental work on stability in Hamiltonian and his profound and influential contributions to nonlinear differential equations",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/J%C3%BCrgen%20Moser%20retouched.jpg",
     "wikidata": "Q65209",
@@ -56400,7 +56897,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "By introducing the knowledge and techniques of the broad area of basic physical sciences of atomic nuclei and hydrodynamics to the analysis of the universe, Dr. Chushiro Hayashi has opened a new phase in research into the evolution of stars and the origins of solar systems with his theoretical explanation of various phenomena of celestial bodies, and has ultimately made an enormous contribution to the development of modern astronomical physics",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Chushiro%20Hayashi.jpg",
     "wikidata": "Q511395",
@@ -56438,7 +56935,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for his contributions to the theory of superconductivity and to the theory of high-energy processes in astrophysics",
-    "affiliation": "",
+    "affiliation": "列別捷夫物理研究所",
     "country": "Russia",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ginzburg%20in%20MSU%20opaque.jpg",
     "wikidata": "Q104668",
@@ -56476,7 +56973,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for discovering prions, new class of pathogens that cause important neurodegenerative disease by inducing changes in protein structute",
-    "affiliation": "",
+    "affiliation": "舊金山加利福尼亞大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanley%20B.%20Prusiner%20in%202024%20(3x4%20close%20cropped).jpg",
     "wikidata": "Q155380",
@@ -56518,7 +57015,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Bourgain's work touches on several central topics of mathematical analysis: the geometry of Banach spaces, convexity in high dimensions, harmonic analysis, ergodic theory, and finally, nonlinear partial differential equations from mathematical physics",
-    "affiliation": "",
+    "affiliation": "伊利诺伊大学厄巴纳-香槟分校",
     "country": "Belgium",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Bourgain%20(vertical%20crop).jpg",
     "wikidata": "Q260802",
@@ -56553,7 +57050,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "His contributions cover a variety of areas, from probability theory to partial differential equations (PDEs). Within the PDE area he has done several beautiful things in nonlinear equations. The choice of his problems have always been motivated by applications",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre-Louis%20Lions%20par%20Philippe%20Binant.jpg",
     "wikidata": "Q334030",
@@ -56621,7 +57118,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Yoccoz obtained a very enlightening proof of Bruno's theorem, and he was able to prove the converse [...] Palis and Yoccoz obtained a complete system of C∞ conjugation invariants for Morse-Smale diffeomorphisms",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Christophe%20Yoccoz.jpg",
     "wikidata": "Q369600",
@@ -56688,7 +57185,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For pioneering the design and construction of large scale artificial intelligence systems, demonstrating the practical importance and potential commercial impact of artificial intelligence technology",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/27.%20Dr.%20Edward%20A.%20Feigenbaum%201994-1997.jpg",
     "wikidata": "Q92823",
@@ -56720,9 +57217,9 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. André Weil is a renowned mathematician who pioneered research in a broad range of mathematics and has thereby become the most significant contributor to the drastic development of pure mathematics in this century",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "France",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andr%C3%A9%20Weil%2C%201968%20(cropped).jpg",
     "wikidata": "Q323232",
     "links": [
       "https://www.kyotoprize.org/en/laureates/andre_weil/"
@@ -56744,7 +57241,10 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "André Weil 博士是一位著名数学家，他在广泛的数学领域开创了研究，并由此成为本世纪纯数学急剧发展的最重要贡献者"
+    "discovery": "André Weil 博士是一位著名数学家，他在广泛的数学领域开创了研究，并由此成为本世纪纯数学急剧发展的最重要贡献者",
+    "cn": "安德烈·韦伊",
+    "birthYear": "1906",
+    "deathYear": "1998"
   },
   {
     "id": "wolf-physics-1994-yoichiro-nambu",
@@ -56755,7 +57255,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for his contribution to elementary particle theory, including recognition of the role played by spontaneous symmetry-breaking in analogy with superconductivity theory, and the discovery of the color symmetry of the strong interactions",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/YoichiroNambu.jpg",
     "wikidata": "Q188120",
@@ -56793,9 +57293,9 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discoveries concerning cellular transmembrane signalling involving phospholipids and calcium",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nishiz%2C%20yasutomi.jpg",
     "wikidata": "Q900311",
     "links": [
       "https://wolffund.org.il/yasutomi-nishizuka/"
@@ -56822,7 +57322,10 @@ const awards = [
       "LIF-019",
       "LIF-020"
     ],
-    "discovery": "因关于涉及磷脂与钙的细胞跨膜信号传导的发现"
+    "discovery": "因关于涉及磷脂与钙的细胞跨膜信号传导的发现",
+    "cn": "西塚泰美",
+    "birthYear": "1932",
+    "deathYear": "2004"
   },
   {
     "id": "wolf-med-1994-michael-berridge",
@@ -56833,7 +57336,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their discoveries concerning cellular transmembrane signalling involving phospholipids and calcium",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q1499435",
@@ -56876,7 +57379,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "With Richard E. Stearns, in recognition of their seminal paper which established the foundations for the field of computational complexity theory",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2012-06-15%20Juris%20Hartmanis%20(35414382405).jpg",
     "wikidata": "Q92628",
@@ -56941,7 +57444,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his revolutionary contributions to global Riemannian and symplectic geometry, algebraic topology, geometric group theory and the theory of partial differential equations",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mikhael%20Gromov.jpg",
     "wikidata": "Q353451",
@@ -56975,7 +57478,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his pioneering and fundamental contributions to the theory of the structure of algebraic and other classes of groups and in particular for the theory of buildings",
-    "affiliation": "",
+    "affiliation": "波恩大学",
     "country": "Belgium",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques%20Tits%20(2008)%20(cropped).jpg",
     "wikidata": "Q451331",
@@ -57010,7 +57513,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. William Donald Hamilton is a renowned behavioral ecologist who has exerted a revolutionary impact on conventional biological sciences with his concept of “inclusive fitness,” which shed light on the evolution of altruistic behavior, and other extremely influential theories in evolutionary biology, such as expansion of the theory of sex ratio",
-    "affiliation": "",
+    "affiliation": "密西根大学",
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q15451",
@@ -57048,7 +57551,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "by recognizing the widespread occurrence of fractals and developing mathematical tools for describing them, he has changed our view of nature",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Benoit%20Mandelbrot%20mg%201804-d.jpg",
     "wikidata": "Q101740",
@@ -57118,9 +57621,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his profound contributions to all aspects of finite group theory and connections with other branches of mathematics",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Griggs%20Thompson.jpg",
     "wikidata": "Q313168",
     "links": [
       "https://wolffund.org.il/john-g-thompson/"
@@ -57139,7 +57642,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对有限群论各个方面及其与数学其他分支之联系的深刻贡献"
+    "discovery": "因对有限群论各个方面及其与数学其他分支之联系的深刻贡献",
+    "cn": "約翰·格里格斯·湯普森",
+    "birthYear": "1932"
   },
   {
     "id": "wolf-math-1992-lennart-carleson",
@@ -57184,7 +57689,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. Yasutomi Nishizuka is an eminent biochemist who, through his discovery and analysis of protein kinase C, also known as C kinase, has elucidated a new intracellular signal transduction system, thereby clarifying regulatory mechanisms for a great variety of biological phenomena as well as tumorgenesis, and exerting a major influence upon the progress of the life sciences",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Nishiz%2C%20yasutomi.jpg",
     "wikidata": "Q900311",
@@ -57222,7 +57727,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for his discovery of an orbiting radio pulsar and its exploitation to verify the general theory of relativity to high precision",
-    "affiliation": "",
+    "affiliation": "马萨诸塞大学阿默斯特分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/2008JosephTaylor.jpg",
     "wikidata": "Q192685",
@@ -57259,7 +57764,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his discoveries which originated the concept and developed the field of angiogenesis research",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q710619",
@@ -57335,7 +57840,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. Edward Norton Lorenz is recognized world-wide not only as one of the outstanding theoretical meteorologists of our day, but also as a pioneer in the new major area of scientific study known as “deterministic chaos,” which has applications in many fields ranging from pure mathematics to physics, engineering, chemistry, biology, economics and geology as well as his own field of atmospheric science",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/EdwardLorenz.jpg",
     "wikidata": "Q174808",
@@ -57373,7 +57878,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their separate seminal contributions to nuclear and particle physics, particularly those concerning the weak interactions involving leptons",
-    "affiliation": "",
+    "affiliation": "布鲁克黑文国家实验室",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Goldhaber%2CMaurice%201937.jpg",
     "wikidata": "Q611352",
@@ -57411,7 +57916,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their separate seminal contributions to nuclear and particle physics, particularly those concerning the weak interactions involving leptons",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "Hungary",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ETH-BIB-Telegdi%2C%20Valentine%20(1922-2006)-Portr%2010203.tif",
     "wikidata": "Q672378",
@@ -57449,7 +57954,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for having generated a new field of molecular neurogenetics by his pioneering research on the dissection of the nervous system and behavior by gene mutations",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Seymour%20Benzer.gif",
     "wikidata": "Q1975294",
@@ -57492,7 +57997,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Time and again he has surprised the mathematical community by a brilliant application of physical insight leading to new and deep mathematical theorems",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Witten.jpg",
     "wikidata": "Q201513",
@@ -57526,7 +58031,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "The most profound and exciting development in algebraic geometry during the last decade or so was [...] Mori's Program in connection with the classification problems of algebraic varieties of dimension three. Early in 1979, Mori brought to algebraic geometry a completely new excitement, that was his proof of Hartshorne's conjecture",
-    "affiliation": "",
+    "affiliation": "京都大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shigefumi%20Mori%2020140511.jpg",
     "wikidata": "Q206215",
@@ -57560,7 +58065,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Drinfeld's main preoccupation in the last decade [are] Langlands' program and quantum groups. In both domains, Drinfeld's work constituted a decisive breakthrough and prompted a wealth of research",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q369561",
@@ -57594,7 +58099,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Jones discovered an astonishing relationship between von Neumann algebras and geometric topology. As a result, he found a new polynomial invariant for knots and links in 3-space",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Vaughan%20Jones%20p1190550.jpg",
     "wikidata": "Q369638",
@@ -57629,7 +58134,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his pioneering work organizing the concepts and leading the development of the general-purpose, large-scale, time-sharing and resource-sharing computer systems, CTSS and Multics",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Fernando%20Corbato.jpg",
     "wikidata": "Q92625",
@@ -57662,7 +58167,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental contributions in the fields of homogeneous complex domains, discrete groups, representation theory and automorphic forms",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "Russia",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ilya-Piatetski-Shapiro-Yale.jpg",
     "wikidata": "Q718045",
@@ -57770,7 +58275,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for a wide variety of pioneering contributions to our understanding of the organization of complex condensed matter systems, de Gennes especially for his work on macromolecular matter and liquid crystals and Thouless for his on disordered and low-dimensional systems",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Pierre-Gilles%20de%20Gennes.jpg",
     "wikidata": "Q187224",
@@ -57808,7 +58313,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for a wide variety of pioneering contributions to our understanding of the organization of complex condensed matter systems, de Gennes especially for his work on macromolecular matter and liquid crystals and Thouless for his on disordered and low-dimensional systems",
-    "affiliation": "",
+    "affiliation": "華盛頓大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/DavidThouless%201995%20UW.jpg",
     "wikidata": "Q726394",
@@ -57846,7 +58351,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his part in the demonstration that the transforming factor in bacteria is due to deoxyribonucleic acid (DNA) and the concomitant discovery that the genetic material is composed of DNA",
-    "affiliation": "",
+    "affiliation": "洛克菲勒大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Maclyn%20McCarty%20(20e%20eeuw).jpg",
     "wikidata": "Q902110",
@@ -57889,7 +58394,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his fundamental contributions to numerical analysis. One of the foremost experts on floating-point computations. Kahan has dedicated himself to \"making the world safe for numerical computations!",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20Kahan.jpg",
     "wikidata": "Q92782",
@@ -57921,9 +58426,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for ingenious and highly original discoveries in geometry, which have opened important new vistas in topology from the algebraic, combinatorial, and differentiable viewpoint",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Milnor.jpg",
     "wikidata": "Q215765",
     "links": [
       "https://wolffund.org.il/john-w-milnor/"
@@ -57942,7 +58447,9 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在几何中巧妙而极具原创性的发现，这些发现从代数、组合与可微的观点为拓扑学开辟了重要的新前景"
+    "discovery": "因在几何中巧妙而极具原创性的发现，这些发现从代数、组合与可微的观点为拓扑学开辟了重要的新前景",
+    "cn": "约翰·米尔诺",
+    "birthYear": "1931"
   },
   {
     "id": "wolf-math-1989-alberto-calderon",
@@ -57953,7 +58460,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his groundbreaking work on singular integral operators and their application to and important problems in partial differential equations",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "Argentina",
     "photo": "",
     "wikidata": "Q578918",
@@ -57990,7 +58497,7 @@ const awards = [
     "motivation": "Through pioneering and monumental works especially in functional analysis, Dr. Gelfand made outstanding contributions to the advancement of mathematical sciences. In the course of his creative career, he also brought up and inspired many prominent mathematicians through collaboration, who, in turn, continue to play leading roles in mathematical sciences",
     "affiliation": "",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Izrail%20Gel'Fand.jpg",
     "wikidata": "Q315414",
     "links": [
       "https://www.kyotoprize.org/en/laureates/izrail_moiseevich_gelfand/"
@@ -58012,7 +58519,10 @@ const awards = [
       "PHY-014",
       "PHY-015"
     ],
-    "discovery": "Gelfand 博士通过尤其是在泛函分析领域的开创性与不朽工作，为数理科学的进步作出了杰出贡献。在其富有创造力的职业生涯中，他还通过合作培养并启发了许多卓越的数学家，而这些数学家又继续在数理科学中发挥引领作用"
+    "discovery": "Gelfand 博士通过尤其是在泛函分析领域的开创性与不朽工作，为数理科学的进步作出了杰出贡献。在其富有创造力的职业生涯中，他还通过合作培养并启发了许多卓越的数学家，而这些数学家又继续在数理科学中发挥引领作用",
+    "cn": "伊斯拉埃爾·蓋爾范德",
+    "birthYear": "1913",
+    "deathYear": "2009"
   },
   {
     "id": "wolf-med-1989-john-gurdon",
@@ -58023,7 +58533,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his introduction of the xenopus oocyte into molecular biology and his demonstration that the nucleus of a differentiated cell and of the egg differ in expression but not in the content of genetic material",
-    "affiliation": "",
+    "affiliation": "牛津大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Gurdon%20Cambridge%202012.JPG",
     "wikidata": "Q81218",
@@ -58066,7 +58576,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his demonstration and exploration of the genetic control of the development of body segments by homeotic genes",
-    "affiliation": "",
+    "affiliation": "加州理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ed%20Lewis%201986.png",
     "wikidata": "Q274123",
@@ -58109,7 +58619,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his pioneering and visionary contributions to computer graphics, starting with Sketchpad, and continuing after",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ivan%20Sutherland%20at%20CHM.jpg",
     "wikidata": "Q62866",
@@ -58141,7 +58651,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for outstanding work combining topology, algebraic and differential geometry, and algebraic number theory; and for his stimulation of mathematical cooperation and research",
-    "affiliation": "",
+    "affiliation": "波恩大学",
     "country": "Germany",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Friedrich%20Hirzebruch.jpeg",
     "wikidata": "Q61753",
@@ -58176,9 +58686,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for fundamental work in modern analysis, in particular, the application of pseudo differential and Fourier integral operators to linear partial differential equations",
-    "affiliation": "",
+    "affiliation": "隆德大学",
     "country": "Sweden",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lars%20H%C3%B6rmander.jpg",
     "wikidata": "Q333941",
     "links": [
       "https://wolffund.org.il/lars-hormander/"
@@ -58197,7 +58707,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在现代分析方面的奠基性工作，特别是将拟微分算子与傅里叶积分算子应用于线性偏微分方程"
+    "discovery": "因在现代分析方面的奠基性工作，特别是将拟微分算子与傅里叶积分算子应用于线性偏微分方程",
+    "cn": "拉尔斯·霍尔曼德尔",
+    "birthYear": "1931",
+    "deathYear": "2012"
   },
   {
     "id": "kyoto-basic-1988-noam-chomsky",
@@ -58208,7 +58721,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Dr. Chomsky is well recognized and respected for his revolutionary and epoch-making linguistical account titled, “The Generative Grammar Theory.” In this work, he established a highly developed system for elucidating the structure and workings of the human mind. This consequently gave birth to a new discipline known as cognitive science, a study built on an interdisciplinary collaboration of psychology, information science, linguistics, neurophysiology, and philosophy. Dr. Chomsky’s theory provides the underlying structural foundation for cognitive science",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Noam%20Chomsky%20portrait%202015.jpg",
     "wikidata": "Q9049",
@@ -58283,7 +58796,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their brilliant development of the theory of general relativity, in which they have shown the necessity for cosmological singularities and have elucidated the physics of black holes. In this work they have greatly enlarged our understanding of the origin and possible fate of the Universe",
-    "affiliation": "",
+    "affiliation": "格雷沙姆學院",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Roger%20Penrose%209560.JPG",
     "wikidata": "Q193803",
@@ -58363,7 +58876,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the biochemical elucidation of lysosomal storage diseases and the resulting contributions to biology, pathology, prenatal diagnosis, and therapeutics",
-    "affiliation": "",
+    "affiliation": "加州大学洛杉矶分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Elizabeth-Fondal-Neufeld.jpg",
     "wikidata": "Q539886",
@@ -58405,7 +58918,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For significant contributions in the design and theory of compilers, the architecture of large systems and the development of reduced instruction set computers (RISC); for discovering and systematizing many fundamental transformations now used in optimizing compilers including reduction of operator strength, elimination of common subexpressions, register allocation, constant propagation, and dead code elimination",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "United States",
     "photo": "",
     "wikidata": "Q92632",
@@ -58438,7 +58951,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his outstanding contributions to many areas of analysis and applied mathematics",
-    "affiliation": "",
+    "affiliation": "纽约大学",
     "country": "Hungary",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Lax%20in%20Tokyo.jpg",
     "wikidata": "Q323331",
@@ -58473,7 +58986,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental contributions to pure and applied probability theory, especially the creation of the stochastic differential and integral calculus",
-    "affiliation": "",
+    "affiliation": "名古屋大學",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kiyoshi%20Ito%20cropped%203%20Kiyosi%20Ito.jpg",
     "wikidata": "Q455616",
@@ -58546,7 +59059,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for the discovery of extra-solar X-ray sources and the elucidation of their physical processes",
-    "affiliation": "",
+    "affiliation": "约翰斯·霍普金斯大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/RiccardoGiacconi.jpg",
     "wikidata": "Q186481",
@@ -58745,7 +59258,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Using methods of arithmetic algebraic geometry, he received medal primarily for his proof of the Mordell Conjecture",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "Germany",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerd%20Faltings%20MFO.jpg",
     "wikidata": "Q77137",
@@ -58779,7 +59292,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Developed new methods for topological analysis of four-manifolds. One of his results is a proof of the four-dimensional Poincaré Conjecture",
-    "affiliation": "",
+    "affiliation": "加利福尼亞大學聖巴巴拉分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Freedman%2C%202010%20(cropped).jpg",
     "wikidata": "Q333494",
@@ -58847,7 +59360,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "With Robert E Tarjan, for fundamental achievements in the design and analysis of algorithms and data structures",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hopcrofg.jpg",
     "wikidata": "Q62874",
@@ -58879,7 +59392,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "With John E Hopcroft, for fundamental achievements in the design and analysis of algorithms and data structures",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Bob%20Tarjan.jpg",
     "wikidata": "Q92638",
@@ -58913,7 +59426,7 @@ const awards = [
     "motivation": "for his profound and original work on number theory and on discrete groups and automorphic forms",
     "affiliation": "",
     "country": "Norway",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Atle%20Selberg.jpg",
     "wikidata": "Q211041",
     "links": [
       "https://wolffund.org.il/atle-selberg/"
@@ -58932,7 +59445,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在数论以及离散群与自守形式上深刻而原创的工作"
+    "discovery": "因在数论以及离散群与自守形式上深刻而原创的工作",
+    "cn": "阿特勒·塞爾伯格",
+    "birthYear": "1917",
+    "deathYear": "2007"
   },
   {
     "id": "wolf-math-1986-samuel-eilenberg",
@@ -58943,7 +59459,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his fundamental work in algebraic topology and homological algebra",
-    "affiliation": "",
+    "affiliation": "密西根大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Samuel%20Eilenberg%20MFO.jpeg",
     "wikidata": "Q535833",
@@ -58978,7 +59494,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Ecology, which is the synthetic study of organisms and their environment, was established in the last century as a part of modern science. Through this century, its research targets have been drastically expanded, and its methodology has been rapidly developed. Today, the importance of ecological research is widely recognized",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/G.%20Evelyn%20Hutchinson%201984%20press%20photo.jpg",
     "wikidata": "Q302752",
@@ -59016,7 +59532,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for his pioneering theoretical studies demonstrating the universal character of non-linear systems, which has made possible the systematic study of chaos",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Mitchell%20J%20Feigenbaum%20-%20Niels%20Bohr%20Institute%202006.jpg",
     "wikidata": "Q354659",
@@ -59054,7 +59570,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for his brilliant experimental demonstration of the transition to turbulence and chaos in dynamical systems",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "",
     "wikidata": "Q381974",
@@ -59091,7 +59607,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the discovery of the oxygenase enzymes and elucidation of their structure and biological importance",
-    "affiliation": "",
+    "affiliation": "东京大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Osamu%20Hayaishi.jpg",
     "wikidata": "Q904598",
@@ -59134,7 +59650,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his continuing contributions to the theory of algorithms including the development of efficient algorithms for network flow and other combinatorial optimization problems, the identification of polynomial-time computability with the intuitive notion of algorithmic efficiency, and, most notably, contributions to the theory of NP-completeness. Karp introduced the now standard methodology for proving problems to be NP-complete which has led to the identification of many theoretical and practical problems as being computationally difficult",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Karp%20mg%207725-b.cr2.jpg",
     "wikidata": "Q92612",
@@ -59166,7 +59682,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for initiating many, now classic and essential, developments in partial differential equations",
-    "affiliation": "",
+    "affiliation": "布朗大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Hans%20Lewy.jpeg",
     "wikidata": "Q68505",
@@ -59201,7 +59717,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "Communication technology is one of the technologies which has made the most remarkable progress in this century and produced significant effects in a wide range of human life. It is expected that the problems concerned with information and communication will become increasingly significant in the coming century",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/ClaudeShannon%20MFO3807.jpg",
     "wikidata": "Q92760",
@@ -59239,7 +59755,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their major contributions to the fundamental theory of solids, especially of the behavior of electrons in metals",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Conyers%20Herring.jpg",
     "wikidata": "Q1129529",
@@ -59348,9 +59864,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his outstanding contributions to the study of complex manifolds and algebraic varieties",
-    "affiliation": "",
+    "affiliation": "约翰斯·霍普金斯大学",
     "country": "Japan",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kodaira%20Kunihiko.jpg",
     "wikidata": "Q333918",
     "links": [
       "https://wolffund.org.il/kunihiko-kodaira/"
@@ -59369,7 +59885,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因对复流形与代数簇研究的杰出贡献"
+    "discovery": "因对复流形与代数簇研究的杰出贡献",
+    "cn": "小平邦彥",
+    "birthYear": "1915",
+    "deathYear": "1997"
   },
   {
     "id": "wolf-physics-1984-erwin-hahn",
@@ -59380,7 +59899,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for his discovery of nuclear spin echoes and for the phenomenon of self-induced transparency",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q476205",
@@ -59418,7 +59937,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for discoveries concerning the biosynthesis and processing of insulin which have had profound implications for basic biology and clinical medicine",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Donald%20Steiner%20in%201970s.jpg",
     "wikidata": "Q905944",
@@ -59561,7 +60080,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for outstanding contributions to global differential geometry, which have profoundly influenced all mathematics",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shiing-shen%20Chern%201988%20(re-scanned).jpg",
     "wikidata": "Q328131",
@@ -59634,7 +60153,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for his development of the utilization of the transmission electron microscope as a universal instrument to study the structure of crystalline matter",
-    "affiliation": "",
+    "affiliation": "牛津大学",
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q1629187",
@@ -59706,7 +60225,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Revolutionized study of topology in 2 and 3 dimensions, showing interplay between analysis, topology, and geometry. Contributed idea that a very large class of closed 3-manifolds carry a hyperbolic structure",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20Thurston.jpg",
     "wikidata": "Q333927",
@@ -59741,7 +60260,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Made contributions in differential equations, also to the Calabi conjecture in algebraic geometry, to the positive mass conjecture of general relativity theory, and to real and complex Monge–Ampère equations",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Shing-Tung%20Yau.jpg",
     "wikidata": "Q334760",
@@ -59775,7 +60294,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his advancement of our understanding of the complexity of computation in a significant and profound way. His seminal paper, \"The Complexity of Theorem Proving Procedures,\" presented at the 1971 ACM SIGACT Symposium on the Theory of Computing, laid the foundations for the theory of NP-Completeness. The ensuing exploration of the boundaries and nature of NP-complete class of problems has been one of the most active and important research activities in computer science for the last decade",
-    "affiliation": "",
+    "affiliation": "多倫多大學",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Prof.Cook.jpg",
     "wikidata": "Q62870",
@@ -59877,7 +60396,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their experimental discovery of unexpected new particles establishing a third generation quarks and leptons",
-    "affiliation": "",
+    "affiliation": "密西根大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Perl%20-%20tau.jpg",
     "wikidata": "Q107416",
@@ -59915,7 +60434,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their experimental discovery of unexpected new particles establishing a third generation quarks and leptons",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Leon%20M.%20Lederman.jpg",
     "wikidata": "Q192695",
@@ -59953,7 +60472,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for developing agents which block beta adrenergic and histamine receptors",
-    "affiliation": "",
+    "affiliation": "倫敦大學學院",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/James%20Black%20(pharmacologist).jpg",
     "wikidata": "Q110974",
@@ -59996,7 +60515,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the isolation, purification and characterization of the acetylcholine receptor",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/JPChangeux-small.jpg",
     "wikidata": "Q910163",
@@ -60038,7 +60557,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for the development of the ways to label neurotransmitter receptors, which provide tools to describe their properties",
-    "affiliation": "",
+    "affiliation": "约翰斯·霍普金斯大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Solomon%20H.%20Snyder.jpg",
     "wikidata": "Q1681665",
@@ -60080,7 +60599,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his fundamental and continuing contributions to the theory and practice of database management systems",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "United States",
     "photo": "",
     "wikidata": "Q92596",
@@ -60113,9 +60632,9 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for seminal discoveries and the creation of powerful new methods in geometric function theory",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
-    "photo": "",
+    "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lars%20Ahlfors%20-%20MFO.jpg",
     "wikidata": "Q211642",
     "links": [
       "https://wolffund.org.il/lars-v-ahlfors/"
@@ -60134,7 +60653,10 @@ const awards = [
       "MAT-011",
       "MAT-012"
     ],
-    "discovery": "因在几何函数论中的奠基性发现以及创造了强有力的新方法"
+    "discovery": "因在几何函数论中的奠基性发现以及创造了强有力的新方法",
+    "cn": "拉尔斯·阿尔福斯",
+    "birthYear": "1907",
+    "deathYear": "1996"
   },
   {
     "id": "wolf-math-1981-oscar-zariski",
@@ -60145,7 +60667,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Creator of the modern approach to Algebraic geometry, by its fusion, with Commutative algebra",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Oscar%20Zariski.jpg",
     "wikidata": "Q381307",
@@ -60180,7 +60702,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their outstanding contributions to theoretical physics, especially in the development and application of the quantum theory of, fields",
-    "affiliation": "",
+    "affiliation": "杜克大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Freeman%20Dyson.jpg",
     "wikidata": "Q153717",
@@ -60218,7 +60740,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for their outstanding contributions to theoretical physics, especially in the development and application of the quantum theory of, fields",
-    "affiliation": "",
+    "affiliation": "乌特勒支大学",
     "country": "Kingdom of the Netherlands",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20't%20Hooft.jpg",
     "wikidata": "Q184592",
@@ -60293,7 +60815,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for her imaginative and important contributions to our understanding of chromosome structure behavior and function, and for her identification and description of transposable genetic (mobile) elements",
-    "affiliation": "",
+    "affiliation": "密苏里大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Barbara%20McClintock%20(1902-1992)%20shown%20in%20her%20laboratory%20in%201947.jpg",
     "wikidata": "Q199654",
@@ -60336,7 +60858,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his concepts underlying genetic engineering; for constructing a biologically functional hybrid plasmid, and for achieving actual expression of a foreign gene implanted in E. Coli by the recombinant DNA method",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanley%20Norman%20Cohen%20DSC%202027.jpg",
     "wikidata": "Q741299",
@@ -60446,7 +60968,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for pioneering work in algebraic topology, complex variables homological algebra and inspired leadership of a generation of mathematicians",
-    "affiliation": "",
+    "affiliation": "巴黎大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Henri%20Cartan.jpg",
     "wikidata": "Q164405",
@@ -60481,7 +61003,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for path breaking developments culminating in the general theory of the critical behavior at transitions between the different thermodynamic phases of matter",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kenneth%20G.%20Wilson.121.png",
     "wikidata": "Q193503",
@@ -60519,7 +61041,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for path breaking developments culminating in the general theory of the critical behavior at transitions between the different thermodynamic phases of matter",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Professor%20Leo%20Kadanoff.jpg",
     "wikidata": "Q981454",
@@ -60557,7 +61079,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for path breaking developments culminating in the general theory of the critical behavior at transitions between the different thermodynamic phases of matter",
-    "affiliation": "",
+    "affiliation": "康奈尔大学",
     "country": "United Kingdom",
     "photo": "",
     "wikidata": "Q1364884",
@@ -60595,7 +61117,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for their contributions to knowledge of the function and disfunction of the body cells through their studies on the immunological role of the lymphocytes, the development of specific antibodies and the elucidation of mechanisms governing the control and differentiation of normal and cancer cells",
-    "affiliation": "",
+    "affiliation": "布宜诺斯艾利斯大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Milstein%20lnp%20restauraci%C3%B3n.jpg",
     "wikidata": "Q155525",
@@ -60724,7 +61246,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his pioneering effort in programming languages and mathematical notation resulting in what the computing field now knows as APL, for his contributions to the implementation of interactive systems, to educational uses of APL, and to programming language theory and practice",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "Canada",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/KEI%20with%20ATW%20NY%20Aug%201989%20(cropped)%20-%20Ken%20Iverson.png",
     "wikidata": "Q92629",
@@ -60757,7 +61279,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for his inspired introduction of algebro-geometry to the theory of numbers",
-    "affiliation": "",
+    "affiliation": "芝加哥大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Andr%C3%A9%20Weil%2C%201968%20(cropped).jpg",
     "wikidata": "Q323232",
@@ -60792,7 +61314,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for pioneering work on the development and application of topological methods to the study of differential equations",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Leray.jpeg",
     "wikidata": "Q441143",
@@ -60827,7 +61349,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for his discovery, jointly with the late Samuel A .Goudsmit, of the electron spin",
-    "affiliation": "",
+    "affiliation": "密西根大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/George%20E%20Uhlenbeck.jpg",
     "wikidata": "Q315439",
@@ -60946,7 +61468,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his studies on the functional differentiation of the right and left hemispheres of the brain",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Roger%20Wolcott%20Sperry.jpg",
     "wikidata": "Q232305",
@@ -60989,7 +61511,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for his work which established the role of dopamine as a neurotransmitter",
-    "affiliation": "",
+    "affiliation": "哥特堡大學",
     "country": "Sweden",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Arvid%20Carlsson%202011a.jpg",
     "wikidata": "Q298045",
@@ -61032,7 +61554,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Contributed several innovations that revised the study of multidimensional complex analysis by finding correct generalizations of classical (low-dimensional) results",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Fefferman.jpg",
     "wikidata": "Q284129",
@@ -61066,7 +61588,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Provided innovative analysis of the structure of Lie groups. His work belongs to combinatorics, differential geometry, ergodic theory, dynamical systems, and Lie groups",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Grigory%20Margulis%20(2006).jpg",
     "wikidata": "Q325705",
@@ -61272,7 +61794,7 @@ const awards = [
     "star": "physics",
     "domain": "物理学",
     "motivation": "for her persistent and successful exploration of the weak interaction which helped establish the precise form and the non conservation of parity for this new natural force",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Chien-Shiung%20Wu%20(1912-1997)%20in%201958.jpg",
     "wikidata": "Q450317",
@@ -61310,7 +61832,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for discovering the HL-A system, the major histocompatibility complex in man and its primordial role in organ transplantation",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean%20Dausset%201968.jpg",
     "wikidata": "Q152760",
@@ -61353,7 +61875,7 @@ const awards = [
     "star": "life",
     "domain": "生命科学",
     "motivation": "for discovery of H-2 antigens, which codes for major transplantation antigens and the onset of the immune response",
-    "affiliation": "",
+    "affiliation": "傑克遜實驗室",
     "country": "United States",
     "photo": "",
     "wikidata": "Q295666",
@@ -61439,7 +61961,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For profound, influential, and lasting contributions to the design of practical high-level programming systems, notably through his work on FORTRAN, and for seminal publication of formal procedures for the specification of programming languages",
-    "affiliation": "",
+    "affiliation": "IBM",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Backus%202.jpg",
     "wikidata": "Q92746",
@@ -61472,7 +61994,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "Along with Michael O. Rabin, for their joint paper \"Finite Automata and Their Decision Problem,\" which introduced the idea of nondeterministic machines, which has proved to be an enormously valuable concept. Their (Scott & Rabin) classic paper has been a continuous source of inspiration for subsequent work in this field",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Scott%20Dana%20small.jpg",
     "wikidata": "Q49823",
@@ -61504,7 +62026,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "Along with Dana S. Scott, for their joint paper \"Finite Automata and Their Decision Problem,\" which introduced the idea of nondeterministic machines, which has proved to be an enormously valuable concept. Their (Scott & Rabin) classic paper has been a continuous source of inspiration for subsequent work in this field",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "Israel",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/M%20O%20Rabin.jpg",
     "wikidata": "Q357965",
@@ -61637,7 +62159,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Contributed to problems of the existence and structure of varieties of moduli, varieties whose points parametrize isomorphism classes of some type of geometric object. Also made several important contributions to the theory of algebraic surfaces",
-    "affiliation": "",
+    "affiliation": "布朗大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/David%20Mumford.jpg",
     "wikidata": "Q334021",
@@ -61671,7 +62193,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his major contributions to the analysis of algorithms and the design of programming languages, and in particular for his contributions to the \"art of computer programming\" through his well-known books in a continuous series by this title",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/KnuthAtOpenContentAlliance.jpg",
     "wikidata": "Q17457",
@@ -61736,7 +62258,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For fundamental contributions to programming as a high, intellectual challenge; for eloquent insistence and practical demonstration that programs should be composed correctly, not just debugged into correctness; for illuminating perception of problems at the foundations of program design",
-    "affiliation": "",
+    "affiliation": "德克薩斯州大學奧斯汀分校",
     "country": "Kingdom of the Netherlands",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Edsger%20Dijkstra%201994.jpg",
     "wikidata": "Q8556",
@@ -61769,7 +62291,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "Dr. McCarthy's lecture \"The Present State of Research on Artificial Intelligence\" is a topic that covers the area in which he has achieved considerable recognition for his work",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20McCarthy%20Stanford.jpg",
     "wikidata": "Q92739",
@@ -61802,7 +62324,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Generalized work of Zariski who had proved for dimension ≤ 3 the theorem concerning the resolution of singularities on an algebraic variety. Hironaka proved the results in any dimension",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Heisuke%20Hironaka.jpg",
     "wikidata": "Q183373",
@@ -61837,7 +62359,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Generalized the Gelfond-Schneider theorem (the solution to Hilbert's seventh problem). From this work he generated transcendental numbers not previously identified",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Alan-Baker.jpg",
     "wikidata": "Q310769",
@@ -61872,7 +62394,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Proved jointly with W. Feit that all non-cyclic finite simple groups have even order. The extension of this work by Thompson determined the minimal simple finite groups, that is, the simple finite groups whose proper subgroups are solvable",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Griggs%20Thompson.jpg",
     "wikidata": "Q313168",
@@ -61974,7 +62496,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his central role in creating, shaping, promoting, and advancing the field of Artificial Intelligence",
-    "affiliation": "",
+    "affiliation": "麻省理工學院",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Marvin%20Minsky%20at%20OLPCb%20(3x4%20cropped).jpg",
     "wikidata": "Q204815",
@@ -62108,7 +62630,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Did joint work with Hirzebruch in K-theory; proved jointly with Singer the index theorem of elliptic operators on complex manifolds; worked in collaboration with Bott to prove a fixed point theorem related to the 'Lefschetz formula",
-    "affiliation": "",
+    "affiliation": "剑桥大学",
     "country": "United Kingdom",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Michael%20Francis%20Atiyah.jpg",
     "wikidata": "Q208356",
@@ -62143,7 +62665,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Used technique called \"forcing\" to prove the independence in set theory of the axiom of choice and of the generalized continuum hypothesis. The latter problem was the first of Hilbert's problems of the 1900 Congress",
-    "affiliation": "",
+    "affiliation": "史丹佛大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q216809",
@@ -62178,7 +62700,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Worked in differential topology where he proved the generalized Poincaré conjecture in dimension n ≥ 5: Every closed, n-dimensional manifold homotopy-equivalent to the n-dimensional sphere is homeomorphic to it. Introduced the method of handle-bodies to solve this and related problems",
-    "affiliation": "",
+    "affiliation": "加州大學柏克萊分校",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephen%20Smale%2C%202008%20(cropped).jpg",
     "wikidata": "Q315394",
@@ -62212,7 +62734,7 @@ const awards = [
     "star": "compute",
     "domain": "信息与智能",
     "motivation": "For his influence in the area of advanced programming techniques and compiler construction",
-    "affiliation": "",
+    "affiliation": "耶魯大學",
     "country": "United States",
     "photo": "",
     "wikidata": "Q62861",
@@ -62245,7 +62767,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Proved that a 7-dimensional sphere can have several differential structures; this led to the creation of the field of differential topology",
-    "affiliation": "",
+    "affiliation": "普林斯顿大学",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Milnor.jpg",
     "wikidata": "Q215765",
@@ -62279,7 +62801,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Worked in partial differential equations. Specifically, contributed to the general theory of linear differential operators. The questions go back to one of Hilbert's problems at the 1900 congress",
-    "affiliation": "",
+    "affiliation": "隆德大学",
     "country": "Sweden",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lars%20H%C3%B6rmander.jpg",
     "wikidata": "Q333941",
@@ -62314,7 +62836,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "for creating the theory of 'Cobordisme' which has, within the few years of its existence, led to the most penetrating insight into the topology of differentiable manifolds",
-    "affiliation": "",
+    "affiliation": "法國高等科學研究所",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Ren%C3%A9%20Thom.jpeg",
     "wikidata": "Q164428",
@@ -62384,7 +62906,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Achieved major results on the homotopy groups of spheres, especially in his use of the method of spectral sequences. Reformulated and extended some of the main results of complex variable theory in terms of sheaves",
-    "affiliation": "",
+    "affiliation": "法兰西公学院",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Pierre%20Serre%20(2009)%20cropped.jpg",
     "wikidata": "Q212063",
@@ -62418,7 +62940,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Achieved major results in the theory of harmonic integrals and numerous applications to Kählerian and more specifically to algebraic varieties. He demonstrated, by sheaf cohomology, that such varieties are Hodge manifolds",
-    "affiliation": "",
+    "affiliation": "约翰斯·霍普金斯大学",
     "country": "Japan",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Kodaira%20Kunihiko.jpg",
     "wikidata": "Q333918",
@@ -62488,7 +63010,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Developed the theory of distributions, a new notion of generalized function motivated by the Dirac delta-function of theoretical physics",
-    "affiliation": "",
+    "affiliation": "巴黎大学",
     "country": "France",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/LaurentSchwartz.jpg",
     "wikidata": "Q212081",
@@ -62523,7 +63045,7 @@ const awards = [
     "star": "compute",
     "domain": "数学与计算",
     "motivation": "Awarded medal for research on covering surfaces related to Riemann surfaces of inverse functions of entire and meromorphic functions. Opened up new fields of analysis",
-    "affiliation": "",
+    "affiliation": "哈佛大學",
     "country": "United States",
     "photo": "https://commons.wikimedia.org/wiki/Special:FilePath/Lars%20Ahlfors%20-%20MFO.jpg",
     "wikidata": "Q211642",
