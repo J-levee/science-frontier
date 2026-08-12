@@ -333,14 +333,16 @@
     border-color:rgba(255,216,74,.7);box-shadow:0 0 48px rgba(249,115,22,.46),inset 0 0 26px rgba(249,115,22,.16)}
   @keyframes hotPulse{0%,100%{box-shadow:0 0 26px rgba(249,115,22,.20),inset 0 0 18px rgba(249,115,22,.08)}
     50%{box-shadow:0 0 46px rgba(249,115,22,.44),inset 0 0 26px rgba(249,115,22,.16)}}
-  /* hero depth-科普 chip — 内容流里的简洁按钮 */
-  .hero-explain-chip{display:inline-block;margin-top:24px;font-size:12.5px;letter-spacing:.06em;
-    color:rgba(220,230,255,.85);text-decoration:none;padding:8px 18px;
-    border:1px solid rgba(150,170,255,.28);border-radius:999px;
-    background:rgba(120,140,255,.06);transition:all .25s;cursor:pointer;pointer-events:auto}
-  .hero-explain-chip:hover{color:#fff;border-color:rgba(180,200,255,.6);
-    background:rgba(120,140,255,.14);transform:translateY(-1px)}
-  .hero-explain-chip:focus-visible{outline:1px solid rgba(180,200,255,.5);outline-offset:3px}
+  /* hero depth-科普 chip — 更醒目的椭圆药丸按钮，位于标题下方，避免被挂谷卡遮挡 */
+  .hero-explain-chip{position:relative;z-index:10;display:inline-flex;align-items:center;gap:6px;margin-top:12px;font-size:13px;letter-spacing:.06em;
+    color:#e0f2fe;text-decoration:none;padding:9px 20px;
+    border:1px solid rgba(125,211,252,.45);border-radius:999px;
+    background:rgba(15,23,42,.55);backdrop-filter:blur(4px);
+    box-shadow:0 4px 18px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.06);
+    transition:all .25s;cursor:pointer;pointer-events:auto}
+  .hero-explain-chip:hover{color:#fff;border-color:#7dd3fc;
+    background:rgba(15,23,42,.78);box-shadow:0 6px 26px rgba(0,0,0,.5),0 0 16px rgba(125,211,252,.18);transform:translateY(-2px)}
+  .hero-explain-chip:focus-visible{outline:1px solid rgba(125,211,252,.6);outline-offset:3px}
   @keyframes hotSpin{to{transform:rotate(360deg)}}
   @media(prefers-reduced-motion:reduce){#hotKakeya,#hotKakeya::before{animation:none}}
 
@@ -369,6 +371,14 @@
   .teach-body::-webkit-scrollbar-thumb{background:rgba(150,170,255,.36);border-radius:3px}
   .th-head{text-align:center;margin-bottom:26px}
   .th-head h2{font-size:clamp(24px,3.6vw,36px)}
+  .th-explainer-banner{display:flex;align-items:center;gap:14px;margin:-6px 0 26px;padding:16px 20px;border-radius:14px;
+    border:1px solid rgba(125,211,252,.35);background:linear-gradient(135deg,rgba(8,47,73,.45),rgba(99,102,241,.12));
+    text-decoration:none;transition:all .25s ease;cursor:pointer}
+  .th-explainer-banner:hover{transform:translateY(-2px);border-color:rgba(125,211,252,.65);
+    box-shadow:0 8px 28px rgba(0,0,0,.4),0 0 18px rgba(125,211,252,.12)}
+  .th-explainer-ic{font-size:30px;line-height:1}
+  .th-explainer-title{font-size:16px;color:#e0f2fe;font-weight:600;font-family:var(--serif);margin-bottom:4px}
+  .th-explainer-desc{font-size:13px;color:rgba(200,220,255,.75);line-height:1.55}
   .th-paths{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:34px}
   .th-path{border:1px solid rgba(150,170,255,.18);border-radius:14px;padding:18px 16px;cursor:pointer;
     background:rgba(120,140,255,.04);transition:all .25s ease;text-align:left}
@@ -751,9 +761,9 @@
     <div class="inner">
       <div class="eyebrow">科学边界 · Science Frontier</div>
       <h1>仰望·追问·探索</h1>
+      <a class="hero-explain-chip" href="explainers/index.html" target="_blank" aria-label="打开深度科普讲解">📖 深度科普讲解</a>
       <p class="sub">有些世界已被照亮，<br/>有些星海仍待探索。</p>
       <div class="quiet"><span data-stat="total-problems">—</span> 个前沿问题 · <span data-stat="total-awardees">—</span> 位获奖者 · 100% 溯源</div>
-      <a class="hero-explain-chip" href="explainers/index.html" target="_blank">📖 深度科普讲解</a>
       <div class="scroll-hint">向下 · 进入同一片星海</div>
     </div>
     <div class="hot-question" id="hotKakeya">
@@ -2144,6 +2154,12 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     h+='<div class="th-head"><div class="act-tag">科普教学场景</div>'
       +'<h2>选择你的探索路线</h2>'
       +'<p class="lede">无论你从哪来，这里都有一条路。三条路线由浅入深，十个领域各有一个“为什么重要”。</p></div>';
+    h+='<a class="th-explainer-banner" href="explainers/index.html" target="_blank" rel="noopener" aria-label="打开深度科普讲解">'
+      +'<span class="th-explainer-ic">📖</span>'
+      +'<div class="th-explainer-txt">'
+      +'<div class="th-explainer-title">深度科普讲解</div>'
+      +'<div class="th-explainer-desc">用故事、图画和比喻，把最前沿的科学讲给你听 →</div>'
+      +'</div></a>';
     h+='<div class="th-paths">';
     (T.paths||[]).forEach(function(pa){
       h+='<div class="th-path" data-path="'+esc(pa.key)+'">'
@@ -3184,6 +3200,10 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       + '<circle cx="16" cy="16" r="4.2" fill="#a5f3fc" fill-opacity="0.5"/>'
       + '</svg>';
   }
+  function dotIconSVG(size){
+    size = size || 16;
+    return '<svg viewBox="0 0 16 16" width="'+size+'" height="'+size+'" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="5" fill="#67e8f9"/></svg>';
+  }
 
   // ---- DOM 构建 ----
   var btn = document.createElement('div');
@@ -3382,7 +3402,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   launcher.id = 'ai-ask-launcher';
   launcher.type = 'button';
   launcher.setAttribute('aria-label', '就选中的内容向 AI 提问');
-  launcher.innerHTML = particleIconSVG().replace('width="22" height="22"', 'width="16" height="16"') + '<span>提问</span>';
+  launcher.innerHTML = dotIconSVG(16) + '<span>提问</span>';
   document.body.appendChild(launcher);
 
   function openPanel(){
@@ -3500,9 +3520,9 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     '.ai-input{cursor:text !important}',
     '.ai-head-title{font-weight:600;color:#c7d2fe}',
     '#ai-ask-launcher{position:fixed;z-index:100002;display:none;align-items:center;gap:6px;',
-    'padding:7px 12px;border-radius:999px;border:1px solid rgba(125,211,252,.5);',
-    'background:rgba(15,23,42,.94);color:#e0f2fe;font-size:13px;font-family:inherit;cursor:pointer !important;',
-    'box-shadow:0 6px 24px rgba(0,0,0,.5);opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s;pointer-events:auto}',
+    'height:34px;padding:0 16px;border-radius:999px;border:1px solid rgba(125,211,252,.45);',
+    'background:rgba(15,23,42,.94);color:#e0f2fe;font-size:13px;font-weight:600;font-family:inherit;cursor:pointer !important;',
+    'box-shadow:0 6px 24px rgba(0,0,0,.5);opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s;pointer-events:auto;white-space:nowrap;-webkit-appearance:none;appearance:none;box-sizing:border-box}',
     '#ai-ask-launcher.on{display:flex;opacity:1;transform:none}',
     '#ai-ask-launcher:hover{background:rgba(15,23,42,1);border-color:#7dd3fc}',
     '#ai-ask-launcher svg{width:16px;height:16px;flex:0 0 16px}',

@@ -1,56 +1,162 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2215%22%20fill%3D%22none%22%20stroke%3D%22%237dd3fc%22%20stroke-width%3D%221%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2210%22%20fill%3D%22none%22%20stroke%3D%22%237dd3fc%22%20stroke-width%3D%221.2%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%224.2%22%20fill%3D%22%2367e8f9%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%224.2%22%20fill%3D%22%23a5f3fc%22%20fill-opacity%3D%220.5%22%2F%3E%3C%2Fsvg%3E" />
-<style>
-:root{--bg:#07070b;--bg-2:#0b0b13;--ink:#e9eaf2;--ink-dim:#9aa0b8;--ink-2:#5d6182;--line:rgba(255,255,255,.08);--accent:#6366f1;--accent2:#818cf8;--accent3:#a78bfa;--warm:#f59e0b;--hot:#ef4444;--cool:#06b6d4;--green:#10b981;--gold:#fbbf24;--serif:'PingFang SC','Microsoft YaHei',Georgia,serif;--radius:12px}
-body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;line-height:1.6;margin:0;min-height:100vh}
-body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(60% 50% at 18% 8%,rgba(99,102,241,0.06),transparent 70%),radial-gradient(50% 42% at 86% 18%,rgba(6,182,212,0.05),transparent 70%),radial-gradient(55% 45% at 50% 96%,rgba(167,139,250,0.05),transparent 70%)}
-.header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px 24px}
-.header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:16px}
-.logo{font-weight:700;font-size:18px;background:linear-gradient(135deg,var(--accent2),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
-.back{color:var(--ink-dim);font-size:13px;text-decoration:none}
-.main{max-width:1100px;margin:0 auto;padding:32px 24px 64px}
-.hero{text-align:center;padding:32px 0 8px}
-.hero h1{font-size:30px;margin:0 0 12px}
-.hero .hook{color:var(--ink-dim);font-size:16px;max-width:720px;margin:0 auto;line-height:1.7}
-.badge{display:inline-block;margin-top:14px;padding:5px 14px;border-radius:999px;background:rgba(16,185,129,0.12);color:var(--green);font-size:12px;border:1px solid rgba(16,185,129,0.3)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:36px}
-.card{background:rgba(19,19,26,0.55);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:var(--radius);padding:22px;cursor:pointer;transition:transform .25s ease,border-color .25s ease;text-decoration:none;color:inherit;display:block}
-.card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 12px 30px rgba(0,0,0,.45)}
-.card .ic{font-size:30px;margin-bottom:12px}
-.card h3{font-size:18px;margin:0 0 6px}
-.card p{color:var(--ink-dim);font-size:14px;line-height:1.6;margin:0}
-.card .soon{margin-top:12px;font-size:12px;color:var(--warm)}
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-@media(max-width:760px){.reveal{opacity:1!important;transform:none}.hero h1{font-size:24px}}
-</style>
+  <style>
+    :root {
+    --bg: #07070b; --bg-2: #0b0b13; --ink: #e9eaf2; --ink-dim: #9aa0b8;
+    --line: rgba(255,255,255,.08); --accent: #6366f1; --accent2: #818cf8;
+    --accent3: #a78bfa; --warm: #f59e0b; --hot: #ef4444; --cool: #06b6d4;
+    --green: #10b981; --gold: #fbbf24;
+    --serif: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Georgia,serif;
+    --radius: 12px;
+  }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.8; }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+    .back { display: inline-block; color: var(--accent2); text-decoration: none; font-size: 14px; margin-bottom: 30px; }
+    h1 { font-size: 2.2em; font-weight: 800; margin-bottom: 10px; background: linear-gradient(135deg, var(--accent2), #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hook { font-size: 1.15em; color: var(--warm); margin-bottom: 30px; padding: 16px 20px; background: rgba(251,191,36,0.06); border-left: 3px solid var(--warm); border-radius: 0 8px 8px 0; }
+    .section { margin: 40px 0; }
+    h2 { font-size: 1.4em; color: #c4b5fd; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { margin-bottom: 14px; font-size: 1.05em; }
+    .analogy { background: var(--bg-2); border-radius: 12px; padding: 20px 24px; margin: 24px 0; border: 1px solid var(--line); }
+    .analogy h3 { color: var(--accent2); font-size: 1em; margin-bottom: 8px; }
+    .takeaway { background: linear-gradient(135deg, rgba(251,191,36,0.08), rgba(96,165,250,0.04)); border: 1px solid rgba(251,191,36,0.25); border-radius: 12px; padding: 20px 24px; margin: 30px 0; }
+    .takeaway h3 { color: var(--warm); }
+    .audio-player { background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 30px 0; display: flex; align-items: center; gap: 14px; }
+    .audio-player audio { flex: 1; }
+    .audio-label { font-size: 13px; color: var(--ink-dim); white-space: nowrap; }
+    svg { max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 8px; background: var(--bg-2); }
+    .svg-caption { text-align: center; font-size: 13px; color: var(--ink-dim); margin-top: -16px; margin-bottom: 20px; }
+    .related { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .related a { color: var(--accent2); text-decoration: none; font-size: 14px; padding: 6px 14px; border: 1px solid rgba(96,165,250,0.25); border-radius: 20px; transition: all .2s; }
+    .related a:hover { background: rgba(96,165,250,0.12); }
+  </style>
 </head>
 <body>
-<div class="header"><div class="header-inner"><a class="logo" href="../">科学边界</a><a class="back" href="../">← 返回主站</a></div></div>
-<div class="main">
-  <div class="hero">
-    <h1>热点方向 · 深度科普讲解</h1>
-    <p class="hook">每个专题都是一次科学探险——用故事、图画和比喻，把最前沿的科学讲给你听。每一条说法后面，都有真实的出处可以查。</p>
-    <div class="badge">📡 图文并茂 · 零门槛 · 即点即看</div>
+<div class="wrap">
+  <a class="back" href="../">← 返回科学边界</a>
+  <h1>脑机接口：用意念连接世界</h1>
+  <div class="hook">💡 想象一下：只要想一下，就能让电脑打字、让机械手拿水杯、让轮椅前进。这不是科幻，而是脑机接口（Brain-Computer Interface，BCI）正在努力实现的事。</div>
+
+  <div class="section">
+    <h2>一、大脑在“发电”，科学家在“读电”<span data-ai-q="脑机接口是怎么读取大脑信号的？"></span></h2>
+    <p>你的大脑里有约 860 亿个神经元。每当一个神经元被激活，它就会产生微弱的电信号。虽然单个信号小得难以想象，但成千上万个神经元一起“放电”时，就能在头皮或大脑表面形成可被检测到的电波。</p>
+    <p>脑机接口的核心思路就是：<strong>读取这些电信号，用算法理解它们代表什么意图，再把这个意图翻译成电脑或机器能执行的命令。</strong>比如，当你想“抬左手”时，大脑运动皮层会产生一种特定的电活动模式；脑机接口识别出这个模式后，就能让机械手臂做出抬手的动作。</p>
+
+    <svg viewBox="0 0 680 320" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="glow"><feGaussianBlur stdDeviation="2" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+        <linearGradient id="brainGrad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#a78bfa"/><stop offset="100%" stop-color="#60a5fa"/></linearGradient>
+      </defs>
+      <rect width="680" height="320" fill="#111827" rx="8"/>
+
+      <!-- 大脑 -->
+      <path d="M160,220 C100,220 80,160 110,120 C130,90 180,80 210,100 C240,80 290,90 310,120 C340,160 320,220 260,220 C240,235 180,235 160,220" fill="url(#brainGrad)" opacity="0.25" stroke="#a78bfa" stroke-width="1.5"/>
+      <text x="210" y="265" text-anchor="middle" fill="#94a3b8" font-size="12">大脑产生电信号</text>
+
+      <!-- 神经元放电示意 -->
+      <circle cx="170" cy="150" r="4" fill="#fbbf24" opacity="0.9"/>
+      <circle cx="210" cy="130" r="4" fill="#fbbf24" opacity="0.9"/>
+      <circle cx="250" cy="155" r="4" fill="#fbbf24" opacity="0.9"/>
+      <circle cx="195" cy="180" r="4" fill="#fbbf24" opacity="0.9"/>
+      <circle cx="235" cy="175" r="4" fill="#fbbf24" opacity="0.9"/>
+
+      <!-- 信号波 -->
+      <path d="M340,160 Q360,110 380,160 T420,160 T460,160 T500,160" fill="none" stroke="#67e8f9" stroke-width="2.5" stroke-linecap="round" filter="url(#glow)"/>
+      <text x="420" y="205" text-anchor="middle" fill="#67e8f9" font-size="12">电波信号</text>
+
+      <!-- 解码芯片 -->
+      <rect x="520" y="130" width="110" height="60" rx="8" fill="rgba(99,102,241,0.15)" stroke="#818cf8" stroke-width="1.5"/>
+      <text x="575" y="155" text-anchor="middle" fill="#e2e8f0" font-size="11">算法解码</text>
+      <text x="575" y="175" text-anchor="middle" fill="#94a3b8" font-size="10">识别意图</text>
+
+      <!-- 输出 -->
+      <rect x="520" y="230" width="110" height="50" rx="8" fill="rgba(16,185,129,0.12)" stroke="#10b981" stroke-width="1.5"/>
+      <text x="575" y="252" text-anchor="middle" fill="#e2e8f0" font-size="11">机器执行</text>
+      <text x="575" y="270" text-anchor="middle" fill="#94a3b8" font-size="10">打字/抓握/移动</text>
+
+      <!-- 箭头 -->
+      <text x="470" y="240" text-anchor="middle" fill="#10b981" font-size="20">→</text>
+    </svg>
+    <div class="svg-caption">图：脑机接口的工作链路——读取脑电信号 → 算法解码意图 → 翻译成机器指令。</div>
   </div>
-  <div class="grid">
-    <a class="card reveal" href="dark-energy.html"><div class="ic">🌌</div><h3>暗能量与宇宙命运</h3><p>宇宙学 · 是什么在加速宇宙膨胀？三种宇宙结局。</p></a>
-    <a class="card reveal" href="quantum-error.html"><div class="ic">🛡️</div><h3>量子纠错</h3><p>给脆弱的量子信息穿上铠甲——从不可能到可能。</p></a>
-    <a class="card reveal" href="fusion.html"><div class="ic">⚛️</div><h3>可控核聚变</h3><p>材料与能源 · 人造太阳，无限清洁能源的关键路径。</p></a>
-    <a class="card reveal" href="agi.html"><div class="ic">🧠</div><h3>通用人工智能 AGI</h3><p>信息与智能 · ChatGPT 之后，下一步会到哪里？</p></a>
-    <a class="card reveal" href="sleep.html"><div class="ic">💤</div><h3>睡眠的奥秘</h3><p>生命科学 · 为什么我们要睡觉？青少年为什么需要 9 小时？</p></a>
-    <a class="card reveal" href="brain-computer.html"><div class="ic">🧬</div><h3>脑机接口</h3><p>Neuralink 等推动的全球热点方向。</p></a>
+
+  <div class="section">
+    <h2>二、三种“读脑”方式：从头皮到大脑内部<span data-ai-q="侵入式和非侵入式脑机接口有什么区别？"></span></h2>
+    <p>根据传感器离大脑有多近，脑机接口主要分为三类：</p>
+    <p><strong>非侵入式（最常见）：</strong>传感器戴在头皮上，比如一个布满电极的帽子。优点是安全、方便、便宜；缺点是信号穿过了头骨和头皮，会被严重削弱，像隔着厚墙听人说话。</p>
+    <p><strong>半侵入式：</strong>传感器放在头骨下方、大脑表面之上，比如放在硬脑膜外。信号质量比非侵入式好，手术风险又比植入脑内低。</p>
+    <p><strong>侵入式（最精确）：</strong>电极直接植入大脑皮层，能记录单个神经元的活动。Neuralink 的“心灵感应”芯片就属于这一类。它能实现更精细的控制，比如快速打字、操作机械手，但需要手术，也有感染、排异等风险。</p>
+
+    <svg viewBox="0 0 680 260" xmlns="http://www.w3.org/2000/svg">
+      <rect width="680" height="260" fill="#111827" rx="8"/>
+
+      <!-- 非侵入式 -->
+      <circle cx="130" cy="110" r="55" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.6"/>
+      <path d="M80,90 Q130,60 180,90 Q190,130 130,150 Q70,130 80,90" fill="#a78bfa" opacity="0.15"/>
+      <circle cx="110" cy="100" r="3" fill="#fbbf24"/><circle cx="150" cy="95" r="3" fill="#fbbf24"/><circle cx="130" cy="120" r="3" fill="#fbbf24"/>
+      <text x="130" y="210" text-anchor="middle" fill="#e2e8f0" font-size="12">非侵入式</text>
+      <text x="130" y="230" text-anchor="middle" fill="#94a3b8" font-size="10">电极在头皮上</text>
+
+      <!-- 半侵入式 -->
+      <circle cx="340" cy="110" r="55" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.6"/>
+      <path d="M290,90 Q340,60 390,90 Q400,130 340,150 Q280,130 290,90" fill="#a78bfa" opacity="0.2"/>
+      <ellipse cx="340" cy="110" rx="48" ry="38" fill="none" stroke="#fbbf24" stroke-width="1" stroke-dasharray="3,3"/>
+      <circle cx="325" cy="100" r="3" fill="#fbbf24"/><circle cx="355" cy="105" r="3" fill="#fbbf24"/><circle cx="340" cy="125" r="3" fill="#fbbf24"/>
+      <text x="340" y="210" text-anchor="middle" fill="#e2e8f0" font-size="12">半侵入式</text>
+      <text x="340" y="230" text-anchor="middle" fill="#94a3b8" font-size="10">电极在头骨下</text>
+
+      <!-- 侵入式 -->
+      <circle cx="550" cy="110" r="55" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.6"/>
+      <path d="M500,90 Q550,60 600,90 Q610,130 550,150 Q490,130 500,90" fill="#a78bfa" opacity="0.25"/>
+      <circle cx="535" cy="100" r="3" fill="#fbbf24"/><circle cx="565" cy="95" r="3" fill="#fbbf24"/><circle cx="550" cy="120" r="3" fill="#fbbf24"/>
+      <line x1="535" y1="100" x2="535" y2="55" stroke="#ef4444" stroke-width="1.5"/><line x1="565" y1="95" x2="565" y2="55" stroke="#ef4444" stroke-width="1.5"/><line x1="550" y1="120" x2="550" y2="55" stroke="#ef4444" stroke-width="1.5"/>
+      <rect x="500" y="35" width="100" height="22" rx="4" fill="rgba(239,68,68,0.12)" stroke="#ef4444" stroke-width="1"/>
+      <text x="550" y="52" text-anchor="middle" fill="#fca5a5" font-size="10">植入式芯片</text>
+      <text x="550" y="210" text-anchor="middle" fill="#e2e8f0" font-size="12">侵入式</text>
+      <text x="550" y="230" text-anchor="middle" fill="#94a3b8" font-size="10">电极在大脑内部</text>
+    </svg>
+    <div class="svg-caption">图：三种脑机接口按“离大脑远近”分类——越近信号越清晰，但手术风险也越高。</div>
+  </div>
+
+  <div class="section">
+    <h2>三、它能帮什么人？</h2>
+    <p>脑机接口最成熟、也最动人的应用，是帮助身体无法动弹的人重新与世界沟通。</p>
+    <p><strong>瘫痪患者：</strong>高位截瘫或渐冻症（ALS）患者无法控制手脚，但大脑仍然“想动”。脑机接口可以读出他们的运动意图，控制机械手臂吃饭、操作电脑光标，甚至通过拼写器“意念打字”。</p>
+    <p><strong>失语者：</strong>有些患者能理解语言但无法说话。科学家正在尝试把大脑中的“语言意图”直接解码成文字或语音，让他们不用动嘴就能交流。</p>
+    <p><strong>假肢与康复：</strong>智能假肢可以读取残肢神经信号，让使用者“像真手一样”控制每一根手指。脑机接口还能帮助中风患者进行神经康复训练。</p>
+    <p><strong>未来可能：</strong>更远的未来，有人设想用脑机接口增强记忆、治疗抑郁症、甚至实现“脑脑直连”。但这些大多还在实验室早期阶段。</p>
+  </div>
+
+  <div class="analogy">
+    <h3>🔍 打个比方：大脑是一座热闹的城市</h3>
+    <p>想象你的大脑是一座不夜城，每个神经元都是一座亮着灯的建筑。非侵入式脑机接口就像在城市外面用望远镜看灯光——能看到哪片区域亮，但看不清具体哪盏灯。侵入式脑机接口则像把摄像头直接放进某条街道，能看清每一盏灯什么时候亮、亮多亮。</p>
+    <p>脑机接口的算法，就是努力从这些灯光变化里读懂“城市今天在想什么”。</p>
+  </div>
+
+  <div class="takeaway">
+    <h3>🌟 记住这个</h3>
+    <p>脑机接口不是“读心术”，而是“读电术”——它通过捕捉大脑的电活动，借助算法猜测人的意图，再把这个意图变成指令。它已经在帮助瘫痪患者与人交流，但距离安全、稳定、人人都能用的“意念控制”还有很长一段路。<strong>每一次你动动手指就能打字，背后是大脑无数次精密的电信号协作——而科学家正试图绕过手指，直接听见大脑的声音。</strong></p>
+  </div>
+<div class="related">
+    <span style="color:var(--ink-dim);font-size:14px">探索更多：</span>
+    <a href="../">科学边界主页</a>
+    <a href="agi.html">通用人工智能 AGI</a>
+    <a href="quantum-error.html">量子纠错：给信息穿上铠甲</a>
+    <a href="dark-energy.html">暗能量与宇宙命运</a>
+    <a href="fusion.html">可控核聚变</a>
+    <a href="sleep.html">睡眠的奥秘</a>
   </div>
 </div>
-<script>
-if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.1});document.querySelectorAll('.reveal').forEach(function(e){io.observe(e);});}
-else{document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in');});}
-</script>
+
+  <script>window.__AI_CONTEXT={topic:"脑机接口",icebreakers:["脑机接口是怎么读取大脑信号的？", "侵入式和非侵入式脑机接口有什么区别？", "脑机接口能帮瘫痪患者做什么？", "Neuralink 的芯片是怎么工作的？"]};</script>
+  <script>window.__AI_PROXY_URL="https://ai.sciencefrontier.cn";</script>
+<script src="ai-widget.js?v=3"></script>
 <style id="ex-chrome-style">
 #exFootBar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 20px;pointer-events:none;opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease;background:linear-gradient(to top,rgba(7,7,11,.85),rgba(7,7,11,0));color:rgba(200,210,240,.5);font-size:11.5px;letter-spacing:.04em;flex-wrap:wrap}
 #exFootBar.visible{opacity:1;transform:none;pointer-events:auto}
@@ -169,11 +275,9 @@ else{document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('i
   var h1 = wrap && wrap.querySelector('h1');
   if(!wrap || !h1) return;
 
-  // 移除旧的底部占位播放器
   var oldPlayers = document.querySelectorAll('.audio-player');
   oldPlayers.forEach(function(el){ el.remove(); });
 
-  // 决定插入位置：紧跟 h1；若 h1 下一段是 .hook，则放到 hook 后面
   var insertAfter = h1;
   var hook = h1.nextElementSibling;
   if(hook && hook.classList && hook.classList.contains('hook')) insertAfter = hook;
@@ -188,7 +292,6 @@ else{document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('i
 
   function cleanText(t){
     return String(t||'')
-      // 剔除装饰性 emoji（💡🔍🌟 等 pictograph / dingbat 符号），这些只作版面装饰不朗读
       .replace(/[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{20E3}]/gu, '')
       .replace(/\*\*(.+?)\*\*/g,'$1').replace(/\[([^\]]+)\]\(([^)]+)\)/g,'$1').replace(/https?:\/\/[^\s\)\]]+/g,'').replace(/[<>]/g,'').replace(/\s+/g,' ').trim();
   }
@@ -209,7 +312,6 @@ else{document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('i
     var parts = [];
     parts.push(h1.innerText.trim());
 
-    // 带 tab 的页面只读当前激活 pane
     var activePane = wrap.querySelector('.story-pane.active, .tech-pane.active');
     var scope = activePane || wrap;
 
@@ -219,7 +321,6 @@ else{document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('i
     var sections = scope.querySelectorAll('.section');
     sections.forEach(function(sec){
       var clone = sec.cloneNode(true);
-      // 移除不朗读的元素：图、表、图表说明、脚本、样式、音频占位、相关链接、内联 AI 按钮
       clone.querySelectorAll('svg, .svg-caption, table, script, style, .audio-player, .related, button, [aria-hidden="true"], .ai-inline').forEach(function(el){ el.remove(); });
       var txt = clone.innerText.trim();
       if(txt) parts.push(txt);
@@ -250,7 +351,6 @@ else{document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('i
     next();
   });
 
-  // 轻量 QA 钩子：供回归测试断言朗读文本已剔除装饰 emoji（不影响正常功能）
   window.__exTTS = { collect: collectText, clean: cleanText };
 
   window.addEventListener('beforeunload', stop);

@@ -667,7 +667,7 @@ async function runExplainerTests() {
     await ip.close();
   }
 
-  const pages = ['kakeya', 'agi', 'dark-energy', 'fusion', 'quantum-error', 'sleep'];
+  const pages = ['kakeya', 'agi', 'dark-energy', 'fusion', 'quantum-error', 'sleep', 'brain-computer'];
   for (const p of pages) {
     const url = 'file://' + path.join(ROOT, 'website', 'explainers', p + '.html');
     const page = await browser.newPage();
@@ -755,6 +755,15 @@ async function runExplainerTests() {
       });
     });
     check('Explainer ' + p + ' · 划词提问浮标出现', selAsk.ok, JSON.stringify(selAsk));
+    // 浮标必须是椭圆药丸，不能是圆形（视觉回归：width 应明显大于 height）
+    const askShape = await page.evaluate(() => {
+      const el = document.getElementById('aw-ask-launcher');
+      if (!el) return { ok: false, reason: 'no-launcher' };
+      const cs = getComputedStyle(el);
+      const w = el.offsetWidth, h = el.offsetHeight;
+      return { ok: w > h * 1.35, w: w, h: h, br: cs.borderRadius };
+    });
+    check('Explainer ' + p + ' · 划词浮标为椭圆药丸 (w>h)', askShape.ok, JSON.stringify(askShape));
     // footer + 关于我们（explainer chrome 注入）
     check('Explainer ' + p + ' · footer present', await page.evaluate(() => !!document.getElementById('exFootBar')));
     check('Explainer ' + p + ' · about link present', await page.evaluate(() => !!document.getElementById('ex-openAbout')));
@@ -814,6 +823,13 @@ async function runExplainerTests() {
       });
     });
     check('Mobile Explainer dark-energy · 划词提问浮标出现', mSel.ok, JSON.stringify(mSel));
+    const mAskShape = await mp.evaluate(() => {
+      const el = document.getElementById('aw-ask-launcher');
+      if (!el) return { ok: false, reason: 'no-launcher' };
+      const w = el.offsetWidth, h = el.offsetHeight;
+      return { ok: w > h * 1.25, w: w, h: h };
+    });
+    check('Mobile Explainer dark-energy · 划词浮标为椭圆药丸 (w>h)', mAskShape.ok, JSON.stringify(mAskShape));
     check('Mobile Explainer dark-energy · no pageerror', mErrs.length === 0, mErrs.join('|'));
     await mp.close();
   }

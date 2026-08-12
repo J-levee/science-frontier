@@ -75,6 +75,10 @@
       + '<circle cx="16" cy="16" r="4.2" fill="#a5f3fc" fill-opacity="0.5"/>'
       + '</svg>';
   }
+  function dotIconSVG(size){
+    size = size || 16;
+    return '<svg viewBox="0 0 16 16" width="'+size+'" height="'+size+'" aria-hidden="true" focusable="false"><circle cx="8" cy="8" r="5" fill="#67e8f9"/></svg>';
+  }
 
   /* ---- DOM ---- */
   function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
@@ -158,7 +162,7 @@
   askLauncher.id = 'aw-ask-launcher';
   askLauncher.type = 'button';
   askLauncher.setAttribute('aria-label', '就选中的内容向 AI 提问');
-  askLauncher.innerHTML = particleIconSVG(16).replace('width="22" height="22"', 'width="16" height="16"') + '<span>提问</span>';
+  askLauncher.innerHTML = dotIconSVG(16) + '<span>提问</span>';
   document.body.appendChild(askLauncher);
 
   function openPanel(){
@@ -270,11 +274,11 @@
     '#aw-btn,.aw-sug,.aw-send,.aw-close{cursor:pointer !important}',
     '.aw-input{cursor:text !important}',
     '@media(max-width:500px){#aw-panel{right:6px;bottom:6px;width:calc(100vw-12px);height:420px;border-radius:10px}}',
-    /* ---- 划词提问浮标（与主站 ai-ask-launcher 视觉一致）---- */
-    '#aw-ask-launcher{position:fixed;z-index:100002;display:none;align-items:center;gap:5px;padding:6px 12px;border-radius:999px;border:1px solid rgba(125,211,252,.45);background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;font-size:13px;font-weight:600;cursor:pointer;box-shadow:0 4px 20px rgba(99,102,241,.55);font-family:inherit;user-select:none;line-height:1}',
-    '#aw-ask-launcher.on{display:inline-flex}',
-    '#aw-ask-launcher:hover{filter:brightness(1.12)}',
-    '#aw-ask-launcher svg{display:block}',
+    /* ---- 划词提问浮标：椭圆药丸、深色半透明、青色边框（与主站 ai-ask-launcher 一致）---- */
+    '#aw-ask-launcher{position:fixed;z-index:100002;display:none;align-items:center;gap:6px;height:34px;padding:0 16px;border-radius:999px;border:1px solid rgba(125,211,252,.45);background:rgba(15,23,42,.94);color:#e0f2fe;font-size:13px;font-weight:600;font-family:inherit;cursor:pointer !important;box-shadow:0 6px 24px rgba(0,0,0,.5);opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s;pointer-events:auto;line-height:1;white-space:nowrap;-webkit-appearance:none;appearance:none;box-sizing:border-box}',
+    '#aw-ask-launcher.on{display:flex;opacity:1;transform:none}',
+    '#aw-ask-launcher:hover{background:rgba(15,23,42,1);border-color:#7dd3fc}',
+    '#aw-ask-launcher svg{display:block;width:16px;height:16px;flex:0 0 16px}',
     '@media(max-width:500px){#aw-ask-launcher{font-size:12px;padding:7px 13px}}',
     '/* 内联 AI 按钮——出现在 h3/tip/概念旁边 */',
     'span.ai-inline{display:inline-flex;align-items:center;justify-content:center;width:20px;height:20px;border-radius:50%;background:linear-gradient(135deg,rgba(99,102,241,.4),rgba(139,92,246,.35));color:#c7d2fe;font-size:11px;cursor:pointer;margin:0 3px;vertical-align:middle;transition:all .2s;border:1px solid rgba(120,140,255,.25);user-select:none}',

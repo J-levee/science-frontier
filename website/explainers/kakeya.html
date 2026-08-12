@@ -235,7 +235,7 @@
   </script>
   <script>window.__AI_CONTEXT={topic:"挂谷猜想",icebreakers:["挂谷猜想到底在问什么？用日常例子解释", "为什么挂谷猜想能得菲尔兹奖？", "王虹和Zahl证明的三维情形是什么意思？高维情形能解吗？", "挂谷猜想和日常有关系吗？"]};</script>
   <script>window.__AI_PROXY_URL="https://ai.sciencefrontier.cn";</script>
-<script src="ai-widget.js?v=2"></script>
+<script src="ai-widget.js?v=3"></script>
 <style id="ex-chrome-style">
 #exFootBar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 20px;pointer-events:none;opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease;background:linear-gradient(to top,rgba(7,7,11,.85),rgba(7,7,11,0));color:rgba(200,210,240,.5);font-size:11.5px;letter-spacing:.04em;flex-wrap:wrap}
 #exFootBar.visible{opacity:1;transform:none;pointer-events:auto}
@@ -365,7 +365,7 @@
 
   var bar = document.createElement('div');
   bar.id = 'exArticleTts';
-  bar.innerHTML = '<button class="ex-tts-btn" type="button" aria-label="朗读全文">🔊 朗读全文</button><span class="ex-tts-hint">只朗读标题与正文，不读图表</span>';
+  bar.innerHTML = '<button class="ex-tts-btn" type="button" aria-label="朗读科普故事">🔊 朗读科普故事</button><span class="ex-tts-hint">只朗读「科普故事」内容，不读「技术摘要」</span>';
   insertAfter.parentNode.insertBefore(bar, insertAfter.nextSibling);
 
   var btn = bar.querySelector('.ex-tts-btn');
@@ -383,7 +383,7 @@
     var out=[]; segs.forEach(function(s){ while(s.length>110){ out.push(s.slice(0,110)); s=s.slice(110);} if(s) out.push(s); });
     return out.length?out:[t];
   }
-  function stop(){ window.speechSynthesis.cancel(); speaking=false; btn.classList.remove('playing'); btn.innerHTML='🔊 朗读全文'; btn.setAttribute('aria-label','朗读全文'); }
+  function stop(){ window.speechSynthesis.cancel(); speaking=false; btn.classList.remove('playing'); btn.innerHTML='🔊 朗读科普故事'; btn.setAttribute('aria-label','朗读科普故事'); }
   function pickVoice(){
     var voices = window.speechSynthesis.getVoices() || [];
     var zh = voices.filter(function(v){ return /zh|cmn|Chinese/i.test(v.lang+' '+(v.name||'')); });
@@ -395,8 +395,8 @@
     parts.push(h1.innerText.trim());
 
     // 带 tab 的页面只读当前激活 pane
-    var activePane = wrap.querySelector('.story-pane.active, .tech-pane.active');
-    var scope = activePane || wrap;
+    // 挂谷专题：无论当前打开哪个 tab，朗读只读「科普故事」
+    var scope = wrap.querySelector('.story-pane') || wrap;
 
     var hookEl = scope.querySelector('.hook');
     if(hookEl) parts.push(hookEl.innerText.trim());
