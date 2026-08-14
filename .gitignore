@@ -27,3 +27,11 @@ node_modules/
 shot_*.png
 render_verify.png
 .tmpchk/
+
+# ===== 以下为内部交付归档 / 未定稿文档，不进开源主仓库（本地保留）=====
+PROJECT_ASSETS/
+
+# 内部评审与规划文档（根目录 .md 不对外公开；README/SECURITY 除外）
+/*.md
+!/README.md
+!/SECURITY.md
