@@ -1,119 +1,129 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2215%22%20fill%3D%22none%22%20stroke%3D%22%237dd3fc%22%20stroke-width%3D%221%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2210%22%20fill%3D%22none%22%20stroke%3D%22%237dd3fc%22%20stroke-width%3D%221.2%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%224.2%22%20fill%3D%22%2367e8f9%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%224.2%22%20fill%3D%22%23a5f3fc%22%20fill-opacity%3D%220.5%22%2F%3E%3C%2Fsvg%3E" />
-<style>
-:root{--bg:#07070b;--bg-2:#0b0b13;--ink:#e9eaf2;--ink-dim:#9aa0b8;--ink-2:#5d6182;--line:rgba(255,255,255,.08);--accent:#6366f1;--accent2:#818cf8;--accent3:#a78bfa;--warm:#f59e0b;--hot:#ef4444;--cool:#06b6d4;--green:#10b981;--gold:#fbbf24;--serif:'PingFang SC','Microsoft YaHei',Georgia,serif;--radius:12px}
-body{background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;line-height:1.6;margin:0;min-height:100vh}
-body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(60% 50% at 18% 8%,rgba(99,102,241,0.06),transparent 70%),radial-gradient(50% 42% at 86% 18%,rgba(6,182,212,0.05),transparent 70%),radial-gradient(55% 45% at 50% 96%,rgba(167,139,250,0.05),transparent 70%)}
-.header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:14px 24px}
-.header-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:16px}
-.logo{font-weight:700;font-size:18px;background:linear-gradient(135deg,var(--accent2),var(--accent3));-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-decoration:none}
-.back{color:var(--ink-dim);font-size:13px;text-decoration:none}
-.main{max-width:1100px;margin:0 auto;padding:32px 24px 64px}
-.hero{text-align:center;padding:32px 0 8px}
-.hero h1{font-size:30px;margin:0 0 12px}
-.hero .hook{color:var(--ink-dim);font-size:16px;max-width:720px;margin:0 auto;line-height:1.7}
-.badge{display:inline-block;margin-top:14px;padding:5px 14px;border-radius:999px;background:rgba(16,185,129,0.12);color:var(--green);font-size:12px;border:1px solid rgba(16,185,129,0.3)}
-.cat{margin-top:44px}
-.cat-title{font-size:21px;margin:0 0 4px;display:flex;align-items:baseline;gap:10px}
-.cat-count{font-size:13px;color:var(--ink-2);font-weight:400}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px;margin-top:16px}
-.card{background:rgba(19,19,26,0.55);backdrop-filter:blur(6px);border:1px solid var(--line);border-radius:var(--radius);padding:22px;cursor:pointer;transition:transform .25s ease,border-color .25s ease;text-decoration:none;color:inherit;display:block}
-.card:hover{transform:translateY(-6px);border-color:var(--accent);box-shadow:0 12px 30px rgba(0,0,0,.45)}
-.card .ic{font-size:30px;margin-bottom:12px}
-.card h3{font-size:18px;margin:0 0 6px}
-.card p{color:var(--ink-dim);font-size:14px;line-height:1.6;margin:0}
-.reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
-.reveal.in{opacity:1;transform:none}
-@media(max-width:760px){.reveal{opacity:1!important;transform:none}.hero h1{font-size:24px}.cat-title{font-size:18px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2215%22%20fill%3D%22none%22%20stroke%3D%22%237dd3fc%22%20stroke-width%3D%221%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%2210%22%20fill%3D%22none%22%20stroke%3D%22%237dd3fc%22%20stroke-width%3D%221.2%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%224.2%22%20fill%3D%22%2367e8f9%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2216%22%20r%3D%224.2%22%20fill%3D%22%23a5f3fc%22%20fill-opacity%3D%220.5%22%2F%3E%3C%2Fsvg%3E" />
+  <style>
+    :root {
+    --bg: #07070b; --bg-2: #0b0b13; --ink: #e9eaf2; --ink-dim: #9aa0b8;
+    --line: rgba(255,255,255,.08); --accent: #6366f1; --accent2: #818cf8;
+    --accent3: #a78bfa; --warm: #f59e0b; --hot: #ef4444; --cool: #06b6d4;
+    --green: #10b981; --gold: #fbbf24;
+    --serif: 'PingFang SC','Hiragino Sans GB','Microsoft YaHei',Georgia,serif;
+    --radius: 12px;
+  }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--ink); line-height: 1.8; }
+    .wrap { max-width: 800px; margin: 0 auto; padding: 40px 24px 80px; }
+    .back { display: inline-block; color: var(--accent2); text-decoration: none; font-size: 14px; margin-bottom: 30px; }
+    h1 { font-size: 2.2em; font-weight: 800; margin-bottom: 10px; background: linear-gradient(135deg, var(--accent2), #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .hook { font-size: 1.15em; color: var(--warm); margin-bottom: 30px; padding: 16px 20px; background: rgba(251,191,36,0.06); border-left: 3px solid var(--warm); border-radius: 0 8px 8px 0; }
+    .section { margin: 40px 0; }
+    h2 { font-size: 1.4em; color: #c4b5fd; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
+    p { margin-bottom: 14px; font-size: 1.05em; }
+    .analogy { background: var(--bg-2); border-radius: 12px; padding: 20px 24px; margin: 24px 0; border: 1px solid var(--line); }
+    .analogy h3 { color: var(--accent2); font-size: 1em; margin-bottom: 8px; }
+    .takeaway { background: linear-gradient(135deg, rgba(251,191,36,0.08), rgba(96,165,250,0.04)); border: 1px solid rgba(251,191,36,0.25); border-radius: 12px; padding: 20px 24px; margin: 30px 0; }
+    .takeaway h3 { color: var(--warm); }
+    .audio-player { background: var(--bg-2); border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin: 30px 0; display: flex; align-items: center; gap: 14px; }
+    .audio-player audio { flex: 1; }
+    .audio-label { font-size: 13px; color: var(--ink-dim); white-space: nowrap; }
+    svg { max-width: 100%; height: auto; display: block; margin: 20px auto; border-radius: 8px; background: var(--bg-2); }
+    .svg-caption { text-align: center; font-size: 13px; color: var(--ink-dim); margin-top: -16px; margin-bottom: 20px; }
+    .related { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--line); }
+    .related a { color: var(--accent2); text-decoration: none; font-size: 14px; padding: 6px 14px; border: 1px solid rgba(96,165,250,0.25); border-radius: 20px; transition: all .2s; }
+    .related a:hover { background: rgba(96,165,250,0.12); }
+    /* 专题特色样式：副标题 + 标签 + 科普/技术双 tab */
+    .eyebrow{font-size:11px;letter-spacing:.18em;color:var(--ink-dim);text-transform:uppercase;margin-bottom:6px}
+    .tag-row{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0 14px}
+    .tag{display:inline-block;font-size:12px;color:var(--accent2);padding:3px 12px;border:1px solid rgba(129,140,248,.35);border-radius:999px;background:rgba(99,102,241,.06)}
+    .tab-row{display:flex;gap:6px;margin:20px 0 18px;padding-bottom:0;border-bottom:1px solid var(--line)}
+    .tab-btn{background:none;border:none;color:var(--ink-dim);font-size:13px;padding:8px 16px;cursor:pointer;font-family:inherit;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s}
+    .tab-btn:hover{color:var(--ink)}
+    .tab-btn.active{color:var(--accent2);border-bottom-color:var(--accent2)}
+    .story-pane,.tech-pane{display:none}
+    .story-pane.active,.tech-pane.active{display:block}
+    .tech-pane p{font-size:1em;color:var(--ink-dim);line-height:1.85}
+    .tech-pane p b{color:var(--ink)}
+    .tech-pane h2{font-size:1.2em;color:#a78bfa;padding-bottom:6px}
+  </style>
 </head>
 <body>
-<div class="header"><div class="header-inner"><a class="logo" href="../">科学边界</a><a class="back" href="../">← 返回主站</a></div></div>
-<div class="main">
-  <div class="hero">
-    <h1>热点方向 · 深度科普讲解</h1>
-    <p class="hook">每个专题都是一次科学探险——用故事、图画和比喻，把最前沿的科学讲给你听。每一条说法后面，都有真实的出处可以查。</p>
-    <div class="badge">📡 图文并茂 · 零门槛 · 即点即看 · 共 40 个专题</div>
+<div class="wrap">
+  <a class="back" href="../?open=cancer-immunotherapy">← 返回科学边界</a>
+  <div class="eyebrow">诺贝尔奖成果 · 癌症免疫疗法</div>
+  <h1>癌症免疫疗法：唤醒身体的卫士</h1>
+  <div class="tag-row">
+    <span class="tag">生命医学</span><span class="tag">免疫</span>
   </div>
-  <section class="cat">
-    <h2 class="cat-title reveal">🌌 宇宙物理 <span class="cat-count">7 个专题</span></h2>
-    <div class="grid">
-    <a class="card reveal" href="dark-energy.html"><div class="ic">🌌</div><h3>暗能量与宇宙命运</h3><p>宇宙学 · 是什么在加速宇宙膨胀？三种宇宙结局。</p></a>
-    <a class="card reveal" href="black-hole.html"><div class="ic">🕳️</div><h3>黑洞：连光都无法逃脱</h3><p>连光都逃不出的时空陷阱，藏着宇宙最极端的秘密。</p></a>
-    <a class="card reveal" href="gravitational-waves.html"><div class="ic">🌊</div><h3>引力波：时空的涟漪</h3><p>爱因斯坦预言的时空涟漪，百年后终于被听见。</p></a>
-    <a class="card reveal" href="cmb.html"><div class="ic">📡</div><h3>宇宙微波背景：138亿年前的余晖</h3><p>一张来自宇宙婴儿期的"照片"，藏着起源的秘密。</p></a>
-    <a class="card reveal" href="dark-matter.html"><div class="ic">🌑</div><h3>暗物质：看不见的宇宙主角</h3><p>它不发光、不反光，却占了宇宙物质的八成。</p></a>
-    <a class="card reveal" href="hubble-tension.html"><div class="ic">📏</div><h3>哈勃常数之谜：宇宙在加速还是减速？</h3><p>两种测法给出两个不同的宇宙膨胀速度，谁错了？</p></a>
-    <a class="card reveal" href="exoplanets.html"><div class="ic">🪐</div><h3>系外行星：我们在宇宙中是孤独的吗？</h3><p>太阳系外，还有别的"地球"吗？人类正在疯狂搜寻。</p></a>
+  <div class="tab-row">
+    <button class="tab-btn active" data-tab="story">📖 科普故事</button>
+    <button class="tab-btn" data-tab="tech">📐 技术摘要</button>
+  </div>
+  <div class="story-pane active">
+
+    <div class="hook">💡 过去治癌症，常像"地毯式轰炸"——化疗放疗在杀癌细胞的同时也伤正常细胞。而现在有一种新思路：不亲自上阵，而是卸下身体免疫系统的"刹车"，让它自己去消灭肿瘤。</div>
+    <div class="section">
+      <h2>一、免疫系统为什么"认不出"癌<span data-ai-q="癌症免疫疗法是怎么让身体杀癌的？"></span></h2>
+      <p>我们的免疫系统本该清除异常细胞，但癌细胞很狡猾：它表面有一种"别杀我"的信号（如 PD-L1），结合免疫细胞上的"刹车"蛋白（PD-1），让卫士收手。</p>
+      <p>免疫检查点抑制剂就是专门"松开刹车"的抗体药：艾利森发现 CTLA-4 这个刹车，本庶佑发现 PD-1。两人因此共获 2018 年诺贝尔生理学或医学奖。</p>
     </div>
-  </section>
-  <section class="cat">
-    <h2 class="cat-title reveal">⚛️ 物质能源 <span class="cat-count">7 个专题</span></h2>
-    <div class="grid">
-    <a class="card reveal" href="fusion.html"><div class="ic">⚛️</div><h3>可控核聚变：人造太阳</h3><p>材料与能源 · 人造太阳，无限清洁能源的关键路径。</p></a>
-    <a class="card reveal" href="high-temp-superconductor.html"><div class="ic">❄️</div><h3>高温超导：零电阻的奇迹</h3><p>电流零损耗地奔跑，曾被认为只能在极低温发生。</p></a>
-    <a class="card reveal" href="topological-insulator.html"><div class="ic">🧲</div><h3>拓扑绝缘体：表面导电的神奇材料</h3><p>体内是绝缘体，表面却能导电——靠的是拓扑。</p></a>
-    <a class="card reveal" href="lithium-battery.html"><div class="ic">🔋</div><h3>锂离子电池：移动时代的心脏</h3><p>没有它，手机、笔记本、电动车都寸步难行。</p></a>
-    <a class="card reveal" href="quantum-hall.html"><div class="ic">🔢</div><h3>量子霍尔效应：电阻的量子台阶</h3><p>电阻不再连续变化，而是一级级"台阶"。</p></a>
-    <a class="card reveal" href="graphene.html"><div class="ic">🟩</div><h3>石墨烯：只有一个原子厚的奇迹材料</h3><p>把石墨剥到只剩一层碳原子，会得到什么？</p></a>
-    <a class="card reveal" href="artificial-photosynthesis.html"><div class="ic">🌿</div><h3>人工光合作用：向植物学习发电</h3><p>模仿叶子，把阳光、水、二氧化碳变成燃料。</p></a>
+    <div class="section">
+      <h2>二、另一种思路：给细胞装"导航"</h2>
+      <p>还有 CAR-T 疗法：从患者体内取出 T 细胞，在实验室给它装上识别癌细胞的"导航受体"，再回输体内，让这支"改装部队"精准猎杀肿瘤。它在某些血液癌里已显现奇效。</p>
+      <div class="analogy">
+        <h3>🔍 打个比方：松开警车的刹车</h3>
+        <p>癌细胞悄悄踩住了免疫警车的刹车，让它停着不动。免疫疗法就是帮警车松开刹车、恢复追捕——一旦重启，身体自己的卫士就能去围剿肿瘤。</p>
+      </div>
     </div>
-  </section>
-  <section class="cat">
-    <h2 class="cat-title reveal">🧬 生命医学 <span class="cat-count">7 个专题</span></h2>
-    <div class="grid">
-    <a class="card reveal" href="sleep.html"><div class="ic">💤</div><h3>睡眠的奥秘</h3><p>生命科学 · 为什么我们要睡觉？青少年为什么需要 9 小时？</p></a>
-    <a class="card reveal" href="brain-computer.html"><div class="ic">🧬</div><h3>脑机接口</h3><p>Neuralink 等推动的全球热点方向。</p></a>
-    <a class="card reveal" href="crispr.html"><div class="ic">✂️</div><h3>CRISPR：基因编辑的剪刀</h3><p>一把可以精准剪开 DNA 的"分子剪刀"。</p></a>
-    <a class="card reveal" href="mrna-vaccine.html"><div class="ic">💉</div><h3>mRNA 疫苗：一场突如其来的革命</h3><p>让身体自己学会造"通缉令"，新冠疫情中一战成名。</p></a>
-    <a class="card reveal" href="dna-double-helix.html"><div class="ic">🧬</div><h3>DNA 双螺旋：生命的密码</h3><p>两条链拧成螺旋，写满了生命的说明书。</p></a>
-    <a class="card reveal" href="cancer-immunotherapy.html"><div class="ic">🛡️</div><h3>癌症免疫疗法：唤醒身体的卫士</h3><p>不再只靠毒杀肿瘤，而是让身体自己出手。</p></a>
-    <a class="card reveal" href="microbiome.html"><div class="ic">🦠</div><h3>人体微生物组：住在你身上的万亿邻居</h3><p>肠道里住着数以万亿的"房客"，悄悄影响你的健康。</p></a>
+    <div class="takeaway">
+      <h3>🌟 记住这个</h3>
+      <p>免疫疗法把抗癌思路从"外部毒杀"扭转为"内部赋能"，对黑色素瘤、肺癌等带来了长期缓解的可能。它也让"治愈癌症"从奢望，变成了正在走近的现实之一。</p>
     </div>
-  </section>
-  <section class="cat">
-    <h2 class="cat-title reveal">📐 数学计算 <span class="cat-count">7 个专题</span></h2>
-    <div class="grid">
-    <a class="card reveal" href="kakeya.html"><div class="ic">📐</div><h3>挂谷猜想</h3><p>一根针旋转需要多大地方？2026 菲尔兹奖。</p></a>
-    <a class="card reveal" href="quantum-error.html"><div class="ic">🛡️</div><h3>量子纠错</h3><p>给脆弱的量子信息穿上铠甲——从不可能到可能。</p></a>
-    <a class="card reveal" href="p-vs-np.html"><div class="ic">🧩</div><h3>P vs NP：计算机科学的圣杯</h3><p>难解的问题，是否也都能被快速验证？</p></a>
-    <a class="card reveal" href="riemann-hypothesis.html"><div class="ic">🔢</div><h3>黎曼猜想：素数分布的密码</h3><p>素数看似随机，却藏着一条神秘的"临界线"。</p></a>
-    <a class="card reveal" href="fourier-transform.html"><div class="ic">🎵</div><h3>傅里叶变换：把声音拆成音符</h3><p>一副能把任何信号拆成"频率音符"的魔法眼镜。</p></a>
-    <a class="card reveal" href="chaos-theory.html"><div class="ic">🦋</div><h3>混沌理论：一只蝴蝶能掀起风暴吗？</h3><p>确定性的系统，也会变得不可预测。</p></a>
-    <a class="card reveal" href="rsa-crypto.html"><div class="ic">🔐</div><h3>RSA 密码：大数分解守护互联网</h3><p>互联网背后的"锁"：靠一个极难的数学题守门。</p></a>
+<!-- /.story-pane -->
+  </div>
+
+  <div class="tech-pane">
+
+    <div class="section"><h2>技术摘要</h2>
+      <p><b>癌症免疫疗法</b> 含免疫检查点阻断（抗 CTLA-4、抗 PD-1/PD-L1 抗体）与 CAR-T 细胞疗法。前者解除肿瘤对 T 细胞的抑制信号，后者经基因改造使 T 细胞表达肿瘤特异性受体。</p>
     </div>
-  </section>
-  <section class="cat">
-    <h2 class="cat-title reveal">🌍 地球气候 <span class="cat-count">6 个专题</span></h2>
-    <div class="grid">
-    <a class="card reveal" href="greenhouse-effect.html"><div class="ic">🌡️</div><h3>温室效应：地球的温度调节器</h3><p>让地球不结冰、也让地球变热的双层"被子"。</p></a>
-    <a class="card reveal" href="carbon-cycle.html"><div class="ic">♻️</div><h3>碳循环：地球的生命元素之旅</h3><p>碳在大气、海洋、岩石与生命间不停旅行。</p></a>
-    <a class="card reveal" href="plate-tectonics.html"><div class="ic">🌋</div><h3>板块构造：漂移的大陆</h3><p>大陆不是钉死的，而是在缓慢"漂移"。</p></a>
-    <a class="card reveal" href="el-nino.html"><div class="ic">🌊</div><h3>厄尔尼诺：太平洋的呼吸</h3><p>太平洋每隔几年的一次"深呼吸"，搅动全球天气。</p></a>
-    <a class="card reveal" href="ozone-layer.html"><div class="ic">🛡️</div><h3>臭氧层：地球的隐形盾牌</h3><p>高空的防晒盾，曾被人类自己戳出洞。</p></a>
-    <a class="card reveal" href="ocean-acidification.html"><div class="ic">🐚</div><h3>海洋酸化：被溶解的珊瑚家园</h3><p>海洋在悄悄变酸，珊瑚和贝类的家正在溶解。</p></a>
+    <div class="section"><h2>前沿状态</h2>
+      <p>2018 年诺贝尔生理学或医学奖授予艾利森与本庶佑。多款检查点抑制剂已获批；CAR-T 在白血病/淋巴瘤获批，实体瘤与通用化仍在攻关。</p>
     </div>
-  </section>
-  <section class="cat">
-    <h2 class="cat-title reveal">🧠 人工智能 <span class="cat-count">6 个专题</span></h2>
-    <div class="grid">
-    <a class="card reveal" href="agi.html"><div class="ic">🧠</div><h3>通用人工智能 AGI</h3><p>信息与智能 · ChatGPT 之后，下一步会到哪里？</p></a>
-    <a class="card reveal" href="deep-learning.html"><div class="ic">🕸️</div><h3>深度学习：神经网络的复兴</h3><p>让神经网络"深"起来，机器开始自己学特征。</p></a>
-    <a class="card reveal" href="transformer-llm.html"><div class="ic">🤖</div><h3>大语言模型与 Transformer</h3><p>一句话的论文，改写了整个 AI 的走向。</p></a>
-    <a class="card reveal" href="rl-alphago.html"><div class="ic">♟️</div><h3>强化学习与 AlphaGo</h3><p>从输到赢，机器自己"试"出来的智能。</p></a>
-    <a class="card reveal" href="computer-vision.html"><div class="ic">👁️</div><h3>计算机视觉：让机器看见世界</h3><p>从像素到理解，让机器真正"看见"。</p></a>
-    <a class="card reveal" href="cnn.html"><div class="ic">🔍</div><h3>卷积神经网络：图像识别的引擎</h3><p>模仿视觉皮层，一层层抽取图像特征。</p></a>
+    <div class="section"><h2>相关科学家</h2>
+      <p>艾利森与本庶佑（2018 诺奖）· 多位 CAR-T 先驱（如 June 团队）</p>
     </div>
-  </section>
+    <div class="section"><h2>📚 延伸阅读（可溯源）</h2>
+      <p><a href="https://www.nobelprize.org/prizes/medicine/2018/summary/" target="_blank" rel="noopener">2018 诺贝尔生理学或医学奖</a> · <a href="https://en.wikipedia.org/wiki/Immune_checkpoint" target="_blank" rel="noopener">维基百科：免疫检查点</a> · <a href="https://en.wikipedia.org/wiki/CAR_T_cell" target="_blank" rel="noopener">维基百科：CAR-T</a></p>
+    </div>
+  </div>
+
+  <div class="related">
+    <span style="color:var(--ink-dim);font-size:14px">探索更多：</span>
+    <a href="mrna-vaccine.html">mRNA 疫苗</a>
+    <a href="crispr.html">CRISPR：基因编辑的剪刀</a>
+    <a href="dna-double-helix.html">DNA 双螺旋</a>
+    <a href="microbiome.html">人体微生物组</a>
+  </div>
 </div>
+
 <script>
-if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0.1});document.querySelectorAll('.reveal').forEach(function(e){io.observe(e);});}
-else{document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in');});}
-</script>
+    // 专题 tab 切换
+    document.querySelectorAll('.tab-btn').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        var tab = btn.getAttribute('data-tab');
+        document.querySelectorAll('.tab-btn').forEach(function(b){ b.classList.toggle('active', b===btn); });
+        document.querySelectorAll('.story-pane, .tech-pane').forEach(function(p){
+          p.classList.toggle('active', (tab==='story' && p.classList.contains('story-pane')) || (tab==='tech' && p.classList.contains('tech-pane')));
+        });
+      });
+    });
+  </script>
+<script>window.__AI_CONTEXT={"topic":"癌症免疫疗法","icebreakers":["癌症免疫疗法是怎么让身体杀癌的？","什么是免疫检查点、PD-1？","CAR-T 和普通免疫疗法有什么不同？","为什么它能带来长期缓解？"]};</script>
+  <script>window.__AI_PROXY_URL="https://ai.sciencefrontier.cn";</script>
+<script src="ai-widget.js?v=3"></script>
 <style id="ex-chrome-style">
 #exFootBar{position:fixed;left:0;right:0;bottom:0;z-index:40;display:flex;align-items:center;justify-content:center;gap:12px;padding:14px 20px;pointer-events:none;opacity:0;transform:translateY(8px);transition:opacity .35s ease,transform .35s ease;background:linear-gradient(to top,rgba(7,7,11,.85),rgba(7,7,11,0));color:rgba(200,210,240,.5);font-size:11.5px;letter-spacing:.04em;flex-wrap:wrap}
 #exFootBar.visible{opacity:1;transform:none;pointer-events:auto}
