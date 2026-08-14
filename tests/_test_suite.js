@@ -4,7 +4,7 @@ const fs = require('fs');
 
 const ROOT = path.resolve('.');
 const FILE = 'file://' + path.join(ROOT, 'website/index.html');
-const CHROME = 'C:/Users/zyd/.cache/puppeteer/chrome/win64-127.0.6533.88/chrome-win64/chrome.exe';
+const CHROME = 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const OUT = path.join(ROOT, 'verify_shots/test-report');
 fs.mkdirSync(OUT, { recursive: true });
 const sleep = ms => new Promise(r => setTimeout(r, ms));
@@ -147,6 +147,25 @@ async function runTest(name, vw, vh) {
   check('Stars with 溯源 data-jump (>=5)', jumpProbe.found >= 5, 'found=' + jumpProbe.found + '/' + jumpProbe.total);
   await page.evaluate(() => window.cardHideNow ? window.cardHideNow() : null);
   await sleep(200);
+
+  // ─── 7c. Sticky(pinned) 交互回归守卫 ───
+  // 曾经因 starEnter 首行 `if(pinned) return` + click 先置 pinned 的 bug，导致点击星点根本不开卡（P0）。
+  // 这段断言：点击开卡并常驻 / 常驻不自动消失 / hover 其它星点不切换 / 点击卡外才消失。
+  await page.evaluate(() => { const s = document.querySelector('.bc-star'); if (s) s.dispatchEvent(new MouseEvent('click', { bubbles: true })); });
+  await sleep(300);
+  const pin1 = await page.evaluate(() => { const hc = document.getElementById('hoverCard'); return { on: hc.classList.contains('on'), pinned: hc.classList.contains('pinned'), flag: window.pinned === true }; });
+  check('Click star → card opens & pinned (P0 sticky)', pin1.on && pin1.pinned && pin1.flag, JSON.stringify(pin1));
+  await sleep(1200); // 超过 cardLeaveSoft 的 800ms 阈值
+  const pin2 = await page.evaluate(() => document.getElementById('hoverCard').classList.contains('on'));
+  check('Pinned card stays >1200ms (cardLeaveSoft guarded)', pin2);
+  await page.evaluate(() => { const s = document.querySelectorAll('.bc-star')[1]; if (s) s.dispatchEvent(new MouseEvent('mouseenter', { bubbles: true })); });
+  await sleep(400);
+  const pin3 = await page.evaluate(() => document.getElementById('hoverCard').classList.contains('on'));
+  check('Hover other star while pinned → no switch/disappear', pin3);
+  await page.evaluate(() => document.body.dispatchEvent(new MouseEvent('click', { bubbles: true })));
+  await sleep(300);
+  const pin4 = await page.evaluate(() => { const hc = document.getElementById('hoverCard'); return { on: hc.classList.contains('on'), flag: window.pinned === true }; });
+  check('Click outside → card hidden & unpinned', !pin4.on && !pin4.flag, JSON.stringify(pin4));
 
   // ─── 8. hover card data-detail → opens detail ───
   if (starCard && starCard.hasDetail) {

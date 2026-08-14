@@ -104,7 +104,7 @@
     background:radial-gradient(circle,color-mix(in srgb,var(--bc-c) 96%,white 4%) 0%,color-mix(in srgb,var(--bc-c) 78%,transparent) 48%,transparent 70%);
     box-shadow:0 0 6px color-mix(in srgb,var(--bc-c) 85%,white 15%), 0 0 12px color-mix(in srgb,var(--bc-c) 60%,transparent);
     transition:filter .18s ease;will-change:transform,opacity}
-  .bc-star::after{content:'';position:absolute;inset:-8px;border-radius:50%}
+  .bc-star::after{content:'';position:absolute;inset:-10px;border-radius:50%}
   .bc-star.d-cos{--bc-c:var(--d-cos)} .bc-star.d-phy{--bc-c:var(--d-phy)} .bc-star.d-mat{--bc-c:var(--d-mat)}
   .bc-star.d-lif{--bc-c:var(--d-lif)} .bc-star.d-che{--bc-c:var(--d-che)} .bc-star.d-eng{--bc-c:var(--d-eng)}
   .bc-star.d-inf{--bc-c:var(--d-inf)} .bc-star.d-ear{--bc-c:var(--d-ear)} .bc-star.d-spa{--bc-c:var(--d-spa)} .bc-star.d-soc{--bc-c:var(--d-soc)}
@@ -125,6 +125,8 @@
   /* 单颗星选中：环形 + 光晕 */
   .bc-star.focused-sel{filter:brightness(2.0) drop-shadow(0 0 10px currentColor);z-index:8}
   .bc-star.focused-sel::before{content:'';position:absolute;inset:-9px;border-radius:50%;border:1.5px solid color-mix(in srgb,var(--bc-c) 90%,white);box-shadow:0 0 14px 3px color-mix(in srgb,var(--bc-c) 60%,transparent);animation:starRing 1.4s ease-out infinite}
+  /* 悬停某颗星时，其余星点淡化，减少密集星场中的误点（#197） */
+  #bcStars:hover .bc-star:not(:hover){filter:opacity(.28) saturate(.35);transition:filter .2s ease}
   .bc-star.pulse::after{border:1px solid currentColor;animation:starPulse 1.5s ease-out 2}
   @keyframes starPulse{0%{transform:scale(.4);opacity:1}100%{transform:scale(3.4);opacity:0}}
   /* galaxy canvas — z=6 places it ABOVE .scene (z=5). Without this, sGalaxy's
@@ -207,6 +209,9 @@
   /* 悬浮卡顶部提示——指示用户点击悬浮文字 */
   #hoverCard .hc-tip{font-size:10.5px;color:rgba(251,191,36,.85);letter-spacing:.04em;margin-bottom:8px;padding:4px 0;border-bottom:1px dashed rgba(251,191,36,.25);position:relative}
   #hoverCard .hc-tip::after{content:'';position:absolute;left:-2px;bottom:-1px;width:6px;height:6px;border-left:1px solid rgba(251,191,36,.6);border-bottom:1px solid rgba(251,191,36,.6);transform:translate(-100%,-30%) rotate(135deg)}
+  /* 常驻（pinned）信息卡：固定后高亮边框 + 角标提示，直到点击卡外才消失 */
+  #hoverCard.pinned{border-left-width:4px;box-shadow:0 14px 52px rgba(0,0,0,.72),0 0 30px rgba(125,211,252,.30);animation:none}
+  #hoverCard.pinned::before{content:'📌 已固定 · 点击空白处关闭';position:absolute;top:-24px;left:0;font-size:10px;letter-spacing:.04em;color:rgba(200,220,255,.66);white-space:nowrap;pointer-events:none}
   /* 引导深入探索的追问卡片 */
   #hoverCard .hc-followup{margin-top:10px;padding:10px 12px;border-radius:8px;background:linear-gradient(135deg,rgba(99,102,241,.10),rgba(129,140,248,.06));border:1px solid rgba(120,140,255,.22);display:flex;gap:10px;align-items:flex-start}
   #hoverCard .hc-fu-ic{flex:0 0 auto;color:rgba(180,200,255,.75);font-weight:700;font-size:14px;line-height:1.5}
@@ -343,6 +348,8 @@
   .hero-explain-chip:hover{color:#fff;border-color:#7dd3fc;
     background:rgba(15,23,42,.78);box-shadow:0 6px 26px rgba(0,0,0,.5),0 0 16px rgba(125,211,252,.18);transform:translateY(-2px)}
   .hero-explain-chip:focus-visible{outline:1px solid rgba(125,211,252,.6);outline-offset:3px}
+  /* hero 文案层抬到挂谷卡之上，避免被压住 */
+  #sHero .inner{position:relative;z-index:7}
   @keyframes hotSpin{to{transform:rotate(360deg)}}
   @media(prefers-reduced-motion:reduce){#hotKakeya,#hotKakeya::before{animation:none}}
 
@@ -613,7 +620,7 @@
   p, .lede{font-size:clamp(13px,3.5vw,16px)}
 
   /* 场景内边距 */
-  #sHero .inner, #sBoundary .inner, #sGalaxy .inner, #sHonor .inner, #sTeach .inner{padding:20px 16px;max-width:100vw}
+  #sHero .inner, #sBoundary .inner, #sGalaxy .inner, #sHonor .inner, #sTeach .inner{padding:20px 16px;max-width:100vw;position:relative;z-index:8}
 
   /* ---- Hero：标题缩放 ---- */
   #sHero .eyebrow{font-size:10px}
@@ -621,7 +628,7 @@
   #sHero .sub{font-size:clamp(13px,3.8vw,17px)}
   #sHero .quiet{font-size:11px}
   .hero-explain-chip{font-size:11px;padding:6px 14px}
-  #hotKakeya{position:fixed;left:50%;bottom:80px;transform:translateX(-50%);z-index:30;max-width:calc(100vw-16px);width:max-content}
+  #hotKakeya{position:absolute;left:50%;bottom:5vh;transform:translateX(-50%);z-index:7;max-width:calc(100vw-16px);width:max-content}
   #hotKakeya .hk-t{font-size:14px}
   #hotKakeya .hk-s{font-size:10px}
   .ambient .q-float{font-size:12px;animation-duration:18s !important}
@@ -640,20 +647,24 @@
 
   /* ---- 荣誉屏：3 束改竖排 + 头像缩小 ---- */
   #sHonor .act-tag{font-size:9px;letter-spacing:.16em}
-  #sHonor h2{font-size:clamp(16px,5vw,26px)}
-  #sHonor .lede{font-size:12px;max-width:26ch}
-  .beams{grid-template-columns:1fr !important;gap:14px !important;margin-top:18px}
-  .beams > .beam{padding:12px 14px;display:flex;flex-direction:column;overflow:visible}
-  .beam .b-hd{flex:0 0 auto;margin-bottom:6px}
-  .beam .b-list{flex:1 1 auto;min-height:0;overflow-y:visible;overflow-x:hidden;padding:6px 4px 6px 0;display:flex;flex-wrap:wrap;gap:8px 6px;max-height:none !important}
-  .beam .b-avatars{display:contents}
-  .beam .beacon{width:36px;height:36px;position:relative}
-  .beam .beacon .info{display:none}
-  .beam .b-nm{margin-top:2px;font-size:9px;line-height:1.1}
-  .beam .b-hd h3{font-size:12.5px}
-  .beam .b-hd .n{font-size:10px}
-  .beam .b-more-btn{font-size:10px;padding:6px 10px;margin:6px 0 2px}
-  .honor-bg-note{font-size:9.5px;padding:8px 12px;max-width:90vw}
+  #sHonor h2{font-size:clamp(16px,5vw,26px);white-space:nowrap}
+  #sHonor .lede{font-size:11px;max-width:36ch;line-height:1.45;margin:0 auto}
+  .beams{grid-template-columns:1fr !important;grid-template-rows:repeat(3,188px) !important;gap:12px !important;margin-top:14px;align-items:start}
+  .beams > .beam{padding:10px 12px;display:flex;flex-direction:column;overflow:visible}
+  .beam .b-head{flex:0 0 auto;margin-bottom:4px}
+  .beam .from, .beam .meta{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:9.5px;margin-bottom:1px}
+  .beam .b-list{flex:1 1 auto;min-height:0;overflow-y:visible;overflow-x:hidden;padding:4px 0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 6px;max-height:none !important}
+  .beam .beacon{display:flex;flex-direction:column;align-items:center;width:42px;height:auto;padding:0;border-top:none;position:relative}
+  .beam .beacon .avatar{flex:0 0 auto;width:34px;height:34px;margin:0 auto}
+  .beam .beacon .info{display:block;flex:0 0 auto;min-width:0;width:100%;text-align:center;margin-top:2px;opacity:1}
+  .beam .beacon .info .b-name{font-size:8.5px;line-height:1.1;color:var(--ink);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .beam .beacon .info .b-en,
+  .beam .beacon .info .b-award,
+  .beam .beacon .info .b-note{display:none}
+  .beam .b-head h3{font-size:12px}
+  .beam .b-head .n{font-size:9.5px}
+  .beam .b-more-btn{font-size:9.5px;padding:5px 10px;margin:4px 0 2px}
+  .honor-bg-note{display:none}
   #startBtn{font-size:14px;padding:8px 24px}
 
   /* ---- 教学屏：路径卡 + 领域卡竖排 ---- */
@@ -764,7 +775,7 @@
       <a class="hero-explain-chip" href="explainers/index.html" target="_blank" aria-label="打开深度科普讲解">📖 深度科普讲解</a>
       <p class="sub">有些世界已被照亮，<br/>有些星海仍待探索。</p>
       <div class="quiet"><span data-stat="total-problems">—</span> 个前沿问题 · <span data-stat="total-awardees">—</span> 位获奖者 · 100% 溯源</div>
-      <div class="scroll-hint">向下 · 进入同一片星海</div>
+      <div class="scroll-hint">向下，进入星海</div>
     </div>
     <div class="hot-question" id="hotKakeya">
       <span class="hk-badge">热门</span>
@@ -1061,10 +1072,10 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     s.addEventListener('click',function(e){
       e.stopPropagation();
       if(typeof selectStar==='function') selectStar(p.id);
-      // 触屏设备：tap 也弹出悬浮卡
-      if(window.matchMedia && window.matchMedia('(pointer:coarse), (hover:none)').matches){
-        starEnter(p,s,e);
-      }
+      // 单击 = 选中并常驻信息卡（直到点击卡外才消失）；触屏 tap 同样生效
+      starEnter(p,s,e);      // 先开卡：此刻 pinned 仍为 false，starEnter 不会提前 return
+      window.pinned=true;    // 再锁定：之后 hover 其它星点不再切换
+      if(hcard) hcard.classList.add('pinned');
     });
     starHost.appendChild(s);
     return s;
@@ -1159,7 +1170,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   document.addEventListener('pointerenter', function(){ probe.style.opacity=1; });
 
   /* ---------------- unified hover card ---------------- */
-  var hideT=null, cardOwner=null;
+  var hideT=null, cardOwner=null; window.pinned=false;
   // 暴露给其它模块查询当前卡片归属（防止悬浮问题离开时被重置）
   function getCardOwner(){ return cardOwner; }
   function cardPlace(){
@@ -1186,8 +1197,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     hcard.classList.add('on');
     cardPlace();                       // frozen once shown so the pointer can travel onto it
   }
-  function cardHideNow(){ hcard.classList.remove('on'); cardOwner=null; onCardHidden(); }
-  function cardLeaveSoft(){ if(hideT) clearTimeout(hideT); hideT=setTimeout(cardHideNow,800); }
+  function cardHideNow(){ hcard.classList.remove('on'); cardOwner=null; window.pinned=false; hcard.classList.remove('pinned'); onCardHidden(); }
+  function cardLeaveSoft(){ if(window.pinned) return; if(hideT) clearTimeout(hideT); hideT=setTimeout(cardHideNow,800); }
   hcard.addEventListener('mouseenter', function(){ if(hideT){clearTimeout(hideT);hideT=null;} });
   // 暴露卡片归属查询（防止悬浮问题在用户移到卡片上时漂走）
   window.getCardOwner = getCardOwner;
@@ -1197,6 +1208,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     if(!hcard.classList.contains('on')) return;
     if(hcard.contains(e.target)) return;
     if(e.target.closest('.bc-star,.beacon,.q-float,#hotKakeya')) return;
+    if(window.pinned){ window.pinned=false; hcard.classList.remove('pinned'); }
     cardHideNow();
   });
   hcard.addEventListener('mouseleave', cardLeaveSoft);
@@ -1243,7 +1255,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   });
 
   var PID2BEACON = {};   // filled after beams render
-  function starEnter(p,el,e){
+  function starEnter(p,el,e){ if(window.pinned) return;
     var g=DOM2MACRO[p.d]||0, col=DOM_HEX[p.d];
     // 科普钩子——激发好奇心的问题。点击直接打开详情。
     var hook=generateHook(p);
@@ -1818,7 +1830,9 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
         s.style.setProperty('--bx', np[0].toFixed(1)+'%');
         s.style.setProperty('--by', np[1].toFixed(1)+'%');
       });
-      s.addEventListener('mouseenter',function(){
+      function showQCard(){
+        // 已锁定常驻时，不因 hover/误触重建卡片
+        if(window.pinned) return;
         // 重新进入 → 取消待复位计时，避免刚回来又被复位
         if(s.__relT){ clearTimeout(s.__relT); s.__relT=null; }
         // hold the question in place so the user can read it and aim at the card
@@ -1829,13 +1843,14 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
         var followup = generateFollowup(q);
         var sub='<div class="hc-sub">对应前沿问题 · '+esc(q.t)+'</div>';
         cardShow(
-          '<div class="hc-tip">↑ 点击此处文字直接打开详情</div>'+
+          '<div class="hc-tip" data-detail="prob:'+esc(q.id)+'">↑ 点击此处文字直接打开详情</div>'+
           '<div class="hc-kick"><span class="dot" style="background:'+q.col+'"></span>'+esc(q.id)+' · '+esc(q.d)+'</div>'+
           '<div class="hc-title">'+esc(q.q)+'</div>'+
           sub+
           (followup?'<div class="hc-followup"><span class="hc-fu-ic">→</span><span class="hc-fu-txt">想得更深一步：<br>'+esc(followup)+'</span></div>':''),
           q.col, 'qfloat:'+q.id);
-      });
+      }
+      s.addEventListener('mouseenter',function(){ showQCard(); });
       // 复位：摘掉暂停(held)与高亮(linked)，让问题恢复变暗并继续上升漂移
       function releaseQ(){
         if(s.__relT){ clearTimeout(s.__relT); s.__relT=null; }
@@ -1861,9 +1876,11 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
         releaseQ(); cardLeaveSoft();
       });
       s.addEventListener('click',function(){
-        // 直接打开对应问题的详情卡（背景的星星自动闪烁高亮）
-        if(typeof openDetail==='function') openDetail('prob', q.id);
-        cardHideNow();
+        // 单击 = 选中并常驻信息卡（不再直接弹大详情；卡内"点击文字打开详情"可进大详情）
+        showQCard();            // 先开卡：触屏无 hover 也能弹
+        window.pinned=true;     // 再锁定：之后 hover 其它问题不再切换
+        if(hcard) hcard.classList.add('pinned');
+        if(typeof pulseStar==='function') pulseStar(q.id);
       });
       host.appendChild(s);
     });
