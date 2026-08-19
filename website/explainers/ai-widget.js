@@ -23,6 +23,22 @@
     return '你是"科学边界"知识星图项目的 AI 科普助手，受众是 10-16 岁青少年。当前用户正在阅读《'+topic+'》的主题页面。请针对这个话题深入浅出地回答，多用比喻，每个概念附注英文名，末尾列 2-4 条来源 [名称](URL)。回答 300-500 字。如果问题超出范围，就给搜索建议。';
   }
 
+  /* ---- 运行环境探测：触屏/微信/X5 内核/桌面，决定自动朗读与降级策略 ---- */
+  var ENV = (function(){
+    var fine = false, coarse = false, touch = false, wechat = false, ios = false;
+    try {
+      fine = window.matchMedia && window.matchMedia('(pointer:fine)').matches;
+      coarse = window.matchMedia && window.matchMedia('(pointer:coarse)').matches;
+    } catch(e){}
+    touch = ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
+    var ua = navigator.userAgent || '';
+    wechat = /MicroMessenger/i.test(ua);
+    ios = /iP(hone|od|ad)/i.test(ua) || (/Macintosh/i.test(ua) && touch && !fine);
+    return { fine: fine, coarse: coarse, touch: touch, wechat: wechat, ios: ios,
+             canAutoSpeak: (fine && !coarse) };
+  })();
+  window.__AW_ENV = ENV; // 供回归测试断言
+
   /* ---- TTS 语音播报引擎（与主页问科学共用 localStorage['sf_tts_on']）---- */
   var TTS = (function(){
     var supported = !!(window.speechSynthesis && window.SpeechSynthesisUtterance);
@@ -40,11 +56,13 @@
     function isOn(){ return enabled; }
     function setOn(on){ enabled=!!on; try{ localStorage.setItem(KEY, enabled?'on':'off'); }catch(e){} }
     function cleanText(t){ return String(t||'').replace(/\*\*(.+?)\*\*/g,'$1').replace(/\[([^\]]+)\]\(([^)]+)\)/g,'$1').replace(/https?:\/\/[^\s\)\]]+/g,'').replace(/[<>]/g,'').replace(/\s+/g,' ').trim(); }
+    function copyText(t){ t=cleanText(t); if(!t) return false; try{ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(t); return true; } }catch(e){} try{ var ta=document.createElement('textarea'); ta.value=t; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.top='-9999px'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); var ok=document.execCommand('copy'); document.body.removeChild(ta); return ok; }catch(e){ return false; } }
     function splitChunks(t){ var segs=t.split(/(?<=[。！？；?!;\n])/).map(function(s){return s.trim();}).filter(Boolean); if(!segs.length) segs=[t]; var out=[]; segs.forEach(function(s){ while(s.length>110){ out.push(s.slice(0,110)); s=s.slice(110);} if(s) out.push(s); }); return out.length?out:[t]; }
     function stop(){ if(!supported) return; try{ window.speechSynthesis.cancel(); }catch(e){} if(current){ current.classList.remove('speaking'); current=null; } }
     function speak(text, el){
-      if(!supported || !enabled) return;
+      if(!supported) return;
       stop();
+      try { if(window.speechSynthesis.paused) window.speechSynthesis.resume(); } catch(e){}
       var clean = cleanText(text); if(!clean) return;
       var chunks = splitChunks(clean);
       if(el){ el.classList.add('speaking'); current = el; }
@@ -54,15 +72,29 @@
         try{ window.speechSynthesis.speak(u); }catch(e){ if(el) el.classList.remove('speaking'); } }
       next();
     }
-    return { supported:supported, isOn:isOn, setOn:setOn, speak:speak, stop:stop, cleanText:cleanText };
+    return { supported:supported, isOn:isOn, setOn:setOn, speak:speak, stop:stop, cleanText:cleanText, copy:copyText };
   })();
   function attachTts(msgDiv, rawText){
-    if(!TTS.supported || !rawText) return;
-    var btn = document.createElement('button');
-    btn.className='aw-tts-play'; btn.type='button'; btn.setAttribute('aria-label','朗读本条回答'); btn.title='朗读本条';
-    btn.textContent='🔊 朗读';
-    btn.addEventListener('click', function(e){ e.stopPropagation(); if(msgDiv.classList.contains('speaking')) TTS.stop(); else TTS.speak(rawText, msgDiv); });
-    msgDiv.appendChild(btn);
+    if(!rawText) return;
+    if(TTS.supported){
+      var btn = document.createElement('button');
+      btn.className='aw-tts-play'; btn.type='button'; btn.setAttribute('aria-label','朗读本条回答'); btn.title='朗读本条';
+      btn.textContent='🔊 朗读';
+      btn.addEventListener('click', function(e){ e.stopPropagation(); if(msgDiv.classList.contains('speaking')) TTS.stop(); else TTS.speak(rawText, msgDiv); });
+      var obs = new MutationObserver(function(){
+        var on = msgDiv.classList.contains('speaking');
+        btn.textContent = on ? '⏹ 停止朗读' : '🔊 朗读';
+        btn.classList.toggle('speaking', on);
+      });
+      obs.observe(msgDiv, { attributes:true, attributeFilter:['class'] });
+      msgDiv.appendChild(btn);
+    } else {
+      var copyBtn = document.createElement('button');
+      copyBtn.className='aw-tts-play aw-tts-copy'; copyBtn.type='button'; copyBtn.setAttribute('aria-label','复制本条回答'); copyBtn.title='复制本条回答';
+      copyBtn.textContent='📋 复制回答';
+      copyBtn.addEventListener('click', function(e){ e.stopPropagation(); var ok=TTS.copy(rawText); copyBtn.textContent = ok ? '✅ 已复制' : '⚠️ 复制失败'; setTimeout(function(){ copyBtn.textContent='📋 复制回答'; }, 1600); });
+      msgDiv.appendChild(copyBtn);
+    }
   }
 
   /* ---- 通用粒子点图标（与主页问科学按钮统一） ---- */
@@ -149,7 +181,7 @@
       messages.push({role:'assistant',content:reply});
       ld.innerHTML='<p>'+md2html(reply)+'</p>';
       attachTts(ld, reply);
-      if(TTS.isOn()) TTS.speak(reply, ld);
+      if(TTS.isOn() && ENV.canAutoSpeak) TTS.speak(reply, ld);
     }).catch(function(e){
       ld.innerHTML='<p class="aw-err">⚠️ 连接失败：'+esc(e.message||'')+'。请稍后重试。</p>';
     }).finally(function(){loading=false;send.disabled=false;send.textContent='发送';input.focus();});
@@ -231,10 +263,14 @@
 
   /* ---- 样式 ---- */
   var s=document.createElement('style');s.textContent=[
+    /* B6：微信 X5 / 旧 WebView 灰闪与缩放修正（覆盖整页，含科普子页 chrome） */
+    'html{-webkit-text-size-adjust:100%} *{-webkit-tap-highlight-color:transparent}',
     '#aw-btn{position:fixed;right:20px;bottom:20px;z-index:1000;width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,#6366f1,#8b5cf6);color:#fff;font-size:20px;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 3px 18px rgba(99,102,241,.45);transition:all .25s;border:none;font-family:inherit;user-select:none}',
     '#aw-btn:hover{transform:scale(1.08);box-shadow:0 5px 26px rgba(99,102,241,.65)}',
     '#aw-panel{position:fixed;right:14px;bottom:14px;z-index:1001;width:360px;max-width:calc(100vw-24px);height:460px;max-height:calc(100vh-50px);background:#11131f;border:1px solid rgba(255,255,255,.12);border-radius:14px;display:flex;flex-direction:column;overflow:hidden;box-shadow:0 10px 40px rgba(0,0,0,.7);opacity:0;transform:translateY(16px) scale(.96);pointer-events:none;transition:all .3s cubic-bezier(.4,0,.2,1);font-family:inherit}',
     '#aw-panel.open{opacity:1;transform:none;pointer-events:auto}',
+    /* B3：iPhone 底部 home indicator 不遮挡 AI 面板 */
+    '@supports (bottom: env(safe-area-inset-bottom)){#aw-panel{bottom:calc(14px + env(safe-area-inset-bottom,0px))}}',
     '.aw-head{display:flex;align-items:center;gap:8px;padding:12px 14px;background:linear-gradient(135deg,rgba(99,102,241,.18),rgba(139,92,246,.12));border-bottom:1px solid rgba(255,255,255,.08);font-size:13px;color:#c7d2fe;font-weight:600;flex-shrink:0}',    '.aw-close{background:none;border:none;color:rgba(255,255,255,.45);font-size:15px;cursor:pointer;margin-left:auto;padding:2px 8px;font-family:inherit}',
     '.aw-close:hover{color:#fff}',
     '.aw-msgs{flex:1;overflow-y:auto;padding:10px 12px;display:flex;flex-direction:column;gap:8px}',
@@ -264,6 +300,11 @@
     '.aw-tts-toggle:hover{border-color:#7dd3fc;color:#e0f2fe}',
     '.aw-tts-play{margin-top:7px;display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 12px;border-radius:999px;border:1px solid rgba(125,211,252,.35);background:rgba(8,47,73,.4);color:#7dd3fc;font-size:12px;cursor:pointer;font-family:inherit;transition:all .15s}',
     '.aw-tts-play:hover{background:rgba(8,47,73,.7);border-color:#7dd3fc;color:#e0f2fe}',
+    '.aw-tts-play.speaking{background:rgba(8,47,73,.7);border-color:#7dd3fc;color:#e0f2fe}',
+    '.aw-tts-copy:hover{background:rgba(8,47,73,.7);border-color:#7dd3fc;color:#e0f2fe}',
+    '.tts-btn{margin-top:8px;display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 14px;border-radius:999px;border:1px solid rgba(125,211,252,.35);background:rgba(8,47,73,.4);color:#7dd3fc;font-size:12px;cursor:pointer;font-family:inherit;transition:all .15s}',
+    '.tts-btn:hover{background:rgba(8,47,73,.7);border-color:#7dd3fc;color:#e0f2fe}',
+    '.tts-btn.playing{background:rgba(8,47,73,.7);border-color:#7dd3fc;color:#e0f2fe}',
     '.aw-msg{position:relative}',
     '.aw-msg.speaking{padding-left:14px}',
     '.aw-msg.speaking::before{content:\'\';position:absolute;left:-4px;top:9px;bottom:9px;width:3px;border-radius:2px;background:#67e8f9;animation:awTtsBreath 1.1s ease-in-out infinite}',
@@ -273,7 +314,7 @@
     '#aw-btn,#aw-panel,#aw-panel *{cursor:auto !important}',
     '#aw-btn,.aw-sug,.aw-send,.aw-close{cursor:pointer !important}',
     '.aw-input{cursor:text !important}',
-    '@media(max-width:500px){#aw-panel{right:6px;bottom:6px;width:calc(100vw-12px);height:420px;border-radius:10px}}',
+    '@media(max-width:500px){#aw-panel{right:6px;bottom:calc(6px + env(safe-area-inset-bottom,0px));width:calc(100vw-12px);height:420px;border-radius:10px}}',
     /* ---- 划词提问浮标：椭圆药丸、深色半透明、青色边框（与主站 ai-ask-launcher 一致）---- */
     '#aw-ask-launcher{position:fixed;z-index:100002;display:none;align-items:center;gap:6px;height:34px;padding:0 16px;border-radius:999px;border:1px solid rgba(125,211,252,.45);background:rgba(15,23,42,.94);color:#e0f2fe;font-size:13px;font-weight:600;font-family:inherit;cursor:pointer !important;box-shadow:0 6px 24px rgba(0,0,0,.5);opacity:0;transform:translateY(4px);transition:opacity .15s,transform .15s;pointer-events:auto;line-height:1;white-space:nowrap;-webkit-appearance:none;appearance:none;box-sizing:border-box}',
     '#aw-ask-launcher.on{display:flex;opacity:1;transform:none}',
@@ -307,24 +348,51 @@
 
   /* ---- 旁白：用浏览器内置语音合成朗读本文（零资源、离线可用，替代缺失的 mp3） ---- */
   (function(){
+    function copyBody(){
+      var t = (document.body.innerText || '').replace(/\s+/g, ' ').trim();
+      try { if(navigator.clipboard && navigator.clipboard.writeText){ navigator.clipboard.writeText(t); return true; } } catch(e){}
+      try { var ta = document.createElement('textarea'); ta.value = t; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.top='-9999px'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); var ok = document.execCommand('copy'); document.body.removeChild(ta); return ok; } catch(e){ return false; }
+    }
     function speak(){
       if(!window.speechSynthesis) return;
       var btn = this;
-      if(window.speechSynthesis.speaking){
+      if(window.speechSynthesis.speaking || window.speechSynthesis.pending){
+        try { window.speechSynthesis.resume(); } catch(e){}
         window.speechSynthesis.cancel();
         document.querySelectorAll('.tts-btn.playing').forEach(function(b){ b.classList.remove('playing'); b.textContent='🔊 朗读本文'; });
         return;
       }
       var text = (document.body.innerText || '').replace(/\s+/g, ' ').trim().slice(0, 4000);
-      var u = new SpeechSynthesisUtterance(text);
-      u.lang = 'zh-CN'; u.rate = 0.98;
-      u.onend = function(){ btn.classList.remove('playing'); btn.textContent = '🔊 朗读本文'; };
-      u.onerror = function(){ btn.classList.remove('playing'); btn.textContent = '🔊 朗读本文'; };
-      try { window.speechSynthesis.speak(u); } catch (e) { return; }
+      // 长文分句排队，规避 iOS 15s 截断
+      var segs = text.split(/(?<=[。！？；?!;\n])/).map(function(s){ return s.trim(); }).filter(Boolean);
+      if(!segs.length) segs = [text];
+      var i = 0;
+      function next(){
+        if(i >= segs.length){ btn.classList.remove('playing'); btn.textContent = '🔊 朗读本文'; return; }
+        var u = new SpeechSynthesisUtterance(segs[i]);
+        u.lang = 'zh-CN'; u.rate = 0.98;
+        u.onend = function(){ i++; next(); };
+        u.onerror = function(){ i++; next(); };
+        try { window.speechSynthesis.speak(u); } catch(e){ i++; next(); }
+      }
+      next();
       btn.classList.add('playing'); btn.textContent = '⏹ 停止朗读';
     }
     document.querySelectorAll('.audio-player').forEach(function(box){
       box.innerHTML = '';
+      if(!window.speechSynthesis){
+        // X5 等无语音合成内核：降级为「复制本文」
+        var cbtn = document.createElement('button');
+        cbtn.type = 'button'; cbtn.className = 'tts-btn tts-copy';
+        cbtn.textContent = '📋 复制本文';
+        cbtn.addEventListener('click', function(){
+          var ok = copyBody();
+          cbtn.textContent = ok ? '✅ 已复制' : '⚠️ 复制失败';
+          setTimeout(function(){ cbtn.textContent = '📋 复制本文'; }, 1600);
+        });
+        box.appendChild(cbtn);
+        return;
+      }
       var btn = document.createElement('button');
       btn.type = 'button'; btn.className = 'tts-btn';
       btn.textContent = '🔊 朗读本文';
