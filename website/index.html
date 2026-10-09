@@ -1117,6 +1117,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       starEnter(p,s,e);      // 先开卡：此刻 pinned 仍为 false，starEnter 不会提前 return
       window.pinned=true;    // 再锁定：之后 hover 其它星点不再切换
       if(hcard) hcard.classList.add('pinned');
+      // 统计：点击边界屏某颗前沿问题星点（star_click）
+      try { if (window.SF_TRACK) { var stier = (s.className.match(/s-(\w+)/)||[])[1]||''; window.SF_TRACK.event('star_click', { id: p.id, tier: stier, dom: p.d }); } } catch(e){}
     });
     starHost.appendChild(s);
     return s;
@@ -1721,6 +1723,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       if(dom && typeof selectDomain==='function') selectDomain(dom);
       document.querySelectorAll('.beacon.is-selected').forEach(function(x){ x.classList.remove('is-selected'); });
       bn.classList.add('is-selected');
+      // 统计：荣誉屏点击某位拓荒者（honor_expand）
+      try { if (window.SF_TRACK) window.SF_TRACK.event('honor_expand', { beam: bn.__bi, name: it.cn || it.n }); } catch(e){}
     });
   }
   (function renderBeams(){
@@ -2110,9 +2114,23 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
 
   /* ---------------- scroll -> progress ---------------- */
   var targetP=0, curP=0;
+  var sfReached = {};   // 统计：各屏到达标记（一次性，避免重复上报）
   function onScroll(){
     var max=document.documentElement.scrollHeight-window.innerHeight;
     targetP = max>0 ? clamp(window.scrollY/max,0,1) : 0;
+    // 统计：5 屏滚动到达率（screen_reach，每屏仅记一次）
+    try {
+      if (window.SF_TRACK) {
+        var sfScenes = [['hero',0.05],['boundary',0.26],['galaxy',0.52],['honor',0.80],['teach',0.99]];
+        for (var si=0; si<sfScenes.length; si++){
+          var sn = sfScenes[si][0], sc = sfScenes[si][1];
+          if (!sfReached[sn] && targetP >= sc - 0.04){
+            sfReached[sn] = true;
+            window.SF_TRACK.event('screen_reach', { screen: sn });
+          }
+        }
+      }
+    } catch(e){}
   }
   window.addEventListener('scroll', onScroll, {passive:true});
 
@@ -2173,11 +2191,11 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
 
   var railEls=[].slice.call(document.querySelectorAll('#rail a'));
   var railP=railEls.map(function(a){ return parseFloat(a.dataset.p); });
-  railEls.forEach(function(a){ a.addEventListener('click',function(){ scrollToP(parseFloat(a.dataset.p)); }); });
-  document.getElementById('startBtn').addEventListener('click', function(){ if(window.openTeachHub) window.openTeachHub(); });
+  railEls.forEach(function(a){ a.addEventListener('click',function(){ try{if(window.SF_TRACK)window.SF_TRACK.event('rail_click',{screen:a.dataset.p});}catch(e){} scrollToP(parseFloat(a.dataset.p)); }); });
+  document.getElementById('startBtn').addEventListener('click', function(){ try{if(window.SF_TRACK)window.SF_TRACK.event('teach_open');}catch(e){} if(window.openTeachHub) window.openTeachHub(); });
   // 首屏“热门”卡：挂谷猜想——点击打开其详情（数据由 _build_v11.js 注入 __PROBS_FULL.kakeya）
   var hotK = document.getElementById('hotKakeya');
-  if (hotK) hotK.addEventListener('click', function(){ if (window.openDetail) window.openDetail('prob', 'kakeya'); });
+  if (hotK) hotK.addEventListener('click', function(){ try{if(window.SF_TRACK)window.SF_TRACK.event('hot_click',{id:'kakeya'});}catch(e){} if (window.openDetail) window.openDetail('prob', 'kakeya'); });
 
   /* ---------------- 科普教学场景 hub（R10-2：开始探索入口） ---------------- */
   function buildTeachHub(){
@@ -2683,6 +2701,8 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
 
   function openDetail(kind, id) {
     ensure();
+    // 统计：打开任意详情（问题/领域/科学家）——详情层核心互动指标
+    try { if (window.SF_TRACK) window.SF_TRACK.event('detail_open', { kind: kind, id: String(id||'') }); } catch(e){}
     if (window.cardHideNow) window.cardHideNow();
     // 先清除背景星的高亮
     document.querySelectorAll('.bc-star.focused, .bc-star.related-focus').forEach(function(el){
@@ -3156,8 +3176,9 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       try { window.speechSynthesis.cancel(); } catch(e){}
       if(current){ current.classList.remove('speaking'); current = null; }
     }
-    function speak(text, el){
+    function speak(text, el, mode){
       if(!supported) return;
+      try { if (window.SF_TRACK) window.SF_TRACK.event('tts_speak', { ok:true, mode: mode||'manual' }); } catch(e){}
       stop();
       // iOS：cancel() 后引擎可能停在 paused 态，先 resume 避免后续 speak 卡死
       try { if(window.speechSynthesis.paused) window.speechSynthesis.resume(); } catch(e){}
@@ -3203,7 +3224,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       btn.addEventListener('click', function(e){
         e.stopPropagation();
         if(msgDiv.classList.contains('speaking')) TTS.stop();
-        else TTS.speak(rawText, msgDiv);
+        else TTS.speak(rawText, msgDiv, 'manual');
       });
       // 跟随 msgDiv 的 .speaking 态同步按钮文案与高亮（被新回答/关闭打断时也复位）
       var obs = new MutationObserver(function(){
@@ -3223,6 +3244,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
       copyBtn.addEventListener('click', function(e){
         e.stopPropagation();
         var ok = TTS.copy(rawText);
+        try{if(window.SF_TRACK)window.SF_TRACK.event('tts_copy',{ok:ok});}catch(e){}
         copyBtn.textContent = ok ? '✅ 已复制' : '⚠️ 复制失败';
         setTimeout(function(){ copyBtn.textContent = '📋 复制回答'; }, 1600);
       });
@@ -3357,7 +3379,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
   btn.addEventListener('click', function(){
     var open = panel.classList.toggle('open');
     btn.style.display = open ? 'none' : '';
-    if(open) setTimeout(function(){inputEl.focus();}, 300);
+    if(open){ try{if(window.SF_TRACK)window.SF_TRACK.event('ai_chat_open');}catch(e){} setTimeout(function(){inputEl.focus();}, 300); }
   });
   closeBtn.addEventListener('click', function(){
     panel.classList.remove('open');
@@ -3496,10 +3518,11 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
         reply = '抱歉，AI 暂时无法回答。请稍后再试。';
       }
       messages.push({ role: 'assistant', content: reply });
+      try{if(window.SF_TRACK)window.SF_TRACK.event('ai_chat_send');}catch(e){}
       loadingDiv.innerHTML = '<p>' + renderHtml(reply) + '</p>';
       attachTts(loadingDiv, reply);
       // 仅在桌面精确指针环境自动朗读；移动端改由用户点「🔊 朗读」（在手势内，iOS 才出声）
-      if(TTS.isOn() && ENV.canAutoSpeak) TTS.speak(reply, loadingDiv);
+      if(TTS.isOn() && ENV.canAutoSpeak) TTS.speak(reply, loadingDiv, 'auto');
 
       // 生成上下文引导问题
       var followups = suggestQuestions(question + ' ' + reply);
@@ -3509,6 +3532,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
           }).join('')
         + '</div>');
     }).catch(function(err){
+      try{if(window.SF_TRACK)window.SF_TRACK.event('ai_chat_err',{msg:(err&&err.message)||''});}catch(e){}
       loadingDiv.innerHTML = '<p class="ai-error">⚠️ 连接失败：' + escHtml(err.message || '网络错误') + '。可能原因：网络受限 / API key 配额耗尽 / 百炼需要服务端代理。<br><br><span style="font-size:11px">小提示：可以同时在浏览器 DevTools → Network 面板看具体错误。</span></p>';
     }).finally(function(){
       loading = false;
@@ -3596,6 +3620,7 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     hideLauncher();
     if(!txt) return;
     if(txt.length > 120) txt = txt.slice(0, 120) + '…';
+    try{if(window.SF_TRACK)window.SF_TRACK.event('text_select',{len:txt.length});}catch(e){}
     openPanel();
     inputEl.value = '';
     askAI('请讲解这段话：' + txt);
@@ -3792,6 +3817,113 @@ window.HONOR_EXTRA={"physics":[{"n":"Rodrigo Ibata","cn":"Rodrigo Ibata","av":"R
     fillStats();
   }
 })();
+</script>
+<script>window.__SF_COLLECT_URL="https://analytics.sciencefrontier.cn/collect";window.__SF_CF_TOKEN="";</script>
+<script>
+/* ===== 科学边界 · 轻量统计采集（无 Cookie / PIPL 友好）=====
+ *
+ * 阶段一（可选）：Cloudflare Web Analytics
+ *   - 配置 window.__SF_CF_TOKEN（构建期由 SF_CF_TOKEN 环境变量注入）后，
+ *     自动加载 Cloudflare 官方信标脚本。零代码、无 Cookie、符合 PIPL。
+ *
+ * 阶段二（自建事件采集）：window.SF_TRACK.event(name, payload)
+ *   - 默认 POST 到 window.__SF_COLLECT_URL（构建期由 SF_COLLECT_URL 注入），
+ *     缺省兜底 analytics.sciencefrontier.cn/collect（需自行部署 Worker+D1）。
+ *   - 尊重 Do Not Track；可经 window.__SF_TRACK_DISABLED 关闭；支持采样率。
+ *   - 失败静默、绝不抛错、绝不阻塞主流程；优先 sendBeacon，其次 fetch(keepalive)。
+ *
+ * 合规：全站零 PII。采集字段仅含事件名/负载/粗粒度 pathname/来源域名/时间戳，
+ *       不记录 IP、不设用户标识、不做设备指纹。
+ */
+(function () {
+  'use strict';
+
+  /* ---- 配置（可由构建或父页注入）---- */
+  var COLLECT_URL = (window.__SF_COLLECT_URL || 'https://analytics.sciencefrontier.cn/collect');
+  var CF_TOKEN    = (window.__SF_CF_TOKEN || '');
+  var SAMPLE      = (typeof window.__SF_SAMPLE_RATE === 'number') ? window.__SF_SAMPLE_RATE : 1; // 0..1
+  var DISABLED    = !!(window.__SF_TRACK_DISABLED);
+
+  /* 尊重 Do Not Track */
+  try {
+    var dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+    if (dnt === '1' || dnt === 'yes' || dnt === 1) DISABLED = true;
+  } catch (e) {}
+
+  /* ---- 阶段一：Cloudflare Web Analytics 信标（仅当配置了 token）---- */
+  if (CF_TOKEN && !DISABLED) {
+    try {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+      s.defer = true;
+      s.setAttribute('data-cf-beacon', JSON.stringify({ token: CF_TOKEN }));
+      document.head.appendChild(s);
+    } catch (e) { /* 静默 */ }
+  }
+
+  /* ---- 发送实现 ---- */
+  function send(name, payload) {
+    if (DISABLED) return;
+    try {
+      if (SAMPLE < 1 && Math.random() > SAMPLE) return; // 采样
+      var body = {
+        n: name,                                                          // 事件名
+        p: (payload && typeof payload === 'object') ? payload : {},       // 事件负载
+        t: Date.now(),                                                    // 客户端时间戳
+        v: 1,                                                             // 采集协议版本
+        pg: location.pathname,                                            // 仅 pathname，无查询串/无 PII
+        ref: document.referrer ? document.referrer.replace(/[?#].*$/, '') : '' // 仅来源域名/路径，去参数
+      };
+      var json = JSON.stringify(body);
+
+      // 1) sendBeacon：页面卸载也能送达，且不触发 CORS 预检（text/plain 简单请求）
+      if (navigator.sendBeacon) {
+        try { if (navigator.sendBeacon(COLLECT_URL, json)) return; } catch (e) {}
+      }
+      // 2) fetch keepalive：页面存活时更可靠
+      if (window.fetch) {
+        try {
+          fetch(COLLECT_URL, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: json,
+            keepalive: true,
+            mode: 'cors'
+          });
+          return;
+        } catch (e) {}
+      }
+      // 3) 兜底 Image 信标（GET，参数化，仅用于极端降级）
+      try {
+        var img = new Image();
+        img.src = COLLECT_URL + '?n=' + encodeURIComponent(name) +
+                   '&t=' + body.t + '&pg=' + encodeURIComponent(body.pg);
+      } catch (e) {}
+    } catch (e) { /* 静默失败，绝不抛错 */ }
+  }
+
+  /* ---- 公共 API ---- */
+  var SF_TRACK = {
+    event: function (name, payload) { send(name, payload); },
+    pageview: function () { send('pageview', {}); },
+    setCollectUrl: function (u) { if (u) COLLECT_URL = u; },
+    disable: function () { DISABLED = true; },
+    enable: function () { DISABLED = false; },
+    isDisabled: function () { return DISABLED; }
+  };
+  window.SF_TRACK = SF_TRACK;
+
+  /* ---- 初始 pageview（延迟到 load，不阻塞首屏）---- */
+  if (!DISABLED) {
+    if (document.readyState === 'complete') {
+      setTimeout(function () { SF_TRACK.pageview(); }, 0);
+    } else {
+      window.addEventListener('load', function () { SF_TRACK.pageview(); });
+    }
+  }
+})();
+
 </script>
 </body>
 </html>

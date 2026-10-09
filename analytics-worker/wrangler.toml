@@ -1,0 +1,22 @@
+name = "sciencefrontier-analytics"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+# D1 数据库绑定（先建库：wrangler d1 create sciencefrontier_analytics，再把返回的 id 填到下面）
+[[d1_databases]]
+binding = "DB"
+database_name = "sciencefrontier_analytics"
+database_id = "REPLACE_WITH_YOUR_D1_ID"
+
+# 路由：analytics.sciencefrontier.cn
+# 前提：sciencefrontier.cn 已在 Cloudflare 托管，并添加 analytics 子域名 DNS（橙色云）
+# 方式一（推荐，自定义域直连 Worker）：
+routes = [
+  { pattern = "analytics.sciencefrontier.cn", custom_domain = true }
+]
+# 方式二（若不想用 custom_domain，可改为普通 route，需在 DNS 建 A/AAAA 指向 Workers）：
+# routes = [ { pattern = "analytics.sciencefrontier.cn/*" } ]
+
+# 变量（非敏感，可公开；如需覆盖默认采集地址可在此注入，但前端 tracker 已内置默认值）
+# [vars]
+# COLLECT_URL = "https://analytics.sciencefrontier.cn/collect"

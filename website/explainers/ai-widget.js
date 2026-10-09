@@ -59,8 +59,9 @@
     function copyText(t){ t=cleanText(t); if(!t) return false; try{ if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(t); return true; } }catch(e){} try{ var ta=document.createElement('textarea'); ta.value=t; ta.setAttribute('readonly',''); ta.style.position='fixed'; ta.style.top='-9999px'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); var ok=document.execCommand('copy'); document.body.removeChild(ta); return ok; }catch(e){ return false; } }
     function splitChunks(t){ var segs=t.split(/(?<=[。！？；?!;\n])/).map(function(s){return s.trim();}).filter(Boolean); if(!segs.length) segs=[t]; var out=[]; segs.forEach(function(s){ while(s.length>110){ out.push(s.slice(0,110)); s=s.slice(110);} if(s) out.push(s); }); return out.length?out:[t]; }
     function stop(){ if(!supported) return; try{ window.speechSynthesis.cancel(); }catch(e){} if(current){ current.classList.remove('speaking'); current=null; } }
-    function speak(text, el){
+    function speak(text, el, mode){
       if(!supported) return;
+      try { if (window.SF_TRACK) window.SF_TRACK.event('tts_speak', { ok:true, target:'answer', mode: mode||'manual' }); } catch(e){}
       stop();
       try { if(window.speechSynthesis.paused) window.speechSynthesis.resume(); } catch(e){}
       var clean = cleanText(text); if(!clean) return;
@@ -92,7 +93,7 @@
       var copyBtn = document.createElement('button');
       copyBtn.className='aw-tts-play aw-tts-copy'; copyBtn.type='button'; copyBtn.setAttribute('aria-label','复制本条回答'); copyBtn.title='复制本条回答';
       copyBtn.textContent='📋 复制回答';
-      copyBtn.addEventListener('click', function(e){ e.stopPropagation(); var ok=TTS.copy(rawText); copyBtn.textContent = ok ? '✅ 已复制' : '⚠️ 复制失败'; setTimeout(function(){ copyBtn.textContent='📋 复制回答'; }, 1600); });
+      copyBtn.addEventListener('click', function(e){ e.stopPropagation(); var ok=TTS.copy(rawText); try{if(window.SF_TRACK)window.SF_TRACK.event('tts_copy',{ok:ok});}catch(e){} copyBtn.textContent = ok ? '✅ 已复制' : '⚠️ 复制失败'; setTimeout(function(){ copyBtn.textContent='📋 复制回答'; }, 1600); });
       msgDiv.appendChild(copyBtn);
     }
   }
@@ -130,7 +131,7 @@
   var msgs=panel.querySelector('.aw-msgs'), input=panel.querySelector('.aw-input'), send=panel.querySelector('.aw-send');
 
   /* ---- 交互 ---- */
-  btn.onclick=function(){panel.classList.add('open');btn.style.display='none';setTimeout(function(){input.focus();},300);};
+  btn.onclick=function(){panel.classList.add('open');btn.style.display='none';try{if(window.SF_TRACK)window.SF_TRACK.event('ai_chat_open');}catch(e){}setTimeout(function(){input.focus();},300);};
   panel.querySelector('.aw-close').onclick=function(){panel.classList.remove('open');btn.style.display='';TTS.stop();};
   document.addEventListener('click',function(e){if(!panel.classList.contains('open'))return;if(!panel.contains(e.target)&&!e.target.closest('#aw-btn')){panel.classList.remove('open');btn.style.display='';TTS.stop();}});
   /* ---- 语音播报开关（默认开启，持久化）---- */
@@ -179,10 +180,12 @@
     callAPI(API_URL,{model:MODEL,messages:messages,temperature:.7,max_tokens:1200}).then(function(d){
       var reply=d.choices&&d.choices[0]&&d.choices[0].message?d.choices[0].message.content:'抱歉，AI 无法回答。';
       messages.push({role:'assistant',content:reply});
+      try{if(window.SF_TRACK)window.SF_TRACK.event('ai_chat_send');}catch(e){}
       ld.innerHTML='<p>'+md2html(reply)+'</p>';
       attachTts(ld, reply);
       if(TTS.isOn() && ENV.canAutoSpeak) TTS.speak(reply, ld);
     }).catch(function(e){
+      try{if(window.SF_TRACK)window.SF_TRACK.event('ai_chat_err',{msg:(e&&e.message)||''});}catch(e2){}
       ld.innerHTML='<p class="aw-err">⚠️ 连接失败：'+esc(e.message||'')+'。请稍后重试。</p>';
     }).finally(function(){loading=false;send.disabled=false;send.textContent='发送';input.focus();});
   }
@@ -256,6 +259,7 @@
     hideAskLauncher();
     if(!txt) return;
     if(txt.length > 120) txt = txt.slice(0, 120) + '…';
+    try{if(window.SF_TRACK)window.SF_TRACK.event('text_select',{len:txt.length});}catch(e){}
     openPanel();
     input.value = '';
     ask('请讲解这段话：' + txt);
@@ -355,6 +359,7 @@
     }
     function speak(){
       if(!window.speechSynthesis) return;
+      try { if (window.SF_TRACK) window.SF_TRACK.event('tts_speak', { ok:true, target:'page', mode:'manual' }); } catch(e){}
       var btn = this;
       if(window.speechSynthesis.speaking || window.speechSynthesis.pending){
         try { window.speechSynthesis.resume(); } catch(e){}
@@ -387,6 +392,7 @@
         cbtn.textContent = '📋 复制本文';
         cbtn.addEventListener('click', function(){
           var ok = copyBody();
+          try{if(window.SF_TRACK)window.SF_TRACK.event('tts_copy',{ok:ok});}catch(e){}
           cbtn.textContent = ok ? '✅ 已复制' : '⚠️ 复制失败';
           setTimeout(function(){ cbtn.textContent = '📋 复制本文'; }, 1600);
         });
@@ -400,4 +406,12 @@
       box.appendChild(btn);
     });
   })();
+
+  /* ---- 统计：科普子页打开（explainer_open）---- */
+  try {
+    if (window.SF_TRACK) {
+      var __slug = (location.pathname.split('/').pop() || '').replace(/\.html$/, '') || 'index';
+      window.SF_TRACK.event('explainer_open', { slug: __slug });
+    }
+  } catch(e){}
 })();
